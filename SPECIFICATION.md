@@ -4,7 +4,7 @@
 
 | Field | Value |
 |-------|-------|
-| Version | 1.4.0 |
+| Version | 1.4.1 |
 | Last Updated | 2026-04-26 |
 | Status | Production Ready |
 
@@ -433,6 +433,7 @@ Required features:
 | 1.2.1 | 2026-04-26 | - Fixed incorrect subject name mapping ("Question Type, Fill in the Blank, Fair, Specific, Engaging" → "STEAM")<br>- Added 21 missing predefined questions for G5<br>- Corrected keyword names (2-dimensional, 3-dimensional, half-smash)<br>- Added missing Maths questions: top view, factor, common, share, mixed number, whole<br>- Added missing Science questions: small intestine, grow, human, body, health, electricity, safety, thorn<br>- Added missing STEAM questions: Question Type, Fair<br>- Added missing PE questions: half-smash, base position |
 | 1.3.0 | 2026-04-26 | - **CRITICAL FIX**: Streamlit app now uses same predefined questions as React app<br>- Created TS→Python converter script (`scripts/convert_predefined_questions.py`)<br>- Streamlit Quiz page updated to use `get_subject_data()` with predefined questions<br>- Cleaned up 18 old scripts and process files<br>- Added data sync documentation in CLAUDE.md<br>- Created validation script for question consistency<br>- **Result**: 1023 high-quality predefined questions now shared between both apps |
 | 1.4.0 | 2026-04-26 | - **MAJOR ENHANCEMENT**: Streamlit Quiz page redesigned to match React app experience<br>- Added animated countdown timer with color transitions (green→yellow→red)<br>- Implemented full points system: Easy=10pts, Medium=15pts, Hard=20pts<br>- Added speed bonus (+5pts) for fast correct answers (<10s)<br>- Implemented two-step answer flow: Select → Check (more engaging)<br>- Added lives system (3 hearts) for hard mode with game over screen<br>- Enhanced CSS with slide-in, pulse, shake, and bounce animations<br>- Added gradient backgrounds, hover effects, and shadows<br>- Implemented celebration screen with performance levels (Perfect→🌳✨, Excellent→🌿, Good→🌱)<br>- Added comprehensive results screen with metrics breakdown and keyword badges<br>- Improved difficulty info expander with detailed mode descriptions |
+| 1.4.1 | 2026-04-26 | - **HOTFIX**: Fixed dictionary access syntax in quiz page<br>- Changed `config.timer` to `config['timer']` throughout the file<br>- Fixed `DIFFICULTY_CONFIG[x].timer` to `DIFFICULTY_CONFIG[x]['timer']`<br>- Committed and pushed complete predefined_questions.py with 1023+ questions<br>- Resolved KeyError on Streamlit Cloud deployment |
 
 ## 12. Future Enhancements
 
