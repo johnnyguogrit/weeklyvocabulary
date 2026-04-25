@@ -4,8 +4,8 @@
 
 | Field | Value |
 |-------|-------|
-| Version | 1.2.0 |
-| Last Updated | 2025-04-25 |
+| Version | 1.2.1 |
+| Last Updated | 2026-04-26 |
 | Status | Production Ready |
 
 ## 1. System Overview
@@ -349,6 +349,7 @@ Required features:
 | 1.0.0 | 2025-04-25 | Initial release |
 | 1.1.0 | 2025-04-25 | - Disabled reading comprehension for all grades<br>- Moved pronunciation guide to answer explanations<br>- Removed PronunciationCard component |
 | 1.2.0 | 2025-04-25 | - Improved PDF parsing with pdfplumber for better text extraction<br>- Added support for variant Chinese characters in subject names<br>- Enhanced markdown format handling for G2-G5<br>- Fixed zero-width space issues from markitdown tool<br>- Regenerated predefinedQuestions.ts with complete question data |
+| 1.2.1 | 2026-04-26 | - Fixed incorrect subject name mapping ("Question Type, Fill in the Blank, Fair, Specific, Engaging" → "STEAM")<br>- Added 21 missing predefined questions for G5<br>- Corrected keyword names (2-dimensional, 3-dimensional, half-smash)<br>- Added missing Maths questions: top view, factor, common, share, mixed number, whole<br>- Added missing Science questions: small intestine, grow, human, body, health, electricity, safety, thorn<br>- Added missing STEAM questions: Question Type, Fair<br>- Added missing PE questions: half-smash, base position |
 
 ## 12. Future Enhancements
 
