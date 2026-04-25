@@ -175,7 +175,7 @@ def show_add_students():
 
     # Class selection
     class_options = {f"{cls['name']} ({cls['code']})": cls for cls in classes}
-    selected = st.selectbox("Select a class", options=list(class_options.keys()))
+    selected = st.selectbox("Select a class", options=list(class_options.keys()), key="add_students_class_select")
     selected_class = class_options[selected]
 
     # Bulk add students
@@ -183,12 +183,13 @@ def show_add_students():
     student_names = st.text_area(
         "Student Names",
         placeholder="Alice Smith\nBob Johnson\nCharlie Brown",
-        height=150
+        height=150,
+        key="add_students_names"
     )
 
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("Add Students", type="primary", use_container_width=True):
+        if st.button("Add Students", type="primary", use_container_width=True, key="add_students_btn"):
             if not student_names.strip():
                 st.error("Please enter at least one student name")
                 return
@@ -226,7 +227,7 @@ def show_view_students():
 
     # Class selection
     class_options = {f"{cls['name']} ({cls['code']})": cls for cls in classes}
-    selected = st.selectbox("Select a class", options=list(class_options.keys()))
+    selected = st.selectbox("Select a class", options=list(class_options.keys()), key="view_students_class_select")
     selected_class = class_options[selected]
 
     # Get students
