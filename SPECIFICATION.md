@@ -4,7 +4,7 @@
 
 | Field | Value |
 |-------|-------|
-| Version | 1.1.0 |
+| Version | 1.2.0 |
 | Last Updated | 2025-04-25 |
 | Status | Production Ready |
 
@@ -225,14 +225,30 @@ App.tsx (Consumes SubjectData)
 ## 6. Content Management
 
 ### 6.1 Adding New Questions
-1. Edit markdown files in `weeklytest/`
-2. Run parser: `node scripts/parseVocabularyMd.cjs`
-3. Generated file: `src/data/predefinedQuestions.ts`
+1. Place PDF source files in `weeklytest/` directory
+2. Parse PDFs to markdown using `python weeklytest/parse_pdf_pdfplumber.py`
+3. Run parser: `cd app/ && node scripts/parseVocabularyMd.cjs`
+4. Generated file: `src/data/predefinedQuestions.ts`
 
 ### 6.2 Markdown Format
+The parser supports multiple formats for flexibility:
+
 - **G1 Format**: `• 第N周(keyword)`
 - **G2+ Format**: `第N周(keyword1, keyword2, keyword3)`
-- **Question Format**: `keyword - 题干：...选项：...正确答案：...`
+- **Question Format**: `keyword - 题干：...选项：A) xxx B) xxx C) xxx D) xxx 正确答案：X (解析：...)`
+
+### 6.3 PDF Parsing Tools (weeklytest/)
+| Script | Purpose |
+|--------|---------|
+| `parse_pdf_pdfplumber.py` | Primary PDF to markdown converter using pdfplumber |
+| `fix_markdown.py` | Replaces zero-width spaces with newlines |
+| `fix_markdown_v2.py` | Reconstructs incomplete questions |
+
+### 6.4 Parser Features (parseVocabularyMd.cjs)
+- Handles variant Chinese characters (e.g., `⾳乐` → `音乐`)
+- Supports combined subject names (e.g., `表演艺术与戏剧`)
+- Detects format automatically (G1, G2, G3/G4/G5)
+- Preserves pronunciation guide in explanations
 
 ### 6.3 Translation Data
 Located in `src/data/translations.ts`:
@@ -332,6 +348,7 @@ Required features:
 |---------|------|---------|
 | 1.0.0 | 2025-04-25 | Initial release |
 | 1.1.0 | 2025-04-25 | - Disabled reading comprehension for all grades<br>- Moved pronunciation guide to answer explanations<br>- Removed PronunciationCard component |
+| 1.2.0 | 2025-04-25 | - Improved PDF parsing with pdfplumber for better text extraction<br>- Added support for variant Chinese characters in subject names<br>- Enhanced markdown format handling for G2-G5<br>- Fixed zero-width space issues from markitdown tool<br>- Regenerated predefinedQuestions.ts with complete question data |
 
 ## 12. Future Enhancements
 
