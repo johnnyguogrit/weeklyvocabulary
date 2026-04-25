@@ -604,7 +604,7 @@ def show_quiz_question():
         """, unsafe_allow_html=True)
 
         # Speed bonus
-        if is_correct and config['timer'] > 0:
+        if is_correct and config['timer'] > 0 and 'start_time' in st.session_state and st.session_state.start_time:
             time_taken = time.time() - st.session_state.start_time
             if time_taken < 10:
                 st.markdown(f"""
@@ -632,10 +632,12 @@ def submit_answer(question):
     speed_bonus = 0
 
     if is_correct:
-        time_taken = time.time() - st.session_state.start_time
-        if DIFFICULTY_CONFIG[difficulty]['timer'] > 0 and time_taken < 10:
-            speed_bonus = 5
-            st.session_state.speed_bonuses += 1
+        # Check if start_time exists (for timer-based difficulties)
+        if 'start_time' in st.session_state and st.session_state.start_time:
+            time_taken = time.time() - st.session_state.start_time
+            if DIFFICULTY_CONFIG[difficulty]['timer'] > 0 and time_taken < 10:
+                speed_bonus = 5
+                st.session_state.speed_bonuses += 1
 
         st.session_state.points += base_points + speed_bonus
     else:
