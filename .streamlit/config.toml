@@ -7,14 +7,13 @@ font = "sans serif"
 
 [client]
 showErrorDetails = false
-showProgressBar = "default"
 
 [logger]
 level = "info"
 
 [browser]
 gatherUsageStats = false
-serverAddress = "localhost"
+serverAddress = ""
 serverPort = 8501
 
 [server]
