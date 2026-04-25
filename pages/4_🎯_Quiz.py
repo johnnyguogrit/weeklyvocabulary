@@ -594,6 +594,12 @@ def show_quiz_question():
 
         # Explanation
         explanation = question.get('explanation', 'Great job!')
+        # Clean up explanation - only show the first part before other weeks' info
+        if ' • ' in explanation:
+            explanation = explanation.split(' • ')[0] + '.'
+        elif ' •​' in explanation:  # Handle zero-width space
+            explanation = explanation.split(' •​')[0] + '.'
+
         st.markdown(f"""
         <div class="explanation-box {'correct' if is_correct else 'incorrect'}">
             <p style="margin: 0; font-weight: bold; color: {'#2e7d32' if is_correct else '#c62828'}">
