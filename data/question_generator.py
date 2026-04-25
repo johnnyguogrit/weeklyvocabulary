@@ -366,17 +366,30 @@ def get_subject_data(grade: str, subject: str, predefined_questions: Dict = None
 
         # Check for predefined questions
         week_questions = []
-        if predefined_questions and grade in predefined_questions and subject in predefined_questions:
+        if predefined_questions and grade in predefined_questions and subject in predefined_questions[grade]:
             week_predefined = predefined_questions[grade][subject].get(week_id, [])
             for pq in week_predefined:
                 # Convert answer letter to option text
                 options = pq.get('options', [])
-                answer_letter = pq.get('answer', 'A')
+                if not options:
+                    continue  # Skip questions without options
+                answer_letter = pq.get('answer', 'A').upper()
                 answer_index = ord(answer_letter) - ord('A')
                 correct_answer = options[answer_index] if 0 <= answer_index < len(options) else options[0]
 
+                # Create the question object for the quiz
+                question_obj = {
+                    'id': f"q-{week_id}-{len(week_questions)}",
+                    'type': 'multipleChoice',
+                    'question': pq['question'],
+                    'options': options,
+                    'correctAnswer': correct_answer,
+                    'explanation': pq.get('explanation', ''),
+                    'weekId': week_id,
+                }
+
+                # If question has a passage, also add to passages for reading comprehension
                 if pq.get('passage'):
-                    # This is a reading comprehension question
                     existing_passage = next((p for p in passages if p['weekId'] == week_id), None)
                     if existing_passage:
                         existing_passage['questions'].append({
@@ -397,16 +410,9 @@ def get_subject_data(grade: str, subject: str, predefined_questions: Dict = None
                                 'explanation': pq.get('explanation', ''),
                             }],
                         })
-                else:
-                    week_questions.append({
-                        'id': f"q-{week_id}-{len(week_questions)}",
-                        'type': 'multipleChoice',
-                        'question': pq['question'],
-                        'options': options,
-                        'correctAnswer': correct_answer,
-                        'explanation': pq.get('explanation', ''),
-                        'weekId': week_id,
-                    })
+
+                # Always add to week_questions for regular quiz
+                week_questions.append(question_obj)
 
         # If no predefined questions, generate them
         if not week_questions:
