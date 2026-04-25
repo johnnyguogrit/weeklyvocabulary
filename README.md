@@ -3,43 +3,70 @@
 A gamified vocabulary learning application for Grades 1-5 covering 8 academic subjects (Maths, Science, STEAM, Music, Performing Arts, Drama, Visual Arts, PE).
 
 ## Version
-**v1.2.1** (2026-04-26)
+**v2.0.0** (2026-04-26) - Streamlit Edition with User Management
 
 ## Features
 
+### Student Features
 - **8 Subject Areas**: Maths, Science, STEAM, Music, Performing Arts, Drama, Visual Arts, PE
 - **5 Grade Levels**: G1 (age 6-7) through G5 (age 10-11)
 - **3 Difficulty Levels**: Easy, Medium, Hard
 - **Gamified Progress**: Plant growth metaphor from seedling to mighty oak
-- **Local Progress Saving**: Uses browser localStorage
-- **Responsive Design**: Works on desktop, tablet, and mobile
+- **Progress Tracking**: Database-backed progress for each student
+- **Home Access**: Parents and students can access from any web browser
 
-## Tech Stack
+### Teacher Features
+- **Class Management**: Create classes with unique 8-letter codes
+- **Student Management**: Bulk-add students with auto-generated animal passwords
+- **Progress Monitoring**: View class statistics and individual student progress
+- **Password Management**: Reset animal passwords for students
 
-- **React 19** + TypeScript 5.9
-- **Vite 7** for building
-- **Tailwind CSS** for styling
-- **Radix UI** components
-- **Framer Motion** for animations
+## Deployment Options
 
-## Quick Start
+### Option 1: Streamlit Cloud (Recommended - Free)
+Best for home access - parents and students can use from any device.
+
+```bash
+# 1. Push code to GitHub
+# 2. Connect repository to https://streamlit.io/cloud
+# 3. Access at https://your-app-name.streamlit.app
+```
+
+### Option 2: Local Development
 
 ```bash
 # Install dependencies
-cd app/
-npm install
+pip install -r requirements.txt
 
-# Start development server
-npm run dev
+# Run Streamlit app
+streamlit run streamlit_app.py
 
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
+# Or use the pages directly
+streamlit run pages/0_🏠_Home.py
 ```
 
-The app will be available at `http://localhost:3000` in development mode.
+### Option 3: React App (Original Version)
+
+```bash
+cd app/
+npm install
+npm run dev
+```
+
+## Tech Stack
+
+### Streamlit Version (v2.0.0)
+- **Python 3.9+**
+- **Streamlit 1.31** - Web framework
+- **SQLite** - Database for users and progress
+- **Pandas** - Data manipulation
+- **Plotly** - Progress visualization
+
+### React Version (v1.2.1)
+- **React 19** + TypeScript 5.9
+- **Vite 7** for building
+- **Tailwind CSS** + Radix UI
+- **Framer Motion** animations
 
 ## Project Structure
 
