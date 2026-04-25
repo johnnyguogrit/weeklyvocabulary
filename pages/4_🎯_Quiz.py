@@ -496,19 +496,19 @@ def show_quiz_question():
     st.markdown('</div>', unsafe_allow_html=True)
 
     # Animated timer for medium/hard
-    if config.timer > 0 and not st.session_state.is_answered:
+    if config['timer'] > 0 and not st.session_state.is_answered:
         # Initialize timer if needed
         if 'time_remaining' not in st.session_state or st.session_state.get('question_id') != current_idx:
-            st.session_state.time_remaining = config.timer
+            st.session_state.time_remaining = config['timer']
             st.session_state.question_id = current_idx
             st.session_state.start_time = time.time()
 
         # Calculate remaining time
         elapsed = time.time() - st.session_state.start_time
-        st.session_state.time_remaining = max(0, config.timer - int(elapsed))
+        st.session_state.time_remaining = max(0, config['timer'] - int(elapsed))
 
         # Determine color
-        pct = st.session_state.time_remaining / config.timer
+        pct = st.session_state.time_remaining / config['timer']
         color_class = 'green' if pct > 0.5 else 'yellow' if pct > 0.2 else 'red'
 
         st.markdown(f"""
@@ -604,7 +604,7 @@ def show_quiz_question():
         """, unsafe_allow_html=True)
 
         # Speed bonus
-        if is_correct and config.timer > 0:
+        if is_correct and config['timer'] > 0:
             time_taken = time.time() - st.session_state.start_time
             if time_taken < 10:
                 st.markdown(f"""
@@ -633,7 +633,7 @@ def submit_answer(question):
 
     if is_correct:
         time_taken = time.time() - st.session_state.start_time
-        if DIFFICULTY_CONFIG[difficulty].timer > 0 and time_taken < 10:
+        if DIFFICULTY_CONFIG[difficulty]['timer'] > 0 and time_taken < 10:
             speed_bonus = 5
             st.session_state.speed_bonuses += 1
 
@@ -686,7 +686,7 @@ def next_question():
     st.session_state.selected_option = None
     st.session_state.is_answered = False
     st.session_state.is_correct = False
-    st.session_state.time_remaining = DIFFICULTY_CONFIG[st.session_state.quiz_difficulty].timer
+    st.session_state.time_remaining = DIFFICULTY_CONFIG[st.session_state.quiz_difficulty]['timer']
     st.rerun()
 
 
