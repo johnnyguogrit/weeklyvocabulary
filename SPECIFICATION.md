@@ -4,21 +4,27 @@
 
 | Field | Value |
 |-------|-------|
-| Version | 1.2.1 |
+| Version | 1.4.0 |
 | Last Updated | 2026-04-26 |
 | Status | Production Ready |
 
 ## 1. System Overview
 
 ### 1.1 Purpose
-A gamified web application for teaching English vocabulary to students in Grades 1-5 across 8 academic subjects.
+A gamified vocabulary learning application for teaching English vocabulary to students in Grades 1-5 across 8 academic subjects.
+
+**Dual-App Architecture**:
+1. **React App** (`app/`): Local frontend for students (port 3000)
+2. **Streamlit App** (`pages/`, `data/`): Web-based teacher interface with user management (port 8501)
 
 ### 1.2 Target Audience
-- Primary: Students ages 6-11 (Grades 1-5)
-- Secondary: Teachers and parents tracking progress
+- **Primary**: Students ages 6-11 (Grades 1-5)
+- **Secondary**: Teachers managing class progress via Streamlit dashboard
+- **Tertiary**: Parents tracking student performance
 
 ### 1.3 Platform
-- Web browser (modern browsers: Chrome, Firefox, Safari, Edge)
+- React App: Modern browsers (Chrome, Firefox, Safari, Edge)
+- Streamlit App: Python-based web interface
 - Responsive design (desktop, tablet, mobile)
 
 ## 2. Functional Requirements
@@ -212,23 +218,98 @@ App.tsx (Main Container)
 - ~~ReadingCompScreen~~ (Reading passages disabled)
 
 ### 5.3 Data Flow
+
+**Question Data Flow (Dual-App Sync)**:
 ```
-vocabularyData.ts (Keywords by week)
+weeklytest/*.md (Source markdown files)
     ↓
-predefinedQuestions.ts (Parsed from MD files)
+┌─────────────────────────────────────────────┐
+│  React App Generation                        │
+│  node app/scripts/parseVocabularyMd.cjs     │
+│  → app/src/data/predefinedQuestions.ts      │
+│  (1023+ questions)                          │
+└─────────────────────────────────────────────┘
     ↓
-questionGenerator.ts (getSubjectData)
+┌─────────────────────────────────────────────┐
+│  Streamlit App Generation                    │
+│  python scripts/convert_predefined_questions.py │
+│  → data/predefined_questions.py             │
+│  (Same 1023+ questions)                     │
+└─────────────────────────────────────────────┘
     ↓
-App.tsx (Consumes SubjectData)
+question_generator.get_subject_data()
+    ↓
+Both apps use identical predefined questions
+```
+
+**Question Priority** (both apps):
+1. Predefined questions (from markdown) - 1023 high-quality questions
+2. Auto-generated (template-based) - Fallback only
+
+### 5.4 Streamlit Quiz Features (v1.4.0)
+
+**Enhanced Quiz Experience** matching React app functionality:
+
+#### Visual Features
+- **Animated Timer Bar**: Real-time countdown with color transitions (green→yellow→red)
+- **Gradient Buttons**: Hover effects with elevation and color shifts
+- **CSS Animations**: Slide-in, pulse, shake, fade, and bounce effects
+- **Performance Emojis**: Perfect→🌳✨, Excellent→🌿, Good→🌱, Keep Practicing→📚
+
+#### Game Mechanics
+- **Points System**:
+  - Easy: 10 points per correct answer
+  - Medium: 15 points + speed bonuses
+  - Hard: 20 points + speed bonuses
+- **Speed Bonus**: +5 extra points for answering in <10 seconds
+- **Lives System** (Hard mode): 3 hearts with game over screen
+- **Two-Step Flow**: Select answer → Check (more engaging than immediate submit)
+
+#### Quiz States
+1. **Setup Screen**: Grade/Subject/Week/Difficulty selection with keyword preview
+2. **Quiz Screen**: Animated timer, options with hover effects, two-step submission
+3. **Results Screen**: Score breakdown, performance level, keyword badges, answer review
+4. **Game Over Screen**: Triggers when lives depleted in hard mode
+
+#### CSS Animation Classes
+```css
+.quiz-question      - Slide-in animation for questions
+.quiz-option        - Hover effects with elevation
+.quiz-option.correct - Pulse animation for correct answers
+.quiz-option.incorrect - Shake animation for wrong answers
+.timer-bar          - Smooth width transition with color change
+.score-display      - Pop-in animation
+.speed-bonus        - Pop-in animation for bonus notification
 ```
 
 ## 6. Content Management
 
-### 6.1 Adding New Questions
-1. Place PDF source files in `weeklytest/` directory
-2. Parse PDFs to markdown using `python weeklytest/parse_pdf_pdfplumber.py`
-3. Run parser: `cd app/ && node scripts/parseVocabularyMd.cjs`
-4. Generated file: `src/data/predefinedQuestions.ts`
+### 6.1 Adding New Questions (Dual-App Sync)
+When updating questions from markdown files, BOTH apps must be regenerated:
+
+```bash
+# Step 1: Edit markdown files in weeklytest/ folder
+vim weeklytest/*.md
+
+# Step 2: Regenerate React app predefined questions
+cd app/
+node scripts/parseVocabularyMd.cjs
+# Output: app/src/data/predefinedQuestions.ts
+
+# Step 3: Regenerate Streamlit app predefined questions
+cd ../
+python scripts/convert_predefined_questions.py
+# Output: data/predefined_questions.py
+
+# Step 4: Verify consistency
+python scripts/validate_question_sync.py
+```
+
+### 6.2 Question Data Files
+| App | Predefined Questions File | Questions |
+|-----|--------------------------|-----------|
+| React | `app/src/data/predefinedQuestions.ts` | 1023+ |
+| Streamlit | `data/predefined_questions.py` | 1023+ (synced) |
 
 ### 6.2 Markdown Format
 The parser supports multiple formats for flexibility:
@@ -350,6 +431,8 @@ Required features:
 | 1.1.0 | 2025-04-25 | - Disabled reading comprehension for all grades<br>- Moved pronunciation guide to answer explanations<br>- Removed PronunciationCard component |
 | 1.2.0 | 2025-04-25 | - Improved PDF parsing with pdfplumber for better text extraction<br>- Added support for variant Chinese characters in subject names<br>- Enhanced markdown format handling for G2-G5<br>- Fixed zero-width space issues from markitdown tool<br>- Regenerated predefinedQuestions.ts with complete question data |
 | 1.2.1 | 2026-04-26 | - Fixed incorrect subject name mapping ("Question Type, Fill in the Blank, Fair, Specific, Engaging" → "STEAM")<br>- Added 21 missing predefined questions for G5<br>- Corrected keyword names (2-dimensional, 3-dimensional, half-smash)<br>- Added missing Maths questions: top view, factor, common, share, mixed number, whole<br>- Added missing Science questions: small intestine, grow, human, body, health, electricity, safety, thorn<br>- Added missing STEAM questions: Question Type, Fair<br>- Added missing PE questions: half-smash, base position |
+| 1.3.0 | 2026-04-26 | - **CRITICAL FIX**: Streamlit app now uses same predefined questions as React app<br>- Created TS→Python converter script (`scripts/convert_predefined_questions.py`)<br>- Streamlit Quiz page updated to use `get_subject_data()` with predefined questions<br>- Cleaned up 18 old scripts and process files<br>- Added data sync documentation in CLAUDE.md<br>- Created validation script for question consistency<br>- **Result**: 1023 high-quality predefined questions now shared between both apps |
+| 1.4.0 | 2026-04-26 | - **MAJOR ENHANCEMENT**: Streamlit Quiz page redesigned to match React app experience<br>- Added animated countdown timer with color transitions (green→yellow→red)<br>- Implemented full points system: Easy=10pts, Medium=15pts, Hard=20pts<br>- Added speed bonus (+5pts) for fast correct answers (<10s)<br>- Implemented two-step answer flow: Select → Check (more engaging)<br>- Added lives system (3 hearts) for hard mode with game over screen<br>- Enhanced CSS with slide-in, pulse, shake, and bounce animations<br>- Added gradient backgrounds, hover effects, and shadows<br>- Implemented celebration screen with performance levels (Perfect→🌳✨, Excellent→🌿, Good→🌱)<br>- Added comprehensive results screen with metrics breakdown and keyword badges<br>- Improved difficulty info expander with detailed mode descriptions |
 
 ## 12. Future Enhancements
 
