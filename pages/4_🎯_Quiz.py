@@ -394,7 +394,7 @@ def show_quiz_setup():
         difficulty = st.selectbox(
             "⚡ Select Difficulty",
             options=list(DIFFICULTY_CONFIG.keys()),
-            format_func=lambda x: f"{DIFFICULTY_CONFIG[x]['emoji']} {DIFFICULTY_CONFIG[x']['label']}",
+            format_func=lambda x: f"{DIFFICULTY_CONFIG[x]['emoji']} {DIFFICULTY_CONFIG[x]['label']}",
             key="setup_difficulty"
         )
 
