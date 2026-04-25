@@ -21,7 +21,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A person or animal you pretend to be in a story is a _______.",
                 "options": ["character", "stage", "stretch", "dialogue"],
                 "answer": "A",
-                "explanation": "character意为\\",
+                "explanation": "character意为\"角色\"。 • 第3周 (dialogue) ◦ 题干：When two actors talk to each other, it is a _______. ◦ 选项：A) cartwheel B) dialogue C) stage D) stretch ◦ 正确答案：B ◦ 答案解析：dialogue意为\"对话/对白\"。 • 第4周 (hot seating) ◦ 题干：In _______, you sit in a chair and answer questions as your character. ◦ 选项：A) hot seating B) stage C) cartwheel D) stretch ◦ 正确答案：A ◦ 答案解析：hot seating是戏剧中的\"焦点人物法\"。 • 第5周（综合复习测试：涵盖 character, dialogue, hot seating） ◦ 阅读文本：You pretend to be a character. In hot seating, you sit in a chair. You speak your dialogue out loud. ◦ 题干：Who do you pretend to be? ◦ 选项：A) A stage B) A dialogue C) A character D) A chair ◦ 正确答案：C ◦ 答案解析：扮演故事中的角色(character)。 【第二阶段：第7-9周】",
                 "passage": "You pretend to be a character. In hot seating, you sit in a chair. You speak your dialogue out loud.",
             },
                 ],
@@ -32,7 +32,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Happy and sad are different _______ we show on our face.",
                 "options": ["lines", "actors", "emotions", "stages"],
                 "answer": "C",
-                "explanation": "emotions意为\\",
+                "explanation": "emotions意为\"情绪\"。 • 第8周 (actor) ◦ 题干：A person who performs in a show is an _______. ◦ 选项：A) emotions B) actor C) lines D) stage ◦ 正确答案：B ◦ 答案解析：actor意为\"演员\"。 • 第9周 (play) ◦ 题干：A story acted out on a stage is a _______. ◦ 选项：A) play B) actor C) lines D) stretch ◦ 正确答案：A ◦ 答案解析：play在戏剧语境中意为\"戏剧/舞台剧\"。 • 第9周末（综合复习测试：涵盖 emotions, actor, play） ◦ 阅读文本：The actor performs in a big play. He cries and smiles to show strong emotions. ◦ 题干：What does the actor perform in? ◦ 选项：A) A play B) Emotions C) A cartwheel D) A character ◦ 正确答案：A ◦ 答案解析：演员(actor)在剧(play)中表演强烈的情绪(emotions)。 【第三阶段：第10-12周】",
                 "passage": "The actor performs in a big play. He cries and smiles to show strong emotions.",
             },
                 ],
@@ -43,7 +43,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We are watching a funny _______ at the theater.",
                 "options": ["emotions", "stretch", "play", "hot seating"],
                 "answer": "C",
-                "explanation": "巩固play的语境理解。 • 第11周 (sing) ◦ 题干：In a musical play, actors talk and _______ songs. ◦ 选项：A) sing B) stretch C) bow D) stage ◦ 正确答案：A ◦ 答案解析：sing意为\\",
+                "explanation": "巩固play的语境理解。 • 第11周 (sing) ◦ 题干：In a musical play, actors talk and _______ songs. ◦ 选项：A) sing B) stretch C) bow D) stage ◦ 正确答案：A ◦ 答案解析：sing意为\"唱歌\"。 • 第12周 (facial expression) ◦ 题干：A smile is a _______ that shows you are happy. ◦ 选项：A) dialogue B) facial expression C) stage D) lines ◦ 正确答案：B ◦ 答案解析：facial expression意为\"面部表情\"。 • 第12周末（综合复习测试：涵盖 play, sing, facial expression） ◦ 阅读文本：In our play, we sing happy songs. We use a big smile as our facial expression. ◦ 题干：What do we do in the play? ◦ 选项：A) We sleep B) We sing happy songs C) We cry D) We stretch ◦ 正确答案：B ◦ 答案解析：音乐剧(play)包含唱歌(sing)与表情(facial expression)。 【第四阶段：第13-15周】 • 第13/14周 (stage directions) ◦ 题干：_______ tell actors where to walk on the stage. ◦ 选项：A) Stage directions B) Lines C) Emotions D) Characters ◦ 正确答案：A ◦ 答案解析：stage directions意为\"舞台走位指示\"。",
                 "passage": "In our play, we sing happy songs. We use a big smile as our facial expression.",
             },
                 ],
@@ -54,7 +54,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Actors memorize their _______ so they know what words to say.",
                 "options": ["stage directions", "lines", "emotions", "stages"],
                 "answer": "B",
-                "explanation": "lines意为\\",
+                "explanation": "lines意为\"台词\"。 • 第15周末（综合复习测试：涵盖 stage directions, lines） ◦ 阅读文本：The stage directions tell the actor to walk left. Then, the actor speaks his lines loudly. ◦ 题干：What tells the actor to walk left? ◦ 选项：A) His lines B) His emotions C) Stage directions D) The play ◦ 正确答案：C ◦ 答案解析：舞台指示(stage directions)教导走位，台词(lines)表达内容。",
                 "passage": "The stage directions tell the actor to walk left. Then, the actor speaks his lines loudly.",
             },
                 ],
@@ -67,7 +67,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A shape with three sides is a _______.",
                 "options": ["circle", "triangle", "square", "line"],
                 "answer": "B",
-                "explanation": "triangle意为\\",
+                "explanation": "triangle意为\"三角形\"，符合三条边的几何特征。 • 第3周 (square) ◦ 题干：A _______ has four equal straight sides. ◦ 选项：A) triangle B) square C) star D) dot ◦ 正确答案：B ◦ 答案解析：square意为\"正方形\"，符合四条相等的直边的特征。 • 第4周 (minus) ◦ 题干：If we take away 1 from 3, we use _______. ◦ 选项：A) plus B) total C) minus D) more ◦ 正确答案：C ◦ 答案解析：minus意为\"减去\"，在数学运算中表示减少或拿走。 • 第5周（综合复习测试：涵盖 triangle, square, minus, number） ◦ 阅读文本：Look at my shapes! I have a number of toys. I have a triangle with 3 sides and a square with 4 sides. If I have 5 toys and use minus 2, I have 3 left. ◦ 题干：What shape has 4 sides in the text? ◦ 选项：A) triangle B) square C) circle D) number ◦ 正确答案：B ◦ 答案解析：阅读文本中提到\"a square with 4 sides\"，综合考察了过往三周形状与运算词汇， 及第5周复习周强调的词汇number。 【第二阶段：第7-9周】",
                 "passage": "Look at my shapes! I have a number of toys. I have a triangle with 3 sides and a square with 4 sides. If I have 5 toys and use minus 2, I have 3 left.",
             },
                 ],
@@ -78,7 +78,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To put two groups together, we use the _______ sign.",
                 "options": ["minus", "less", "plus", "price"],
                 "answer": "C",
-                "explanation": "plus意为\\",
+                "explanation": "plus意为\"加上\"，表示把两组物品加在一起。 • 第8周 (minus) ◦ 题干：Ten _______ five is five. ◦ 选项：A) plus B) more C) total D) minus ◦ 正确答案：D ◦ 答案解析：巩固减法概念，10减去(minus)5等于5。 • 第9周 (more) ◦ 题干：Five apples is _______ than two apples. ◦ 选项：A) less B) more C) total D) minus ◦ 正确答案：B ◦ 答案解析：more意为\"更多\"，用于数学比较逻辑。 • 第9周末（综合复习测试：涵盖 plus, minus, more） ◦ 阅读文本：I have 3 apples. My mom gives me 2 more apples. I use plus to find I have 5 apples now. Then I eat 1 apple, I use minus. ◦ 题干：What math sign do I use when mom gives me 2 more apples? ◦ 选项：A) minus B) less C) plus D) price ◦ 正确答案：C ◦ 答案解析：文本中明确说明得到更多(more)苹果时，使用加法(plus)。 【第三阶段：第10-12周】",
                 "passage": "I have 3 apples. My mom gives me 2 more apples. I use plus to find I have 5 apples now. Then I eat 1 apple, I use minus.",
             },
                 ],
@@ -89,7 +89,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Three is _______ than eight.",
                 "options": ["more", "less", "total", "plus"],
                 "answer": "B",
-                "explanation": "less意为\\",
+                "explanation": "less意为\"更少\"，用于基础数值比较。 • 第11周 (together) ◦ 题干：If we put 2 and 3 _______, we get 5. ◦ 选项：A) less B) difference C) together D) minus ◦ 正确答案：C ◦ 答案解析：together意为\"一起\"，put together是加法运算的语境表达。 • 第12周 (difference) ◦ 题干：The _______ between 10 and 6 is 4. ◦ 选项：A) total B) difference C) plus D) together ◦ 正确答案：B ◦ 答案解析：difference特指数学运算中的\"差值\"。 • 第12周末（综合复习测试：涵盖 less, together, difference） ◦ 阅读文本：I have 10 pens, and you have 6 pens, which is less than mine. If we put them together, we have 16. The difference between 10 and 6 is 4. ◦ 题干：What is the difference between our pens? ◦ 选项：A) 4 B) 6 C) 10 D) 16 ◦ 正确答案：A ◦ 答案解析：综合段落中的减法差值逻辑，difference明确指出是4。 【第四阶段：第13-15周】",
                 "passage": "I have 10 pens, and you have 6 pens, which is less than mine. If we put them together, we have 16. The difference between 10 and 6 is 4.",
             },
                 ],
@@ -100,7 +100,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "You check the _______ to see how much a toy costs.",
                 "options": ["total", "price", "number", "difference"],
                 "answer": "B",
-                "explanation": "price意为\\",
+                "explanation": "price意为\"价格\"，用以表示物品的标价。 • 第14周 (money) ◦ 题干：We use _______ to buy things in the shop. ◦ 选项：A) money B) shape C) minus D) square ◦ 正确答案：A ◦ 答案解析：money意为\"金钱\"，用于购买物品。 • 第15周 (total) ◦ 题干：The _______ of 4 and 5 is 9. ◦ 选项：A) less B) price C) total D) minus ◦ 正确答案：C ◦ 答案解析：total意为\"总和\"，在加法计算中表示结果。 • 第15周末（综合复习测试：涵盖 price, money, total） ◦ 阅读文本：We want to buy a book. The price is 5 dollars. We use our money to pay. If we buy two books, the total is 10 dollars. ◦ 题干：What do we use to pay for the book? ◦ 选项：A) price B) money C) total D) less ◦ 正确答案：B ◦ 答案解析：文本中提到我们使用金钱(money)来支付图书的价格(price)并计算总额(total)。",
                 "passage": "We want to buy a book. The price is 5 dollars. We use our money to pay. If we buy two books, the total is 10 dollars.",
             },
                 ],
@@ -113,7 +113,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A drum or a piano is a musical _______.",
                 "options": ["stage", "Instrument", "audience", "bow"],
                 "answer": "B",
-                "explanation": "Instrument意为\\",
+                "explanation": "Instrument意为\"乐器\"。 • 第3周 (shake) ◦ 题干：You can _______ a tambourine (铃鼓) to make a sound. ◦ 选项：A) bow B) stage C) shake D) finish ◦ 正确答案：C ◦ 答案解析：shake意为\"摇晃\"。 • 第4周 (tap) ◦ 题干：You can _______ a drum with your hands. ◦ 选项：A) bow B) tap C) audience D) stage ◦ 正确答案：B ◦ 答案解析：tap意为\"轻敲\"。 • 第5周（综合复习测试：涵盖 Instrument, shake, tap, pattern） ◦ 阅读文本：We play a musical Instrument. I shake the tambourine, and you tap the drum. We make a nice musical pattern. ◦ 题干：What do you do to the drum? ◦ 选项：A) shake it B) tap it C) bow to it D) perform it ◦ 正确答案：B ◦ 答案解析：通过拍打(tap)乐器(Instrument)形成节奏模式(pattern)。 【第二阶段：第7-9周】",
                 "passage": "We play a musical Instrument. I shake the tambourine, and you tap the drum. We make a nice musical pattern.",
             },
                 ],
@@ -124,7 +124,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We _______ 1, 2, 3, 4 to keep the beat.",
                 "options": ["count", "bow", "stage", "perform"],
                 "answer": "A",
-                "explanation": "count意为\\",
+                "explanation": "count意为\"数数\"。 • 第8周 (follow) ◦ 题干：We must _______ the teacher's hand to play together. ◦ 选项：A) follow B) shake C) tap D) finish ◦ 正确答案：A ◦ 答案解析：follow意为\"跟随\"。 • 第9周 (start) ◦ 题干：When the teacher points to us, we _______ playing. ◦ 选项：A) finish B) start C) bow D) stage ◦ 正确答案：B ◦ 答案解析：start意为\"开始\"。 • 第9周末（综合复习测试：涵盖 count, follow, start） ◦ 阅读文本：We follow the teacher. We count 1, 2, 3, 4. Then we start the song together. ◦ 题干：What do we do after we count 1, 2, 3, 4? ◦ 选项：A) finish the song B) start the song C) bow D) shake ◦ 正确答案：B ◦ 答案解析：数完拍子(count)后跟随(follow)指挥开始(start)音乐。 【第三阶段：第10-12周】",
                 "passage": "We follow the teacher. We count 1, 2, 3, 4. Then we start the song together.",
             },
                 ],
@@ -135,7 +135,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We stop playing when we _______ the song.",
                 "options": ["start", "finish", "count", "practice"],
                 "answer": "B",
-                "explanation": "finish意为\\",
+                "explanation": "finish意为\"结束/完成\"。 • 第11周 (practice) ◦ 题干：To get better at music, we must _______ every day. ◦ 选项：A) finish B) stage C) practice D) bow ◦ 正确答案：C ◦ 答案解析：practice意为\"练习\"。 • 第12周 (stage) ◦ 题干：We stand up on the big _______ to sing for everyone. ◦ 选项：A) pattern B) instrument C) stage D) count ◦ 正确答案：C ◦ 答案解析：stage意为\"舞台\"。 • 第12周末（综合复习测试：涵盖 finish, practice, stage） ◦ 阅读文本：We practice our song every day. Today, we stand on the stage. We sing until we finish the song. ◦ 题干：Where do we stand to sing? ◦ 选项：A) In a box B) On the stage C) On an instrument D) In the audience ◦ 正确答案：B ◦ 答案解析：在舞台(stage)上演出直到结束(finish)。 【第四阶段：第13-15周】",
                 "passage": "We practice our song every day. Today, we stand on the stage. We sing until we finish the song.",
             },
                 ],
@@ -146,7 +146,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "At the end, we bend forward to _______ and say thank you.",
                 "options": ["bow", "start", "tap", "count"],
                 "answer": "A",
-                "explanation": "bow意为\\",
+                "explanation": "bow意为\"鞠躬\"。 • 第14周 (audience) ◦ 题干：The people who watch and clap for us are the _______. ◦ 选项：A) stage B) instrument C) audience D) pattern ◦ 正确答案：C ◦ 答案解析：audience意为\"观众\"。 • 第15周 (perform) ◦ 题干：To sing or play music for people is to _______ for them. ◦ 选项：A) finish B) perform C) count D) tap ◦ 正确答案：B ◦ 答案解析：perform意为\"表演\"。 • 第15周末（综合复习测试：涵盖 bow, audience, perform） ◦ 阅读文本：We will perform a great song. The audience claps for us. When we are done, we bow. ◦ 题干：Who claps for us? ◦ 选项：A) The stage B) The audience C) The instruments D) The pattern ◦ 正确答案：B ◦ 答案解析：观众(audience)为我们的表演(perform)鼓掌。",
                 "passage": "We will perform a great song. The audience claps for us. When we are done, we bow.",
             },
                 ],
@@ -159,7 +159,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In PE, we play the game _______ with our friends.",
                 "options": ["together", "cheer", "bounce", "hoop"],
                 "answer": "A",
-                "explanation": "together意为\\",
+                "explanation": "together意为\"一起\"。 • 第3周 (cheer) ◦ 题干：We shout and _______ for our team to win! ◦ 选项：A) bounce B) cheer C) save D) relay ◦ 正确答案：B ◦ 答案解析：cheer意为\"欢呼/加油\"。 • 第4/5周 (teamwork) ◦ 题干：Working nicely in a group is called good _______. ◦ 选项：A) bounce B) teamwork C) hoop D) save ◦ 正确答案：B ◦ 答案解析：teamwork意为\"团队合作\"。 • 第5周（综合复习测试：涵盖 together, cheer, teamwork） ◦ 阅读文本：We play together on the field. We cheer for our friends. This shows good teamwork. ◦ 题干：What does it show when we play together and cheer? ◦ 选项：A) A bounce B) Good teamwork C) A hoop D) A save ◦ 正确答案：B ◦ 答案解析：大家一起(together)玩并欢呼(cheer)，体现良好的团队精神(teamwork)。 【第二阶段：第7-9周】",
                 "passage": "We play together on the field. We cheer for our friends. This shows good teamwork.",
             },
                 ],
@@ -170,7 +170,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Talking and listening to your team is good _______.",
                 "options": ["bounce", "communication", "relay", "hoop"],
                 "answer": "B",
-                "explanation": "communication意为\\",
+                "explanation": "communication意为\"沟通\"，在体育团队配合中至关重要。 • 第8周 (hoop) ◦ 题干：We try to throw the basketball into the net or _______. ◦ 选项：A) relay B) save C) hoop D) cheer ◦ 正确答案：C ◦ 答案解析：hoop意为\"篮筐或呼啦圈\"。 • 第9周 (bounce) ◦ 题干：When a ball hits the floor and comes up, it will _______. ◦ 选项：A) cheer B) bounce C) save D) teamwork ◦ 正确答案：B ◦ 答案解析：bounce意为\"弹跳/拍球\"。 • 第9周末（综合复习测试：涵盖 communication, hoop, bounce） ◦ 阅读文本：We use clear communication to pass the ball. We bounce the ball on the floor and throw it into the hoop. ◦ 题干：What do we do to the ball on the floor? ◦ 选项：A) We eat it. B) We bounce it. C) We cheer it. D) We communicate it. ◦ 正确答案：B ◦ 答案解析：通过沟通(communication)，拍(bounce)球进入篮筐(hoop)。 【第三阶段：第10-12周】",
                 "passage": "We use clear communication to pass the ball. We bounce the ball on the floor and throw it into the hoop.",
             },
                 ],
@@ -181,7 +181,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "I can _______ the basketball five times without stopping.",
                 "options": ["bounce", "team", "save", "relay"],
                 "answer": "A",
-                "explanation": "继续巩固bounce的使用。 • 第11周 (practice) ◦ 题干：To get better at running, you must _______ every day. ◦ 选项：A) save B) practice C) bounce D) hoop ◦ 正确答案：B ◦ 答案解析：practice意为\\",
+                "explanation": "继续巩固bounce的使用。 • 第11周 (practice) ◦ 题干：To get better at running, you must _______ every day. ◦ 选项：A) save B) practice C) bounce D) hoop ◦ 正确答案：B ◦ 答案解析：practice意为\"练习\"。 • 第12周 (team) ◦ 题干：A group of players playing a game together is a _______. ◦ 选项：A) bounce B) hoop C) team D) save ◦ 正确答案：C ◦ 答案解析：team意为\"队伍\"。 • 第12周末（综合复习测试：涵盖 bounce, practice, team） ◦ 阅读文本：Our soccer team wants to win. We must practice every day. We learn how to kick and bounce the ball. ◦ 题干：What must the soccer team do every day? ◦ 选项：A) sleep B) practice C) save D) hoop ◦ 正确答案：B ◦ 答案解析：球队(team)要想变强必须每天练习(practice)。 【第四阶段：第13-15周】",
                 "passage": "Our soccer team wants to win. We must practice every day. We learn how to kick and bounce the ball.",
             },
                 ],
@@ -192,7 +192,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When a goalie stops the ball from going in the net, it is a _______.",
                 "options": ["relay", "bounce", "save", "team"],
                 "answer": "C",
-                "explanation": "save在此处特指守门员的\\",
+                "explanation": "save在此处特指守门员的\"扑救\"。 • 第14周 (practice) ◦ 题干：We _______ kicking the ball to score a goal. ◦ 选项：A) practice B) save C) bounce D) relay ◦ 正确答案：A ◦ 答案解析：巩固动词practice。 • 第15周 (relay) ◦ 题干：A race where runners take turns passing a stick is a _______. ◦ 选项：A) save B) bounce C) relay D) hoop ◦ 正确答案：C ◦ 答案解析：relay意为\"接力赛\"。 • 第15周末（综合复习测试：涵盖 save, practice, relay） ◦ 阅读文本：The goalie makes a great save! The runners practice passing the stick for the team relay race. ◦ 题干：What kind of race do the runners practice for? ◦ 选项：A) A swimming race B) A relay race C) A bouncing race D) A saving race ◦ 正确答案：B ◦ 答案解析：短文叙述扑救(save)和跑者练习(practice)为接力赛(relay)做准备。",
                 "passage": "The goalie makes a great save! The runners practice passing the stick for the team relay race.",
             },
                 ],
@@ -205,7 +205,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In _______ class, we learn to jump, roll, and balance.",
                 "options": ["Gymnastics", "audience", "dialogue", "stage"],
                 "answer": "A",
-                "explanation": "Gymnastics意为\\",
+                "explanation": "Gymnastics意为\"体操\"。 • 第3/4周 (cartwheel) ◦ 题干：A _______ is a move where you turn sideways on your hands. ◦ 选项：A) bow B) cartwheel C) stage D) stretch ◦ 正确答案：B ◦ 答案解析：cartwheel意为\"侧手翻\"。 • 第5周（综合复习测试：涵盖 Gymnastics, cartwheel） ◦ 阅读文本：In Gymnastics, we move our bodies. We learn how to do a sideways flip called a cartwheel. ◦ 题干：What sideways flip do we learn? ◦ 选项：A) Gymnastics B) A stretch C) A cartwheel D) A stage ◦ 正确答案：C ◦ 答案解析：侧手翻(cartwheel)是体操(Gymnastics)中的基础动作。 【第二阶段：第7-9周】 • 第7/8周 (cartwheel) ◦ 题干：You need strong arms to do a good sideways _______. ◦ 选项：A) cartwheel B) audience C) dialogue D) character ◦ 正确答案：A ◦ 答案解析：继续巩固侧手翻技能词汇。",
                 "passage": "In Gymnastics, we move our bodies. We learn how to do a sideways flip called a cartwheel.",
             },
                 ],
@@ -216,7 +216,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Reach your arms up high to _______ your body.",
                 "options": ["Stretch", "cartwheel", "sing", "bow"],
                 "answer": "A",
-                "explanation": "Stretch意为\\",
+                "explanation": "Stretch意为\"伸展/拉伸\"。 • 第9周末（综合复习测试：涵盖 cartwheel, Stretch） ◦ 阅读文本：Before we do a cartwheel, we must warm up. We reach up high to Stretch our arms. ◦ 题干：What must we stretch? ◦ 选项：A) Our cartwheel B) Our arms C) Our face D) Our dialogue ◦ 正确答案：B ◦ 答案解析：在进行大动作前必须伸展(Stretch)四肢。 【第三阶段：第10-12周】",
                 "passage": "Before we do a cartwheel, we must warm up. We reach up high to Stretch our arms.",
             },
                 ],
@@ -251,7 +251,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To see how two leaves are different is to _______ them.",
                 "options": ["grow", "compare", "reflect", "measure"],
                 "answer": "B",
-                "explanation": "compare意为\\",
+                "explanation": "compare意为\"比较\"，科学观察中用以寻找异同。 • 第3周 (grow) ◦ 题干：Plants need water and sunlight to _______ bigger. ◦ 选项：A) measure B) grow C) reflect D) source ◦ 正确答案：B ◦ 答案解析：grow意为\"生长\"。 • 第4周 (human) ◦ 题干：You are a person, which means you are a _______. ◦ 选项：A) light B) human C) source D) safety ◦ 正确答案：B ◦ 答案解析：human意为\"人类\"，生物学基础分类。 • 第5周（综合复习测试：涵盖 compare, human, grow） ◦ 阅读文本：A human needs food and water to grow big. We can look at a baby and an adult to compare them. ◦ 题干：What does a human need to grow big? ◦ 选项：A) Food and water B) Toys C) Darkness D) Electricity ◦ 正确答案：A ◦ 答案解析：文本提到人类(human)需要食物和水来生长(grow)并进行比较(compare)。 【第二阶段：第7-9周】",
                 "passage": "A human needs food and water to grow big. We can look at a baby and an adult to compare them.",
             },
                 ],
@@ -262,7 +262,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We use a ruler to _______ how tall a plant is.",
                 "options": ["measure", "grow", "reflect", "compare"],
                 "answer": "A",
-                "explanation": "measure意为\\",
+                "explanation": "measure意为\"测量\"。 • 第8周 (healthy) ◦ 题干：Eating apples and carrots keeps our body _______. ◦ 选项：A) dark B) healthy C) source D) reflect ◦ 正确答案：B ◦ 答案解析：healthy意为\"健康的\"。 • 第9周 (teeth) ◦ 题干：We use our _______ to chew food. ◦ 选项：A) eyes B) hair C) teeth D) light ◦ 正确答案：C ◦ 答案解析：teeth意为\"牙齿\"。 • 第9周末（综合复习测试：涵盖 measure, healthy, teeth） ◦ 阅读文本：To stay healthy, we must eat good food and brush our teeth. The doctor can measure how tall we are. ◦ 题干：What should we brush to stay healthy? ◦ 选项：A) Our hands B) Our hair C) Our teeth D) Our shoes ◦ 正确答案：C ◦ 答案解析：文本说明为了保持健康(healthy)，必须每天刷牙(teeth)。 【第三阶段：第10-12周】",
                 "passage": "To stay healthy, we must eat good food and brush our teeth. The doctor can measure how tall we are.",
             },
                 ],
@@ -273,7 +273,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We need _______ to see things in a dark room.",
                 "options": ["light", "water", "human", "teeth"],
                 "answer": "A",
-                "explanation": "light意为\\",
+                "explanation": "light意为\"光\"。 • 第11周 (source) ◦ 题干：The sun is the biggest natural _______ of light. ◦ 选项：A) source B) darkness C) safety D) human ◦ 正确答案：A ◦ 答案解析：source意为\"来源/源头\"，太阳是最大的光源。 • 第12周 (reflect) ◦ 题干：A mirror can _______ light back to your eyes. ◦ 选项：A) grow B) measure C) reflect D) compare ◦ 正确答案：C ◦ 答案解析：reflect意为\"反射\"，光学基础现象。 • 第12周末（综合复习测试：涵盖 light, source, reflect） ◦ 阅读文本：The sun is a big source of light. When the light hits a mirror, the mirror will reflect it. ◦ 题干：What does a mirror do to light? ◦ 选项：A) It grows it. B) It eats it. C) It reflects it. D) It hides it. ◦ 正确答案：C ◦ 答案解析：说明镜子能反射(reflect)光(light)。 【第四阶段：第13-15周】",
                 "passage": "The sun is a big source of light. When the light hits a mirror, the mirror will reflect it.",
             },
                 ],
@@ -284,7 +284,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When there is no light at all, we are in _______.",
                 "options": ["darkness", "safety", "electricity", "source"],
                 "answer": "A",
-                "explanation": "darkness意为\\",
+                "explanation": "darkness意为\"黑暗\"。 • 第14周 (electricity) ◦ 题干：We use _______ to turn on the TV and lamps. ◦ 选项：A) darkness B) teeth C) electricity D) water ◦ 正确答案：C ◦ 答案解析：electricity意为\"电\"。 • 第15周 (safety) ◦ 题干：Do not touch broken wires for your own _______. ◦ 选项：A) source B) safety C) darkness D) light ◦ 正确答案：B ◦ 答案解析：safety意为\"安全\"，科学常识强调防触电。 • 第15周末（综合复习测试：涵盖 darkness, electricity, safety） ◦ 阅读文本：At night, there is darkness. We turn on lamps using electricity. But we must be careful with wires for our safety. ◦ 题干：Why must we be careful with wires? ◦ 选项：A) For fun B) For our safety C) For darkness D) For food ◦ 正确答案：B ◦ 答案解析：强调安全用电(electricity)和注意自身安全(safety)。",
                 "passage": "At night, there is darkness. We turn on lamps using electricity. But we must be careful with wires for our safety.",
             },
                 ],
@@ -297,7 +297,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We use a _______ to count things with marks.",
                 "options": ["Robot", "Symbol"],
                 "answer": "B",
-                "explanation": "Tally Chart意为\\",
+                "explanation": "Tally Chart意为\"画记统计表\"。 • 第3周 (Algorithm) ◦ 题干：A step-by-step rule to solve a problem is an _______. ◦ 选项：A) Algorithm B) Character C) Budget D) Symbol ◦ 正确答案：A ◦ 答案解析：Algorithm意为\"算法\"。 • 第4周 (Instructions) ◦ 题干：We read the _______ to know how to build the toy. ◦ 选项：A) Instructions B) Robot C) Tally Chart D) Symbol ◦ 正确答案：A ◦ 答案解析：Instructions意为\"说明/指令\"。 • 第5周（综合复习测试：涵盖 Tally Chart, Algorithm, Instructions, Robot） ◦ 阅读文本：We read the Instructions to build a Robot. We use a Tally Chart to count its parts. Then we write an Algorithm to make it move! ◦ 题干：What do we write to make the Robot move? ◦ 选项：A) A Tally Chart B) An Algorithm C) A Symbol D) A Budget ◦ 正确答案：B ◦ 答案解析：文本中描述通过写算法(Algorithm)指令(Instructions)使机器人(Robot)移动。 【第二阶段：第7-9周】",
                 "passage": "We read the Instructions to build a Robot. We use a Tally Chart to count its parts. Then we write an Algorithm to make it move!",
             },
                 ],
@@ -308,7 +308,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The money we can spend on our project is our _______.",
                 "options": ["Symbol", "Robot"],
                 "answer": "A",
-                "explanation": "Budget意为\\",
+                "explanation": "Budget意为\"预算\"。 • 第8周 (Calculate) ◦ 题干：We must _______ the numbers to find the total cost. ◦ 选项：A) Calculate B) Repeat C) Dance D) Character ◦ 正确答案：A ◦ 答案解析：Calculate意为\"计算\"。 • 第9周 (Symbol) ◦ 题干：A plus sign (+) is a math _______. ◦ 选项：A) Robot B) Budget C) Symbol D) Character ◦ 正确答案：C ◦ 答案解析：Symbol意为\"符号\"。 • 第9周末（综合复习测试：涵盖 Budget, Calculate, Symbol） ◦ 阅读文本：We need to buy parts. We must check our Budget. We use a math Symbol like (+) to Calculate the total cost. ◦ 题干：What tells us how much money we can spend? ◦ 选项：A) Symbol B) Budget C) Calculate D) Robot ◦ 正确答案：B ◦ 答案解析：依靠预算(Budget)知道资金情况并进行计算(Calculate)。 【第三阶段：第10-12周】",
                 "passage": "We need to buy parts. We must check our Budget. We use a math Symbol like (+) to Calculate the total cost.",
             },
                 ],
@@ -319,7 +319,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A set of steps to make a robot dance is a _______.",
                 "options": ["Symbol"],
                 "answer": "A",
-                "explanation": "Dance Algorithm意为\\",
+                "explanation": "Dance Algorithm意为\"舞蹈算法\"。 • 第11周 (ScratchJr) ◦ 题干：_______ is a coding app we use on the tablet. ◦ 选项：A) Budget B) ScratchJr C) Symbol D) Character ◦ 正确答案：B ◦ 答案解析：ScratchJr是一款著名少儿编程平台。 • 第12周 (Character) ◦ 题干：The cat in our coding game is the main _______. ◦ 选项：A) Symbol B) Budget C) Character D) Algorithm ◦ 正确答案：C ◦ 答案解析：Character意为\"角色\"。 • 第12周末（综合复习测试：涵盖 Dance Algorithm, ScratchJr, Character） ◦ 阅读文本：We use the ScratchJr app on the tablet. We code a cat Character. We give it a Dance Algorithm to make it jump and spin. ◦ 题干：What is the cat in the app called? ◦ 选项：A) A Symbol B) A Budget C) A Character D) A Chart ◦ 正确答案：C ◦ 答案解析：通过ScratchJr软件给角色(Character)写入舞蹈算法(Dance Algorithm)。 【第四阶段：第13-15周】",
                 "passage": "We use the ScratchJr app on the tablet. We code a cat Character. We give it a Dance Algorithm to make it jump and spin.",
             },
                 ],
@@ -330,7 +330,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To make the cat jump 5 times easily, we use a _______.",
                 "options": ["Symbol"],
                 "answer": "A",
-                "explanation": "Repeat Block指编程中的\\",
+                "explanation": "Repeat Block指编程中的\"重复积木/循环模块\"。 • 第14周 (Efficient) ◦ 题干：Doing work quickly and well means it is _______. ◦ 选项：A) Efficient B) Character C) Symbol D) Budget ◦ 正确答案：A ◦ 答案解析：Efficient意为\"高效的\"。 • 第15周 (Choreographer) ◦ 题干：A person who plans the dance steps is a _______. ◦ 选项：A) Symbol B) Robot C) Choreographer D) Character ◦ 正确答案：C ◦ 答案解析：Choreographer意为\"编舞者\"。 • 第15周末（综合复习测试：涵盖 Repeat Block, Efficient, Choreographer） ◦ 阅读文本：A Choreographer plans the dance. In coding, using a Repeat Block makes the dance code short and Efficient. ◦ 题干：What makes the code short and efficient? ◦ 选项：A) A Choreographer B) A Robot C) A Repeat Block D) A Symbol ◦ 正确答案：C ◦ 答案解析：使用重复块(Repeat Block)让编舞指令更高效(Efficient)。",
                 "passage": "A Choreographer plans the dance. In coding, using a Repeat Block makes the dance code short and Efficient.",
             },
                 ],
@@ -343,7 +343,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The hero in your drawing is the main _______.",
                 "options": ["setting", "sculpture", "character", "oval"],
                 "answer": "C",
-                "explanation": "美术故事创作中的character同样意为\\",
+                "explanation": "美术故事创作中的character同样意为\"角色\"。 • 第3周 (setting) ◦ 题干：The place or background in the art is the _______. ◦ 选项：A) setting B) character C) sculpture D) line ◦ 正确答案：A ◦ 答案解析：setting指画作的\"背景/环境\"。 • 第4/5周 (sculpture) ◦ 题干：A 3D art piece made of clay is a _______. ◦ 选项：A) setting B) character C) sculpture D) spiral ◦ 正确答案：C ◦ 答案解析：sculpture意为\"雕塑\"。 • 第5周（综合复习测试：涵盖 character, setting, sculpture） ◦ 阅读文本：I draw a hero character. Behind him is a forest setting. Then I make a 3D clay sculpture. ◦ 题干：What is the forest used for? ◦ 选项：A) The character B) The setting C) The sculpture D) The spiral ◦ 正确答案：B ◦ 答案解析：森林用于画作的背景设置(setting)。 【第二阶段：第7-9周】",
                 "passage": "I draw a hero character. Behind him is a forest setting. Then I make a 3D clay sculpture.",
             },
                 ],
@@ -354,7 +354,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "An egg shape is called an _______.",
                 "options": ["square", "triangle", "oval", "spiral"],
                 "answer": "C",
-                "explanation": "oval意为\\",
+                "explanation": "oval意为\"椭圆形\"。 • 第8周 (spiral) ◦ 题干：A curvy line that goes round and round is a _______. ◦ 选项：A) square B) oval C) spiral D) collage ◦ 正确答案：C ◦ 答案解析：spiral意为\"螺旋形\"。 • 第9周 (sculpture) ◦ 题干：We build a tall clay _______ in art class. ◦ 选项：A) oval B) spiral C) sculpture D) setting ◦ 正确答案：C ◦ 答案解析：再次巩固3D艺术概念(sculpture)。 • 第9周末（综合复习测试：涵盖 oval, spiral, sculpture） ◦ 阅读文本：I paint a round spiral line. I paint an egg-shaped oval. I put my painting next to my clay sculpture. ◦ 题干：What shape looks like an egg? ◦ 选项：A) A spiral B) A sculpture C) An oval D) A square ◦ 正确答案：C ◦ 答案解析：椭圆形(oval)形似鸡蛋。 【第三阶段：第10-12周】",
                 "passage": "I paint a round spiral line. I paint an egg-shaped oval. I put my painting next to my clay sculpture.",
             },
                 ],
@@ -365,7 +365,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A snail shell looks like a round _______.",
                 "options": ["setting", "spiral", "collage", "oval"],
                 "answer": "B",
-                "explanation": "蜗牛壳具有螺旋(spiral)形状特征。 • 第11周 (collage) ◦ 题干：Art made by gluing cut paper together is a _______. ◦ 选项：A) spiral B) sculpture C) collage D) oval ◦ 正确答案：C ◦ 答案解析：collage意为\\",
+                "explanation": "蜗牛壳具有螺旋(spiral)形状特征。 • 第11周 (collage) ◦ 题干：Art made by gluing cut paper together is a _______. ◦ 选项：A) spiral B) sculpture C) collage D) oval ◦ 正确答案：C ◦ 答案解析：collage意为\"拼贴画\"。 • 第12周 (layout) ◦ 题干：The way we place the cut paper on the page is our good _______. ◦ 选项：A) spiral B) layout C) character D) oval ◦ 正确答案：B ◦ 答案解析：layout意为\"布局/排版\"。 • 第12周末（综合复习测试：涵盖 spiral, collage, layout） ◦ 阅读文本：We draw a round spiral. Then we cut paper and glue it to make a collage. We plan a nice layout on the page. ◦ 题干：What do we make by gluing cut paper? ◦ 选项：A) A collage B) A layout C) A spiral D) An oval ◦ 正确答案：A ◦ 答案解析：粘贴碎纸片制作的是拼贴画(collage)。 【第四阶段：第13-15周】 • 第13/14周 (yarn) ◦ 题干：A thick, soft string used for knitting or art is _______. ◦ 选项：A) yarn B) sculpture C) oval D) layout ◦ 正确答案：A ◦ 答案解析：yarn意为\"毛线/粗纱\"。",
                 "passage": "We draw a round spiral. Then we cut paper and glue it to make a collage. We plan a nice layout on the page.",
             },
                 ],
@@ -376,7 +376,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A very thin string used for sewing is a _______.",
                 "options": ["collage", "yarn", "thread", "oval"],
                 "answer": "C",
-                "explanation": "thread意为\\",
+                "explanation": "thread意为\"细线/缝线\"。 • 第15周末（综合复习测试：涵盖 yarn, thread） ◦ 阅读文本：In our collage, we glue thick yarn to make a tree. We use thin thread to make small leaves. ◦ 题干：What do we use to make small leaves? ◦ 选项：A) Thick yarn B) Thin thread C) A collage D) An oval ◦ 正确答案：B ◦ 答案解析：在拼贴画(collage)中，细线(thread)用于制作小叶子。",
                 "passage": "In our collage, we glue thick yarn to make a tree. We use thin thread to make small leaves.",
             },
                 ],
@@ -391,7 +391,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A person or animal you pretend to be in a story is a _______.",
                 "options": ["stage", "scene", "character", "script"],
                 "answer": "C",
-                "explanation": "character意为\\",
+                "explanation": "character意为\"⻆⾊\"",
             },
             {
                 "week": 2,
@@ -399,7 +399,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A short part of a play that happens in one place is a _______.",
                 "options": ["character", "dialogue", "scene", "actor"],
                 "answer": "C",
-                "explanation": "scene意为\\",
+                "explanation": "scene意为\"场景/幕\"",
             },
                 ],
                 3: [
@@ -409,7 +409,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The conversation or words the actors say to each other is the _______.",
                 "options": ["dialogue", "stage", "character", "scene"],
                 "answer": "A",
-                "explanation": "dialogue意为\\",
+                "explanation": "dialogue意为\"对话/对⽩\"",
             },
             {
                 "week": 3,
@@ -417,7 +417,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The paper book with all the words the actors must read is the _______.",
                 "options": ["hot seating", "script", "actor", "emotion"],
                 "answer": "B",
-                "explanation": "script意为\\",
+                "explanation": "script意为\"剧本\"",
             },
                 ],
                 4: [
@@ -427,7 +427,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "You must act exactly like your _______ when you are on stage.",
                 "options": ["character", "stage left", "script", "scene"],
                 "answer": "A",
-                "explanation": "巩固词汇：character意为\\",
+                "explanation": "巩固词汇：character意为\"⻆⾊\"",
             },
             {
                 "week": 4,
@@ -435,18 +435,18 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Sitting in a chair to answer questions while acting as your character is _______.",
                 "options": ["hot seating", "stage right", "script", "play"],
                 "answer": "A",
-                "explanation": "hot seating是戏 剧中的\\",
+                "explanation": "hot seating是戏 剧中的\"热板凳/焦点⼈物法\"",
             },
                 ],
                 5: [
             {
                 "week": 5,
                 "keyword": "review",
-                "question": "What kind of question can only be answered with \\",
+                "question": "What kind of question can only be answered with \"yes\" or \"no\"?",
                 "options": ["A scene question B) A script question C) A closed question D) A hot seating question"],
                 "answer": "C",
-                "explanation": "只能⽤\\",
-                "passage": "I read the dialogue in the script. I am playing a brave Character. In the game of hot seating, you ask me a closed question and I can only answer \\",
+                "explanation": "只能⽤\"是\"或\"否\"回答的是封闭式问题 closed question",
+                "passage": "I read the dialogue in the script. I am playing a brave Character. In the game of hot seating, you ask me a closed question and I can only answer \"yes\" or \"no\".",
             },
                 ],
                 7: [
@@ -456,7 +456,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The words an actor must remember and say out loud are their _______.",
                 "options": ["lines", "emotions", "stage", "dance"],
                 "answer": "A",
-                "explanation": "lines意为\\",
+                "explanation": "lines意为\"台词\"",
             },
             {
                 "week": 7,
@@ -464,7 +464,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Happy, angry, and sad are different _______ you can show in acting.",
                 "options": ["scripts", "emotions", "stages", "lines"],
                 "answer": "B",
-                "explanation": "emotions意为\\",
+                "explanation": "emotions意为\"情感/情绪\"",
             },
                 ],
                 8: [
@@ -474,7 +474,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A person who performs a role in a movie or play is an _______.",
                 "options": ["script", "scene", "actor", "emotion"],
                 "answer": "C",
-                "explanation": "actor意为\\",
+                "explanation": "actor意为\"演员\"",
             },
             {
                 "week": 8,
@@ -482,7 +482,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The raised wooden floor where the actors perform is the _______.",
                 "options": ["line", "stage", "dialogue", "script"],
                 "answer": "B",
-                "explanation": "stage意为\\",
+                "explanation": "stage意为\"舞台\"",
             },
                 ],
                 9: [
@@ -492,7 +492,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A story acted out live in front of people in a theater is a _______.",
                 "options": ["script", "gesture", "play", "sing"],
                 "answer": "C",
-                "explanation": "play在此意为\\",
+                "explanation": "play在此意为\"戏剧/舞台剧\"",
             },
             {
                 "week": 9,
@@ -500,7 +500,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The _______ put on his costume before walking onto the stage.",
                 "options": ["scene", "script", "actor", "line"],
                 "answer": "C",
-                "explanation": "巩固词汇：actor意为\\",
+                "explanation": "巩固词汇：actor意为\"演员\"",
             },
                 ],
                 10: [
@@ -510,7 +510,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We bought tickets to watch a funny _______ at the school theater.",
                 "options": ["script", "play", "line", "emotion"],
                 "answer": "B",
-                "explanation": "巩固词汇：play意为\\",
+                "explanation": "巩固词汇：play意为\"戏剧\"",
             },
             {
                 "week": 10,
@@ -518,7 +518,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Every _______ must remember their lines perfectly.",
                 "options": ["actor", "stage", "scene", "script"],
                 "answer": "A",
-                "explanation": "巩固词汇：actor意为\\",
+                "explanation": "巩固词汇：actor意为\"演员\"",
             },
                 ],
                 11: [
@@ -528,7 +528,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using your voice to make musical sounds with a melody is to _______.",
                 "options": ["sing", "dance", "play", "line"],
                 "answer": "A",
-                "explanation": "sing意为\\",
+                "explanation": "sing意为\"唱歌\"",
             },
             {
                 "week": 11,
@@ -536,7 +536,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Moving your body beautifully to the rhythm of music is to _______.",
                 "options": ["sing", "script", "dance", "scene"],
                 "answer": "C",
-                "explanation": "dance意为\\",
+                "explanation": "dance意为\"跳舞\"",
             },
                 ],
                 12: [
@@ -546,7 +546,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A big smile or a sad frown on your face is a _______.",
                 "options": ["gesture", "facial expression", "stage left", "line"],
                 "answer": "B",
-                "explanation": "facial expression意为\\",
+                "explanation": "facial expression意为\"⾯部表情\"",
             },
             {
                 "week": 12,
@@ -554,7 +554,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Waving your hand to say hello without talking is a friendly _______.",
                 "options": ["gesture", "play", "script", "emotion"],
                 "answer": "A",
-                "explanation": "gesture意为\\",
+                "explanation": "gesture意为\"⼿势/动作\"",
             },
                 ],
                 13: [
@@ -564,7 +564,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When an actor stands facing the audience and moves to their left side, they move to _______.",
                 "options": ["stage right", "stage left", "script", "emotion"],
                 "answer": "B",
-                "explanation": "stage left意为\\",
+                "explanation": "stage left意为\"舞台左侧\"",
             },
             {
                 "week": 13,
@@ -572,7 +572,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When an actor stands facing the audience and moves to their right side, they move to _______.",
                 "options": ["stage left", "stage right", "play", "scene"],
                 "answer": "B",
-                "explanation": "stage right意为\\",
+                "explanation": "stage right意为\"舞台右侧\"",
             },
                 ],
                 14: [
@@ -613,7 +613,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the long hand is on 12, we say it is _______.",
                 "options": ["half past", "o'clock", "quarter", "minute"],
                 "answer": "B",
-                "explanation": "o'clock意为\\",
+                "explanation": "o'clock意为\"整点\"",
             },
             {
                 "week": 3,
@@ -621,7 +621,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the time is 3:30, it is _______ three.",
                 "options": ["half past", "o'clock", "quarter to", "quarter past"],
                 "answer": "A",
-                "explanation": "half past意为\\",
+                "explanation": "half past意为\"半点/过半\"",
             },
                 ],
                 4: [
@@ -631,7 +631,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "15 minutes before 4:00 is called a _______ 4.",
                 "options": ["quarter past", "half past", "o'clock", "quarter to"],
                 "answer": "D",
-                "explanation": "quarter to意为\\",
+                "explanation": "quarter to意为\"差⼀刻到整点\"",
             },
             {
                 "week": 4,
@@ -639,7 +639,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "15 minutes after 2:00 is called a _______ 2.",
                 "options": ["quarter to", "quarter past", "o'clock", "half past"],
                 "answer": "B",
-                "explanation": "quarter past意为\\",
+                "explanation": "quarter past意为\"过⼀刻/15分\"",
             },
                 ],
                 5: [
@@ -660,7 +660,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To add 3 groups of 4, we can _______ 3 and 4 to get 12.",
                 "options": ["subtract", "divide", "multiply", "half past"],
                 "answer": "C",
-                "explanation": "multiply意为\\",
+                "explanation": "multiply意为\"乘\"",
             },
             {
                 "week": 7,
@@ -668,7 +668,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To share 10 apples equally into 2 bags, we _______ them.",
                 "options": ["multiply", "divide", "add", "subtract"],
                 "answer": "B",
-                "explanation": "divide意为\\",
+                "explanation": "divide意为\"除以/平分\"",
             },
                 ],
                 8: [
@@ -678,7 +678,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The number 1,000 is called one _______.",
                 "options": ["hundred", "thousand", "ten thousand", "million"],
                 "answer": "B",
-                "explanation": "thousand意为\\",
+                "explanation": "thousand意为\"千\"",
             },
             {
                 "week": 8,
@@ -686,7 +686,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The number 10,000 is called _______.",
                 "options": ["ten thousand", "thousand", "hundred", "ten"],
                 "answer": "A",
-                "explanation": "ten thousand意为\\",
+                "explanation": "ten thousand意为\"⼀万/⼗个千\"",
             },
                 ],
                 9: [
@@ -696,7 +696,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you _______ 5 and 3 together, you get 8.",
                 "options": ["subtract", "multiply", "divide", "add"],
                 "answer": "D",
-                "explanation": "add意为\\",
+                "explanation": "add意为\"加\"",
             },
             {
                 "week": 9,
@@ -704,7 +704,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you _______ 2 from 10, you have 8 left.",
                 "options": ["add", "subtract", "multiply", "divide"],
                 "answer": "B",
-                "explanation": "subtract意为\\",
+                "explanation": "subtract意为\"减去\"",
             },
                 ],
                 10: [
@@ -714,7 +714,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When we put 4 and 6 _______, the total is 10.",
                 "options": ["difference", "together", "subtract", "divide"],
                 "answer": "B",
-                "explanation": "together意为\\",
+                "explanation": "together意为\"放在⼀起\"",
             },
             {
                 "week": 10,
@@ -722,7 +722,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The _______ between 10 and 7 is 3.",
                 "options": ["together", "difference", "total", "times"],
                 "answer": "B",
-                "explanation": "difference意为\\",
+                "explanation": "difference意为\"差值\"",
             },
                 ],
                 11: [
@@ -732,7 +732,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Five _______ two equals ten.",
                 "options": ["add", "divide", "times", "less"],
                 "answer": "C",
-                "explanation": "times意为\\",
+                "explanation": "times意为\"乘以/倍\"",
             },
                 ],
                 12: [
@@ -742,7 +742,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you add 3 and 4, the _______ is 7.",
                 "options": ["remainder", "less", "total", "difference"],
                 "answer": "C",
-                "explanation": "total意为\\",
+                "explanation": "total意为\"总和\"",
             },
             {
                 "week": 12,
@@ -750,7 +750,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you divide 7 by 2, you get 3 with a _______ of 1.",
                 "options": ["total", "remainder", "times", "more"],
                 "answer": "B",
-                "explanation": "remainder意为\\",
+                "explanation": "remainder意为\"余数\"",
             },
                 ],
                 13: [
@@ -760,7 +760,15 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "100 hundreds make one _______.",
                 "options": ["thousand", "ten thousand", "hundred", "ten"],
                 "answer": "B",
-                "explanation": "ten thousand意为\\",
+                "explanation": "ten thousand意为\"⼀万\"",
+            },
+            {
+                "week": 13,
+                "keyword": "more",
+                "question": "8 is 3 _______ than 5.",
+                "options": ["less", "difference", "more", "total"],
+                "answer": "C",
+                "explanation": "",
             },
                 ],
                 14: [
@@ -770,7 +778,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "4 is _______ than 9.",
                 "options": ["more", "total", "less", "together"],
                 "answer": "C",
-                "explanation": "less意为\\",
+                "explanation": "less意为\"更少\"",
             },
             {
                 "week": 14,
@@ -778,7 +786,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The _______ number of students in the class is 20.",
                 "options": ["less", "total", "remainder", "difference"],
                 "answer": "B",
-                "explanation": "total意为\\",
+                "explanation": "total意为\"总数\"",
             },
                 ],
                 15: [
@@ -801,7 +809,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A musical _______ repeats the same notes again and again.",
                 "options": ["stage", "bow", "pattern", "audience"],
                 "answer": "C",
-                "explanation": "pattern意为\\",
+                "explanation": "pattern意为\"节奏型/模式\"",
             },
             {
                 "week": 2,
@@ -809,7 +817,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The steady, repeating heartbeat you feel in a song is the _______.",
                 "options": ["pulse", "bow", "stage", "team"],
                 "answer": "A",
-                "explanation": "pulse意为\\",
+                "explanation": "pulse意为\"脉动/稳定的节拍\"",
             },
                 ],
                 3: [
@@ -819,15 +827,15 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A short section of a song between two bar lines is a _______.",
                 "options": ["finish", "measure", "count", "strike"],
                 "answer": "B",
-                "explanation": "measure在⾳乐中指\\",
+                "explanation": "measure在⾳乐中指\"⼩节\"",
             },
             {
                 "week": 3,
                 "keyword": "count",
-                "question": "To keep the music steady, the teacher will _______ \\",
+                "question": "To keep the music steady, the teacher will _______ \"1, 2, 3, 4\".",
                 "options": ["strike", "measure", "count", "bow"],
                 "answer": "C",
-                "explanation": "count意为\\",
+                "explanation": "count意为\"数拍⼦\"",
             },
                 ],
                 4: [
@@ -837,7 +845,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the conductor raises his hand, we _______ playing.",
                 "options": ["finish", "strike", "start", "practice"],
                 "answer": "C",
-                "explanation": "start意为\\",
+                "explanation": "start意为\"开始\"",
             },
             {
                 "week": 4,
@@ -845,7 +853,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the song is over, we _______ playing.",
                 "options": ["finish", "start", "improve", "rehearse"],
                 "answer": "A",
-                "explanation": "finish意为\\",
+                "explanation": "finish意为\"结束\"",
             },
                 ],
                 5: [
@@ -863,18 +871,18 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
             {
                 "week": 7,
                 "keyword": "pattern",
-                "question": "Clapping \\",
+                "question": "Clapping \"short, short, long\" twice is a rhythmic _______.",
                 "options": ["stage", "bow", "audience", "pattern"],
                 "answer": "D",
-                "explanation": "巩固词汇：pattern意为\\",
+                "explanation": "巩固词汇：pattern意为\"节奏型\"",
             },
             {
                 "week": 7,
                 "keyword": "repeat after me",
-                "question": "When the teacher sings a line and wants you to copy her, she says \\",
+                "question": "When the teacher sings a line and wants you to copy her, she says \"_______\".",
                 "options": ["stage", "repeat after me", "strike", "bow"],
                 "answer": "B",
-                "explanation": "repeat after me 意为\\",
+                "explanation": "repeat after me 意为\"跟着我重复\"",
             },
                 ],
                 8: [
@@ -884,7 +892,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To learn a new song, you must _______ playing it many times.",
                 "options": ["bow", "stage", "practice", "audience"],
                 "answer": "C",
-                "explanation": "practice意为\\",
+                "explanation": "practice意为\"练习\"",
             },
             {
                 "week": 8,
@@ -892,7 +900,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you practice every day, your musical skills will _______.",
                 "options": ["improve", "strike", "finish", "watch"],
                 "answer": "A",
-                "explanation": "improve意为\\",
+                "explanation": "improve意为\"进步/提⾼\"",
             },
                 ],
                 9: [
@@ -902,7 +910,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "At the concert, the musicians stand up on the big _______.",
                 "options": ["stage", "pulse", "measure", "focus"],
                 "answer": "A",
-                "explanation": "stage意为\\",
+                "explanation": "stage意为\"舞台\"",
             },
             {
                 "week": 9,
@@ -910,7 +918,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "After singing, you bend forward to _______ to the people watching.",
                 "options": ["strike", "bow", "stage", "count"],
                 "answer": "B",
-                "explanation": "bow意为\\",
+                "explanation": "bow意为\"鞠躬\"",
             },
                 ],
                 10: [
@@ -920,7 +928,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The people who sit, watch, and clap for your concert are the _______.",
                 "options": ["teamwork", "stage", "audience", "group"],
                 "answer": "C",
-                "explanation": "audience意为\\",
+                "explanation": "audience意为\"观众\"",
             },
             {
                 "week": 10,
@@ -928,7 +936,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To sing or play an instrument for an audience is to _______.",
                 "options": ["perform", "listen", "watch", "strike"],
                 "answer": "A",
-                "explanation": "perform意为\\",
+                "explanation": "perform意为\"表演\"",
             },
                 ],
                 11: [
@@ -938,7 +946,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To practice the whole play before the real concert is to _______.",
                 "options": ["finish", "rehearse", "bow", "gentle"],
                 "answer": "B",
-                "explanation": "rehearse意为\\",
+                "explanation": "rehearse意为\"排练\"",
             },
             {
                 "week": 11,
@@ -946,7 +954,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "After we rehearse many times, we are fully _______ for the concert.",
                 "options": ["ready", "strong", "strike", "stage"],
                 "answer": "A",
-                "explanation": "ready意为\\",
+                "explanation": "ready意为\"准备好的\"",
             },
                 ],
                 12: [
@@ -956,7 +964,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Playing music together with 5 friends means you play in a _______.",
                 "options": ["bow", "measure", "stage", "group"],
                 "answer": "D",
-                "explanation": "group意为\\",
+                "explanation": "group意为\"团队/⼩组\"",
             },
             {
                 "week": 12,
@@ -964,7 +972,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Playing perfectly together in a group requires good _______.",
                 "options": ["teamwork", "audience", "stage", "gentle"],
                 "answer": "A",
-                "explanation": "teamwork意为\\",
+                "explanation": "teamwork意为\"团队合作\"",
             },
                 ],
                 13: [
@@ -974,7 +982,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To hear the quiet violin notes, you must _______.",
                 "options": ["strike loud", "stage", "listen carefully", "bow"],
                 "answer": "C",
-                "explanation": "listen carefully意为\\",
+                "explanation": "listen carefully意为\"仔细听\"",
             },
             {
                 "week": 13,
@@ -982,7 +990,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "You must _______ the conductor's hands so you know when to start.",
                 "options": ["watch", "listen", "shake", "bow"],
                 "answer": "A",
-                "explanation": "watch意为\\",
+                "explanation": "watch意为\"注视/观看\"",
             },
                 ],
                 14: [
@@ -992,7 +1000,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Hitting the big drum very hard makes a loud, _______ sound.",
                 "options": ["gentle", "strong", "ready", "stage"],
                 "answer": "B",
-                "explanation": "strong意为\\",
+                "explanation": "strong意为\"强有⼒的\"",
             },
             {
                 "week": 14,
@@ -1000,7 +1008,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Playing the flute very softly makes a quiet, _______ sound.",
                 "options": ["strong", "gentle", "strike", "bow"],
                 "answer": "B",
-                "explanation": "gentle意为\\",
+                "explanation": "gentle意为\"轻柔的\"",
             },
                 ],
                 15: [
@@ -1023,7 +1031,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In PE, we play the game _______ as a happy group.",
                 "options": ["together", "bounce", "shot put", "sprint"],
                 "answer": "A",
-                "explanation": "together意为\\",
+                "explanation": "together意为\"⼀起\"",
             },
             {
                 "week": 2,
@@ -1031,7 +1039,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To shout loudly and happily for your team is to _______.",
                 "options": ["respect", "trust", "cheer", "discus"],
                 "answer": "C",
-                "explanation": "cheer意为\\",
+                "explanation": "cheer意为\"欢呼/加油\"",
             },
                 ],
                 3: [
@@ -1041,7 +1049,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Following the rules and being nice to everyone shows good _______.",
                 "options": ["hurdle", "respect", "bounce", "lap"],
                 "answer": "B",
-                "explanation": "respect意为\\",
+                "explanation": "respect意为\"尊重\"",
             },
             {
                 "week": 3,
@@ -1049,7 +1057,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Believing your teammate will catch you if you fall is having _______ in them.",
                 "options": ["trust", "hoop", "sprint", "discus"],
                 "answer": "A",
-                "explanation": "trust意为\\",
+                "explanation": "trust意为\"信任\"",
             },
                 ],
                 4: [
@@ -1059,7 +1067,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Working nicely with your friends in a group to win is good _______.",
                 "options": ["shot put", "hurdle", "teamwork", "lap"],
                 "answer": "C",
-                "explanation": "teamwork意为\\",
+                "explanation": "teamwork意为\"团队合作\"",
             },
                 ],
                 5: [
@@ -1080,7 +1088,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Your strong desire and energy to try hard and win is your _______.",
                 "options": ["hurdle", "motivation", "hoop", "discus"],
                 "answer": "B",
-                "explanation": "motivation意为\\",
+                "explanation": "motivation意为\"动⼒/积极性\"",
             },
             {
                 "week": 7,
@@ -1088,7 +1096,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A team that stays happy and never gives up has great team _______.",
                 "options": ["sprint", "shot put", "lap", "spirit"],
                 "answer": "D",
-                "explanation": "spirit意为\\",
+                "explanation": "spirit意为\"精神\"",
             },
                 ],
                 8: [
@@ -1098,7 +1106,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In basketball, you must throw the ball through the net or _______.",
                 "options": ["shot put", "discus", "hoop", "save"],
                 "answer": "C",
-                "explanation": "hoop意为\\",
+                "explanation": "hoop意为\"篮筐/圆圈\"",
             },
             {
                 "week": 8,
@@ -1106,7 +1114,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In a running race, you might have to jump over a fence called a _______.",
                 "options": ["shot put", "hurdle", "bounce", "medal"],
                 "answer": "B",
-                "explanation": "hurdle意为\\",
+                "explanation": "hurdle意为\"跨栏\"",
             },
                 ],
                 9: [
@@ -1116,7 +1124,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you throw a basketball down to the floor, it will _______ back up.",
                 "options": ["bounce", "shot put", "save", "sprint"],
                 "answer": "A",
-                "explanation": "bounce意为\\",
+                "explanation": "bounce意为\"弹跳/拍球\"",
             },
             {
                 "week": 9,
@@ -1124,7 +1132,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Pushing a heavy metal ball as far as you can is called the _______.",
                 "options": ["lap", "discus", "shot put", "relay"],
                 "answer": "C",
-                "explanation": "shot put意为\\",
+                "explanation": "shot put意为\"推铅球\"",
             },
                 ],
                 10: [
@@ -1134,7 +1142,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Dribbling the ball means you _______ it on the ground.",
                 "options": ["discus", "bounce", "hurdle", "medal"],
                 "answer": "B",
-                "explanation": "巩固词汇：bounce意为\\",
+                "explanation": "巩固词汇：bounce意为\"弹跳/拍球\"",
             },
             {
                 "week": 10,
@@ -1142,7 +1150,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The heavy ball event in track and field is the _______.",
                 "options": ["sprint", "lap", "shot put", "team"],
                 "answer": "C",
-                "explanation": "巩固词汇：shot put意为\\",
+                "explanation": "巩固词汇：shot put意为\"推铅球\"",
             },
                 ],
                 11: [
@@ -1152,7 +1160,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To get better at sports, you need to _______ every day.",
                 "options": ["sprint", "practice", "save", "medal"],
                 "answer": "B",
-                "explanation": "practice意为\\",
+                "explanation": "practice意为\"练习\"",
             },
             {
                 "week": 11,
@@ -1160,7 +1168,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A heavy, flat plate that you throw like a flying saucer is a _______.",
                 "options": ["discus", "lap", "team", "sprint"],
                 "answer": "A",
-                "explanation": "discus指⽥径运动中的\\",
+                "explanation": "discus指⽥径运动中的\"铁饼\"",
             },
                 ],
                 12: [
@@ -1170,7 +1178,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A group of players playing a sport together is a _______.",
                 "options": ["lap", "medal", "team", "save"],
                 "answer": "C",
-                "explanation": "team意为\\",
+                "explanation": "team意为\"队伍/团队\"",
             },
             {
                 "week": 12,
@@ -1178,7 +1186,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Running one full circle around the running track is a _______.",
                 "options": ["save", "discus", "team", "lap"],
                 "answer": "D",
-                "explanation": "lap意为\\",
+                "explanation": "lap意为\"(跑道的",
             },
                 ],
                 13: [
@@ -1188,7 +1196,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the goalie stops the ball from going into the net, it is a great _______.",
                 "options": ["save", "sprint", "relay", "medal"],
                 "answer": "A",
-                "explanation": "save在体育中意为\\",
+                "explanation": "save在体育中意为\"扑救\"",
             },
                 ],
                 14: [
@@ -1198,7 +1206,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We must _______ passing the ball before the big game.",
                 "options": ["practice", "save", "medal", "relay"],
                 "answer": "A",
-                "explanation": "巩固词汇：practice意为\\",
+                "explanation": "巩固词汇：practice意为\"练习\"",
             },
                 ],
                 15: [
@@ -1221,7 +1229,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A wizard says magic _______ to make things happen.",
                 "options": ["spells", "jump", "comedy", "audience"],
                 "answer": "A",
-                "explanation": "spells意为\\",
+                "explanation": "spells意为\"魔咒/咒语\"",
             },
             {
                 "week": 2,
@@ -1229,7 +1237,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Harry Potter uses a wooden stick called a _______ to do magic.",
                 "options": ["comedy", "straight back", "wand", "turn"],
                 "answer": "B",
-                "explanation": "wand意为\\",
+                "explanation": "wand意为\"魔杖\"",
             },
                 ],
                 3: [
@@ -1239,7 +1247,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Say the secret _______ out loud to open the magic door!",
                 "options": ["jump", "spell", "comedy", "turn"],
                 "answer": "B",
-                "explanation": "巩固词汇：spell意为\\",
+                "explanation": "巩固词汇：spell意为\"咒语\"",
             },
             {
                 "week": 3,
@@ -1247,7 +1255,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Wave your magic _______ to make the frog disappear!",
                 "options": ["straight back", "exciting", "wand", "audience"],
                 "answer": "C",
-                "explanation": "巩固词汇：wand意为\\",
+                "explanation": "巩固词汇：wand意为\"魔杖\"",
             },
                 ],
                 4: [
@@ -1257,7 +1265,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In the dance, you must jump and _______ high into the air.",
                 "options": ["straight back", "Kick legs up", "comedy", "wand"],
                 "answer": "B",
-                "explanation": "Kick legs up意为\\",
+                "explanation": "Kick legs up意为\"向上踢腿\"",
             },
             {
                 "week": 4,
@@ -1265,7 +1273,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When you stand tall without bending, you have a _______.",
                 "options": ["wand", "comedy", "turn", "straight back"],
                 "answer": "D",
-                "explanation": "straight back意为\\",
+                "explanation": "straight back意为\"挺直的背\"",
             },
                 ],
                 5: [
@@ -1286,7 +1294,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To push yourself up from the floor into the air is to _______.",
                 "options": ["jump", "turn", "spell", "straight back"],
                 "answer": "A",
-                "explanation": "jump意为\\",
+                "explanation": "jump意为\"跳跃\"",
             },
             {
                 "week": 7,
@@ -1294,7 +1302,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To spin your body around in a circle is to _______.",
                 "options": ["jump", "straight back", "turn", "comedy"],
                 "answer": "C",
-                "explanation": "turn意为\\",
+                "explanation": "turn意为\"旋转/转⾝\"",
             },
                 ],
                 8: [
@@ -1304,7 +1312,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The dancer will _______ over the box easily.",
                 "options": ["spell", "wand", "jump", "comedy"],
                 "answer": "C",
-                "explanation": "巩固词汇：jump意为\\",
+                "explanation": "巩固词汇：jump意为\"跳跃\"",
             },
             {
                 "week": 8,
@@ -1312,7 +1320,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Always keep a _______ when you dance so you look tall.",
                 "options": ["jump", "turn", "straight back", "wand"],
                 "answer": "C",
-                "explanation": "巩固词汇：straight back意为\\",
+                "explanation": "巩固词汇：straight back意为\"挺直的背\"",
             },
                 ],
                 9: [
@@ -1322,7 +1330,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A jump where your legs open and close like blades is a _______.",
                 "options": ["scissor jump", "comedy", "turn", "wand"],
                 "answer": "A",
-                "explanation": "scissor jump意为\\",
+                "explanation": "scissor jump意为\"剪⼑跳\"",
             },
             {
                 "week": 9,
@@ -1330,7 +1338,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Do a scissor jump but keep a _______ so you don't fall forward.",
                 "options": ["comedy", "straight back", "spell", "turn"],
                 "answer": "B",
-                "explanation": "巩固词汇：straight back意为\\",
+                "explanation": "巩固词汇：straight back意为\"挺直的 背\"",
             },
                 ],
                 10: [
@@ -1340,7 +1348,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Open your legs wide in the air to do a beautiful _______.",
                 "options": ["wand", "spell", "scissor jump", "comedy"],
                 "answer": "C",
-                "explanation": "巩固词汇：scissor jump意为\\",
+                "explanation": "巩固词汇：scissor jump意为\"剪⼑跳\"",
             },
             {
                 "week": 10,
@@ -1348,7 +1356,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Sit up with a _______ before the show starts.",
                 "options": ["straight back", "scissor jump", "wand", "audience"],
                 "answer": "A",
-                "explanation": "巩固词汇：straight back意为\\",
+                "explanation": "巩固词汇：straight back意为\"挺直的背\"",
             },
                 ],
                 11: [
@@ -1358,7 +1366,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A funny play that makes everyone laugh is a _______.",
                 "options": ["tragedy", "wand", "comedy", "jump"],
                 "answer": "C",
-                "explanation": "comedy意为\\",
+                "explanation": "comedy意为\"喜剧\"",
             },
             {
                 "week": 11,
@@ -1366,7 +1374,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "An action movie with lots of jumping and running is very _______.",
                 "options": ["boring", "exciting", "straight", "scissor"],
                 "answer": "B",
-                "explanation": "exciting意为\\",
+                "explanation": "exciting意为\"令⼈兴奋的\"",
             },
                 ],
                 12: [
@@ -1376,7 +1384,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The clown's jokes were perfect for this funny _______.",
                 "options": ["comedy", "straight back", "wand", "turn"],
                 "answer": "A",
-                "explanation": "巩固词汇：comedy意为\\",
+                "explanation": "巩固词汇：comedy意为\"喜剧\"",
             },
             {
                 "week": 12,
@@ -1384,7 +1392,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Winning the talent show was a very _______ moment!",
                 "options": ["sad", "exciting", "straight", "jump"],
                 "answer": "B",
-                "explanation": "巩固词汇：exciting意为\\",
+                "explanation": "巩固词汇：exciting意为\"令⼈兴奋的\"",
             },
                 ],
                 13: [
@@ -1394,7 +1402,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "My stomach hurt from laughing so much at the _______.",
                 "options": ["wand", "comedy", "jump", "spell"],
                 "answer": "B",
-                "explanation": "巩固词汇：comedy意为\\",
+                "explanation": "巩固词汇：comedy意为\"喜剧\"",
             },
             {
                 "week": 13,
@@ -1402,7 +1410,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The fast dance music made the performance very _______.",
                 "options": ["sad", "boring", "exciting", "straight"],
                 "answer": "C",
-                "explanation": "巩固词汇：exciting意为\\",
+                "explanation": "巩固词汇：exciting意为\"令⼈兴奋的\"",
             },
                 ],
                 14: [
@@ -1412,7 +1420,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you like to smile and laugh, you will love this _______.",
                 "options": ["comedy", "straight back", "jump", "scissor"],
                 "answer": "A",
-                "explanation": "巩固词汇：comedy意为\\",
+                "explanation": "巩固词汇：comedy意为\"喜剧\"",
             },
             {
                 "week": 14,
@@ -1420,7 +1428,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The magic trick at the end of the show was so _______!",
                 "options": ["boring", "exciting", "straight back", "sad"],
                 "answer": "B",
-                "explanation": "巩固词汇：exciting意为\\",
+                "explanation": "巩固词汇：exciting意为\"令⼈兴奋的\"",
             },
                 ],
                 15: [
@@ -1443,7 +1451,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Two cats that look almost the same are very _______.",
                 "options": ["different", "similar", "healthy", "adult"],
                 "answer": "B",
-                "explanation": "similar意为\\",
+                "explanation": "similar意为\"相似的\"",
             },
             {
                 "week": 2,
@@ -1451,7 +1459,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A bird and a fish do not look the same. They are _______.",
                 "options": ["similar", "different", "growth", "inherit"],
                 "answer": "B",
-                "explanation": "different意为\\",
+                "explanation": "different意为\"不同的\"",
             },
                 ],
                 3: [
@@ -1461,7 +1469,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Getting taller every year is part of your _______.",
                 "options": ["adult", "growth", "pattern", "diet"],
                 "answer": "B",
-                "explanation": "growth意为\\",
+                "explanation": "growth意为\"⽣⻓/发育\"",
             },
                 ],
                 4: [
@@ -1471,7 +1479,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A tiger's stripes are an example of an animal _______.",
                 "options": ["pattern", "light", "inherit", "adult"],
                 "answer": "A",
-                "explanation": "pattern意为\\",
+                "explanation": "pattern意为\"花纹/模式\"",
             },
             {
                 "week": 4,
@@ -1479,7 +1487,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "You _______ your eye color from your parents.",
                 "options": ["cut", "cough", "inherit", "light"],
                 "answer": "C",
-                "explanation": "inherit意为\\",
+                "explanation": "inherit意为\"遗传/继承\"",
             },
                 ],
                 5: [
@@ -1500,7 +1508,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Eating apples and running makes your body _______.",
                 "options": ["ill", "healthy", "similar", "darkness"],
                 "answer": "B",
-                "explanation": "healthy意为\\",
+                "explanation": "healthy意为\"健康的\"",
             },
             {
                 "week": 7,
@@ -1508,7 +1516,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The food and drinks you have every day make up your _______.",
                 "options": ["cough", "light", "diet", "pattern"],
                 "answer": "C",
-                "explanation": "diet意为\\",
+                "explanation": "diet意为\"⽇常饮⻝\"",
             },
                 ],
                 8: [
@@ -1518,7 +1526,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When you have a fever and feel sick, you are _______.",
                 "options": ["healthy", "similar", "ill", "daylight"],
                 "answer": "C",
-                "explanation": "ill意为\\",
+                "explanation": "ill意为\"⽣病的\"",
             },
             {
                 "week": 8,
@@ -1526,7 +1534,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When you have a bad throat, you might _______ loudly.",
                 "options": ["cut", "inherit", "cough", "diet"],
                 "answer": "C",
-                "explanation": "cough意为\\",
+                "explanation": "cough意为\"咳嗽\"",
             },
                 ],
                 9: [
@@ -1536,7 +1544,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "You use the white hard things in your mouth, called _______, to bite food.",
                 "options": ["stars", "teeth", "eyes", "ears"],
                 "answer": "B",
-                "explanation": "teeth意为\\",
+                "explanation": "teeth意为\"⽛⻮\"",
             },
             {
                 "week": 9,
@@ -1544,7 +1552,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The sharp front teeth used for cutting food are your _______.",
                 "options": ["molars", "incisors", "cough", "adults"],
                 "answer": "B",
-                "explanation": "incisors意为\\",
+                "explanation": "incisors意为\"⻔⽛\"",
             },
                 ],
                 10: [
@@ -1554,7 +1562,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We use our sharp front teeth to _______ an apple.",
                 "options": ["cut", "light", "cough", "inherit"],
                 "answer": "A",
-                "explanation": "cut意为\\",
+                "explanation": "cut意为\"切/咬断\"",
             },
             {
                 "week": 10,
@@ -1562,7 +1570,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We need the sun's _______ to see things in the room.",
                 "options": ["darkness", "light", "diet", "cut"],
                 "answer": "B",
-                "explanation": "light意为\\",
+                "explanation": "light意为\"光\"",
             },
                 ],
                 11: [
@@ -1572,7 +1580,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The sun is the biggest natural _______ of light.",
                 "options": ["darkness", "source", "cut", "robot"],
                 "answer": "B",
-                "explanation": "source意为\\",
+                "explanation": "source意为\"来源\"",
             },
             {
                 "week": 11,
@@ -1580,7 +1588,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Old stories about the sun are part of our _______ history.",
                 "options": ["cultural", "healthy", "similar", "ill"],
                 "answer": "A",
-                "explanation": "cultural意为\\",
+                "explanation": "cultural意为\"⽂化的\"",
             },
                 ],
                 12: [
@@ -1590,7 +1598,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "You can turn on a _______ to read a book in your bedroom.",
                 "options": ["star", "daylight", "lamp", "sun"],
                 "answer": "C",
-                "explanation": "lamp意为\\",
+                "explanation": "lamp意为\"台灯/灯\"",
             },
             {
                 "week": 12,
@@ -1598,7 +1606,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "At night, you can see the moon and many shining _______ in the sky.",
                 "options": ["lamps", "stars", "robots", "diets"],
                 "answer": "B",
-                "explanation": "stars意为\\",
+                "explanation": "stars意为\"星星\"",
             },
                 ],
                 13: [
@@ -1608,7 +1616,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When there is no light at all, we are in complete _______.",
                 "options": ["daylight", "darkness", "source", "electricity"],
                 "answer": "B",
-                "explanation": "darkness意为\\",
+                "explanation": "darkness意为\"⿊暗\"",
             },
                 ],
                 14: [
@@ -1618,7 +1626,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The bright light from the sun during the day is called _______.",
                 "options": ["darkness", "daylight", "night", "lamp"],
                 "answer": "B",
-                "explanation": "daylight意为\\",
+                "explanation": "daylight意为\"⽇光\"",
             },
             {
                 "week": 14,
@@ -1626,7 +1634,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The sun is actually a very big, hot _______.",
                 "options": ["planet", "robot", "lamp", "star"],
                 "answer": "D",
-                "explanation": "star意为\\",
+                "explanation": "star意为\"恒星/星星\"",
             },
                 ],
                 15: [
@@ -1649,7 +1657,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A painting or drawing of a person's face is a _______.",
                 "options": ["cube", "portrait", "pattern", "abstract"],
                 "answer": "B",
-                "explanation": "portrait意为\\",
+                "explanation": "portrait意为\"肖像画\"",
             },
             {
                 "week": 2,
@@ -1657,7 +1665,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Your eyes, nose, and mouth are on your _______.",
                 "options": ["cube", "rhythm", "face", "culture"],
                 "answer": "C",
-                "explanation": "face意为\\",
+                "explanation": "face意为\"脸\"",
             },
                 ],
                 3: [
@@ -1667,7 +1675,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A 3D box shape with six square sides is a _______.",
                 "options": ["circle", "portrait", "cube", "sketch"],
                 "answer": "C",
-                "explanation": "cube意为\\",
+                "explanation": "cube意为\"⽴⽅体\"",
             },
             {
                 "week": 3,
@@ -1675,7 +1683,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A happy smile or a sad look is an _______ of your feelings.",
                 "options": ["expression", "cube", "pattern", "mixing"],
                 "answer": "A",
-                "explanation": "expression意为\\",
+                "explanation": "expression意为\"表情/表现\"",
             },
                 ],
                 4: [
@@ -1685,7 +1693,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A picture you draw of your own face is a _______.",
                 "options": ["memory", "culture", "self-portrait", "rhythm"],
                 "answer": "C",
-                "explanation": "self-portrait意为\\",
+                "explanation": "self-portrait意为\"⾃画像\"",
             },
             {
                 "week": 4,
@@ -1693,7 +1701,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To look at something very carefully before drawing it is to _______ it.",
                 "options": ["mixing", "observe", "abstract", "pattern"],
                 "answer": "B",
-                "explanation": "observe意为\\",
+                "explanation": "observe意为\"观察\"",
             },
                 ],
                 5: [
@@ -1714,7 +1722,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To draw yourself, you are making a _______.",
                 "options": ["memory", "culture", "self-portrait", "sketch"],
                 "answer": "C",
-                "explanation": "巩固词汇：self-portrait意为\\",
+                "explanation": "巩固词汇：self-portrait意为\"⾃画像\"",
             },
             {
                 "week": 7,
@@ -1722,7 +1730,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A quick, simple drawing done with a pencil is a _______.",
                 "options": ["sketch", "symmetry", "mixing", "abstract"],
                 "answer": "A",
-                "explanation": "sketch意为\\",
+                "explanation": "sketch意为\"素描/草图\"",
             },
                 ],
                 8: [
@@ -1732,7 +1740,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Something you remember in your mind from the past is a _______.",
                 "options": ["pattern", "memory", "expression", "rhythm"],
                 "answer": "B",
-                "explanation": "memory意为\\",
+                "explanation": "memory意为\"记忆\"",
             },
             {
                 "week": 8,
@@ -1740,7 +1748,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Traditional art and stories of a group of people make up their _______.",
                 "options": ["mixing", "sketch", "culture", "abstract"],
                 "answer": "C",
-                "explanation": "culture意为\\",
+                "explanation": "culture意为\"⽂化\"",
             },
                 ],
                 9: [
@@ -1750,7 +1758,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Red and green are opposite on the color wheel. They are a _______ pair.",
                 "options": ["complementary color", "sketch", "pattern", "culture"],
                 "answer": "A",
-                "explanation": "complementary color意为\\",
+                "explanation": "complementary color意为\"互补⾊\"",
             },
             {
                 "week": 9,
@@ -1758,7 +1766,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "I painted a happy picture of my favorite childhood _______.",
                 "options": ["abstract", "mixing", "memory", "symmetry"],
                 "answer": "C",
-                "explanation": "巩固词汇：memory意为\\",
+                "explanation": "巩固词汇：memory意为\"记忆\"",
             },
                 ],
                 10: [
@@ -1768,7 +1776,15 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We share art and traditions from our native _______.",
                 "options": ["sketch", "pattern", "culture", "mixing"],
                 "answer": "C",
-                "explanation": "巩固词汇：culture意为\\",
+                "explanation": "巩固词汇：culture意为\"⽂化\"",
+            },
+            {
+                "week": 10,
+                "keyword": "complementary color",
+                "question": "Blue and orange look very bright together because they are a _______ pair.",
+                "options": ["complementary color", "memory", "sketch", "symmetry"],
+                "answer": "A",
+                "explanation": "",
             },
                 ],
                 11: [
@@ -1778,7 +1794,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the left side of a drawing matches the right side perfectly, it has _______.",
                 "options": ["abstract", "mixing", "symmetry", "memory"],
                 "answer": "C",
-                "explanation": "symmetry意 为\\",
+                "explanation": "symmetry意 为\"对称\"。注：原⼤纲含拼写变体symmmetry，统⼀作symmetry考察",
             },
             {
                 "week": 11,
@@ -1786,7 +1802,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A design that repeats shapes and colors is a _______.",
                 "options": ["memory", "culture", "pattern", "rhythm"],
                 "answer": "C",
-                "explanation": "pattern意为\\",
+                "explanation": "pattern意为\"图案/规律\"",
             },
                 ],
                 12: [
@@ -1796,7 +1812,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Repeating shapes to create a feeling of movement in a painting is visual _______.",
                 "options": ["rhythm", "mixing", "memory", "culture"],
                 "answer": "A",
-                "explanation": "rhythm在艺术中指 视觉\\",
+                "explanation": "rhythm在艺术中指 视觉\"韵律/节奏\"",
             },
                 ],
                 13: [
@@ -1806,7 +1822,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Art that uses crazy shapes and colors, but does not look like real things, is _______.",
                 "options": ["portrait", "sketch", "abstract", "symmetry"],
                 "answer": "C",
-                "explanation": "abstract意 为\\",
+                "explanation": "abstract意 为\"抽象的\"",
             },
             {
                 "week": 13,
@@ -1814,7 +1830,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Putting yellow and blue paint together to make green is color _______.",
                 "options": ["mixing", "symmetry", "rhythm", "abstract"],
                 "answer": "A",
-                "explanation": "mixing意为\\",
+                "explanation": "mixing意为\"混合\"",
             },
                 ],
                 14: [
@@ -1824,7 +1840,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A painting of floating colorful squares is an _______ artwork.",
                 "options": ["abstract", "symmetry", "rhythm", "portrait"],
                 "answer": "A",
-                "explanation": "巩固词汇：abstract意为\\",
+                "explanation": "巩固词汇：abstract意为\"抽象的\"",
             },
             {
                 "week": 14,
@@ -1832,7 +1848,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Showing your inside feelings in your art is an _______ of yourself.",
                 "options": ["abstract", "symmetry", "expression", "rhythm"],
                 "answer": "B",
-                "explanation": "expression意为\\",
+                "explanation": "expression意为\"表达/表现\"",
             },
                 ],
                 15: [
@@ -1857,7 +1873,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In a Scratch game, the cat character you can move around is a _______.",
                 "options": ["Block", "Stage", "Sprite", "Script"],
                 "answer": "C",
-                "explanation": "Sprite在编程中意为\\",
+                "explanation": "Sprite在编程中意为\"精灵/⻆⾊\"",
             },
             {
                 "week": 3,
@@ -1865,7 +1881,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A puzzle piece of code you drag and drop on the screen is a _______.",
                 "options": ["Block", "Sprite", "Stage", "Pseudocode"],
                 "answer": "A",
-                "explanation": "Block在Scratch中意为\\",
+                "explanation": "Block在Scratch中意为\"积⽊块\"",
             },
             {
                 "week": 3,
@@ -1873,7 +1889,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When you snap many blocks together to make a character move, you build a _______.",
                 "options": ["Stage", "Script", "Sprite", "Repetition"],
                 "answer": "B",
-                "explanation": "Script在编程中意 为\\",
+                "explanation": "Script在编程中意 为\"脚本\"",
             },
                 ],
                 4: [
@@ -1883,7 +1899,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you want your character to walk or jump, you use the _______ blocks.",
                 "options": ["Control", "Stage", "Motion", "Script"],
                 "answer": "C",
-                "explanation": "Motion意为\\",
+                "explanation": "Motion意为\"运动\"，指运动积⽊类",
             },
                 ],
                 5: [
@@ -1893,6 +1909,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What do we call a repeat block placed inside another repeat block?",
                 "options": ["A Sprite B) A Nested Loop C) A Motion Block D) A Stage"],
                 "answer": "B",
+                "explanation": "",
                 "passage": "In our code, we put a repeat block inside another repeat block. This is called a Nested Loop. The loop that is inside is the Inner Loop. The loop that is on the outside is the Outer Loop.",
             },
                 ],
@@ -1903,7 +1920,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Drawing pictures using shapes like circles, squares, and triangles is _______.",
                 "options": ["Geometric Art", "Input", "Output", "micro:bit"],
                 "answer": "A",
-                "explanation": "Geometric Art意为\\",
+                "explanation": "Geometric Art意为\"⼏何艺术\"",
             },
             {
                 "week": 7,
@@ -1911,7 +1928,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A beautiful circle design with repeating patterns starting from the center is a _______.",
                 "options": ["Mandala", "Simulator", "Pen Extension", "Variable"],
                 "answer": "A",
-                "explanation": "Mandala意为\\",
+                "explanation": "Mandala意为\"曼陀罗图案\"",
             },
             {
                 "week": 7,
@@ -1919,7 +1936,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Doing the exact same drawing steps again and again is called _______.",
                 "options": ["Repetition", "Masterpiece", "Input", "Output"],
                 "answer": "A",
-                "explanation": "Repetition意为\\",
+                "explanation": "Repetition意为\"重复\"",
             },
                 ],
                 8: [
@@ -1929,7 +1946,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In Scratch, you add the _______ to allow your sprite to draw lines on the screen.",
                 "options": ["Simulator", "Pen Extension", "micro:bit", "Variable"],
                 "answer": "B",
-                "explanation": "Pen Extension意为\\",
+                "explanation": "Pen Extension意为\"画笔扩展\"",
             },
             {
                 "week": 8,
@@ -1937,7 +1954,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A very beautiful and excellent piece of finished art is your _______.",
                 "options": ["Variable", "Input", "Masterpiece", "Pen Extension"],
                 "answer": "C",
-                "explanation": "Masterpiece意为\\",
+                "explanation": "Masterpiece意为\"杰作/优 秀作品\"",
             },
             {
                 "week": 8,
@@ -1945,7 +1962,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A short paragraph written by you to explain your artwork is your _______.",
                 "options": ["Artist Statement", "Physical Computing", "Simulator", "Repetition"],
                 "answer": "A",
-                "explanation": "Artist Statement意为\\",
+                "explanation": "Artist Statement意为\"艺术家陈述/作品说明\"",
             },
                 ],
                 9: [
@@ -1955,7 +1972,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using a computer board to interact with the real world is called _______.",
                 "options": ["Physical Computing", "Artist Statement", "Mandala", "Repetition"],
                 "answer": "A",
-                "explanation": "Physical Computing意为\\",
+                "explanation": "Physical Computing意为\"实体计算/物理计算\"",
             },
             {
                 "week": 9,
@@ -1971,7 +1988,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Pressing a button on the micro:bit sends an _______ signal to the computer.",
                 "options": ["Output", "Input", "Masterpiece", "Repetition"],
                 "answer": "B",
-                "explanation": "Input意为\\",
+                "explanation": "Input意为\"输⼊\"",
             },
                 ],
                 10: [
@@ -1981,6 +1998,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What are the 25 small lights on the micro:bit called?",
                 "options": ["The Simulator B) The Input C) The LED Matrix D) The Physical Computing"],
                 "answer": "C",
+                "explanation": "",
                 "passage": "On our computer screen, we use a virtual Simulator to test our code first. When we press button A (the input), the real micro:bit gives an Output. It turns on the 25 small lights, called the LED Matrix, to show a happy face.",
             },
                 ],
@@ -1991,7 +2009,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The sensor inside a micro:bit that detects when you shake it is the _______.",
                 "options": ["Simulator", "Accelerometer", "Output", "Masterpiece"],
                 "answer": "B",
-                "explanation": "Accelerometer意为\\",
+                "explanation": "Accelerometer意为\"加速度计/传感器\"",
             },
             {
                 "week": 11,
@@ -1999,7 +2017,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A container in a computer program that holds a number or a score is a _______.",
                 "options": ["Variable", "Accelerometer", "LED Matrix", "Input"],
                 "answer": "A",
-                "explanation": "Variable意为\\",
+                "explanation": "Variable意为\"变 量\"",
             },
                 ],
                 12: [
@@ -2009,7 +2027,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To add 1 point to your score when you win, you _______ the variable by 1.",
                 "options": ["Set", "Change", "Initialize", "Reset"],
                 "answer": "B",
-                "explanation": "Change意为\\",
+                "explanation": "Change意为\"改变\"，⽤于增加/减少变 量值",
             },
             {
                 "week": 12,
@@ -2017,17 +2035,25 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the game is over, we _______ the score back to zero to play again.",
                 "options": ["Reset", "Accelerometer", "Detect", "Measure"],
                 "answer": "A",
-                "explanation": "Reset意为\\",
+                "explanation": "Reset意为\"重置/清零\"",
             },
                 ],
                 13: [
+            {
+                "week": 13,
+                "keyword": "Temperature Sensor",
+                "question": "The component that measures how hot or cold the air is, is the _______.",
+                "options": ["Light Sensor", "Temperature Sensor", "Touch Sensor", "Range"],
+                "answer": "B",
+                "explanation": "",
+            },
             {
                 "week": 13,
                 "keyword": "Touch Sensor",
                 "question": "A component that knows when your finger taps it is a _______.",
                 "options": ["Light Sensor", "Temperature Sensor", "Touch Sensor", "Accelerometer"],
                 "answer": "C",
-                "explanation": "Touch Sensor意为\\",
+                "explanation": "Touch Sensor意为\"触摸传感器\"",
             },
                 ],
                 14: [
@@ -2037,7 +2063,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The numbers between the minimum and maximum that a sensor reads is its _______.",
                 "options": ["Range", "Detect", "Reset", "Initialize"],
                 "answer": "A",
-                "explanation": "Range意为\\",
+                "explanation": "Range意为\"范围/量 程\"",
             },
             {
                 "week": 14,
@@ -2045,7 +2071,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To find out exactly how hot it is, the sensor will _______ the temperature.",
                 "options": ["Change", "Set", "Measure", "Reset"],
                 "answer": "C",
-                "explanation": "Measure意为\\",
+                "explanation": "Measure意为\"测量\"",
             },
                 ],
                 15: [
@@ -2055,6 +2081,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What is the early, rough model of our project called?",
                 "options": ["A Feedback B) A User Testing C) A Prototype D) A Sensor"],
                 "answer": "C",
+                "explanation": "",
                 "passage": "We build a rough, early model of our smart light called a Prototype. We ask our classmates to try it out, which is called User Testing. After they test it, they give us ideas on how to fix it, which is useful Feedback.",
             },
                 ],
@@ -2067,7 +2094,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The person or animal you pretend to be in the story is your _______.",
                 "options": ["prop", "character", "stage direction", "stage"],
                 "answer": "B",
-                "explanation": "character意为\\",
+                "explanation": "character意为\"⻆⾊\"",
             },
             {
                 "week": 2,
@@ -2075,7 +2102,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A short part of the play that happens in one place is a _______.",
                 "options": ["scene", "prop", "character", "emotion"],
                 "answer": "A",
-                "explanation": "scene意为\\",
+                "explanation": "scene意为\"场景/幕\"",
             },
                 ],
                 3: [
@@ -2085,7 +2112,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the lights change and the story moves to a new room, we are in a new _______.",
                 "options": ["character", "prop", "scene", "actor"],
                 "answer": "C",
-                "explanation": "巩固词汇：scene意 为\\",
+                "explanation": "巩固词汇：scene意 为\"场景\"",
             },
             {
                 "week": 3,
@@ -2093,7 +2120,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The notes in the script telling you where to walk are the _______.",
                 "options": ["props", "stage direction", "closed question", "hot seating"],
                 "answer": "B",
-                "explanation": "stage direction 意为\\",
+                "explanation": "stage direction 意为\"舞台指⽰\"",
             },
             {
                 "week": 3,
@@ -2101,17 +2128,17 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Hats, bags, and magic wands used by actors are called _______.",
                 "options": ["scenes", "actors", "emotions", "props"],
                 "answer": "D",
-                "explanation": "巩固词汇：props意为\\",
+                "explanation": "巩固词汇：props意为\"道具(复数",
             },
                 ],
                 4: [
             {
                 "week": 4,
                 "keyword": "closed question",
-                "question": "A question that you can only answer with a simple \\",
+                "question": "A question that you can only answer with a simple \"yes\" or \"no\" is a _______.",
                 "options": ["open question", "stage direction", "closed question", "hot seating"],
                 "answer": "C",
-                "explanation": "closed question意为\\",
+                "explanation": "closed question意为\"封闭式问题\"",
             },
             {
                 "week": 4,
@@ -2119,7 +2146,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "You must think and act exactly like your _______ on stage.",
                 "options": ["prop", "stage direction", "scene", "character"],
                 "answer": "D",
-                "explanation": "巩固词汇：character意为\\",
+                "explanation": "巩固词汇：character意为\"⻆⾊\"",
             },
             {
                 "week": 4,
@@ -2127,7 +2154,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Sitting in a chair answering questions as if you are the character is the game of _______.",
                 "options": ["hot seating", "closed question", "props", "upstage"],
                 "answer": "A",
-                "explanation": "hot seating是\\",
+                "explanation": "hot seating是\"焦点⼈物法/热板凳\"",
             },
                 ],
                 5: [
@@ -2137,7 +2164,8 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What is the drama game where you sit in a chair and answer questions as the hero?",
                 "options": ["Stage direction B) Prop C) Hot seating D) Scene"],
                 "answer": "C",
-                "passage": "To understand our Character better, we play a drama game called hot seating. You sit in a chair and become the hero. The class asks you a closed question, and you must answer only with a \\",
+                "explanation": "",
+                "passage": "To understand our Character better, we play a drama game called hot seating. You sit in a chair and become the hero. The class asks you a closed question, and you must answer only with a \"Yes\" or \"No\".",
             },
                 ],
                 7: [
@@ -2147,7 +2175,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "How high, low, or angry you sound when you speak is your _______.",
                 "options": ["tone of voice", "lines", "stage direction", "prop"],
                 "answer": "A",
-                "explanation": "tone of voice意为\\",
+                "explanation": "tone of voice意为\"语⽓/语 调\"",
             },
             {
                 "week": 7,
@@ -2155,7 +2183,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Crying or laughing on stage shows the audience your strong _______.",
                 "options": ["props", "stage", "emotions", "lines"],
                 "answer": "C",
-                "explanation": "emotions意为\\",
+                "explanation": "emotions意为\"情绪/情感\"",
             },
                 ],
                 8: [
@@ -2165,7 +2193,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A real person who performs in a play or movie is an _______.",
                 "options": ["prop", "scene", "character", "actor"],
                 "answer": "D",
-                "explanation": "actor意为\\",
+                "explanation": "actor意为\"演员\"",
             },
             {
                 "week": 8,
@@ -2173,7 +2201,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Batman is a famous comic book _______ played by an actor.",
                 "options": ["character", "stage", "prop", "emotion"],
                 "answer": "A",
-                "explanation": "巩固词汇：character意为\\",
+                "explanation": "巩固词汇：character意为\"⻆⾊\"",
             },
             {
                 "week": 8,
@@ -2181,7 +2209,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The wooden floor where the actors stand to perform is the _______.",
                 "options": ["stage", "prop", "line", "closed question"],
                 "answer": "A",
-                "explanation": "stage意为\\",
+                "explanation": "stage意为\"舞台\"",
             },
                 ],
                 9: [
@@ -2191,7 +2219,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A live story acted out in front of an audience in a theater is a _______.",
                 "options": ["prop", "play", "line", "emotion"],
                 "answer": "B",
-                "explanation": "play在此意为\\",
+                "explanation": "play在此意为\"戏剧/舞台剧\"",
             },
             {
                 "week": 9,
@@ -2199,7 +2227,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The _______ wears a costume and walks onto the stage.",
                 "options": ["scene", "line", "actor", "prop"],
                 "answer": "C",
-                "explanation": "巩固词汇：actor意为\\",
+                "explanation": "巩固词汇：actor意为\"演员\"",
             },
             {
                 "week": 9,
@@ -2207,7 +2235,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Act 1, _______ 2 takes place in a dark forest.",
                 "options": ["scene", "play", "actor", "tone"],
                 "answer": "A",
-                "explanation": "巩固词汇：scene意为\\",
+                "explanation": "巩固词汇：scene意为\"场景/幕\"",
             },
                 ],
                 10: [
@@ -2217,6 +2245,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What is the live story acted out in the theater called?",
                 "options": ["A play B) A line C) A prop D) A tone of voice"],
                 "answer": "A",
+                "explanation": "",
                 "passage": "The school is putting on a big live play in the theater. My brother is the main actor. In the first scene, he is in a forest looking for a lost treasure.",
             },
                 ],
@@ -2227,7 +2256,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using your voice to make musical notes and melodies is to _______.",
                 "options": ["dance", "sing", "stage", "gesture"],
                 "answer": "B",
-                "explanation": "sing意为\\",
+                "explanation": "sing意为\"唱歌\"",
             },
             {
                 "week": 11,
@@ -2235,7 +2264,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Moving your body beautifully to the beat of the music is to _______.",
                 "options": ["sing", "dance", "costume", "voice"],
                 "answer": "B",
-                "explanation": "dance意为\\",
+                "explanation": "dance意为\"跳舞\"",
             },
                 ],
                 12: [
@@ -2245,7 +2274,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A sad frown or a big happy smile is a _______.",
                 "options": ["gesture", "voice", "facial expression", "prop"],
                 "answer": "C",
-                "explanation": "facial expression意为\\",
+                "explanation": "facial expression意为\"⾯部表情\"",
             },
             {
                 "week": 12,
@@ -2253,7 +2282,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Waving your hand or pointing your finger is a body _______.",
                 "options": ["costume", "gesture", "voice", "sing"],
                 "answer": "B",
-                "explanation": "gesture意为\\",
+                "explanation": "gesture意为\"⼿势/动作\"",
             },
                 ],
                 13: [
@@ -2263,7 +2292,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The part of the stage that is farthest away from the audience is _______.",
                 "options": ["downstage", "stage centre", "upstage", "offstage"],
                 "answer": "C",
-                "explanation": "upstage意为\\",
+                "explanation": "upstage意为\"舞台后 部\"",
             },
             {
                 "week": 13,
@@ -2271,7 +2300,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The part of the stage that is closest to the audience is _______.",
                 "options": ["upstage", "downstage", "stage centre", "offstage"],
                 "answer": "B",
-                "explanation": "downstage意为\\",
+                "explanation": "downstage意为\"舞台前 部\"",
             },
             {
                 "week": 13,
@@ -2279,7 +2308,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The exact middle of the stage floor is called _______.",
                 "options": ["upstage", "downstage", "stage centre", "costume"],
                 "answer": "C",
-                "explanation": "stage centre意为\\",
+                "explanation": "stage centre意为\"舞台正中央\"",
             },
                 ],
                 14: [
@@ -2307,6 +2336,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Where does the actor go when the scene is over and the audience cannot see him?",
                 "options": ["Onstage B) Offstage C) Upstage D) Stage centre"],
                 "answer": "B",
+                "explanation": "",
                 "passage": "The actor uses strong physicality to move his body like a heavy monster. He walks onstage so the audience can see him. When the scene is over, he walks into the dark area offstage to change his costume.",
             },
                 ],
@@ -2319,7 +2349,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you cut an apple into two equal pieces, each piece is a _______.",
                 "options": ["quarter", "third", "half", "whole"],
                 "answer": "C",
-                "explanation": "half意为\\",
+                "explanation": "half意为\"⼀半/⼆分之⼀\"",
             },
             {
                 "week": 2,
@@ -2327,7 +2357,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "One part of three equal parts is called a _______.",
                 "options": ["half", "third", "quarter", "fifth"],
                 "answer": "B",
-                "explanation": "third意为\\",
+                "explanation": "third意为\"三分之⼀\"",
             },
             {
                 "week": 2,
@@ -2335,7 +2365,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you divide a pizza into 4 equal slices, one slice is a _______.",
                 "options": ["quarter", "half", "third", "double"],
                 "answer": "A",
-                "explanation": "quarter意为\\",
+                "explanation": "quarter意为\"四分之⼀\"",
             },
                 ],
                 3: [
@@ -2345,7 +2375,15 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A number like 1/2 or 3/4 that shows part of a whole is a _______.",
                 "options": ["scale", "fraction", "group", "decimal"],
                 "answer": "B",
-                "explanation": "fraction意为\\",
+                "explanation": "fraction意为\"分数\"",
+            },
+            {
+                "week": 3,
+                "keyword": "equal",
+                "question": "2 + 3 is _______ to 5.",
+                "options": ["different", "more", "equal", "less"],
+                "answer": "C",
+                "explanation": "",
             },
             {
                 "week": 3,
@@ -2353,7 +2391,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We put 10 students into 2 _______s, so there are 5 in each.",
                 "options": ["equal", "fraction", "group", "scale"],
                 "answer": "C",
-                "explanation": "group意为\\",
+                "explanation": "group意为\"组/群\"",
             },
                 ],
                 4: [
@@ -2363,7 +2401,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We use a _______ to measure how heavy a bag of apples is.",
                 "options": ["clock", "scale", "ruler", "fraction"],
                 "answer": "B",
-                "explanation": "scale意为\\",
+                "explanation": "scale意为\"秤/刻度\"",
             },
                 ],
                 5: [
@@ -2373,6 +2411,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What do we do to find the answer of 3 groups of 1000?",
                 "options": ["We subtract them. B) We divide them. C) We multiply them. D) We scale them."],
                 "answer": "C",
+                "explanation": "",
                 "passage": "Today we learn big numbers. We know that 10 hundreds make one thousand. If we have 3 groups of 1000, we can multiply them. We say it is 3 times 1000, which equals 3000.",
             },
                 ],
@@ -2383,7 +2422,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To add 5 four times, you can _______ 5 by 4.",
                 "options": ["subtract", "multiply", "divide", "measure"],
                 "answer": "B",
-                "explanation": "multiply意为\\",
+                "explanation": "multiply意为\"乘\"",
             },
             {
                 "week": 7,
@@ -2391,7 +2430,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We use a ruler to _______ how long the desk is.",
                 "options": ["multiply", "guess", "measure", "add"],
                 "answer": "C",
-                "explanation": "measure意为\\",
+                "explanation": "measure意为\"测量\"",
             },
             {
                 "week": 7,
@@ -2399,7 +2438,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "100 centimetres is equal to 1 _______.",
                 "options": ["kilogram", "litre", "metre", "gram"],
                 "answer": "C",
-                "explanation": "metre意为\\",
+                "explanation": "metre意为\"⽶\"，1⽶等于100厘⽶",
             },
                 ],
                 8: [
@@ -2409,7 +2448,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "1/3 is a _______ that is smaller than 1/2.",
                 "options": ["square", "area", "fraction", "perimeter"],
                 "answer": "C",
-                "explanation": "fraction意为\\",
+                "explanation": "fraction意为\"分数\"",
             },
             {
                 "week": 8,
@@ -2417,7 +2456,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If two pieces of cake are the exact same size, they are _______.",
                 "options": ["different", "equivalent", "equal", "less"],
                 "answer": "C",
-                "explanation": "equal意为\\",
+                "explanation": "equal意为\"相等的/相同的\"",
             },
             {
                 "week": 8,
@@ -2425,7 +2464,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "1/2 and 2/4 have the same value, so they are _______ fractions.",
                 "options": ["equivalent", "subtract", "add", "measure"],
                 "answer": "A",
-                "explanation": "equivalent意为\\",
+                "explanation": "equivalent意为\"等值的\"，指等值 分数",
             },
                 ],
                 9: [
@@ -2435,7 +2474,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you _______ 4 and 6 together, the total is 10.",
                 "options": ["subtract", "add", "multiply", "equal"],
                 "answer": "B",
-                "explanation": "add意为\\",
+                "explanation": "add意为\"加\"",
             },
             {
                 "week": 9,
@@ -2443,7 +2482,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you _______ 3 from 10, the difference is 7.",
                 "options": ["add", "multiply", "subtract", "measure"],
                 "answer": "C",
-                "explanation": "subtract意为\\",
+                "explanation": "subtract意为\"减去\"",
             },
             {
                 "week": 9,
@@ -2451,7 +2490,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "2/5 is a math _______, showing 2 parts out of 5.",
                 "options": ["metre", "equivalent", "fraction", "clock"],
                 "answer": "C",
-                "explanation": "fraction意为\\",
+                "explanation": "fraction意为\"分数\"",
             },
                 ],
                 10: [
@@ -2461,6 +2500,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What do we measure to build a fence around the garden?",
                 "options": ["The area B) The perimeter C) The square D) The metre"],
                 "answer": "B",
+                "explanation": "",
                 "passage": "We have a garden shaped like a perfect square. To build a fence around it, we measure the outside length, which is the perimeter. The inside space where we plant the flowers is called the area.",
             },
                 ],
@@ -2471,7 +2511,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We look at the _______ on the wall to see what time it is.",
                 "options": ["clock", "time", "scale", "bar"],
                 "answer": "A",
-                "explanation": "clock意为\\",
+                "explanation": "clock意为\"时钟\"",
             },
             {
                 "week": 11,
@@ -2479,7 +2519,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "It is _______ to go to bed because it is very late.",
                 "options": ["count", "clock", "time", "hour"],
                 "answer": "C",
-                "explanation": "time意为\\",
+                "explanation": "time意为\"时间\"，it is time to do表⽰该做某事了",
             },
                 ],
                 12: [
@@ -2489,7 +2529,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We can _______ from 1 to 10 on our fingers.",
                 "options": ["count", "time", "add", "clock"],
                 "answer": "A",
-                "explanation": "count意为\\",
+                "explanation": "count意为\"数数\"",
             },
                 ],
                 13: [
@@ -2499,7 +2539,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A number with a dot, like 2.5, is called a _______.",
                 "options": ["bar graph", "fraction", "decimal", "data"],
                 "answer": "C",
-                "explanation": "decimal意为\\",
+                "explanation": "decimal意为\"⼩数\"",
             },
             {
                 "week": 13,
@@ -2507,7 +2547,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "0.5 is the same as the _______ 1/2.",
                 "options": ["fraction", "decimal", "bar", "graph"],
                 "answer": "A",
-                "explanation": "fraction意为\\",
+                "explanation": "fraction意为\"分数\"",
             },
             {
                 "week": 13,
@@ -2515,7 +2555,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We use a _______ with tall blocks to show how many apples we have.",
                 "options": ["fraction", "bar graph", "clock", "scale"],
                 "answer": "B",
-                "explanation": "bar graph意为\\",
+                "explanation": "bar graph意为\"条形图\"",
             },
                 ],
                 14: [
@@ -2525,7 +2565,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In the chart, the red _______ is taller than the blue one.",
                 "options": ["data", "bar", "decimal", "fraction"],
                 "answer": "B",
-                "explanation": "bar在图表中意为\\",
+                "explanation": "bar在图表中意为\"柱/条\"",
             },
             {
                 "week": 14,
@@ -2533,7 +2573,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The numbers and information we collect is called _______.",
                 "options": ["graph", "bar", "data", "scale"],
                 "answer": "C",
-                "explanation": "data意为\\",
+                "explanation": "data意为\"数据\"",
             },
             {
                 "week": 14,
@@ -2541,7 +2581,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A visual picture that shows math data is a _______.",
                 "options": ["count", "graph", "time", "hour"],
                 "answer": "B",
-                "explanation": "graph意为\\",
+                "explanation": "graph意为\"图表\"",
             },
                 ],
                 15: [
@@ -2551,6 +2591,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What kind of number is $3.50 with a dot in it?",
                 "options": ["A fraction B) A bar C) A decimal D) A graph"],
                 "answer": "C",
+                "explanation": "",
                 "passage": "In math class, we learn how to calculate money. Money usually has a dot, so it is a decimal number, like $3.50. If you buy a toy, you subtract the money from your wallet. If you get pocket money, you add it to your total.",
             },
                 ],
@@ -2563,7 +2604,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A simple plastic or wooden instrument that you blow into is a _______.",
                 "options": ["guitar", "drum", "recorder", "piano"],
                 "answer": "C",
-                "explanation": "recorder在⾳乐中意为\\",
+                "explanation": "recorder在⾳乐中意为\"竖笛/⽊笛\"",
             },
             {
                 "week": 2,
@@ -2571,7 +2612,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The part of the recorder that you put your lips on is the _______.",
                 "options": ["finger", "mouthpiece", "measure", "sequence"],
                 "answer": "B",
-                "explanation": "mouthpiece意为\\",
+                "explanation": "mouthpiece意为\"吹嘴/咬 嘴\"",
             },
             {
                 "week": 2,
@@ -2579,17 +2620,17 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "You use your _______ to cover the small holes on the recorder.",
                 "options": ["eye", "toe", "finger", "mouthpiece"],
                 "answer": "C",
-                "explanation": "finger意为\\",
+                "explanation": "finger意为\"⼿指\"",
             },
                 ],
                 3: [
             {
                 "week": 3,
                 "keyword": "count",
-                "question": "To stay on time, we must _______ \\",
+                "question": "To stay on time, we must _______ \"1, 2, 3, 4\" in our heads.",
                 "options": ["air", "count", "measure", "finger"],
                 "answer": "B",
-                "explanation": "count意为\\",
+                "explanation": "count意为\"数拍⼦\"",
             },
             {
                 "week": 3,
@@ -2597,7 +2638,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The steady pulse that you tap your foot to is the musical _______.",
                 "options": ["beat", "mouthpiece", "finger", "recorder"],
                 "answer": "A",
-                "explanation": "beat意为\\",
+                "explanation": "beat意为\"节拍\"",
             },
                 ],
                 4: [
@@ -2607,15 +2648,15 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To make a sound on the recorder, you must blow _______ into it.",
                 "options": ["tongue", "air", "finger", "pattern"],
                 "answer": "B",
-                "explanation": "air意为\\",
+                "explanation": "air意为\"空⽓/⽓息\"",
             },
             {
                 "week": 4,
                 "keyword": "tongue",
-                "question": "You use your _______ inside your mouth to start the \\",
+                "question": "You use your _______ inside your mouth to start the \"tu\" sound clearly.",
                 "options": ["air", "finger", "tongue", "measure"],
                 "answer": "C",
-                "explanation": "tongue意为\\",
+                "explanation": "tongue意为\"⾆头\"",
             },
             {
                 "week": 4,
@@ -2623,7 +2664,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using your tongue to start and stop the music notes clearly is called _______.",
                 "options": ["sequence", "memory", "articulation", "air"],
                 "answer": "C",
-                "explanation": "articulation在吹 奏中意为\\",
+                "explanation": "articulation在吹 奏中意为\"吐⾳/发⾳技巧\"",
             },
                 ],
                 5: [
@@ -2633,6 +2674,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What is it called when the same melody is repeated higher or lower?",
                 "options": ["A memory B) A sequence C) A pattern D) An articulation"],
                 "answer": "B",
+                "explanation": "",
                 "passage": "The song has a repeating rhythm pattern. When the same melody moves higher or lower, it is a sequence. If you practice it many times, you will know it by memory without looking at the book.",
             },
                 ],
@@ -2643,7 +2685,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The continuous, even heartbeat of a song is the _______.",
                 "options": ["leader", "steady pulse", "memory", "articulation"],
                 "answer": "B",
-                "explanation": "steady pulse意为\\",
+                "explanation": "steady pulse意为\"稳定的脉动/节 拍\"",
             },
             {
                 "week": 7,
@@ -2651,7 +2693,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using your eyes, hands, and breath together at the same time is good _______.",
                 "options": ["sequence", "coordination", "follower", "air"],
                 "answer": "B",
-                "explanation": "coordination意 为\\",
+                "explanation": "coordination意 为\"协调\"",
             },
             {
                 "week": 7,
@@ -2659,7 +2701,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Playing your note at the exact right moment shows good _______.",
                 "options": ["memory", "timing", "mouthpiece", "tongue"],
                 "answer": "B",
-                "explanation": "timing意为\\",
+                "explanation": "timing意为\"时机掌握/节奏感\"",
             },
                 ],
                 8: [
@@ -2669,7 +2711,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The friend you practice and play music with is your duet _______.",
                 "options": ["partner", "sequence", "timing", "memory"],
                 "answer": "A",
-                "explanation": "partner意为\\",
+                "explanation": "partner意为\"搭档\"",
             },
             {
                 "week": 8,
@@ -2677,7 +2719,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The person who listens and plays along with the leader is the _______.",
                 "options": ["partner", "leader", "follower", "steady pulse"],
                 "answer": "C",
-                "explanation": "follower意为\\",
+                "explanation": "follower意为\"跟随者\"",
             },
                 ],
                 9: [
@@ -2687,7 +2729,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When a song is too hard and fast, you should _______ first.",
                 "options": ["play fast", "practice slowly", "stop playing", "sing loud"],
                 "answer": "B",
-                "explanation": "practice slowly意为\\",
+                "explanation": "practice slowly意为\"放慢 练习\"",
             },
             {
                 "week": 9,
@@ -2695,7 +2737,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Playing all the exact right notes without any mistakes is playing with high _______.",
                 "options": ["accuracy", "leader", "sequence", "follower"],
                 "answer": "A",
-                "explanation": "accuracy意 为\\",
+                "explanation": "accuracy意 为\"准确性\"",
             },
                 ],
                 10: [
@@ -2705,6 +2747,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What does sitting up straight with a tall back show?",
                 "options": ["Good confidence B) Good stage presence C) Good posture D) Good follower"],
                 "answer": "C",
+                "explanation": "",
                 "passage": "On the stage, sitting up straight with a tall back is having good posture. When you smile and look proud to play your song, you show great confidence. Both of these help you have amazing stage presence when people watch you.",
             },
                 ],
@@ -2715,7 +2758,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To practice a song many times before the concert is to _______ it.",
                 "options": ["improve", "rehearse", "mood", "character"],
                 "answer": "B",
-                "explanation": "rehearse意为\\",
+                "explanation": "rehearse意为\"排练\"",
             },
             {
                 "week": 11,
@@ -2723,7 +2766,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you practice every day, your music skills will get better and _______.",
                 "options": ["improve", "rehearse", "accent", "support"],
                 "answer": "A",
-                "explanation": "improve意为\\",
+                "explanation": "improve意为\"提⾼/改善\"",
             },
             {
                 "week": 11,
@@ -2731,7 +2774,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Moving forward and getting better step by step is making _______.",
                 "options": ["progress", "mood", "character", "feedback"],
                 "answer": "A",
-                "explanation": "progress意为\\",
+                "explanation": "progress意为\"进步\"",
             },
                 ],
                 12: [
@@ -2741,7 +2784,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A piece of music that tells a tale without words is a _______.",
                 "options": ["musical story", "accent", "feedback", "reflection"],
                 "answer": "A",
-                "explanation": "musical story意为\\",
+                "explanation": "musical story意为\"⾳乐故 事\"",
             },
             {
                 "week": 12,
@@ -2749,7 +2792,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The happy or sad feeling that a song gives you is its _______.",
                 "options": ["accent", "emphasis", "mood", "progress"],
                 "answer": "C",
-                "explanation": "mood意为\\",
+                "explanation": "mood意为\"情绪/氛围\"",
             },
             {
                 "week": 12,
@@ -2757,7 +2800,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The main person or hero that the music is about is the _______.",
                 "options": ["accent", "character", "reflection", "feedback"],
                 "answer": "B",
-                "explanation": "character意为\\",
+                "explanation": "character意为\"⻆⾊\"",
             },
                 ],
                 13: [
@@ -2767,7 +2810,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A symbol in the sheet music that tells you to play loud or soft is an _______.",
                 "options": ["expression mark", "accent", "emphasis", "reflection"],
                 "answer": "A",
-                "explanation": "expression mark意为\\",
+                "explanation": "expression mark意为\"表情记号\"",
             },
             {
                 "week": 13,
@@ -2775,7 +2818,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A specific mark telling you to hit one note very hard is an _______.",
                 "options": ["reflection", "accent", "feedback", "character"],
                 "answer": "B",
-                "explanation": "accent在⾳乐中意为\\",
+                "explanation": "accent在⾳乐中意为\"重⾳记 号\"",
             },
             {
                 "week": 13,
@@ -2783,7 +2826,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Putting extra power or _______ on a note makes it stand out.",
                 "options": ["emphasis", "reflection", "feedback", "progress"],
                 "answer": "A",
-                "explanation": "emphasis意为\\",
+                "explanation": "emphasis意为\"强调/重读\"",
             },
                 ],
                 14: [
@@ -2793,7 +2836,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When no one plays too loud and you can hear everyone in the band, there is good _______.",
                 "options": ["accent", "ensemble balance", "reflection", "character"],
                 "answer": "B",
-                "explanation": "ensemble balance意为\\",
+                "explanation": "ensemble balance意为\"合奏平衡\"",
             },
             {
                 "week": 14,
@@ -2801,7 +2844,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Helping your partner stay on the beat is giving them musical _______.",
                 "options": ["support", "accent", "emphasis", "mood"],
                 "answer": "A",
-                "explanation": "support意为\\",
+                "explanation": "support意为\"⽀持\"",
             },
                 ],
                 15: [
@@ -2811,6 +2854,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What is it called when the teacher tells us how we can do better next time?",
                 "options": ["A performance B) A reflection C) A character D) Helpful feedback"],
                 "answer": "D",
+                "explanation": "",
                 "passage": "After the big concert performance on the stage, we sit down to think about what we did well. This thinking time is called reflection. Our teacher also tells us how we can do better next time, which is helpful feedback.",
             },
                 ],
@@ -2823,7 +2867,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In a team sport, players must work and play _______ to win.",
                 "options": ["together", "alone", "against", "cheer"],
                 "answer": "A",
-                "explanation": "together意为\\",
+                "explanation": "together意为\"⼀起\"",
             },
             {
                 "week": 2,
@@ -2831,7 +2875,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To shout loudly and happily to support your friends is to _______.",
                 "options": ["respect", "trust", "cheer", "complain"],
                 "answer": "C",
-                "explanation": "cheer意为\\",
+                "explanation": "cheer意为\"欢呼/加油\"",
             },
             {
                 "week": 2,
@@ -2839,7 +2883,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Being polite to the referee and playing fairly shows good _______.",
                 "options": ["hurdle", "respect", "cheer", "shot put"],
                 "answer": "B",
-                "explanation": "respect意为\\",
+                "explanation": "respect意为\"尊重\"",
             },
                 ],
                 3: [
@@ -2849,7 +2893,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Believing your partner will catch you when you fall backward is having _______ in them.",
                 "options": ["respect", "trust", "pacing", "sprinting"],
                 "answer": "B",
-                "explanation": "trust意为\\",
+                "explanation": "trust意为\"信任\"",
             },
             {
                 "week": 3,
@@ -2857,7 +2901,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The team captain who guides the group is the _______.",
                 "options": ["leader", "hurdle", "lap", "follower"],
                 "answer": "A",
-                "explanation": "leader意为\\",
+                "explanation": "leader意为\"领导者/队⻓\"",
             },
             {
                 "week": 3,
@@ -2865,7 +2909,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Helping your tired teammate finish the race is giving them _______.",
                 "options": ["pacing", "support", "medal", "discus"],
                 "answer": "B",
-                "explanation": "support意为\\",
+                "explanation": "support意为\"⽀持\"",
             },
                 ],
                 4: [
@@ -2875,7 +2919,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Working nicely in a group where everyone helps each other is good _______.",
                 "options": ["motivation", "teamwork", "hurdle", "bounce"],
                 "answer": "B",
-                "explanation": "teamwork意为\\",
+                "explanation": "teamwork意为\"团队 合作\"",
             },
             {
                 "week": 4,
@@ -2883,7 +2927,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Having high energy and a strong desire to try hard is your _______.",
                 "options": ["hurdle", "motivation", "bounce", "respect"],
                 "answer": "B",
-                "explanation": "motivation意为\\",
+                "explanation": "motivation意为\"动⼒/积极性\"",
             },
                 ],
                 5: [
@@ -2893,6 +2937,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What do we show when we help our friends in the game?",
                 "options": ["Motivation B) Communication C) Teamwork D) Respect"],
                 "answer": "C",
+                "explanation": "",
                 "passage": "To win the game, we need high motivation to try our best. We must use loud communication to talk to each other on the field. Helping your friends in the game shows excellent teamwork.",
             },
                 ],
@@ -2903,7 +2948,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A team that stays happy and positive has great team _______.",
                 "options": ["strategy", "spirit", "challenge", "hoop"],
                 "answer": "B",
-                "explanation": "spirit意为\\",
+                "explanation": "spirit意为\"精神/⼠⽓\"",
             },
             {
                 "week": 7,
@@ -2911,7 +2956,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A very hard task that tests how good you are is a _______.",
                 "options": ["hoop", "spirit", "challenge", "lap"],
                 "answer": "C",
-                "explanation": "challenge意为\\",
+                "explanation": "challenge意为\"挑战\"",
             },
             {
                 "week": 7,
@@ -2919,7 +2964,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A smart plan made by the coach to help the team win is a _______.",
                 "options": ["strategy", "hurdle", "bounce", "sprint"],
                 "answer": "A",
-                "explanation": "strategy意为\\",
+                "explanation": "strategy意为\"策略/战术\"",
             },
                 ],
                 8: [
@@ -2929,7 +2974,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In basketball, you try to throw the ball into the net or _______.",
                 "options": ["shot put", "hoop", "hurdle", "discus"],
                 "answer": "B",
-                "explanation": "hoop意为\\",
+                "explanation": "hoop意为\"篮筐/呼啦圈\"",
             },
             {
                 "week": 8,
@@ -2937,7 +2982,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A plastic fence you must jump over during a running race is a _______.",
                 "options": ["hoop", "pacing", "hurdle", "sprint"],
                 "answer": "C",
-                "explanation": "hurdle意为\\",
+                "explanation": "hurdle意为\"跨栏\"",
             },
             {
                 "week": 8,
@@ -2945,7 +2990,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Running as fast as your legs can go for a short distance is _______.",
                 "options": ["pacing", "sprinting", "bouncing", "walking"],
                 "answer": "B",
-                "explanation": "sprinting意为\\",
+                "explanation": "sprinting意为\"冲刺/短跑\"",
             },
                 ],
                 9: [
@@ -2955,7 +3000,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you throw a ball hard at the floor, it will _______ back up.",
                 "options": ["shot put", "hurdle", "bounce", "sprint"],
                 "answer": "C",
-                "explanation": "bounce意为\\",
+                "explanation": "bounce意为\"弹跳/拍球\"",
             },
                 ],
                 10: [
@@ -2965,6 +3010,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What sport uses a heavy metal ball?",
                 "options": ["Pacing B) Sprinting C) Bounce D) The shot put"],
                 "answer": "D",
+                "explanation": "",
                 "passage": "In track and field, we run a long race and use good pacing so we are not tired. Next, we bounce a basketball on the court. Finally, we go to the throwing field and push a heavy metal ball far for the shot put.",
             },
                 ],
@@ -2975,7 +3021,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To get better at any sport, you must _______ it every day.",
                 "options": ["practice", "sprint", "save", "bounce"],
                 "answer": "A",
-                "explanation": "practice意为\\",
+                "explanation": "practice意为\"练习\"",
             },
             {
                 "week": 11,
@@ -2983,7 +3029,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A heavy, flat, round plate that you spin and throw far is the _______.",
                 "options": ["discus", "shot put", "lap", "hoop"],
                 "answer": "A",
-                "explanation": "discus指⽥径项⽬\\",
+                "explanation": "discus指⽥径项⽬\"铁饼\"",
             },
                 ],
                 12: [
@@ -2993,7 +3039,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Running one complete circle around the big running track is one _______.",
                 "options": ["sprint", "team", "lap", "medal"],
                 "answer": "C",
-                "explanation": "lap意为\\",
+                "explanation": "lap意为\"⼀圈\"",
             },
             {
                 "week": 12,
@@ -3001,7 +3047,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Having high energy to play the whole game without stopping is having great _______.",
                 "options": ["save", "stamina", "lap", "strategy"],
                 "answer": "B",
-                "explanation": "stamina意为\\",
+                "explanation": "stamina意为\"体⼒/持久 ⼒\"",
             },
                 ],
                 13: [
@@ -3011,7 +3057,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A gold or silver prize you get around your neck for winning is a _______.",
                 "options": ["hurdle", "hoop", "save", "medal"],
                 "answer": "D",
-                "explanation": "medal意为\\",
+                "explanation": "medal意为\"奖牌\"",
             },
             {
                 "week": 13,
@@ -3019,7 +3065,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Doing slow stretches after a hard run to relax your body is the _______.",
                 "options": ["reaction time", "cool-down", "sprint", "pacing"],
                 "answer": "B",
-                "explanation": "cool-down意为\\",
+                "explanation": "cool-down意为\"整理运动/ 冷⾝活动\"",
             },
                 ],
                 14: [
@@ -3029,7 +3075,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The fastest runner proudly wore his first-place _______.",
                 "options": ["lap", "medal", "discus", "cool-down"],
                 "answer": "B",
-                "explanation": "巩固词汇：medal意为\\",
+                "explanation": "巩固词汇：medal意为\"奖牌\"",
             },
             {
                 "week": 14,
@@ -3037,7 +3083,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Always take 5 minutes for a slow _______ so your muscles do not hurt tomorrow.",
                 "options": ["sprint", "relay", "cool-down", "save"],
                 "answer": "C",
-                "explanation": "巩固词汇：cool- down意为\\",
+                "explanation": "巩固词汇：cool- down意为\"整理运动\"",
             },
                 ],
                 15: [
@@ -3047,6 +3093,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What is a race where team partners pass a stick called?",
                 "options": ["A sprint B) A relay race C) A reaction time D) A cool-down"],
                 "answer": "B",
+                "explanation": "",
                 "passage": "We line up for the team relay race. We wait for the whistle. Our reaction time is very fast, so we start quickly! We sprint as fast as we can and pass the stick to our partner to win the race!",
             },
                 ],
@@ -3059,7 +3106,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The name of the famous dark wizard from Harry Potter is _______.",
                 "options": ["Batman", "Voldemort", "Superman", "Spiderman"],
                 "answer": "B",
-                "explanation": "Voldemort意为\\",
+                "explanation": "Voldemort意为\"伏地魔\"",
             },
             {
                 "week": 2,
@@ -3067,7 +3114,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The bad guy or evil character in a play is called the _______.",
                 "options": ["hero", "audience", "villain", "isolation"],
                 "answer": "C",
-                "explanation": "villain意为\\",
+                "explanation": "villain意为\"反派\"",
             },
             {
                 "week": 2,
@@ -3075,7 +3122,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A magical stick used to cast a spell is a _______.",
                 "options": ["sword", "wand", "stare", "diagonal"],
                 "answer": "B",
-                "explanation": "wand意为\\",
+                "explanation": "wand意为\"魔杖\"",
             },
                 ],
                 3: [
@@ -3085,7 +3132,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To hold your magic wand safely and strongly, you must _______.",
                 "options": ["run in line", "support wrist", "stare", "battle"],
                 "answer": "B",
-                "explanation": "support wrist意为\\",
+                "explanation": "support wrist意为\"⽀撑⼿腕\"",
             },
             {
                 "week": 3,
@@ -3093,7 +3140,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Moving only one part of your body (like just one arm) is called _______.",
                 "options": ["isolation", "run", "stare", "Together"],
                 "answer": "A",
-                "explanation": "isolation在舞蹈中意为\\",
+                "explanation": "isolation在舞蹈中意为\"孤⽴动作/⾝体 分离控制\"",
             },
             {
                 "week": 3,
@@ -3101,7 +3148,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Looking at the bad guy for a long time without blinking is to _______ at him.",
                 "options": ["smile", "run", "stare", "battle"],
                 "answer": "C",
-                "explanation": "stare意为\\",
+                "explanation": "stare意为\"凝视/盯着看\"",
             },
                 ],
                 4: [
@@ -3111,7 +3158,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Actors stand in straight _______ on the stage to look neat.",
                 "options": ["Lines", "battles", "wands", "villains"],
                 "answer": "A",
-                "explanation": "Lines在此意为\\",
+                "explanation": "Lines在此意为\"队形/队列线\"",
             },
             {
                 "week": 4,
@@ -3119,7 +3166,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When all the actors jump at the exact same time, they move _______.",
                 "options": ["isolation", "diagonal", "Together", "stare"],
                 "answer": "C",
-                "explanation": "Together意为\\",
+                "explanation": "Together意为\"⼀起/同步\"",
             },
             {
                 "week": 4,
@@ -3127,7 +3174,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To stay on the beat, dancers must _______ to the music.",
                 "options": ["Count and move", "run in line", "stare", "support wrist"],
                 "answer": "A",
-                "explanation": "Count and move意为\\",
+                "explanation": "Count and move意为\"数拍 ⼦移动\"",
             },
                 ],
                 5: [
@@ -3137,6 +3184,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "How do the wizards cross the stage?",
                 "options": ["They fly B) They sleep C) They run in line D) They isolation"],
                 "answer": "C",
+                "explanation": "",
                 "passage": "The wizards hold their magic wand up high. When the music starts, they do not move alone; they move altogether as a group. Then, they safely run in line across the stage to get to the other side.",
             },
                 ],
@@ -3147,7 +3195,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A path that goes from the front-left corner to the back-right corner of the stage is _______.",
                 "options": ["a circle", "diagonal", "together", "isolation"],
                 "answer": "B",
-                "explanation": "diagonal意 为\\",
+                "explanation": "diagonal意 为\"对⻆线的\"",
             },
             {
                 "week": 7,
@@ -3155,7 +3203,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To move fast on your feet across the stage is to _______.",
                 "options": ["sit", "sleep", "stare", "run"],
                 "answer": "D",
-                "explanation": "run意为\\",
+                "explanation": "run意为\"跑\"",
             },
                 ],
                 9: [
@@ -3165,7 +3213,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Running across the stage without making loud stomping sounds is a _______.",
                 "options": ["Quiet run", "heavy run", "diagonal", "battle"],
                 "answer": "A",
-                "explanation": "Quiet run意为\\",
+                "explanation": "Quiet run意为\"安静地 跑\"",
             },
             {
                 "week": 9,
@@ -3173,7 +3221,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Running gracefully without bouncing up and down is a _______.",
                 "options": ["jump", "smooth run", "stare", "wand"],
                 "answer": "B",
-                "explanation": "smooth run意为\\",
+                "explanation": "smooth run意为\"平稳地跑\"",
             },
             {
                 "week": 9,
@@ -3181,7 +3229,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To lock your eyes on the villain fiercely is to _______.",
                 "options": ["smile", "sleep", "stare", "isolation"],
                 "answer": "C",
-                "explanation": "stare意为\\",
+                "explanation": "stare意为\"凝视\"",
             },
                 ],
                 10: [
@@ -3191,6 +3239,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What does the hero do so no one hears his footsteps?",
                 "options": ["He stares B) He sleeps C) He yells D) A quiet, smooth run"],
                 "answer": "D",
+                "explanation": "",
                 "passage": "The hero sees the bad guy. He does a Quiet, smooth run across the stage so no one hears his footsteps. When he stops, he begins to stare deep into the bad guy's eyes without blinking.",
             },
                 ],
@@ -3201,7 +3250,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Moving very fast and quick like the wind means you are _______.",
                 "options": ["slow", "Quiet", "Swift", "Together"],
                 "answer": "C",
-                "explanation": "Swift意为\\",
+                "explanation": "Swift意为\"迅速的/敏捷的\"",
             },
             {
                 "week": 12,
@@ -3209,7 +3258,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A magic move that is full of strong energy is very _______.",
                 "options": ["weak", "powerful", "diagonal", "quiet"],
                 "answer": "B",
-                "explanation": "powerful意为\\",
+                "explanation": "powerful意为\"充满⼒量的/强有⼒的\"",
             },
                 ],
                 15: [
@@ -3219,6 +3268,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "How does the hero dodge the attack?",
                 "options": ["With a slow movement B) With a Swift movement C) By sleeping D) By a quiet stare"],
                 "answer": "B",
+                "explanation": "",
                 "passage": "It is time for the final magic battle on stage! The hero dodges the attack with a fast and Swift movement. Then, he uses a powerful spell to defeat the dark wizard. The audience claps loudly!",
             },
                 ],
@@ -3231,7 +3281,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Place your hand on your chest to feel your heart _______.",
                 "options": ["beat", "organ", "force", "attract"],
                 "answer": "A",
-                "explanation": "beat意为\\",
+                "explanation": "beat意为\"跳动/⼼跳\"",
             },
             {
                 "week": 2,
@@ -3239,7 +3289,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The small tubes that carry blood around your body are _______.",
                 "options": ["organs", "blood vessels", "lungs", "intestines"],
                 "answer": "B",
-                "explanation": "blood vessels意为\\",
+                "explanation": "blood vessels意为\"⾎管\"",
             },
             {
                 "week": 2,
@@ -3247,7 +3297,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The heart is a very important _______ inside your body.",
                 "options": ["beat", "fossil", "organ", "pole"],
                 "answer": "C",
-                "explanation": "organ意为\\",
+                "explanation": "organ意为\"器官\"",
             },
                 ],
                 3: [
@@ -3257,7 +3307,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The food you eat goes down into your _______ to be digested.",
                 "options": ["heart", "lungs", "stomach", "kidney"],
                 "answer": "C",
-                "explanation": "stomach意为\\",
+                "explanation": "stomach意为\"胃\"",
             },
             {
                 "week": 3,
@@ -3265,7 +3315,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "After the stomach, food travels through the long, curvy _______.",
                 "options": ["brain", "intestines", "organ", "blood vessels"],
                 "answer": "B",
-                "explanation": "intestines意为\\",
+                "explanation": "intestines意为\"肠道\"",
             },
                 ],
                 4: [
@@ -3275,7 +3325,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The organ inside your head that helps you think is the _______.",
                 "options": ["heart", "stomach", "kidney", "brain"],
                 "answer": "D",
-                "explanation": "brain意为\\",
+                "explanation": "brain意为\"⼤脑\"",
             },
             {
                 "week": 4,
@@ -3283,7 +3333,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The _______ pumps blood to all parts of your body.",
                 "options": ["lungs", "heart", "brain", "stomach"],
                 "answer": "B",
-                "explanation": "heart意为\\",
+                "explanation": "heart意为\"⼼脏\"",
             },
             {
                 "week": 4,
@@ -3291,7 +3341,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We use our two _______ to breathe in oxygen from the air.",
                 "options": ["kidneys", "intestines", "lungs", "blood vessels"],
                 "answer": "C",
-                "explanation": "lungs意为\\",
+                "explanation": "lungs意为\"肺\"",
             },
                 ],
                 5: [
@@ -3301,6 +3351,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Which animal group has dry scales and lays eggs?",
                 "options": ["Mammals B) Insects C) Reptiles D) Birds"],
                 "answer": "C",
+                "explanation": "",
                 "passage": "There are many types of animals. Mammals have hair or fur and feed their babies milk, like dogs and humans. Reptiles have dry scales and lay eggs, like snakes. Insects are tiny bugs with six legs, like ants.",
             },
                 ],
@@ -3311,7 +3362,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A frog can live both in water and on land, so it is an _______.",
                 "options": ["insect", "amphibian", "producer", "fossil"],
                 "answer": "B",
-                "explanation": "amphibian意为\\",
+                "explanation": "amphibian意为\"两栖动物\"",
             },
             {
                 "week": 7,
@@ -3319,7 +3370,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A _______ eats leaves and later turns into a beautiful butterfly.",
                 "options": ["amphibian", "fossil", "caterpillar", "magnet"],
                 "answer": "C",
-                "explanation": "caterpillar意为\\",
+                "explanation": "caterpillar意为\"⽑⽑⾍\"",
             },
             {
                 "week": 7,
@@ -3327,7 +3378,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The changes an animal goes through from birth to adult is its _______.",
                 "options": ["force", "life cycle", "food chain", "unit"],
                 "answer": "B",
-                "explanation": "life cycle意为\\",
+                "explanation": "life cycle意为\"⽣命周期\"",
             },
                 ],
                 8: [
@@ -3337,7 +3388,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A _______ shows how animals eat plants and other animals for energy.",
                 "options": ["life cycle", "food chain", "unit", "force"],
                 "answer": "B",
-                "explanation": "food chain意为\\",
+                "explanation": "food chain意为\"⻝物链\"",
             },
             {
                 "week": 8,
@@ -3345,7 +3396,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A plant makes its own food from sunlight, so it is a _______.",
                 "options": ["consumer", "fossil", "producer", "amphibian"],
                 "answer": "C",
-                "explanation": "producer意为\\",
+                "explanation": "producer意为\"⽣产者\"",
             },
             {
                 "week": 8,
@@ -3353,7 +3404,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "An animal that eats plants or other animals is called a _______.",
                 "options": ["consumer", "producer", "magnet", "force"],
                 "answer": "A",
-                "explanation": "consumer意为\\",
+                "explanation": "consumer意为\"消费者\"",
             },
                 ],
                 9: [
@@ -3363,7 +3414,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A very old bone or footprint of a dinosaur left in a rock is a _______.",
                 "options": ["fossil", "force", "unit", "pole"],
                 "answer": "A",
-                "explanation": "fossil意为\\",
+                "explanation": "fossil意为\"化⽯\"",
             },
             {
                 "week": 9,
@@ -3371,7 +3422,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A push or a pull on an object is called a _______.",
                 "options": ["fossil", "force", "weight", "magnet"],
                 "answer": "B",
-                "explanation": "force意为\\",
+                "explanation": "force意为\"⼒\"",
             },
             {
                 "week": 9,
@@ -3379,7 +3430,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A piece of metal that can pull iron objects towards it is a _______.",
                 "options": ["unit", "pole", "magnet", "earth"],
                 "answer": "C",
-                "explanation": "magnet意为\\",
+                "explanation": "magnet意为\"磁铁\"",
             },
                 ],
                 10: [
@@ -3389,6 +3440,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What is the invisible force that pulls things down to the earth?",
                 "options": ["Weight B) Unit C) Gravity D) Fossil"],
                 "answer": "C",
+                "explanation": "",
                 "passage": "When you drop an apple, it falls down because of an invisible force called gravity. Gravity pulls things toward the earth. This pull gives objects their weight. We use a standard unit, like kilograms, to measure how heavy it is.",
             },
                 ],
@@ -3399,7 +3451,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Ice has very low friction, making it very _______ to walk on.",
                 "options": ["slippery", "sticky", "hot", "rough"],
                 "answer": "A",
-                "explanation": "slippery意为\\",
+                "explanation": "slippery意为\"滑的\"",
             },
                 ],
                 12: [
@@ -3409,7 +3461,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you put a North and a South magnet together, they will pull or _______ each other.",
                 "options": ["attract", "repel", "slip", "force"],
                 "answer": "A",
-                "explanation": "attract意为\\",
+                "explanation": "attract意为\"吸引\"",
             },
             {
                 "week": 12,
@@ -3417,7 +3469,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you put two North magnets together, they will push away or _______ each other.",
                 "options": ["attract", "grip", "repel", "weigh"],
                 "answer": "C",
-                "explanation": "repel意为\\",
+                "explanation": "repel意为\"排斥\"",
             },
             {
                 "week": 12,
@@ -3425,7 +3477,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Every magnet has two ends: a North _______ and a South _______.",
                 "options": ["earth", "pole", "unit", "grip"],
                 "answer": "B",
-                "explanation": "pole意为\\",
+                "explanation": "pole意为\"磁极/极点\"",
             },
                 ],
                 13: [
@@ -3435,7 +3487,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The planet we live on is called the _______.",
                 "options": ["sun", "moon", "earth", "pole"],
                 "answer": "C",
-                "explanation": "earth意为\\",
+                "explanation": "earth意为\"地球\"",
             },
             {
                 "week": 13,
@@ -3443,7 +3495,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The _______ orbits around the Earth and shines at night.",
                 "options": ["sun", "moon", "earth", "gravity"],
                 "answer": "B",
-                "explanation": "moon意为\\",
+                "explanation": "moon意为\"⽉亮\"",
             },
             {
                 "week": 13,
@@ -3451,7 +3503,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The big hot star in the center of our solar system is the _______.",
                 "options": ["earth", "moon", "sun", "pole"],
                 "answer": "C",
-                "explanation": "sun意为\\",
+                "explanation": "sun意为\"太阳\"",
             },
                 ],
                 14: [
@@ -3461,7 +3513,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A heavy metal that magnets can easily attract is _______.",
                 "options": ["iron", "copper", "silver", "earth"],
                 "answer": "A",
-                "explanation": "iron意为\\",
+                "explanation": "iron意为\"铁\"",
             },
             {
                 "week": 14,
@@ -3469,7 +3521,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "An orange-brown metal used inside electrical wires is _______.",
                 "options": ["copper", "iron", "steel", "moon"],
                 "answer": "A",
-                "explanation": "copper意为\\",
+                "explanation": "copper意为\"铜\"",
             },
                 ],
                 15: [
@@ -3479,6 +3531,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Which light metal is often used to make soda cans?",
                 "options": ["Gold B) Silver C) Iron D) Aluminum"],
                 "answer": "D",
+                "explanation": "",
                 "passage": "Metals are found in the earth. Gold is a very expensive yellow metal. Silver is a shiny grey metal. Both are used for jewelry. Soda cans are made of aluminum, which is a very light and cheap metal.",
             },
                 ],
@@ -3491,7 +3544,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Something that is very, very old from a long time ago is _______.",
                 "options": ["new", "modern", "ancient", "fresh"],
                 "answer": "C",
-                "explanation": "ancient意为\\",
+                "explanation": "ancient意为\"古⽼的\"",
             },
             {
                 "week": 2,
@@ -3499,7 +3552,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A dark, natural hole in a mountain where early humans lived is a _______.",
                 "options": ["cave", "paint", "outline", "symbol"],
                 "answer": "A",
-                "explanation": "cave意为\\",
+                "explanation": "cave意为\"洞⽳\"",
             },
             {
                 "week": 2,
@@ -3507,7 +3560,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Early humans used colored dirt and water to _______ pictures of animals on rocks.",
                 "options": ["outline", "paint", "profile", "fold"],
                 "answer": "B",
-                "explanation": "paint意为\\",
+                "explanation": "paint意为\"画/涂颜料\"",
             },
                 ],
                 3: [
@@ -3517,7 +3570,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A picture or shape that stands for a word or idea is a _______.",
                 "options": ["symbol", "outline", "toucan", "cave"],
                 "answer": "A",
-                "explanation": "symbol意为\\",
+                "explanation": "symbol意为\"符号/象征\"",
             },
             {
                 "week": 3,
@@ -3525,7 +3578,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The line drawn only around the outside edge of a shape is the _______.",
                 "options": ["paint", "symbol", "outline", "profile"],
                 "answer": "C",
-                "explanation": "outline意为\\",
+                "explanation": "outline意为\"轮廓/外形线\"",
             },
             {
                 "week": 3,
@@ -3533,7 +3586,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A tropical bird with a very large, colorful beak is a _______.",
                 "options": ["toucan", "cave", "symbol", "profile"],
                 "answer": "A",
-                "explanation": "toucan意为\\",
+                "explanation": "toucan意为\"巨嘴⻦\"",
             },
                 ],
                 4: [
@@ -3543,7 +3596,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Art from the old country of Egypt with pyramids is ancient _______ art.",
                 "options": ["toucan", "egyptian", "modern", "chinese"],
                 "answer": "B",
-                "explanation": "egyptian意为\\",
+                "explanation": "egyptian意为\"埃及的/古埃及 的\"",
             },
             {
                 "week": 4,
@@ -3551,7 +3604,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A drawing of a person's face seen from the side view is a _______.",
                 "options": ["profile", "hieroglyph", "cave", "symbol"],
                 "answer": "A",
-                "explanation": "profile在艺术中指\\",
+                "explanation": "profile在艺术中指\"侧⾯像\"",
             },
             {
                 "week": 4,
@@ -3559,7 +3612,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A picture-word symbol used in ancient Egypt for writing is a _______.",
                 "options": ["profile", "hieroglyph", "outline", "toucan"],
                 "answer": "B",
-                "explanation": "hieroglyph意为\\",
+                "explanation": "hieroglyph意为\"象形⽂字\"",
             },
                 ],
                 5: [
@@ -3569,6 +3622,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What is a painting of a face from the side view called?",
                 "options": ["A historical B) A style C) A profile D) A cave"],
                 "answer": "C",
+                "explanation": "",
                 "passage": "We look at historical art from the past. The Egyptians had a special painting style. They always painted a person's face from the side, which is called a profile.",
             },
                 ],
@@ -3579,7 +3633,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The shape of tall city buildings against the sky is a _______.",
                 "options": ["skyline", "composition", "splatter painting", "cave"],
                 "answer": "A",
-                "explanation": "skyline意为\\",
+                "explanation": "skyline意为\"天际线/城市轮廓\"",
             },
             {
                 "week": 7,
@@ -3587,7 +3641,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "How you carefully arrange the parts of your picture on the page is your _______.",
                 "options": ["composition", "skyline", "hieroglyph", "paint"],
                 "answer": "A",
-                "explanation": "composition 意为\\",
+                "explanation": "composition 意为\"构图/布局\"",
             },
                 ],
                 8: [
@@ -3597,7 +3651,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A beautiful bunch of flowers gathered together is a _______.",
                 "options": ["bouquet", "harmony", "mosaic", "skyline"],
                 "answer": "A",
-                "explanation": "bouquet意为\\",
+                "explanation": "bouquet意为\"花束\"",
             },
             {
                 "week": 8,
@@ -3605,7 +3659,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When colors look peaceful and balanced together in a painting, they show _______.",
                 "options": ["folding", "splatter", "harmony", "outline"],
                 "answer": "C",
-                "explanation": "harmony意 为\\",
+                "explanation": "harmony意 为\"和谐/协调\"",
             },
             {
                 "week": 8,
@@ -3613,7 +3667,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Bending paper neatly to make a 3D shape is paper _______.",
                 "options": ["folding", "painting", "tracing", "splatter"],
                 "answer": "A",
-                "explanation": "folding意为\\",
+                "explanation": "folding意为\"折叠\"",
             },
                 ],
                 9: [
@@ -3623,7 +3677,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A picture made by gluing many small square pieces of colored paper is a _______.",
                 "options": ["mosaic", "bouquet", "skyline", "splatter painting"],
                 "answer": "A",
-                "explanation": "mosaic 意为\\",
+                "explanation": "mosaic 意为\"⻢赛克/镶嵌画\"",
             },
             {
                 "week": 9,
@@ -3631,7 +3685,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "I painted a colorful _______ of roses for my mother.",
                 "options": ["harmony", "bouquet", "folding", "outline"],
                 "answer": "B",
-                "explanation": "巩固词汇：bouquet意为\\",
+                "explanation": "巩固词汇：bouquet意为\"花束\"",
             },
                 ],
                 10: [
@@ -3641,6 +3695,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What do we make by gluing small colored squares together?",
                 "options": ["A bouquet B) Paper folding C) A mosaic D) A skyline"],
                 "answer": "C",
+                "explanation": "",
                 "passage": "We are making art for Mother's Day. First, we do paper folding to make 3D flowers for a beautiful bouquet. Then, we glue small colored squares on the vase to make a bright mosaic.",
             },
                 ],
@@ -3651,7 +3706,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A simple drawing on a piece of paper is 2D and completely _______.",
                 "options": ["three- dimensional", "structure", "flat", "folding"],
                 "answer": "C",
-                "explanation": "flat意为\\",
+                "explanation": "flat意为\"平⾯的/平坦的\"",
             },
             {
                 "week": 11,
@@ -3659,7 +3714,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Something that is built, like a bridge or a tower, is a _______.",
                 "options": ["structure", "flat", "trace", "texture"],
                 "answer": "A",
-                "explanation": "structure意为\\",
+                "explanation": "structure意为\"结构/建筑物\"",
             },
                 ],
                 12: [
@@ -3685,7 +3740,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To copy a shape by drawing over its lines on thin paper is to _______ it.",
                 "options": ["glue", "fold", "trace", "weave"],
                 "answer": "C",
-                "explanation": "trace意为\\",
+                "explanation": "trace意为\"描摹/拓写\"",
             },
                 ],
                 13: [
@@ -3695,7 +3750,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A wooden frame or machine used to hold threads for weaving is a _______.",
                 "options": ["mosaic", "structure", "loom", "bouquet"],
                 "answer": "C",
-                "explanation": "loom意为\\",
+                "explanation": "loom意为\"织布机\"",
             },
             {
                 "week": 13,
@@ -3703,7 +3758,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "How rough or soft the artwork feels when you touch it is its _______.",
                 "options": ["structure", "texture", "trace", "skyline"],
                 "answer": "B",
-                "explanation": "texture意为\\",
+                "explanation": "texture意为\"质感/纹理\"",
             },
                 ],
                 14: [
@@ -3729,7 +3784,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To stick two pieces of paper together permanently, you use sticky _______.",
                 "options": ["loom", "texture", "glue", "trace"],
                 "answer": "C",
-                "explanation": "glue意为\\",
+                "explanation": "glue意为\"胶⽔/粘贴\"",
             },
                 ],
                 15: [
@@ -3739,6 +3794,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What tool do we use to hold the strings tight?",
                 "options": ["A texture B) A loom C) A weaving D) Glue"],
                 "answer": "B",
+                "explanation": "",
                 "passage": "We use a wooden frame called a loom to hold the strings tight. We put colored yarn over and under to do paper and yarn weaving. The thick yarn makes the cloth feel bumpy, which gives it a great texture.",
             },
                 ],
@@ -3753,7 +3809,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A computer grid with rows and columns used to type numbers is a _______.",
                 "options": ["Protocol", "Spreadsheet", "Switch", "Router"],
                 "answer": "B",
-                "explanation": "Spreadsheet意为\\",
+                "explanation": "Spreadsheet意为\"电 ⼦表格\"",
             },
             {
                 "week": 3,
@@ -3761,7 +3817,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Checking if the typed numbers follow the correct rules is _______.",
                 "options": ["Data Validation", "Filter", "Sort", "Format"],
                 "answer": "A",
-                "explanation": "Data Validation意为\\",
+                "explanation": "Data Validation意为\"数据验 证\"",
             },
             {
                 "week": 3,
@@ -3769,7 +3825,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To arrange a list of names into A-Z alphabetical order is to _______ them.",
                 "options": ["Sort", "Filter", "Switch", "Format"],
                 "answer": "A",
-                "explanation": "Sort意为\\",
+                "explanation": "Sort意为\"排序\"",
             },
                 ],
                 4: [
@@ -3779,7 +3835,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A math equation you type into a cell, like =A1+B1, is a _______.",
                 "options": ["Formula", "Filter", "Format", "Switch"],
                 "answer": "A",
-                "explanation": "Formula意为\\",
+                "explanation": "Formula意为\"公式\"",
             },
             {
                 "week": 4,
@@ -3787,7 +3843,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A built-in calculation word in Excel, like SUM(), is called a _______.",
                 "options": ["Function", "Topology", "Network", "Bandwidth"],
                 "answer": "A",
-                "explanation": "Function意为\\",
+                "explanation": "Function意为\"函数\"",
             },
             {
                 "week": 4,
@@ -3795,7 +3851,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To find out how many cells have numbers in them, we use the _______ function.",
                 "options": ["AVERAGE", "Sort", "COUNT", "Filter"],
                 "answer": "C",
-                "explanation": "COUNT意为\\",
+                "explanation": "COUNT意为\"计数函数\"",
             },
             {
                 "week": 4,
@@ -3803,7 +3859,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To calculate the middle or mean score of the class, we use the _______ function.",
                 "options": ["COUNT", "AVERAGE", "Sort", "Filter"],
                 "answer": "B",
-                "explanation": "AVERAGE意为\\",
+                "explanation": "AVERAGE意为\"求平均 值函数\"",
             },
                 ],
                 5: [
@@ -3824,7 +3880,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The main problem you want to answer in your science study is your _______.",
                 "options": ["Research Question", "Sample Size", "Protocol", "Switch"],
                 "answer": "A",
-                "explanation": "Research Question意为\\",
+                "explanation": "Research Question意为\"研究问题\"",
             },
             {
                 "week": 7,
@@ -3832,7 +3888,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The total number of people you ask in a survey is the _______.",
                 "options": ["Bar Chart", "Router", "Hardware", "Sample Size"],
                 "answer": "D",
-                "explanation": "Sample Size意为\\",
+                "explanation": "Sample Size意为\"样本⼤⼩/样本 量\"",
             },
             {
                 "week": 7,
@@ -3840,7 +3896,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A visual graph using tall rectangular blocks to show data is a _______.",
                 "options": ["Pie Chart", "Bar Chart", "Protocol", "Switch"],
                 "answer": "B",
-                "explanation": "Bar Chart意为\\",
+                "explanation": "Bar Chart意为\"条形图\"",
             },
             {
                 "week": 7,
@@ -3848,7 +3904,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A circular graph divided into slices like a pizza is a _______.",
                 "options": ["Pie Chart", "Bar Chart", "Server", "Client"],
                 "answer": "A",
-                "explanation": "Pie Chart意为\\",
+                "explanation": "Pie Chart意为\"饼状图\"",
             },
                 ],
                 8: [
@@ -3858,7 +3914,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A graph that connects data dots with straight lines to show changes over time is a _______.",
                 "options": ["Line Chart", "Bar Chart", "Server", "Client"],
                 "answer": "A",
-                "explanation": "Line Chart意 为\\",
+                "explanation": "Line Chart意 为\"折线图\"",
             },
             {
                 "week": 8,
@@ -3866,7 +3922,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The final decision or answer you reach at the end of your project is your _______.",
                 "options": ["Formula", "Format", "Conclusion", "Switch"],
                 "answer": "C",
-                "explanation": "Conclusion意 为\\",
+                "explanation": "Conclusion意 为\"结论\"",
             },
             {
                 "week": 8,
@@ -3874,7 +3930,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Standing up to show your slides and explain your project to the class is a _______.",
                 "options": ["Presentation", "Hardware", "Protocol", "Network"],
                 "answer": "A",
-                "explanation": "Presentation意为\\",
+                "explanation": "Presentation意为\"演⽰/汇报展⽰\"",
             },
             {
                 "week": 8,
@@ -3882,7 +3938,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The important facts and results you discover during your research are your _______.",
                 "options": ["Hardware", "LAN", "Findings", "Protocol"],
                 "answer": "C",
-                "explanation": "Findings意为\\",
+                "explanation": "Findings意为\"发 现/研究结果\"",
             },
                 ],
                 9: [
@@ -3892,7 +3948,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A small network inside one building, like our school, is called a _______.",
                 "options": ["WAN", "LAN", "PAN", "Formula"],
                 "answer": "B",
-                "explanation": "LAN代表Local Area Network\\",
+                "explanation": "LAN代表Local Area Network\"局域⽹\"",
             },
             {
                 "week": 9,
@@ -3900,7 +3956,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A very large network that connects computers across different cities or countries is a _______.",
                 "options": ["LAN", "WAN", "PAN", "Server"],
                 "answer": "B",
-                "explanation": "WAN代表Wide Area Network\\",
+                "explanation": "WAN代表Wide Area Network\"⼴域⽹\"",
             },
             {
                 "week": 9,
@@ -3908,7 +3964,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A tiny personal network connecting your phone to your Bluetooth headphones is a _______.",
                 "options": ["WAN", "LAN", "PAN", "Client"],
                 "answer": "C",
-                "explanation": "PAN代表Personal Area Network\\",
+                "explanation": "PAN代表Personal Area Network\"个⼈局域⽹\"",
             },
                 ],
                 10: [
@@ -3929,7 +3985,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A unique string of numbers that identifies a computer on a network is its _______.",
                 "options": ["Protocol", "Topology", "Format", "IP Address"],
                 "answer": "D",
-                "explanation": "IP Address意 为\\",
+                "explanation": "IP Address意 为\"IP地址\"",
             },
             {
                 "week": 11,
@@ -3937,7 +3993,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A set of rules computers must follow to talk to each other is a _______.",
                 "options": ["Hardware", "Protocol", "Switch", "Router"],
                 "answer": "B",
-                "explanation": "Protocol意为\\",
+                "explanation": "Protocol意为\"协议\"",
             },
             {
                 "week": 11,
@@ -3945,7 +4001,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "An IP address used only inside a home or school network, not on the public internet, is a _______.",
                 "options": ["Public IP", "Private IP", "Topology", "Format"],
                 "answer": "B",
-                "explanation": "Private IP意为\\",
+                "explanation": "Private IP意为\"私有IP/内⽹IP\"",
             },
             {
                 "week": 11,
@@ -3953,7 +4009,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The way text or data is arranged and styled is its _______.",
                 "options": ["Format", "Protocol", "Switch", "Router"],
                 "answer": "A",
-                "explanation": "Format意为\\",
+                "explanation": "Format意为\"格式/排版\"",
             },
                 ],
                 12: [
@@ -3963,7 +4019,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The main IP address your whole house uses to connect to the outside internet is your _______.",
                 "options": ["Private IP", "Public IP", "Switch", "Hardware"],
                 "answer": "B",
-                "explanation": "Public IP意为\\",
+                "explanation": "Public IP意为\"公⽹IP\"",
             },
             {
                 "week": 12,
@@ -3971,7 +4027,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The basic protocol used to load standard web pages without extra security is _______.",
                 "options": ["HTTPS", "HTTP", "TCP", "Bandwidth"],
                 "answer": "B",
-                "explanation": "HTTP意为\\",
+                "explanation": "HTTP意为\"超⽂本传 输协议\"",
             },
             {
                 "week": 12,
@@ -3979,7 +4035,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When a website is safe and secure for passwords, the web address starts with _______.",
                 "options": ["HTTP", "HTTPS", "LAN", "WAN"],
                 "answer": "B",
-                "explanation": "HTTPS意为\\",
+                "explanation": "HTTPS意为\"安全的超⽂本 传输协议\"",
             },
             {
                 "week": 12,
@@ -3987,7 +4043,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A core protocol that ensures data packets are reliably delivered is _______.",
                 "options": ["TCP", "LAN", "WAN", "Hardware"],
                 "answer": "A",
-                "explanation": "TCP代表\\",
+                "explanation": "TCP代表\"传输控制协议\"",
             },
                 ],
                 13: [
@@ -3997,7 +4053,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The physical parts of a computer that you can touch, like the keyboard, are _______.",
                 "options": ["Software", "Hardware", "Format", "Protocol"],
                 "answer": "B",
-                "explanation": "Hardware意 为\\",
+                "explanation": "Hardware意 为\"硬件\"",
             },
             {
                 "week": 13,
@@ -4005,7 +4061,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A device in a LAN that connects multiple computers together using cables is a _______.",
                 "options": ["Switch", "Format", "Presentation", "Filter"],
                 "answer": "A",
-                "explanation": "Switch意为\\",
+                "explanation": "Switch意为\"交 换机\"",
             },
             {
                 "week": 13,
@@ -4013,7 +4069,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The standard wired cable used to plug a computer into a local network is an _______ cable.",
                 "options": ["Ethernet", "Fiber Optic", "WiFi", "Topology"],
                 "answer": "A",
-                "explanation": "Ethernet 意为\\",
+                "explanation": "Ethernet 意为\"以太⽹/⽹线\"",
             },
                 ],
                 14: [
@@ -4023,7 +4079,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A network shape where all computers connect to one central switch is a _______.",
                 "options": ["Line Chart", "Bar Chart", "Star Topology", "Pie Chart"],
                 "answer": "C",
-                "explanation": "Star Topology意为\\",
+                "explanation": "Star Topology意为\"星型拓扑结构\"",
             },
             {
                 "week": 14,
@@ -4031,7 +4087,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A technology that lets devices connect to the internet without using wires is _______.",
                 "options": ["Ethernet", "WiFi", "Fiber Optic", "Switch"],
                 "answer": "B",
-                "explanation": "WiFi意为\\",
+                "explanation": "WiFi意为\"⽆线局 域⽹技术\"",
             },
             {
                 "week": 14,
@@ -4039,7 +4095,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The maximum amount of data that can move through a network connection at one time is its _______.",
                 "options": ["Topology", "Hardware", "Security", "Bandwidth"],
                 "answer": "D",
-                "explanation": "Bandwidth意为\\",
+                "explanation": "Bandwidth意为\"带宽\"",
             },
                 ],
                 15: [
@@ -4062,7 +4118,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The person you pretend to be in a play is your _______.",
                 "options": ["prop", "stage", "character", "scene"],
                 "answer": "C",
-                "explanation": "character意为\\",
+                "explanation": "character意为\"⻆⾊\"",
             },
             {
                 "week": 2,
@@ -4070,7 +4126,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "How two characters feel about each other is their _______.",
                 "options": ["relationship", "prop", "scene", "stage"],
                 "answer": "A",
-                "explanation": "relationship意为\\",
+                "explanation": "relationship意为\"关系\"",
             },
             {
                 "week": 2,
@@ -4078,7 +4134,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What a character strongly wants to get or achieve is their _______.",
                 "options": ["objective", "stage", "prop", "scene"],
                 "answer": "A",
-                "explanation": "objective意为\\",
+                "explanation": "objective意为\"⽬标/动机\"",
             },
             {
                 "week": 2,
@@ -4086,7 +4142,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The spoken conversation between two actors is the _______.",
                 "options": ["stage", "dialogue", "prop", "scene"],
                 "answer": "B",
-                "explanation": "dialogue意为\\",
+                "explanation": "dialogue意为\"对⽩/对话\"",
             },
                 ],
                 3: [
@@ -4096,7 +4152,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The real people who perform the play are the _______.",
                 "options": ["props", "actors", "scenes", "objectives"],
                 "answer": "B",
-                "explanation": "actors意为\\",
+                "explanation": "actors意为\"演员\"",
             },
             {
                 "week": 3,
@@ -4104,7 +4160,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A short part of the play happening in one place is a _______.",
                 "options": ["scene", "prop", "character", "stage"],
                 "answer": "A",
-                "explanation": "scene意为\\",
+                "explanation": "scene意为\"场景/幕\"",
             },
             {
                 "week": 3,
@@ -4112,7 +4168,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The written notes telling actors where to walk are the _______.",
                 "options": ["props", "scenes", "stage direction", "actors"],
                 "answer": "C",
-                "explanation": "stage direction意为\\",
+                "explanation": "stage direction意为\"舞台指⽰\"",
             },
             {
                 "week": 3,
@@ -4120,7 +4176,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The book that has all the words and actions for the play is the _______.",
                 "options": ["script", "prop", "stage", "scene"],
                 "answer": "A",
-                "explanation": "script意为\\",
+                "explanation": "script意为\"剧本\"",
             },
                 ],
                 4: [
@@ -4130,7 +4186,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "An event where reporters ask a famous person questions is a _______.",
                 "options": ["prop", "scene", "press conference", "stage direction"],
                 "answer": "C",
-                "explanation": "press conference意为\\",
+                "explanation": "press conference意为\"记者招待会\"",
             },
             {
                 "week": 4,
@@ -4138,26 +4194,26 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The hero in the story is the main _______.",
                 "options": ["prop", "character", "stage", "scene"],
                 "answer": "B",
-                "explanation": "巩固词汇：character意为\\",
+                "explanation": "巩固词汇：character意为\"⻆⾊\"",
             },
             {
                 "week": 4,
                 "keyword": "closed question",
-                "question": "A question that you answer with just \\",
+                "question": "A question that you answer with just \"yes\" or \"no\" is a _______.",
                 "options": ["closed question", "stage direction", "prop", "scene"],
                 "answer": "A",
-                "explanation": "closed question意为\\",
+                "explanation": "closed question意为\"封 闭式问题\"",
             },
                 ],
                 5: [
             {
                 "week": 5,
                 "keyword": "review",
-                "question": "What kind of question lets you talk a lot instead of just saying \\",
+                "question": "What kind of question lets you talk a lot instead of just saying \"yes\" or \"no\"?",
                 "options": ["A closed question B) An open question C) A hot seating D) A character"],
                 "answer": "B",
                 "explanation": "让⼈能⻓篇⼤论回答的是开放式问题 open question",
-                "passage": "To understand our character better, we play a game called hot seating. We sit in a chair while others ask us an open question, which lets us talk a lot, or a closed question, which we answer with just \\",
+                "passage": "To understand our character better, we play a game called hot seating. We sit in a chair while others ask us an open question, which lets us talk a lot, or a closed question, which we answer with just \"Yes\" or \"No\".",
             },
                 ],
                 7: [
@@ -4175,7 +4231,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A person holding a microphone who asks questions is a _______.",
                 "options": ["reporter", "prop", "scene", "stage"],
                 "answer": "A",
-                "explanation": "reporter意为\\",
+                "explanation": "reporter意为\"记者\"",
             },
             {
                 "week": 7,
@@ -4188,10 +4244,10 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
             {
                 "week": 7,
                 "keyword": "open question",
-                "question": "\\",
+                "question": "\"How did you feel?\" is an _______ that needs a long answer.",
                 "options": ["open question", "closed question", "prop", "scene"],
                 "answer": "A",
-                "explanation": "open question意为\\",
+                "explanation": "open question意为\"开放 式问题\"",
             },
                 ],
                 8: [
@@ -4225,7 +4281,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The raised wooden floor where the performance happens is the _______.",
                 "options": ["stage", "prop", "dialogue", "scene"],
                 "answer": "A",
-                "explanation": "stage意为\\",
+                "explanation": "stage意为\"舞台\"",
             },
                 ],
                 9: [
@@ -4235,7 +4291,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A live story performed in a theater is a _______.",
                 "options": ["prop", "play", "scene", "dialogue"],
                 "answer": "B",
-                "explanation": "play意为\\",
+                "explanation": "play意为\"戏剧/舞台剧\"",
             },
             {
                 "week": 9,
@@ -4259,7 +4315,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A fake sword held by an actor is a _______.",
                 "options": ["scene", "play", "prop", "stage"],
                 "answer": "C",
-                "explanation": "prop意为\\",
+                "explanation": "prop意为\"道具\"",
             },
                 ],
                 10: [
@@ -4280,7 +4336,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using your voice to make musical notes is to _______.",
                 "options": ["sing", "dance", "prop", "stage"],
                 "answer": "A",
-                "explanation": "sing意为\\",
+                "explanation": "sing意为\"唱歌\"",
             },
             {
                 "week": 11,
@@ -4288,7 +4344,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Moving your body beautifully to the music is to _______.",
                 "options": ["sing", "dance", "prop", "scene"],
                 "answer": "B",
-                "explanation": "dance意为\\",
+                "explanation": "dance意为\"跳舞\"",
             },
             {
                 "week": 11,
@@ -4296,7 +4352,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The special clothes you wear to look like a king is a _______.",
                 "options": ["costume", "prop", "stage", "dialogue"],
                 "answer": "A",
-                "explanation": "costume意为\\",
+                "explanation": "costume意为\"戏服\"",
             },
             {
                 "week": 11,
@@ -4304,7 +4360,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Showing feelings on your face is making a facial _______.",
                 "options": ["prop", "stage", "dialogue", "expression"],
                 "answer": "D",
-                "explanation": "expression意为\\",
+                "explanation": "expression意为\"表情\"",
             },
                 ],
                 12: [
@@ -4314,7 +4370,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A sad frown or a happy smile is a _______.",
                 "options": ["facial expression", "gesture", "prop", "costume"],
                 "answer": "A",
-                "explanation": "facial expression意为\\",
+                "explanation": "facial expression意为\"⾯部表情\"",
             },
             {
                 "week": 12,
@@ -4322,7 +4378,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Waving your hand to say hello is a body _______.",
                 "options": ["gesture", "voice", "facial expression", "prop"],
                 "answer": "A",
-                "explanation": "gesture意为\\",
+                "explanation": "gesture意为\"⼿势/肢体动作\"",
             },
             {
                 "week": 12,
@@ -4330,7 +4386,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "An actor must speak with a loud and clear _______.",
                 "options": ["gesture", "facial expression", "voice", "prop"],
                 "answer": "C",
-                "explanation": "voice意为\\",
+                "explanation": "voice意为\"声⾳/嗓⾳\"",
             },
             {
                 "week": 12,
@@ -4338,7 +4394,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Standing tall with a straight back is having good _______.",
                 "options": ["posture", "facial expression", "prop", "voice"],
                 "answer": "A",
-                "explanation": "posture意为\\",
+                "explanation": "posture意为\"姿态\"",
             },
                 ],
                 13: [
@@ -4348,7 +4404,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The left side of the stage from the actor's point of view is _______.",
                 "options": ["stage left", "stage right", "upstage", "downstage"],
                 "answer": "A",
-                "explanation": "stage left意为\\",
+                "explanation": "stage left意为\"舞台左侧\"",
             },
             {
                 "week": 13,
@@ -4356,7 +4412,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The right side of the stage from the actor's point of view is _______.",
                 "options": ["stage left", "stage right", "upstage", "downstage"],
                 "answer": "B",
-                "explanation": "stage right意为\\",
+                "explanation": "stage right意为\"舞台右 侧\"",
             },
             {
                 "week": 13,
@@ -4364,7 +4420,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Walking to the back wall, away from the audience, is walking _______.",
                 "options": ["upstage", "downstage", "stage left", "stage right"],
                 "answer": "A",
-                "explanation": "upstage意为\\",
+                "explanation": "upstage意为\"舞台后部\"",
             },
             {
                 "week": 13,
@@ -4372,7 +4428,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Walking to the front edge, close to the audience, is walking _______.",
                 "options": ["upstage", "downstage", "stage left", "stage right"],
                 "answer": "B",
-                "explanation": "downstage意为\\",
+                "explanation": "downstage意为\"舞台前 部\"",
             },
                 ],
                 14: [
@@ -4429,7 +4485,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In a math expression, we calculate the part inside the _______ first.",
                 "options": ["point", "bracket", "order", "shape"],
                 "answer": "B",
-                "explanation": "bracket意为\\",
+                "explanation": "bracket意为\"括号\"，指⽰先计算的部分",
             },
             {
                 "week": 2,
@@ -4437,7 +4493,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If we have 3 groups of 4, we can _______ 3 and 4 to get 12.",
                 "options": ["divide", "subtract", "multiply", "round"],
                 "answer": "C",
-                "explanation": "multiply意为\\",
+                "explanation": "multiply意为\"乘\"",
             },
             {
                 "week": 2,
@@ -4445,7 +4501,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To share 20 apples equally into 4 bags, we must _______ them.",
                 "options": ["add", "multiply", "divide", "order"],
                 "answer": "C",
-                "explanation": "divide意为\\",
+                "explanation": "divide意为\"除以/平分\"",
             },
             {
                 "week": 2,
@@ -4453,7 +4509,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To get the right answer, you must follow the correct _______ of operations.",
                 "options": ["order", "fraction", "bracket", "mean"],
                 "answer": "A",
-                "explanation": "order意为\\",
+                "explanation": "order意为\"顺序/次序\"",
             },
                 ],
                 3: [
@@ -4463,7 +4519,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Finding the total of 5 and 3 is called _______.",
                 "options": ["subtraction", "addition", "fraction", "order"],
                 "answer": "B",
-                "explanation": "addition意为\\",
+                "explanation": "addition意为\"加法\"",
             },
             {
                 "week": 3,
@@ -4471,7 +4527,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Taking 2 away from 10 is called _______.",
                 "options": ["addition", "subtraction", "operation", "area"],
                 "answer": "B",
-                "explanation": "subtraction意为\\",
+                "explanation": "subtraction意为\"减法\"",
             },
             {
                 "week": 3,
@@ -4479,7 +4535,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Addition and multiplication are basic math _______s.",
                 "options": ["operations", "brackets", "angles", "points"],
                 "answer": "A",
-                "explanation": "operation意为\\",
+                "explanation": "operation意为\"运算\"",
             },
             {
                 "week": 3,
@@ -4487,7 +4543,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We use a pen and paper to _______ the math problem.",
                 "options": ["calculate", "order", "guess", "convert"],
                 "answer": "A",
-                "explanation": "calculate意为\\",
+                "explanation": "calculate意为\"计算\"",
             },
                 ],
                 4: [
@@ -4497,7 +4553,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In math, multiplication comes before addition in the _______ of operations.",
                 "options": ["point", "order", "area", "division"],
                 "answer": "B",
-                "explanation": "order意为\\",
+                "explanation": "order意为\"顺序\"",
             },
             {
                 "week": 4,
@@ -4505,7 +4561,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Choosing the correct math _______ is important to solve the puzzle.",
                 "options": ["operation", "angle", "side", "mirror"],
                 "answer": "A",
-                "explanation": "operation意为\\",
+                "explanation": "operation意为\"运算/操作\"",
             },
             {
                 "week": 4,
@@ -4513,7 +4569,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "3 x 5 = 15 is an example of _______.",
                 "options": ["addition", "subtraction", "multiplication", "division"],
                 "answer": "C",
-                "explanation": "multiplication意为\\",
+                "explanation": "multiplication意为\"乘法\"",
             },
             {
                 "week": 4,
@@ -4521,7 +4577,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "10 ÷ 2 = 5 is an example of _______.",
                 "options": ["multiplication", "division", "addition", "fraction"],
                 "answer": "B",
-                "explanation": "division意为\\",
+                "explanation": "division意为\"除法\"",
             },
                 ],
                 5: [
@@ -4542,7 +4598,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If we _______ the number 48 to the nearest ten, it becomes 50.",
                 "options": ["subtract", "add", "round", "convert"],
                 "answer": "C",
-                "explanation": "round意为\\",
+                "explanation": "round意为\"四舍五⼊/取整\"",
             },
                 ],
                 8: [
@@ -4552,7 +4608,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you _______ 4 and 6, the total is 10.",
                 "options": ["add", "subtract", "compare", "order"],
                 "answer": "A",
-                "explanation": "add意为\\",
+                "explanation": "add意为\"加\"",
             },
             {
                 "week": 8,
@@ -4560,7 +4616,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you _______ 2 from 9, you have 7 left.",
                 "options": ["add", "subtract", "multiply", "round"],
                 "answer": "B",
-                "explanation": "subtract意为\\",
+                "explanation": "subtract意为\"减去\"",
             },
             {
                 "week": 8,
@@ -4568,7 +4624,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We use the > symbol to _______ two numbers.",
                 "options": ["add", "round", "compare", "order"],
                 "answer": "C",
-                "explanation": "compare意为\\",
+                "explanation": "compare意为\"⽐较\"",
             },
             {
                 "week": 8,
@@ -4576,7 +4632,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Put the numbers 1, 2, 3 in ascending _______.",
                 "options": ["compare", "add", "order", "subtract"],
                 "answer": "C",
-                "explanation": "order意为\\",
+                "explanation": "order意为\"顺序/次序\"",
             },
                 ],
                 9: [
@@ -4586,7 +4642,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To _______ kilometres into metres, you multiply the number by 1000.",
                 "options": ["add", "convert", "compare", "subtract"],
                 "answer": "B",
-                "explanation": "convert意为\\",
+                "explanation": "convert意为\"转换/换算\"",
             },
             {
                 "week": 9,
@@ -4594,7 +4650,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The length of our classroom is about 10 _______s.",
                 "options": ["fractions", "angles", "brackets", "metres"],
                 "answer": "D",
-                "explanation": "metre意为\\",
+                "explanation": "metre意为\"⽶\"",
             },
             {
                 "week": 9,
@@ -4602,7 +4658,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We drove for 5 _______s to get to the park.",
                 "options": ["millimetres", "centimetres", "kilometres", "angles"],
                 "answer": "C",
-                "explanation": "kilometre意为\\",
+                "explanation": "kilometre意为\"千⽶/公⾥\"",
             },
                 ],
                 10: [
@@ -4623,7 +4679,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A 2D shape with exactly three straight sides is a _______.",
                 "options": ["square", "triangle", "circle", "bracket"],
                 "answer": "B",
-                "explanation": "triangle意为\\",
+                "explanation": "triangle意为\"三⻆形\"",
             },
             {
                 "week": 11,
@@ -4631,7 +4687,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The space where two lines meet is called an _______.",
                 "options": ["side", "area", "angle", "order"],
                 "answer": "C",
-                "explanation": "angle意为\\",
+                "explanation": "angle意为\"⻆/⻆度\"",
             },
             {
                 "week": 11,
@@ -4639,7 +4695,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A square has four straight _______s of the same length.",
                 "options": ["sides", "angles", "points", "corners"],
                 "answer": "A",
-                "explanation": "side意为\\",
+                "explanation": "side意为\"边\"",
             },
             {
                 "week": 11,
@@ -4647,7 +4703,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A rectangle has four sharp _______s where the sides meet.",
                 "options": ["sides", "lines", "corners", "areas"],
                 "answer": "C",
-                "explanation": "corner意为\\",
+                "explanation": "corner意为\"⻆/顶点\"",
             },
                 ],
                 12: [
@@ -4657,7 +4713,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "An angle that is exactly 90 degrees is a _______.",
                 "options": ["right angle", "side", "mirror", "corner"],
                 "answer": "A",
-                "explanation": "right angle意为\\",
+                "explanation": "right angle意为\"直⻆\"",
             },
             {
                 "week": 12,
@@ -4665,7 +4721,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A shape with 3 sides and 3 angles is a _______.",
                 "options": ["square", "triangle", "mirror", "line"],
                 "answer": "B",
-                "explanation": "巩固词汇：triangle意为\\",
+                "explanation": "巩固词汇：triangle意为\"三⻆形\"",
             },
             {
                 "week": 12,
@@ -4673,7 +4729,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you look into a _______, you can see your own face.",
                 "options": ["bracket", "mirror", "angle", "side"],
                 "answer": "B",
-                "explanation": "mirror意为\\",
+                "explanation": "mirror意为\"镜⼦\"",
             },
             {
                 "week": 12,
@@ -4681,7 +4737,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A butterfly looks the exact same on both wings because it has _______.",
                 "options": ["symmetry", "average", "fraction", "data"],
                 "answer": "A",
-                "explanation": "symmetry意为\\",
+                "explanation": "symmetry意为\"对称\"",
             },
                 ],
                 13: [
@@ -4691,7 +4747,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The invisible line dividing a shape into two matching halves is the _______.",
                 "options": ["average", "mean", "line of symmetry", "data"],
                 "answer": "C",
-                "explanation": "line of symmetry意为\\",
+                "explanation": "line of symmetry意为\"对称轴\"",
             },
             {
                 "week": 13,
@@ -4699,15 +4755,15 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you add all scores and divide by the number of students, you get the _______ score.",
                 "options": ["fraction", "decimal", "average", "point"],
                 "answer": "C",
-                "explanation": "average意为\\",
+                "explanation": "average意为\"平均 数\"",
             },
             {
                 "week": 13,
                 "keyword": "mean",
-                "question": "Another math word that means the exact same as \\",
+                "question": "Another math word that means the exact same as \"average\" is the _______.",
                 "options": ["mean", "side", "mirror", "angle"],
                 "answer": "A",
-                "explanation": "mean意为\\",
+                "explanation": "mean意为\"算术平均数\"",
             },
             {
                 "week": 13,
@@ -4715,7 +4771,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The numbers and facts we collect in a survey are called _______.",
                 "options": ["symmetry", "data", "mean", "angle"],
                 "answer": "B",
-                "explanation": "data意为\\",
+                "explanation": "data意为\"数据\"",
             },
                 ],
                 14: [
@@ -4725,7 +4781,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A chart that uses tall rectangular blocks to show data is a _______.",
                 "options": ["bar chart", "pie chart", "line graph", "mean"],
                 "answer": "A",
-                "explanation": "bar chart意为\\",
+                "explanation": "bar chart意为\"条形图\"",
             },
             {
                 "week": 14,
@@ -4733,7 +4789,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Another name for a bar chart is a _______.",
                 "options": ["bar graph", "pie chart", "symmetry", "fraction"],
                 "answer": "A",
-                "explanation": "bar graph也意为\\",
+                "explanation": "bar graph也意为\"条形图\"",
             },
             {
                 "week": 14,
@@ -4741,7 +4797,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A chart that connects dots with a continuous line is a _______.",
                 "options": ["pie chart", "bar chart", "line graph", "fraction"],
                 "answer": "C",
-                "explanation": "line graph意为\\",
+                "explanation": "line graph意为\"折线图\"",
             },
             {
                 "week": 14,
@@ -4749,7 +4805,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A circular chart divided into slices like a pizza is a _______.",
                 "options": ["line graph", "bar chart", "pie chart", "bar graph"],
                 "answer": "C",
-                "explanation": "pie chart意为\\",
+                "explanation": "pie chart意为\"饼状图\"",
             },
                 ],
                 15: [
@@ -4772,17 +4828,17 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The single hole on the back of the recorder covered by your thumb is the _______.",
                 "options": ["start note", "thumb hole", "reflection", "posture"],
                 "answer": "B",
-                "explanation": "thumb hole意为\\",
+                "explanation": "thumb hole意为\"拇指孔\"",
             },
                 ],
                 3: [
             {
                 "week": 3,
                 "keyword": "tongue lightly",
-                "question": "To make a clear sound on the recorder, you must _______ to start the air with a \\",
+                "question": "To make a clear sound on the recorder, you must _______ to start the air with a \"tu\" sound.",
                 "options": ["bite hard", "tongue lightly", "dance", "shout"],
                 "answer": "B",
-                "explanation": "tongue lightly指\\",
+                "explanation": "tongue lightly指\"轻吐⾳/⽤⾆头轻吐\"",
             },
             {
                 "week": 3,
@@ -4790,7 +4846,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The very first musical sound you play at the beginning of a song is the _______.",
                 "options": ["stop note", "thumb hole", "start note", "shape"],
                 "answer": "C",
-                "explanation": "start note意 为\\",
+                "explanation": "start note意 为\"起⾳/开始⾳\"",
             },
             {
                 "week": 3,
@@ -4798,7 +4854,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The final sound you play at the end of a musical phrase is the _______.",
                 "options": ["start note", "stop note", "fingering", "duet"],
                 "answer": "B",
-                "explanation": "stop note意为\\",
+                "explanation": "stop note意为\"结束⾳\"",
             },
             {
                 "week": 3,
@@ -4806,7 +4862,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Moving from one note to the next without ugly breaks is called _______.",
                 "options": ["tongue lightly", "smooth playing", "start note", "stop note"],
                 "answer": "B",
-                "explanation": "smooth playing意为\\",
+                "explanation": "smooth playing意为\"流畅的吹奏\"",
             },
                 ],
                 4: [
@@ -4816,7 +4872,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The specific order you move your fingers to play a melody is the _______.",
                 "options": ["finger pattern", "duet", "stage exit", "shape"],
                 "answer": "A",
-                "explanation": "finger pattern意为\\",
+                "explanation": "finger pattern意为\"指 序/指法模式\"",
             },
             {
                 "week": 4,
@@ -4824,7 +4880,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "How you hold the instrument correctly with your left and right hands is your _______.",
                 "options": ["contrast", "stage", "hand position", "reflection"],
                 "answer": "C",
-                "explanation": "hand position意为\\",
+                "explanation": "hand position意为\"⼿部姿势\"",
             },
             {
                 "week": 4,
@@ -4832,7 +4888,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using your eyes, breath, and fingers perfectly at the same time requires good _______.",
                 "options": ["shape", "coordination", "duet", "stage"],
                 "answer": "B",
-                "explanation": "coordination 意为\\",
+                "explanation": "coordination 意为\"协调性\"",
             },
             {
                 "week": 4,
@@ -4840,7 +4896,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Keeping your fingers and breath steady shows good instrument _______.",
                 "options": ["control", "duet", "shape", "stage exit"],
                 "answer": "A",
-                "explanation": "control意为\\",
+                "explanation": "control意为\"控制⼒\"",
             },
                 ],
                 5: [
@@ -4861,7 +4917,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Playing all the correct notes without any wrong mistakes is playing with high _______.",
                 "options": ["accuracy", "contrast", "duet", "trio"],
                 "answer": "A",
-                "explanation": "accuracy意为\\",
+                "explanation": "accuracy意为\"准确 性\"",
             },
             {
                 "week": 7,
@@ -4869,7 +4925,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Playing the song perfectly every single time, not just once, shows good _______.",
                 "options": ["consistency", "contrast", "stage exit", "trio"],
                 "answer": "A",
-                "explanation": "consistency意 为\\",
+                "explanation": "consistency意 为\"稳定性/⼀致性\"",
             },
                 ],
                 8: [
@@ -4879,7 +4935,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A piece of music played by exactly two people is a _______.",
                 "options": ["solo", "duet", "trio", "choir"],
                 "answer": "B",
-                "explanation": "duet意为\\",
+                "explanation": "duet意为\"⼆重奏/⼆重唱\"",
             },
             {
                 "week": 8,
@@ -4887,7 +4943,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A piece of music played by exactly three people is a _______.",
                 "options": ["solo", "duet", "trio", "shape"],
                 "answer": "C",
-                "explanation": "trio意为\\",
+                "explanation": "trio意为\"三重奏/三重唱\"",
             },
             {
                 "week": 8,
@@ -4895,7 +4951,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Four or five musicians playing together form a chamber or _______.",
                 "options": ["small group", "solo", "duet", "stage exit"],
                 "answer": "A",
-                "explanation": "small group意为\\",
+                "explanation": "small group意为\"⾳乐⼩组/⼩团体 合奏\"",
             },
                 ],
                 9: [
@@ -4905,7 +4961,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A hand signal from the leader telling the band to start playing is a _______.",
                 "options": ["shape", "small group", "conductor cue", "duet"],
                 "answer": "C",
-                "explanation": "conductor cue意为\\",
+                "explanation": "conductor cue意为\"指挥提⽰/⼿势\"",
             },
             {
                 "week": 9,
@@ -4913,7 +4969,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "You must keep your eyes on the conductor and _______ so you don't miss the signal.",
                 "options": ["watch closely", "respond quickly", "sleep", "stage exit"],
                 "answer": "A",
-                "explanation": "watch closely意为\\",
+                "explanation": "watch closely意为\"密切注视\"",
             },
             {
                 "week": 9,
@@ -4921,7 +4977,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the conductor points at you, you must _______ and start playing immediately.",
                 "options": ["sleep", "stage exit", "respond quickly", "duet"],
                 "answer": "C",
-                "explanation": "respond quickly意为\\",
+                "explanation": "respond quickly意为\"快速反应\"",
             },
                 ],
                 10: [
@@ -4938,11 +4994,19 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 11: [
             {
                 "week": 11,
+                "keyword": "musical character",
+                "question": "The personality or mood a piece of music portrays (like a bouncy monkey) is its _______.",
+                "options": ["musical character", "stage exit", "trio", "duet"],
+                "answer": "A",
+                "explanation": "",
+            },
+            {
+                "week": 11,
                 "keyword": "imagination",
                 "question": "Using your mind to picture a magical world while playing music is using your _______.",
                 "options": ["imagination", "stage exit", "trio", "contrast"],
                 "answer": "A",
-                "explanation": "imagination意为\\",
+                "explanation": "imagination意为\"想象⼒\"",
             },
             {
                 "week": 11,
@@ -4950,7 +5014,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Your personal and unique way of expressing a song's feeling is your musical _______.",
                 "options": ["stage exit", "interpretation", "trio", "shape"],
                 "answer": "B",
-                "explanation": "interpretation意为\\",
+                "explanation": "interpretation意为\"演绎/诠释\"",
             },
                 ],
                 12: [
@@ -4960,7 +5024,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Adding a slight volume change to make the music sound beautiful is an _______.",
                 "options": ["thumb hole", "expressive detail", "duet", "trio"],
                 "answer": "B",
-                "explanation": "expressive detail意为\\",
+                "explanation": "expressive detail意为\"表情细节/表现细节\"",
             },
             {
                 "week": 12,
@@ -4968,7 +5032,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "How a line of music grows louder then softer is its _______.",
                 "options": ["phrasing shape", "stage exit", "duet", "trio"],
                 "answer": "A",
-                "explanation": "phrasing shape意为\\",
+                "explanation": "phrasing shape意为\"乐句起伏/乐 句形态\"",
             },
             {
                 "week": 12,
@@ -4976,7 +5040,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Playing a loud note right after a very soft note creates a strong _______.",
                 "options": ["contrast", "stage exit", "fingering", "shape"],
                 "answer": "A",
-                "explanation": "contrast意为\\",
+                "explanation": "contrast意为\"对⽐\"",
             },
                 ],
                 13: [
@@ -4986,7 +5050,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Walking onto the platform at the beginning of the concert is your _______.",
                 "options": ["stage entrance", "stage exit", "formation", "spacing"],
                 "answer": "A",
-                "explanation": "stage entrance意为\\",
+                "explanation": "stage entrance意为\"登台/上场\"",
             },
             {
                 "week": 13,
@@ -4994,7 +5058,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Walking off the platform when the concert is done is your _______.",
                 "options": ["stage entrance", "stage exit", "formation", "spacing"],
                 "answer": "B",
-                "explanation": "stage exit意为\\",
+                "explanation": "stage exit意为\"退场/下 台\"",
             },
             {
                 "week": 13,
@@ -5002,7 +5066,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The shape or arrangement the choir stands in (like a semi-circle) is their _______.",
                 "options": ["formation", "stage exit", "stage entrance", "spacing"],
                 "answer": "A",
-                "explanation": "formation意为\\",
+                "explanation": "formation意为\"队形\"",
             },
             {
                 "week": 13,
@@ -5010,7 +5074,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Standing exactly one arm's length away from your partner shows good _______.",
                 "options": ["spacing", "stage exit", "stage entrance", "formation"],
                 "answer": "A",
-                "explanation": "spacing意 为\\",
+                "explanation": "spacing意 为\"间距/空间距离\"",
             },
                 ],
                 14: [
@@ -5020,7 +5084,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "How nicely you look and perform the song for the crowd is your overall _______.",
                 "options": ["presentation", "spacing", "stage exit", "formation"],
                 "answer": "A",
-                "explanation": "presentation意为\\",
+                "explanation": "presentation意为\"表现/呈现\"",
             },
             {
                 "week": 14,
@@ -5028,7 +5092,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When you smile and look proud to play your song, you show great _______.",
                 "options": ["confidence", "spacing", "stage exit", "formation"],
                 "answer": "A",
-                "explanation": "confidence意为\\",
+                "explanation": "confidence意为\"⾃ 信\"",
             },
             {
                 "week": 14,
@@ -5036,7 +5100,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using your face and music to share feelings with the crowd is musical _______.",
                 "options": ["communication", "spacing", "stage exit", "formation"],
                 "answer": "A",
-                "explanation": "communication意为\\",
+                "explanation": "communication意为\"沟通/交流\"",
             },
                 ],
                 15: [
@@ -5059,7 +5123,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In a relay race, the team must run _______ to win.",
                 "options": ["alone", "together", "cheer", "against"],
                 "answer": "B",
-                "explanation": "together意为\\",
+                "explanation": "together意为\"⼀起/共同\"",
             },
             {
                 "week": 2,
@@ -5067,7 +5131,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We _______ loudly to support our teammates.",
                 "options": ["respect", "sleep", "cheer", "complain"],
                 "answer": "C",
-                "explanation": "cheer意为\\",
+                "explanation": "cheer意为\"欢呼/加油\"",
             },
             {
                 "week": 2,
@@ -5075,7 +5139,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Shaking hands with the other team shows good _______.",
                 "options": ["cheer", "respect", "shot put", "false start"],
                 "answer": "B",
-                "explanation": "respect意为\\",
+                "explanation": "respect意为\"尊重\"",
             },
             {
                 "week": 2,
@@ -5083,7 +5147,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Believing your partner will catch you is having _______ in them.",
                 "options": ["respect", "trust", "pacing", "sprinting"],
                 "answer": "B",
-                "explanation": "trust意为\\",
+                "explanation": "trust意为\"信任\"",
             },
                 ],
                 3: [
@@ -5093,7 +5157,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The team captain who guides everyone is the _______.",
                 "options": ["leader", "hurdle", "finish line", "false start"],
                 "answer": "A",
-                "explanation": "leader意为\\",
+                "explanation": "leader意为\"领导者/队⻓\"",
             },
             {
                 "week": 3,
@@ -5101,7 +5165,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Helping your tired teammate finish the race is giving them _______.",
                 "options": ["pacing", "support", "medal", "discus"],
                 "answer": "B",
-                "explanation": "support意为\\",
+                "explanation": "support意为\"⽀持\"",
             },
             {
                 "week": 3,
@@ -5109,7 +5173,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The race ends when the runner crosses the white _______.",
                 "options": ["finish line", "false start", "leader", "shot put"],
                 "answer": "A",
-                "explanation": "finish line意为\\",
+                "explanation": "finish line意为\"终点线\"",
             },
             {
                 "week": 3,
@@ -5117,7 +5181,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Running before the whistle blows is a _______.",
                 "options": ["finish line", "false start", "leader", "discus"],
                 "answer": "B",
-                "explanation": "false start意为\\",
+                "explanation": "false start意为\"抢跑/违规起跑\"",
             },
                 ],
                 4: [
@@ -5127,7 +5191,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Passing the ball well to your friends shows excellent _______.",
                 "options": ["false start", "teamwork", "shot put", "finish line"],
                 "answer": "B",
-                "explanation": "teamwork意为\\",
+                "explanation": "teamwork意为\"团队合作\"",
             },
             {
                 "week": 4,
@@ -5135,7 +5199,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Talking clearly to your team is good _______.",
                 "options": ["communication", "endurance", "pacing", "lap"],
                 "answer": "A",
-                "explanation": "communication意为\\",
+                "explanation": "communication意为\"沟通/交流\"",
             },
             {
                 "week": 4,
@@ -5143,7 +5207,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The desire you feel to try your hardest is your _______.",
                 "options": ["motivation", "shot put", "leader", "hurdle"],
                 "answer": "A",
-                "explanation": "motivation意为\\",
+                "explanation": "motivation意为\"动⼒/积极性\"",
             },
             {
                 "week": 4,
@@ -5151,7 +5215,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A team that stays happy and positive has great team _______.",
                 "options": ["strategy", "spirit", "challenge", "hoop"],
                 "answer": "B",
-                "explanation": "spirit意为\\",
+                "explanation": "spirit意为\"精神/⼠⽓\"",
             },
                 ],
                 5: [
@@ -5172,7 +5236,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A smart plan made by the coach to win is a _______.",
                 "options": ["strategy", "hurdle", "bounce", "sprint"],
                 "answer": "A",
-                "explanation": "strategy意为\\",
+                "explanation": "strategy意为\"策略/战术\"",
             },
             {
                 "week": 7,
@@ -5180,7 +5244,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Waiting calmly for the right moment to pass the ball requires _______.",
                 "options": ["sprint", "patience", "hurdle", "strategy"],
                 "answer": "B",
-                "explanation": "patience意为\\",
+                "explanation": "patience意为\"耐⼼\"",
             },
             {
                 "week": 7,
@@ -5188,7 +5252,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Being polite, even when you lose, is good _______.",
                 "options": ["sportsmanship", "stride", "hurdle", "acceleration"],
                 "answer": "A",
-                "explanation": "sportsmanship意为\\",
+                "explanation": "sportsmanship意为\"体育 精神\"",
             },
                 ],
                 8: [
@@ -5198,7 +5262,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In basketball, you shoot the ball through the orange _______.",
                 "options": ["stride", "hoop", "hurdle", "medal"],
                 "answer": "B",
-                "explanation": "hoop意为\\",
+                "explanation": "hoop意为\"篮筐\"",
             },
             {
                 "week": 8,
@@ -5206,7 +5270,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A fence you must jump over during a track race is a _______.",
                 "options": ["hurdle", "hoop", "stride", "bounce"],
                 "answer": "A",
-                "explanation": "hurdle意为\\",
+                "explanation": "hurdle意为\"跨栏\"",
             },
             {
                 "week": 8,
@@ -5214,7 +5278,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Running as fast as your legs can go for a short distance is _______.",
                 "options": ["pacing", "sprinting", "bouncing", "walking"],
                 "answer": "B",
-                "explanation": "sprinting意为\\",
+                "explanation": "sprinting意为\"冲刺/短跑\"",
             },
             {
                 "week": 8,
@@ -5222,7 +5286,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A long, powerful step you take while running fast is a _______.",
                 "options": ["hoop", "bounce", "stride", "hurdle"],
                 "answer": "C",
-                "explanation": "stride意为\\",
+                "explanation": "stride意为\"⼤步/步幅\"",
             },
                 ],
                 9: [
@@ -5232,7 +5296,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When you dribble a basketball, you _______ it on the floor.",
                 "options": ["bounce", "stride", "medal", "hoop"],
                 "answer": "A",
-                "explanation": "bounce意为\\",
+                "explanation": "bounce意为\"弹跳/拍球\"",
             },
             {
                 "week": 9,
@@ -5240,7 +5304,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "An event where you throw a heavy metal ball far is the _______.",
                 "options": ["shot put", "pacing", "discus", "relay"],
                 "answer": "A",
-                "explanation": "shot put意为\\",
+                "explanation": "shot put意为\"推铅球\"",
             },
             {
                 "week": 9,
@@ -5248,7 +5312,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Keeping a steady running speed to save energy is good _______.",
                 "options": ["acceleration", "pacing", "cool-down", "bounce"],
                 "answer": "B",
-                "explanation": "pacing意为\\",
+                "explanation": "pacing意为\"配速/节奏控 制\"",
             },
             {
                 "week": 9,
@@ -5256,7 +5320,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Increasing your running speed to go faster is _______.",
                 "options": ["pacing", "cool-down", "acceleration", "bounce"],
                 "answer": "C",
-                "explanation": "acceleration意为\\",
+                "explanation": "acceleration意为\"加速\"",
             },
                 ],
                 10: [
@@ -5277,7 +5341,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To get better at a sport, you must _______ every day.",
                 "options": ["practice", "sprint", "save", "bounce"],
                 "answer": "A",
-                "explanation": "practice意为\\",
+                "explanation": "practice意为\"练习\"",
             },
             {
                 "week": 11,
@@ -5285,7 +5349,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A heavy, flat, round plate that you spin and throw is a _______.",
                 "options": ["discus", "shot put", "lap", "hoop"],
                 "answer": "A",
-                "explanation": "discus意为\\",
+                "explanation": "discus意为\"铁饼\"",
             },
             {
                 "week": 11,
@@ -5293,7 +5357,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The ability to keep running for a very long time is _______.",
                 "options": ["endurance", "sprint", "reaction time", "bounce"],
                 "answer": "A",
-                "explanation": "endurance意为\\",
+                "explanation": "endurance意为\"耐⼒\"",
             },
             {
                 "week": 11,
@@ -5301,7 +5365,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Runners push their feet off the metal _______ to start a sprint.",
                 "options": ["starting block", "discus", "hurdle", "medal"],
                 "answer": "A",
-                "explanation": "starting block意为\\",
+                "explanation": "starting block意为\"起跑器\"",
             },
                 ],
                 12: [
@@ -5311,7 +5375,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A group of players working together is a _______.",
                 "options": ["lap", "team", "save", "discus"],
                 "answer": "B",
-                "explanation": "team意为\\",
+                "explanation": "team意为\"队伍/团队\"",
             },
             {
                 "week": 12,
@@ -5319,7 +5383,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Running one complete circle around the track is running one _______.",
                 "options": ["sprint", "team", "lap", "medal"],
                 "answer": "C",
-                "explanation": "lap意为\\",
+                "explanation": "lap意为\"⼀圈\"",
             },
             {
                 "week": 12,
@@ -5327,7 +5391,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The coach uses a _______ to measure exactly how fast you ran.",
                 "options": ["starting block", "stopwatch", "discus", "lap"],
                 "answer": "B",
-                "explanation": "stopwatch意为\\",
+                "explanation": "stopwatch意为\"秒表\"",
             },
                 ],
                 13: [
@@ -5337,7 +5401,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The winner of the race gets a gold _______ around their neck.",
                 "options": ["hurdle", "hoop", "save", "medal"],
                 "answer": "D",
-                "explanation": "medal意为\\",
+                "explanation": "medal意为\"奖牌\"",
             },
             {
                 "week": 13,
@@ -5345,7 +5409,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Doing slow stretches after a hard run is a _______.",
                 "options": ["reaction time", "cool-down", "sprint", "pacing"],
                 "answer": "B",
-                "explanation": "cool-down意为\\",
+                "explanation": "cool-down意为\"整理运动/冷⾝运动\"",
             },
             {
                 "week": 13,
@@ -5353,7 +5417,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Moving your feet skillfully in soccer or basketball is your _______.",
                 "options": ["footwork", "spin", "medal", "cool-down"],
                 "answer": "A",
-                "explanation": "footwork意为\\",
+                "explanation": "footwork意为\"步法\"",
             },
                 ],
                 14: [
@@ -5363,7 +5427,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The team has soccer _______ every day after school.",
                 "options": ["practice", "medal", "cool-down", "save"],
                 "answer": "A",
-                "explanation": "巩固词汇：practice\\",
+                "explanation": "巩固词汇：practice\"练习/训练\"",
             },
             {
                 "week": 14,
@@ -5371,7 +5435,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "She proudly showed her shiny silver _______ to her mom.",
                 "options": ["lap", "medal", "discus", "cool-down"],
                 "answer": "B",
-                "explanation": "巩固词汇：medal\\",
+                "explanation": "巩固词汇：medal\"奖牌\"",
             },
             {
                 "week": 14,
@@ -5379,7 +5443,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A slow walk is a great _______ after a fast sprint.",
                 "options": ["sprint", "relay", "cool-down", "save"],
                 "answer": "C",
-                "explanation": "巩固词汇：cool-down\\",
+                "explanation": "巩固词汇：cool-down\"整理运动\"",
             },
             {
                 "week": 14,
@@ -5387,7 +5451,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The boxer has amazing _______ to dodge punches.",
                 "options": ["footwork", "spin", "medal", "cool-down"],
                 "answer": "A",
-                "explanation": "巩固词汇：footwork\\",
+                "explanation": "巩固词汇：footwork\"步法\"",
             },
                 ],
                 15: [
@@ -5410,7 +5474,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A child whose parents are dead is an _______.",
                 "options": ["adult", "Orphan", "audience", "actor"],
                 "answer": "B",
-                "explanation": "Orphan意为\\",
+                "explanation": "Orphan意为\"孤⼉\"",
             },
             {
                 "week": 2,
@@ -5418,7 +5482,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A thin, boring liquid food of oatmeal boiled in water is called _______.",
                 "options": ["gruel", "pizza", "cake", "candy"],
                 "answer": "A",
-                "explanation": "gruel意为\\",
+                "explanation": "gruel意为\"稀粥\"，常指《雾都孤⼉》中吃的⻝ 物",
             },
             {
                 "week": 2,
@@ -5426,7 +5490,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A very poor person who has no money at all is a _______.",
                 "options": ["king", "prince", "pauper", "boss"],
                 "answer": "C",
-                "explanation": "pauper意为\\",
+                "explanation": "pauper意为\"乞丐/穷⼈\"",
             },
             {
                 "week": 2,
@@ -5434,7 +5498,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A smart little girl who has magic powers in a famous story is _______.",
                 "options": ["Superman", "Matilda", "Batman", "Spiderman"],
                 "answer": "B",
-                "explanation": "Matilda意为\\",
+                "explanation": "Matilda意为\"玛蒂尔达\"，著 名⾳乐剧及⼩说主⻆",
             },
                 ],
                 3: [
@@ -5444,7 +5508,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A part of the play that happens in a school room is a _______.",
                 "options": ["classroom scene", "poor person", "stage exit", "canon"],
                 "answer": "A",
-                "explanation": "classroom scene意 为\\",
+                "explanation": "classroom scene意 为\"教室场景\"",
             },
             {
                 "week": 3,
@@ -5452,7 +5516,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "An actor playing someone with no money is acting as a _______.",
                 "options": ["king", "poor person", "teacher", "dancer"],
                 "answer": "B",
-                "explanation": "poor person意为\\",
+                "explanation": "poor person意为\"穷⼈\"",
             },
             {
                 "week": 3,
@@ -5460,7 +5524,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Taking something that does not belong to you without asking is _______.",
                 "options": ["sharing", "helping", "stealing", "singing"],
                 "answer": "C",
-                "explanation": "stealing意为\\",
+                "explanation": "stealing意为\"偷窃\"",
             },
                 ],
                 4: [
@@ -5470,7 +5534,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Saying the words clearly so everyone can hear is good _______.",
                 "options": ["stealing", "pronouncing", "posture", "gruel"],
                 "answer": "B",
-                "explanation": "pronouncing意为\\",
+                "explanation": "pronouncing意为\"发⾳/咬字\"",
             },
             {
                 "week": 4,
@@ -5478,7 +5542,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Looking directly at the audience's eyes is making strong _______.",
                 "options": ["eye contact", "knee slides", "canon", "gruel"],
                 "answer": "A",
-                "explanation": "eye contact意为\\",
+                "explanation": "eye contact意为\"眼神交流\"",
             },
             {
                 "week": 4,
@@ -5486,7 +5550,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The words of a song that actors must memorize and sing are the _______.",
                 "options": ["gruel", "lyrics", "scenes", "paupers"],
                 "answer": "B",
-                "explanation": "lyrics意为\\",
+                "explanation": "lyrics意为\"歌词\"",
             },
                 ],
                 5: [
@@ -5507,7 +5571,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Keep your _______ so the audience can clearly see your face.",
                 "options": ["head up", "straight back", "canon", "gruel"],
                 "answer": "A",
-                "explanation": "head up意为\\",
+                "explanation": "head up意为\"抬起头\"",
             },
             {
                 "week": 7,
@@ -5515,7 +5579,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Standing tall and straight shows good stage _______.",
                 "options": ["canon", "posture", "gruel", "Orphan"],
                 "answer": "B",
-                "explanation": "posture意为\\",
+                "explanation": "posture意为\"姿态/体态\"",
             },
             {
                 "week": 7,
@@ -5523,7 +5587,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To jump exactly on the right beat, dancers must _______.",
                 "options": ["count the music", "sleep", "steal", "sit down"],
                 "answer": "A",
-                "explanation": "count the music意为\\",
+                "explanation": "count the music意为\"数⾳乐拍 ⼦\"",
             },
             {
                 "week": 7,
@@ -5531,7 +5595,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Looking at your scene partner's eyes is making good _______.",
                 "options": ["eye contact", "knee slide", "canon", "gruel"],
                 "answer": "A",
-                "explanation": "巩固词汇：eye contact意为\\",
+                "explanation": "巩固词汇：eye contact意为\"眼神交 流\"",
             },
                 ],
                 8: [
@@ -5541,7 +5605,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The direction where an actor is looking on stage is their _______.",
                 "options": ["Eyeline", "gruel", "canon", "Orphan"],
                 "answer": "A",
-                "explanation": "Eyeline意为\\",
+                "explanation": "Eyeline意为\"视线/⽬光⽅向\"",
             },
             {
                 "week": 8,
@@ -5553,11 +5617,19 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
             },
             {
                 "week": 8,
+                "keyword": "character connection",
+                "question": "When actors act like best friends and trust each other, they show strong _______.",
+                "options": ["lyrics", "knee slides", "character connection", "gruel"],
+                "answer": "C",
+                "explanation": "",
+            },
+            {
+                "week": 8,
                 "keyword": "naughty",
                 "question": "A child who misbehaves and plays tricks is being _______.",
                 "options": ["polite", "naughty", "canon", "straight"],
                 "answer": "B",
-                "explanation": "naughty意为\\",
+                "explanation": "naughty意为\"淘⽓的/调⽪的\"",
             },
                 ],
                 9: [
@@ -5612,7 +5684,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To make the dance look perfect, all dancers must _______.",
                 "options": ["fight", "work together", "gruel", "steal"],
                 "answer": "B",
-                "explanation": "work together意为\\",
+                "explanation": "work together意为\"合作\"",
             },
             {
                 "week": 11,
@@ -5620,7 +5692,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Holding hands in a circle helps the dancers to _______.",
                 "options": ["connect as a group", "gruel", "steal", "sing alone"],
                 "answer": "A",
-                "explanation": "connect as a group意为\\",
+                "explanation": "connect as a group意为\"作 为⼀个团队建⽴连结\"",
             },
             {
                 "week": 11,
@@ -5628,7 +5700,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Doing a backflip is a great way to _______ your skills.",
                 "options": ["hide", "show off", "sleep", "gruel"],
                 "answer": "B",
-                "explanation": "show off意为\\",
+                "explanation": "show off意为\"炫耀/展⽰\"",
             },
             {
                 "week": 11,
@@ -5636,7 +5708,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A character who loves playing playful tricks is very _______.",
                 "options": ["sad", "mischievous", "straight", "gruel"],
                 "answer": "B",
-                "explanation": "mischievous意为\\",
+                "explanation": "mischievous意为\"恶作剧的/淘⽓的\"",
             },
                 ],
                 12: [
@@ -5753,7 +5825,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The very hot center of the Earth is called the _______.",
                 "options": ["crust", "core", "mantle", "structure"],
                 "answer": "B",
-                "explanation": "core意为\\",
+                "explanation": "core意为\"地核\"",
             },
             {
                 "week": 2,
@@ -5761,7 +5833,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The rocky outside layer of the Earth where we live is the _______.",
                 "options": ["core", "mantle", "crust", "focus"],
                 "answer": "C",
-                "explanation": "crust意为\\",
+                "explanation": "crust意为\"地壳\"",
             },
             {
                 "week": 2,
@@ -5769,7 +5841,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The thick layer of rock right below the Earth's crust is the _______.",
                 "options": ["core", "crust", "wave", "mantle"],
                 "answer": "D",
-                "explanation": "mantle意为\\",
+                "explanation": "mantle意为\"地幔\"",
             },
             {
                 "week": 2,
@@ -5777,7 +5849,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The way the inside of the Earth is built and organized is its _______.",
                 "options": ["wave", "structure", "orbit", "shadow"],
                 "answer": "B",
-                "explanation": "structure意为\\",
+                "explanation": "structure意为\"结构\"",
             },
                 ],
                 3: [
@@ -5787,7 +5859,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A mountain with a hole that can blow out hot rock is a _______.",
                 "options": ["core", "volcano", "mantle", "habitat"],
                 "answer": "B",
-                "explanation": "volcano意为\\",
+                "explanation": "volcano意为\"⽕⼭\"",
             },
             {
                 "week": 3,
@@ -5795,7 +5867,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The hot, melted rock that flows out of a volcano is called _______.",
                 "options": ["ash", "core", "lava", "wave"],
                 "answer": "C",
-                "explanation": "lava意为\\",
+                "explanation": "lava意为\"熔岩/岩浆\"",
             },
             {
                 "week": 3,
@@ -5803,7 +5875,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The dark grey powder that shoots into the sky during an eruption is _______.",
                 "options": ["ash", "lava", "crust", "core"],
                 "answer": "A",
-                "explanation": "ash意为\\",
+                "explanation": "ash意为\"⽕⼭灰\"",
             },
             {
                 "week": 3,
@@ -5811,7 +5883,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When a volcano explodes and shoots out lava, we say it will _______.",
                 "options": ["erupt", "orbit", "absorb", "reflect"],
                 "answer": "A",
-                "explanation": "erupt意为\\",
+                "explanation": "erupt意为\"爆发/喷发\"",
             },
                 ],
                 4: [
@@ -5821,7 +5893,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A sudden and violent shaking of the ground is an _______.",
                 "options": ["orbit", "earthquake", "epicentre", "axis"],
                 "answer": "B",
-                "explanation": "earthquake意为\\",
+                "explanation": "earthquake意为\"地震\"",
             },
             {
                 "week": 4,
@@ -5829,7 +5901,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The energy from an earthquake travels outward in a seismic _______.",
                 "options": ["wave", "habitat", "beak", "mirror"],
                 "answer": "A",
-                "explanation": "wave意为\\",
+                "explanation": "wave意为\"波/地震波\"",
             },
             {
                 "week": 4,
@@ -5837,7 +5909,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The point on the Earth's surface directly above the focus is the _______.",
                 "options": ["epicentre", "core", "habitat", "shadow"],
                 "answer": "A",
-                "explanation": "epicentre意为\\",
+                "explanation": "epicentre意为\"震中\"",
             },
                 ],
                 5: [
@@ -5858,7 +5930,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The natural home where an animal or plant lives is its _______.",
                 "options": ["habitat", "wave", "epicentre", "core"],
                 "answer": "A",
-                "explanation": "habitat意为\\",
+                "explanation": "habitat意为\"栖息地\"",
             },
             {
                 "week": 7,
@@ -5866,7 +5938,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A bird uses its hard _______ to pick up seeds to eat.",
                 "options": ["fins", "habitat", "beak", "gills"],
                 "answer": "C",
-                "explanation": "beak意为\\",
+                "explanation": "beak意为\"⻦喙\"",
             },
             {
                 "week": 7,
@@ -5874,7 +5946,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A fish uses its _______ to swim quickly and turn in the water.",
                 "options": ["beak", "fins", "shadow", "core"],
                 "answer": "B",
-                "explanation": "fins意为\\",
+                "explanation": "fins意为\"⻥鳍\"",
             },
             {
                 "week": 7,
@@ -5882,7 +5954,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A fish breathes oxygen from the water using its _______.",
                 "options": ["beak", "habitat", "gills", "orbit"],
                 "answer": "C",
-                "explanation": "gills意为\\",
+                "explanation": "gills意为\"鳃\"",
             },
                 ],
                 8: [
@@ -5892,7 +5964,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The sun shines bright _______ so we are not in the dark.",
                 "options": ["light", "shadow", "asteroid", "fins"],
                 "answer": "A",
-                "explanation": "light意为\\",
+                "explanation": "light意为\"光/光线\"",
             },
             {
                 "week": 8,
@@ -5900,7 +5972,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A shiny mirror will _______ the light back to your eyes.",
                 "options": ["travel", "absorb", "reflect", "spin"],
                 "answer": "C",
-                "explanation": "reflect意为\\",
+                "explanation": "reflect意为\"反射\"",
             },
             {
                 "week": 8,
@@ -5908,7 +5980,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A lamp, a fire, or the sun is a _______ of light.",
                 "options": ["source", "wave", "habitat", "shadow"],
                 "answer": "A",
-                "explanation": "source意为\\",
+                "explanation": "source意为\"光源/来源\"",
             },
             {
                 "week": 8,
@@ -5916,7 +5988,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We use our eyes and light to _______ the things around us.",
                 "options": ["reflect", "absorb", "prove", "see"],
                 "answer": "D",
-                "explanation": "see意为\\",
+                "explanation": "see意为\"看⻅\"",
             },
                 ],
                 9: [
@@ -5926,7 +5998,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Light can _______ very fast through the air and space.",
                 "options": ["spin", "absorb", "travel", "prove"],
                 "answer": "C",
-                "explanation": "travel在此指光线的\\",
+                "explanation": "travel在此指光线的\"传播/⾏进\"",
             },
             {
                 "week": 9,
@@ -5934,7 +6006,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Light always moves in a _______ line, not a wavy line.",
                 "options": ["straight", "round", "spin", "dark"],
                 "answer": "A",
-                "explanation": "straight意为\\",
+                "explanation": "straight意为\"直的\"，指光沿直线传播",
             },
             {
                 "week": 9,
@@ -5942,7 +6014,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Scientists do experiments to _______ that their idea is true.",
                 "options": ["travel", "reflect", "absorb", "prove"],
                 "answer": "D",
-                "explanation": "prove作动词，意为\\",
+                "explanation": "prove作动词，意为\"证明\"",
             },
             {
                 "week": 9,
@@ -5950,7 +6022,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The result of the experiment gives us the _______ we need.",
                 "options": ["proof", "straight", "shadow", "asteroid"],
                 "answer": "A",
-                "explanation": "proof作名词，意为\\",
+                "explanation": "proof作名词，意为\"证据/证明\"",
             },
                 ],
                 10: [
@@ -5971,7 +6043,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Dark colors will _______ more heat from the sun than white colors.",
                 "options": ["reflect", "absorb", "prove", "spin"],
                 "answer": "B",
-                "explanation": "absorb意为\\",
+                "explanation": "absorb意为\"吸收\"",
             },
             {
                 "week": 11,
@@ -5979,7 +6051,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When you look in a mirror, you see your own _______.",
                 "options": ["image", "wave", "asteroid", "axis"],
                 "answer": "A",
-                "explanation": "image意为\\",
+                "explanation": "image意为\"影像/图像\"",
             },
             {
                 "week": 11,
@@ -5987,7 +6059,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A smooth glass that shows your reflection is a _______.",
                 "options": ["globe", "shadow", "mirror", "core"],
                 "answer": "C",
-                "explanation": "mirror意为\\",
+                "explanation": "mirror意为\"镜⼦\"",
             },
             {
                 "week": 11,
@@ -5995,7 +6067,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A rough _______ does not reflect light as well as a smooth one.",
                 "options": ["proof", "surface", "orbit", "beak"],
                 "answer": "B",
-                "explanation": "surface意为\\",
+                "explanation": "surface意为\"表⾯\"",
             },
                 ],
                 12: [
@@ -6005,7 +6077,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The sun and all the objects traveling around it make up the _______.",
                 "options": ["solar system", "asteroid", "globe", "habitat"],
                 "answer": "A",
-                "explanation": "solar system意为\\",
+                "explanation": "solar system意为\"太阳系\"",
             },
             {
                 "week": 12,
@@ -6013,7 +6085,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The circle path a planet takes around the sun is its _______.",
                 "options": ["axis", "orbit", "mirror", "wave"],
                 "answer": "B",
-                "explanation": "orbit意为\\",
+                "explanation": "orbit意为\"轨道/绕轨运⾏\"",
             },
             {
                 "week": 12,
@@ -6021,7 +6093,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A small, rocky space object flying around the sun is an _______.",
                 "options": ["image", "asteroid", "crust", "mantle"],
                 "answer": "B",
-                "explanation": "asteroid意为\\",
+                "explanation": "asteroid意为\"⼩⾏星\"",
             },
             {
                 "week": 12,
@@ -6029,7 +6101,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Earth is a large _______ that orbits the sun.",
                 "options": ["planet", "asteroid", "core", "focus"],
                 "answer": "A",
-                "explanation": "planet意为\\",
+                "explanation": "planet意为\"⾏星\"",
             },
                 ],
                 13: [
@@ -6039,7 +6111,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To turn around and around like a top is to _______.",
                 "options": ["travel", "spin", "absorb", "prove"],
                 "answer": "B",
-                "explanation": "spin意为\\",
+                "explanation": "spin意为\"旋转/⾃转\"",
             },
             {
                 "week": 13,
@@ -6047,7 +6119,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The Earth spins on an invisible line called its _______.",
                 "options": ["axis", "orbit", "asteroid", "equator"],
                 "answer": "A",
-                "explanation": "axis意为\\",
+                "explanation": "axis意为\"地轴/中⼼轴\"",
             },
             {
                 "week": 13,
@@ -6055,7 +6127,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Moving in the opposite direction of the hands on a clock is _______.",
                 "options": ["straight", "clockwise", "anticlockwise", "straight"],
                 "answer": "C",
-                "explanation": "anticlockwise意为\\",
+                "explanation": "anticlockwise意为\"逆时 针⽅向的\"",
             },
             {
                 "week": 13,
@@ -6063,7 +6135,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Moving in the same direction as the hands on a clock is _______.",
                 "options": ["straight", "clockwise", "anticlockwise", "straight"],
                 "answer": "B",
-                "explanation": "clockwise意为\\",
+                "explanation": "clockwise意为\"顺时针⽅向 的\"",
             },
                 ],
                 14: [
@@ -6073,7 +6145,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "It takes Earth one full year to completely _______ the sun.",
                 "options": ["absorb", "reflect", "orbit", "spin"],
                 "answer": "C",
-                "explanation": "巩固词汇：orbit作动词，意为\\",
+                "explanation": "巩固词汇：orbit作动词，意为\"绕轨道运⾏/环绕\"",
             },
             {
                 "week": 14,
@@ -6081,7 +6153,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To see if your hair is messy, you look into a _______.",
                 "options": ["globe", "mirror", "axis", "habitat"],
                 "answer": "B",
-                "explanation": "巩固词汇：mirror意为\\",
+                "explanation": "巩固词汇：mirror意为\"镜⼦\"",
             },
             {
                 "week": 14,
@@ -6089,7 +6161,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A sponge will _______ spilled water from the table quickly.",
                 "options": ["absorb", "reflect", "travel", "prove"],
                 "answer": "A",
-                "explanation": "巩固词汇：absorb意为\\",
+                "explanation": "巩固词汇：absorb意为\"吸收\"",
             },
             {
                 "week": 14,
@@ -6097,7 +6169,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Earth is the third planet in our _______.",
                 "options": ["asteroid", "solar system", "globe", "mirror"],
                 "answer": "B",
-                "explanation": "巩固词汇：solar system意为\\",
+                "explanation": "巩固词汇：solar system意为\"太阳系\"",
             },
                 ],
                 15: [
@@ -6120,7 +6192,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A type of woven cloth or material is a _______.",
                 "options": ["pattern", "textile", "border", "palette"],
                 "answer": "B",
-                "explanation": "textile意为\\",
+                "explanation": "textile意为\"纺织品\"",
             },
             {
                 "week": 2,
@@ -6128,7 +6200,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Cotton or silk material used to sew shirts is called _______.",
                 "options": ["fabric", "palette", "grid", "motif"],
                 "answer": "A",
-                "explanation": "fabric意为\\",
+                "explanation": "fabric意为\"布料/织物\"",
             },
             {
                 "week": 2,
@@ -6136,7 +6208,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A design that repeats over and over is a _______.",
                 "options": ["palette", "border", "pattern", "grid"],
                 "answer": "C",
-                "explanation": "pattern意为\\",
+                "explanation": "pattern意为\"图案/花纹\"",
             },
             {
                 "week": 2,
@@ -6144,7 +6216,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A small, single shape or design that gets repeated is a _______.",
                 "options": ["border", "grid", "palette", "motif"],
                 "answer": "D",
-                "explanation": "motif意为\\",
+                "explanation": "motif意为\"主题/基本图形/装饰纹样\"",
             },
                 ],
                 3: [
@@ -6154,7 +6226,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To draw the exact same star shape again and again is to _______ it.",
                 "options": ["rotation", "repeat", "symmetry", "border"],
                 "answer": "B",
-                "explanation": "repeat意为\\",
+                "explanation": "repeat意为\"重复\"",
             },
             {
                 "week": 3,
@@ -6162,7 +6234,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the left side matches the right side, it has perfect _______.",
                 "options": ["rotation", "grid", "symmetry", "palette"],
                 "answer": "C",
-                "explanation": "symmetry意为\\",
+                "explanation": "symmetry意为\"对称\"",
             },
             {
                 "week": 3,
@@ -6170,7 +6242,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Spinning or turning a shape around a center point is called _______.",
                 "options": ["rotation", "border", "symmetry", "palette"],
                 "answer": "A",
-                "explanation": "rotation意为\\",
+                "explanation": "rotation意为\"旋转\"",
             },
             {
                 "week": 3,
@@ -6178,7 +6250,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A network of crisscrossing lines used to align drawings is a _______.",
                 "options": ["motif", "grid", "palette", "rotation"],
                 "answer": "B",
-                "explanation": "grid意为\\",
+                "explanation": "grid意为\"⽹格\"",
             },
                 ],
                 4: [
@@ -6188,7 +6260,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A flat board where an artist mixes paint is a _______.",
                 "options": ["border", "palette", "motif", "grid"],
                 "answer": "B",
-                "explanation": "palette意为\\",
+                "explanation": "palette意为\"调⾊板\"",
             },
             {
                 "week": 4,
@@ -6196,7 +6268,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Red, blue, and yellow are examples of _______.",
                 "options": ["texture", "colour", "palette", "border"],
                 "answer": "B",
-                "explanation": "colour意为\\",
+                "explanation": "colour意为\"颜⾊/⾊彩\"",
             },
             {
                 "week": 4,
@@ -6204,7 +6276,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A decorative line drawn around the outside edge of a picture is a _______.",
                 "options": ["border", "palette", "rotation", "symmetry"],
                 "answer": "A",
-                "explanation": "border意为\\",
+                "explanation": "border意为\"边框/边界\"",
             },
             {
                 "week": 4,
@@ -6212,7 +6284,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "How rough or smooth a painting feels is its _______.",
                 "options": ["texture", "palette", "grid", "motif"],
                 "answer": "A",
-                "explanation": "texture意为\\",
+                "explanation": "texture意为\"纹理/质感\"",
             },
                 ],
                 5: [
@@ -6233,7 +6305,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A large 3D art piece built inside a whole room is _______.",
                 "options": ["origami", "installation art", "stroke", "calligraphy"],
                 "answer": "B",
-                "explanation": "installation art意为\\",
+                "explanation": "installation art意为\"装置 艺术\"",
             },
             {
                 "week": 7,
@@ -6241,7 +6313,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The Japanese art of folding paper into shapes is _______.",
                 "options": ["calligraphy", "installation art", "origami", "stroke"],
                 "answer": "C",
-                "explanation": "origami意为\\",
+                "explanation": "origami意为\"折纸艺术\"",
             },
             {
                 "week": 7,
@@ -6249,7 +6321,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Folding paper so the crease points up like a peak is a _______.",
                 "options": ["valley fold", "mountain fold", "stroke", "pupil"],
                 "answer": "B",
-                "explanation": "mountain fold意为\\",
+                "explanation": "mountain fold意为\"⼭折/凸 折\"",
             },
             {
                 "week": 7,
@@ -6257,7 +6329,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Folding paper so the crease points down like a V is a _______.",
                 "options": ["valley fold", "mountain fold", "installation art", "origami"],
                 "answer": "A",
-                "explanation": "valley fold意为\\",
+                "explanation": "valley fold意为\"⾕折/凹 折\"",
             },
                 ],
                 8: [
@@ -6267,7 +6339,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The art of writing beautifully with a brush and ink is _______.",
                 "options": ["origami", "calligraphy", "culture", "stroke"],
                 "answer": "B",
-                "explanation": "calligraphy意为\\",
+                "explanation": "calligraphy意为\"书法\"",
             },
             {
                 "week": 8,
@@ -6275,7 +6347,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A single movement of a brush to make a line is a _______.",
                 "options": ["pupil", "culture", "stroke", "origami"],
                 "answer": "C",
-                "explanation": "stroke意为\\",
+                "explanation": "stroke意为\"笔画/笔触\"",
             },
             {
                 "week": 8,
@@ -6283,7 +6355,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Traditional art styles passed down by a group of people belong to their _______.",
                 "options": ["pupil", "culture", "stroke", "fold"],
                 "answer": "B",
-                "explanation": "culture意为\\",
+                "explanation": "culture意为\"⽂化\"",
             },
             {
                 "week": 8,
@@ -6291,7 +6363,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Doing art the same way for hundreds of years creates a rich _______.",
                 "options": ["tradition", "origami", "stroke", "pupil"],
                 "answer": "A",
-                "explanation": "tradition意为\\",
+                "explanation": "tradition意为\"传统\"",
             },
                 ],
                 9: [
@@ -6301,7 +6373,15 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A young student learning art from a master teacher is a _______.",
                 "options": ["pupil", "culture", "stroke", "fold"],
                 "answer": "A",
-                "explanation": "pupil意为\\",
+                "explanation": "pupil意为\"学⽣/学徒\"",
+            },
+            {
+                "week": 9,
+                "keyword": "complementary color",
+                "question": "Red and green are opposite on the color wheel, making them a _______ pair.",
+                "options": ["mountain fold", "stroke", "complementary color", "pupil"],
+                "answer": "C",
+                "explanation": "",
             },
             {
                 "week": 9,
@@ -6338,7 +6418,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The traditional art of making designs by cutting thin red paper is _______.",
                 "options": ["paper cutting", "font design", "sketch", "typography"],
                 "answer": "A",
-                "explanation": "paper cutting 意为\\",
+                "explanation": "paper cutting 意为\"剪纸\"",
             },
             {
                 "week": 11,
@@ -6346,7 +6426,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A sharp metal tool used to slice through paper is a pair of _______.",
                 "options": ["markers", "scissors", "brushes", "sketches"],
                 "answer": "B",
-                "explanation": "scissors意为\\",
+                "explanation": "scissors意为\"剪⼑\"",
             },
             {
                 "week": 11,
@@ -6354,7 +6434,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A beautiful paper decoration hung on the wall is an _______.",
                 "options": ["ornament", "sketch", "scissors", "font"],
                 "answer": "A",
-                "explanation": "ornament意为\\",
+                "explanation": "ornament意为\"装饰品\"",
             },
             {
                 "week": 11,
@@ -6362,7 +6442,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A symbol that brings good luck and fortune is _______.",
                 "options": ["sketch", "typography", "auspicious", "ornament"],
                 "answer": "C",
-                "explanation": "auspicious意为\\",
+                "explanation": "auspicious意为\"吉祥的/吉利的\"",
             },
                 ],
                 12: [
@@ -6372,7 +6452,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Creating snowflakes from folded paper is a type of _______.",
                 "options": ["sketch", "typography", "paper-cutting", "font design"],
                 "answer": "C",
-                "explanation": "巩固词汇：paper- cutting\\",
+                "explanation": "巩固词汇：paper- cutting\"剪纸\"",
             },
             {
                 "week": 12,
@@ -6380,7 +6460,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Always be careful when holding sharp _______.",
                 "options": ["sketch", "scissors", "font", "layout"],
                 "answer": "B",
-                "explanation": "巩固词汇：scissors\\",
+                "explanation": "巩固词汇：scissors\"剪⼑\"",
             },
             {
                 "week": 12,
@@ -6388,7 +6468,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To cut just a little bit off the edges to make it neat is to _______ it.",
                 "options": ["sketch", "tear", "trim", "fold"],
                 "answer": "C",
-                "explanation": "trim意为\\",
+                "explanation": "trim意为\"修剪\"",
             },
             {
                 "week": 12,
@@ -6396,7 +6476,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To rip paper apart with your hands is to _______ it.",
                 "options": ["tear", "trim", "sketch", "fold"],
                 "answer": "A",
-                "explanation": "tear意为\\",
+                "explanation": "tear意为\"撕/撕开\"",
             },
                 ],
                 13: [
@@ -6406,7 +6486,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Creating a specific shape and style for letters is _______.",
                 "options": ["font design", "paper cutting", "tear", "trim"],
                 "answer": "A",
-                "explanation": "font design意为\\",
+                "explanation": "font design意为\"字体设计\"",
             },
             {
                 "week": 13,
@@ -6414,7 +6494,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The art of arranging text to make reading look nice is _______.",
                 "options": ["typography", "origami", "paper cutting", "sketch"],
                 "answer": "A",
-                "explanation": "typography意为\\",
+                "explanation": "typography意为\"排版艺术/ 字体排印\"",
             },
             {
                 "week": 13,
@@ -6422,7 +6502,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A quick, rough pencil drawing is a _______.",
                 "options": ["tear", "trim", "sketch", "scissors"],
                 "answer": "C",
-                "explanation": "sketch意为\\",
+                "explanation": "sketch意为\"草图/素描\"",
             },
             {
                 "week": 13,
@@ -6430,7 +6510,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The overall plan of where pictures and text go on a page is the _______.",
                 "options": ["layout", "tear", "trim", "scissors"],
                 "answer": "A",
-                "explanation": "layout意为\\",
+                "explanation": "layout意为\"布局/版⾯设计\"",
             },
                 ],
                 14: [
@@ -6489,7 +6569,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A period of 100 years is called a _______.",
                 "options": ["decade", "century", "millennium", "year"],
                 "answer": "B",
-                "explanation": "century意为\\",
+                "explanation": "century意为\"世纪/百年\"",
             },
             {
                 "week": 2,
@@ -6497,7 +6577,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A period of 1,000 years is called a _______.",
                 "options": ["century", "day", "millennium", "month"],
                 "answer": "C",
-                "explanation": "millennium意为\\",
+                "explanation": "millennium意为\"千年/千禧年\"",
             },
             {
                 "week": 2,
@@ -6505,7 +6585,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What you see when you look at an object from directly in front is its _______.",
                 "options": ["top view", "side view", "front view", "back view"],
                 "answer": "C",
-                "explanation": "front view意为\\",
+                "explanation": "front view意为\"正 视图/主视图\"",
             },
             {
                 "week": 2,
@@ -6513,7 +6593,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Looking at a car from its left or right gives you the _______.",
                 "options": ["top view", "side view", "front view", "bottom view"],
                 "answer": "B",
-                "explanation": "side view意为\\",
+                "explanation": "side view意为\"侧视图\"",
             },
             {
                 "week": 2,
@@ -6521,7 +6601,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What you see when you look at an object from directly above is its _______.",
                 "options": ["top view", "side view", "front view", "bottom view"],
                 "answer": "A",
-                "explanation": "top view意为\\",
+                "explanation": "top view意为\"俯视图/顶视图\"",
             },
                 ],
                 3: [
@@ -6531,7 +6611,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Drawing a road getting narrower in the distance shows _______.",
                 "options": ["object", "block", "perspective", "fraction"],
                 "answer": "C",
-                "explanation": "perspective意为\\",
+                "explanation": "perspective意为\"透视/视⻆\"",
             },
             {
                 "week": 3,
@@ -6539,7 +6619,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A flat shape like a square or a circle is _______.",
                 "options": ["3-dimensional", "2-dimensional", "heavy", "solid"],
                 "answer": "B",
-                "explanation": "2-dimensional意为\\",
+                "explanation": "2-dimensional意为\"⼆维的/平⾯的\"",
             },
             {
                 "week": 3,
@@ -6547,7 +6627,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A shape that has length, width, and depth (like a box) is _______.",
                 "options": ["flat", "2-dimensional", "3-dimensional", "line"],
                 "answer": "C",
-                "explanation": "3-dimensional意为\\",
+                "explanation": "3-dimensional意为\"三维的/⽴ 体的\"",
             },
             {
                 "week": 3,
@@ -6555,7 +6635,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A physical thing that you can touch and see is an _______.",
                 "options": ["object", "idea", "dream", "sound"],
                 "answer": "A",
-                "explanation": "object意为\\",
+                "explanation": "object意为\"物体\"",
             },
             {
                 "week": 3,
@@ -6563,7 +6643,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A solid piece of wood or plastic used for building is a _______.",
                 "options": ["circle", "block", "point", "line"],
                 "answer": "B",
-                "explanation": "block意为\\",
+                "explanation": "block意为\"⽊块/积⽊/块体\"",
             },
                 ],
                 4: [
@@ -6573,7 +6653,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A 3D shape with 6 equal square faces, like a dice, is a _______.",
                 "options": ["sphere", "cube", "line", "triangle"],
                 "answer": "B",
-                "explanation": "cube意为\\",
+                "explanation": "cube意为\"⽴⽅体/正⽅体\"",
             },
             {
                 "week": 4,
@@ -6581,7 +6661,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A box-like 3D shape with rectangular faces is called a _______.",
                 "options": ["circle", "cuboid", "pyramid", "cone"],
                 "answer": "B",
-                "explanation": "cuboid意为\\",
+                "explanation": "cuboid意为\"⻓⽅体\"",
             },
             {
                 "week": 4,
@@ -6589,7 +6669,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Another mathematical name for a cuboid is a _______.",
                 "options": ["rectangular prism", "cylinder", "cube", "sphere"],
                 "answer": "A",
-                "explanation": "rectangular prism意为\\",
+                "explanation": "rectangular prism意为\"矩形 棱柱/⻓⽅体\"",
             },
             {
                 "week": 4,
@@ -6597,7 +6677,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To find out how long a box is, you measure its _______.",
                 "options": ["height", "color", "length", "weight"],
                 "answer": "C",
-                "explanation": "length意为\\",
+                "explanation": "length意为\"⻓度\"",
             },
             {
                 "week": 4,
@@ -6605,7 +6685,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To find out how tall a box is, you measure its _______.",
                 "options": ["length", "height", "side", "fraction"],
                 "answer": "B",
-                "explanation": "height意为\\",
+                "explanation": "height意为\"⾼度\"",
             },
                 ],
                 5: [
@@ -6615,7 +6695,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The number 3 is a _______ of 12 because 3 × 4 = 12.",
                 "options": ["factor", "multiple", "decimal", "fraction"],
                 "answer": "A",
-                "explanation": "factor意为\\",
+                "explanation": "factor意为\"因数\"",
             },
             {
                 "week": 5,
@@ -6623,7 +6703,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The number 3 is a _______ factor that both 12 and 15 share.",
                 "options": ["common", "rare", "single", "zero"],
                 "answer": "A",
-                "explanation": "common在此语境下意为\\",
+                "explanation": "common在此语境下意为\"共同的\"",
             },
             {
                 "week": 5,
@@ -6631,7 +6711,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When we _______ 12 apples equally among 3 friends, each gets 4.",
                 "options": ["share", "multiply", "subtract", "divide"],
                 "answer": "A",
-                "explanation": "share意为\\",
+                "explanation": "share意为\"分享/分配\"",
             },
             {
                 "week": 5,
@@ -6650,7 +6730,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The number 2 is a _______ of both 4 and 8.",
                 "options": ["common factor", "remainder", "decimal", "volume"],
                 "answer": "A",
-                "explanation": "common factor意为\\",
+                "explanation": "common factor意为\"公因数\"",
             },
             {
                 "week": 7,
@@ -6658,7 +6738,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The number 12 is a _______ of both 3 and 4.",
                 "options": ["common factor", "remainder", "common multiple", "cube"],
                 "answer": "C",
-                "explanation": "common multiple意为\\",
+                "explanation": "common multiple意为\"公倍数\"",
             },
             {
                 "week": 7,
@@ -6666,7 +6746,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A number ending in 0 is always _______ by 10.",
                 "options": ["heavy", "divisible", "mixed", "flat"],
                 "answer": "B",
-                "explanation": "divisible意为\\",
+                "explanation": "divisible意为\"可整除的\"",
             },
             {
                 "week": 7,
@@ -6674,7 +6754,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you divide 10 by 3, the answer is 3 with a _______ of 1.",
                 "options": ["factor", "multiple", "remainder", "object"],
                 "answer": "C",
-                "explanation": "remainder意为\\",
+                "explanation": "remainder意为\"余数\"",
             },
                 ],
                 8: [
@@ -6684,7 +6764,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A number like 1/2 or 3/4 is called a _______.",
                 "options": ["fraction", "multiple", "remainder", "cube"],
                 "answer": "A",
-                "explanation": "fraction意为\\",
+                "explanation": "fraction意为\"分数\"",
             },
             {
                 "week": 8,
@@ -6692,7 +6772,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A number like 2 1/2 that has both a whole number and a fraction is a _______.",
                 "options": ["improper", "mixed number", "equal", "normal"],
                 "answer": "B",
-                "explanation": "mixed number意为\\",
+                "explanation": "mixed number意为\"带分数\"",
             },
             {
                 "week": 8,
@@ -6700,7 +6780,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A fraction where the top number is larger than the bottom number (like 5/3) is an _______ fraction.",
                 "options": ["improper", "mixed", "equal", "normal"],
                 "answer": "A",
-                "explanation": "improper意为\\",
+                "explanation": "improper意为\"假分数中的'假的/不当的'\"",
             },
             {
                 "week": 8,
@@ -6708,7 +6788,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To make a fair fraction, all slices of the pizza must be _______ in size.",
                 "options": ["improper", "mixed", "equal", "heavy"],
                 "answer": "C",
-                "explanation": "equal意为\\",
+                "explanation": "equal意为\"相等的\"",
             },
             {
                 "week": 8,
@@ -6716,7 +6796,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A fraction represents a _______ of a whole.",
                 "options": ["length", "part", "volume", "height"],
                 "answer": "B",
-                "explanation": "part意为\\",
+                "explanation": "part意为\"部分\"",
             },
                 ],
                 9: [
@@ -6726,7 +6806,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If we _______ 1/4 and 1/4, we get 2/4.",
                 "options": ["subtract", "multiply", "add", "divide"],
                 "answer": "C",
-                "explanation": "add意为\\",
+                "explanation": "add意为\"加\"",
             },
             {
                 "week": 9,
@@ -6734,7 +6814,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If we _______ 1/3 from 2/3, we get 1/3.",
                 "options": ["add", "subtract", "simplify", "count"],
                 "answer": "B",
-                "explanation": "subtract意为\\",
+                "explanation": "subtract意为\"减去\"",
             },
             {
                 "week": 9,
@@ -6742,7 +6822,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "2/5 is a math _______ that shows two out of five pieces.",
                 "options": ["volume", "shape", "remainder", "fraction"],
                 "answer": "D",
-                "explanation": "fraction意为\\",
+                "explanation": "fraction意为\"分数\"",
             },
             {
                 "week": 9,
@@ -6750,7 +6830,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The fraction 7/4 is _______ because 7 is bigger than 4.",
                 "options": ["proper", "improper", "equal", "mixed"],
                 "answer": "B",
-                "explanation": "improper意为\\",
+                "explanation": "improper意为\"假（分数",
             },
             {
                 "week": 9,
@@ -6758,7 +6838,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To make 2/4 into 1/2, we must _______ the fraction.",
                 "options": ["add", "simplify", "subtract", "count"],
                 "answer": "B",
-                "explanation": "simplify意为\\",
+                "explanation": "simplify意为\"化简/约分\"",
             },
                 ],
                 10: [
@@ -6768,7 +6848,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A complete pizza before cutting is called a _______.",
                 "options": ["whole", "fraction", "part", "piece"],
                 "answer": "A",
-                "explanation": "whole意为\\",
+                "explanation": "whole意为\"整体/全部\"",
             },
             {
                 "week": 10,
@@ -6787,7 +6867,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A dice is a perfect 3D _______ with square faces.",
                 "options": ["line", "point", "cube", "circle"],
                 "answer": "C",
-                "explanation": "cube意为\\",
+                "explanation": "cube意为\"⽴⽅体\"",
             },
             {
                 "week": 11,
@@ -6795,7 +6875,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A shoe box is an example of a 3D _______.",
                 "options": ["sphere", "cuboid", "triangle", "pyramid"],
                 "answer": "B",
-                "explanation": "cuboid意为\\",
+                "explanation": "cuboid意为\"⻓⽅体\"",
             },
             {
                 "week": 11,
@@ -6803,7 +6883,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The flat outside face of a 3D shape is its _______.",
                 "options": ["edge", "volume", "surface", "multiple"],
                 "answer": "C",
-                "explanation": "surface意为\\",
+                "explanation": "surface意为\"表⾯\"",
             },
             {
                 "week": 11,
@@ -6811,7 +6891,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The straight line where two surfaces of a cuboid meet is an _______.",
                 "options": ["edge", "volume", "factor", "fraction"],
                 "answer": "A",
-                "explanation": "edge意为\\",
+                "explanation": "edge意为\"边缘/棱\"",
             },
             {
                 "week": 11,
@@ -6819,7 +6899,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The amount of 3D space inside a box is its _______.",
                 "options": ["length", "volume", "edge", "height"],
                 "answer": "B",
-                "explanation": "volume意为\\",
+                "explanation": "volume意为\"体积/容积\"",
             },
                 ],
                 12: [
@@ -6829,7 +6909,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We fill a cup with water to measure its _______.",
                 "options": ["line", "point", "space", "volume"],
                 "answer": "D",
-                "explanation": "volume意为\\",
+                "explanation": "volume意为\"体积/容积\"",
             },
             {
                 "week": 12,
@@ -6837,7 +6917,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A standard size used for measuring, like a kilogram or a litre, is a _______.",
                 "options": ["unit", "edge", "shape", "fraction"],
                 "answer": "A",
-                "explanation": "unit意为\\",
+                "explanation": "unit意为\"单位\"",
             },
             {
                 "week": 12,
@@ -6845,7 +6925,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We use a ruler to measure small things in _______s.",
                 "options": ["hours", "kilograms", "centimetres", "tones"],
                 "answer": "C",
-                "explanation": "centimetre意为\\",
+                "explanation": "centimetre意为\"厘⽶\"",
             },
             {
                 "week": 12,
@@ -6853,7 +6933,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To find how many blocks there are, you must _______ them one by one.",
                 "options": ["slide", "count", "turn", "flip"],
                 "answer": "B",
-                "explanation": "count意为\\",
+                "explanation": "count意为\"计数/数数\"",
             },
             {
                 "week": 12,
@@ -6861,7 +6941,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Volume tells us how much 3D _______ an object takes up.",
                 "options": ["space", "line", "edge", "point"],
                 "answer": "A",
-                "explanation": "space意为\\",
+                "explanation": "space意为\"空间\"",
             },
                 ],
                 13: [
@@ -6871,7 +6951,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Moving a shape across a grid is a type of mathematical _______.",
                 "options": ["unit", "point", "movement", "volume"],
                 "answer": "C",
-                "explanation": "movement意为\\",
+                "explanation": "movement意为\"移动/运动\"",
             },
             {
                 "week": 13,
@@ -6879,7 +6959,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To move a shape left or right without turning it is to _______ it (translation).",
                 "options": ["slide", "count", "observe", "divide"],
                 "answer": "A",
-                "explanation": "slide意为\\",
+                "explanation": "slide意为\"平移/滑动\"",
             },
             {
                 "week": 13,
@@ -6887,7 +6967,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To rotate a shape around a center point is to _______ it.",
                 "options": ["count", "turn", "slide", "add"],
                 "answer": "B",
-                "explanation": "turn意为\\",
+                "explanation": "turn意为\"旋转/转动\"",
             },
             {
                 "week": 13,
@@ -6895,7 +6975,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To create a mirror image of a shape over a line is to _______ it (reflection).",
                 "options": ["flip", "count", "slide", "turn"],
                 "answer": "A",
-                "explanation": "flip意为\\",
+                "explanation": "flip意为\"翻转\"",
             },
             {
                 "week": 13,
@@ -6903,7 +6983,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A triangle, square, or circle is a 2D _______.",
                 "options": ["volume", "unit", "shape", "line"],
                 "answer": "C",
-                "explanation": "shape意为\\",
+                "explanation": "shape意为\"形状\"",
             },
                 ],
                 14: [
@@ -6913,7 +6993,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To look closely at the information in a chart is to _______ it.",
                 "options": ["slide", "observe", "flip", "turn"],
                 "answer": "B",
-                "explanation": "observe意为\\",
+                "explanation": "observe意为\"观察\"",
             },
             {
                 "week": 14,
@@ -6921,7 +7001,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The numbers and facts we collect for a math project are called _______.",
                 "options": ["data", "volume", "edge", "unit"],
                 "answer": "A",
-                "explanation": "data意为\\",
+                "explanation": "data意为\"数据\"",
             },
             {
                 "week": 14,
@@ -6929,7 +7009,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "On a graph, a specific dot marking a piece of data is a _______.",
                 "options": ["edge", "volume", "point", "slide"],
                 "answer": "C",
-                "explanation": "point意为\\",
+                "explanation": "point意为\"点/坐标点\"",
             },
             {
                 "week": 14,
@@ -6937,7 +7017,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The general direction that the line graph goes (up or down) is the _______.",
                 "options": ["cube", "trend", "surface", "unit"],
                 "answer": "B",
-                "explanation": "trend意为\\",
+                "explanation": "trend意为\"趋势\"",
             },
                 ],
                 15: [
@@ -6947,7 +7027,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In multiplication, 5 is a _______ of 10 because 5 × 2 = 10.",
                 "options": ["factor", "multiple", "fraction", "decimal"],
                 "answer": "A",
-                "explanation": "factor意为\\",
+                "explanation": "factor意为\"因数\"",
             },
             {
                 "week": 15,
@@ -6968,7 +7048,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A plastic or wooden wind instrument we play by blowing air into it is the _______.",
                 "options": ["piano", "guitar", "soprano recorder", "drum"],
                 "answer": "C",
-                "explanation": "soprano recorder意为\\",
+                "explanation": "soprano recorder意为\"⾼⾳竖笛\"",
             },
             {
                 "week": 2,
@@ -6976,7 +7056,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using the correct fingers to cover specific holes on an instrument is called _______.",
                 "options": ["fingering", "dancing", "acting", "singing"],
                 "answer": "A",
-                "explanation": "fingering意为\\",
+                "explanation": "fingering意为\"指 法\"",
             },
             {
                 "week": 2,
@@ -6984,7 +7064,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The single hole on the back of the recorder covered by your thumb is the _______.",
                 "options": ["front hole", "thumb hole", "bottom hole", "top hole"],
                 "answer": "B",
-                "explanation": "thumb hole意为\\",
+                "explanation": "thumb hole意为\"拇指孔\"",
             },
             {
                 "week": 2,
@@ -6992,7 +7072,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Blowing air steadily so the instrument sounds smooth requires good _______.",
                 "options": ["breath control", "eye contact", "footwork", "memory"],
                 "answer": "A",
-                "explanation": "breath control意为\\",
+                "explanation": "breath control意为\"⽓息控制\"",
             },
             {
                 "week": 2,
@@ -7000,7 +7080,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "How high or low a musical note sounds is its _______.",
                 "options": ["volume", "pitch", "rest", "beat"],
                 "answer": "B",
-                "explanation": "补充词汇：pitch意为\\",
+                "explanation": "补充词汇：pitch意为\"⾳⾼\"",
             },
                 ],
                 3: [
@@ -7010,7 +7090,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Music can make us feel happy, sad, or excited because it carries strong _______.",
                 "options": ["emotion", "math", "science", "silence"],
                 "answer": "A",
-                "explanation": "emotion意为\\",
+                "explanation": "emotion意为\"情感/情绪\"",
             },
             {
                 "week": 3,
@@ -7018,7 +7098,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The specific purpose or goal the singer wants to show the audience is their musical _______.",
                 "options": ["volume", "mistake", "intention", "accident"],
                 "answer": "C",
-                "explanation": "intention意为\\",
+                "explanation": "intention意为\"意图/⽬的\"",
             },
             {
                 "week": 3,
@@ -7026,7 +7106,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When we read the lyrics carefully, we can understand the deep _______ of the song.",
                 "options": ["color", "meaning", "weight", "height"],
                 "answer": "B",
-                "explanation": "meaning意为\\",
+                "explanation": "meaning意为\"意义/含 义\"",
             },
             {
                 "week": 3,
@@ -7034,7 +7114,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Showing the feeling of the music through your voice and face is your _______.",
                 "options": ["expression", "silence", "mistake", "resting"],
                 "answer": "A",
-                "explanation": "expression意 为\\",
+                "explanation": "expression意 为\"表达/表现⼒\"",
             },
                 ],
                 4: [
@@ -7044,7 +7124,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Pronouncing every word clearly while singing so the audience understands is good _______.",
                 "options": ["enunciation", "sleeping", "dancing", "breathing"],
                 "answer": "A",
-                "explanation": "enunciation意为\\",
+                "explanation": "enunciation意为\"清晰的发⾳/咬字\"",
             },
             {
                 "week": 4,
@@ -7052,7 +7132,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Letters like T, P, and K that make crisp sounds in lyrics are _______s.",
                 "options": ["vowels", "numbers", "consonants", "colors"],
                 "answer": "C",
-                "explanation": "consonant意为\\",
+                "explanation": "consonant意为\"辅⾳\"",
             },
                 ],
                 5: [
@@ -7073,7 +7153,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Starting your song at the exact right beat is catching the perfect _______.",
                 "options": ["timing moment", "resting space", "wrong turn", "sleeping time"],
                 "answer": "A",
-                "explanation": "timing moment意为\\",
+                "explanation": "timing moment意为\"时机掌握\"",
             },
             {
                 "week": 7,
@@ -7081,7 +7161,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Looking surprised when the music suddenly gets loud is a good facial _______.",
                 "options": ["reaction", "silence", "cue line", "resting"],
                 "answer": "A",
-                "explanation": "reaction意为\\",
+                "explanation": "reaction意为\"反应\"",
             },
             {
                 "week": 7,
@@ -7089,7 +7169,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Looking at your partner and singing together is a beautiful musical _______.",
                 "options": ["isolation", "interaction", "mistake", "secret"],
                 "answer": "B",
-                "explanation": "interaction意为\\",
+                "explanation": "interaction意为\"互 动\"",
             },
                 ],
                 8: [
@@ -7099,7 +7179,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The director's plan of exactly where every actor stands on stage is the _______.",
                 "options": ["singing", "blocking", "sleeping", "resting"],
                 "answer": "B",
-                "explanation": "blocking意为\\",
+                "explanation": "blocking意为\"⾛位安排\"",
             },
             {
                 "week": 8,
@@ -7107,7 +7187,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The invisible line you walk on to get from the left to the right of the stage is your _______.",
                 "options": ["movement path", "vocal energy", "high note", "rest"],
                 "answer": "A",
-                "explanation": "movement path意为\\",
+                "explanation": "movement path意为\"移动路线\"",
             },
                 ],
                 9: [
@@ -7117,7 +7197,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Deciding to sing a sad song while looking at the floor is a specific _______.",
                 "options": ["mistake", "acting choice", "sleep", "rest"],
                 "answer": "B",
-                "explanation": "acting choice意为\\",
+                "explanation": "acting choice意为\"表演选 择/处理⽅式\"",
             },
             {
                 "week": 9,
@@ -7125,7 +7205,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the music pauses and everyone holds their breath, it creates a _______.",
                 "options": ["boring time", "dramatic moment", "funny joke", "mistake"],
                 "answer": "B",
-                "explanation": "dramatic moment意为\\",
+                "explanation": "dramatic moment意为\"戏剧性时刻\"",
             },
             {
                 "week": 9,
@@ -7133,7 +7213,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Showing if your character is brave or shy is showing their _______.",
                 "options": ["height", "personality", "weight", "color"],
                 "answer": "B",
-                "explanation": "personality意为\\",
+                "explanation": "personality意为\"性格/个性\"",
             },
             {
                 "week": 9,
@@ -7141,7 +7221,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Picturing a magical forest in your mind while singing requires great _______.",
                 "options": ["imagination", "anger", "argument", "sleep"],
                 "answer": "A",
-                "explanation": "imagination意 为\\",
+                "explanation": "imagination意 为\"想象⼒\"",
             },
                 ],
                 10: [
@@ -7162,7 +7242,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Singing a group of notes smoothly together like a sentence is good _______.",
                 "options": ["noise", "musical phrasing", "silence", "resting"],
                 "answer": "B",
-                "explanation": "musical phrasing意为\\",
+                "explanation": "musical phrasing意为\"乐句处理\"",
             },
             {
                 "week": 11,
@@ -7170,7 +7250,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Changing your tone to sound dark and sad gives the song a different _______.",
                 "options": ["emotional color", "height", "speed", "rest"],
                 "answer": "A",
-                "explanation": "emotional color 意为\\",
+                "explanation": "emotional color 意为\"情感⾊彩\"",
             },
             {
                 "week": 11,
@@ -7178,7 +7258,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Singing with strong power and deep focus brings high _______ to the performance.",
                 "options": ["sleepiness", "boredom", "intensity", "silence"],
                 "answer": "C",
-                "explanation": "intensity意为\\",
+                "explanation": "intensity意为\"强度/张⼒\"",
             },
                 ],
                 12: [
@@ -7188,7 +7268,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Making the people in the seats clap and sing along is great _______.",
                 "options": ["boredom", "audience engagement", "stage focus", "sleep"],
                 "answer": "B",
-                "explanation": "audience engagement意为\\",
+                "explanation": "audience engagement意为\"观众互动/参与感\"",
             },
             {
                 "week": 12,
@@ -7196,7 +7276,15 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Standing tall and not being afraid to sing solos shows strong _______.",
                 "options": ["fear", "stage confidence", "mistake", "running"],
                 "answer": "B",
-                "explanation": "stage confidence意 为\\",
+                "explanation": "stage confidence意 为\"舞台⾃信\"",
+            },
+            {
+                "week": 12,
+                "keyword": "stage focus",
+                "question": "Keeping your eyes on the conductor and not looking at your friends is good _______.",
+                "options": ["stage focus", "sleeping", "audience engagement", "running"],
+                "answer": "A",
+                "explanation": "",
             },
             {
                 "week": 12,
@@ -7204,7 +7292,15 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Giving 100% of your energy to the song from beginning to end is _______.",
                 "options": ["laziness", "fear", "commitment", "quitting"],
                 "answer": "C",
-                "explanation": "commitment意为\\",
+                "explanation": "commitment意为\"投⼊/ 全⼼全意\"",
+            },
+            {
+                "week": 12,
+                "keyword": "presence",
+                "question": "When a performer has a powerful energy that makes everyone watch them, they have great stage _______.",
+                "options": ["fear", "presence", "mistake", "weakness"],
+                "answer": "B",
+                "explanation": "",
             },
                 ],
                 13: [
@@ -7214,7 +7310,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Listening to each other so the choir sounds like one voice requires excellent _______.",
                 "options": ["teamwork", "laziness", "arguing", "sleeping"],
                 "answer": "A",
-                "explanation": "teamwork意 为\\",
+                "explanation": "teamwork意 为\"团队合作\"",
             },
             {
                 "week": 13,
@@ -7222,7 +7318,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Bringing your own sheet music to class every day is your personal _______.",
                 "options": ["mistake", "fear", "responsibility", "joke"],
                 "answer": "C",
-                "explanation": "responsibility意 为\\",
+                "explanation": "responsibility意 为\"责任/责任⼼\"",
             },
             {
                 "week": 13,
@@ -7230,7 +7326,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Warming up your voice before the concert begins is good _______.",
                 "options": ["preparation", "laziness", "argument", "ending"],
                 "answer": "A",
-                "explanation": "preparation意为\\",
+                "explanation": "preparation意为\"准备⼯作\"",
             },
             {
                 "week": 13,
@@ -7238,7 +7334,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If the choir can always count on you to know your lyrics, you show high _______.",
                 "options": ["fear", "reliability", "mistake", "argument"],
                 "answer": "B",
-                "explanation": "reliability意 为\\",
+                "explanation": "reliability意 为\"可靠性\"",
             },
                 ],
                 14: [
@@ -7248,7 +7344,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Fixing the last few tiny mistakes to make the song shine is to _______ it.",
                 "options": ["break", "polish", "ruin", "ignore"],
                 "answer": "B",
-                "explanation": "polish意为\\",
+                "explanation": "polish意为\"润⾊/打磨\"",
             },
             {
                 "week": 14,
@@ -7256,7 +7352,15 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The very last practice session before the show day is the _______.",
                 "options": ["first practice", "final rehearsal", "audition", "resting time"],
                 "answer": "B",
-                "explanation": "final rehearsal意 为\\",
+                "explanation": "final rehearsal意 为\"最终排练\"",
+            },
+            {
+                "week": 14,
+                "keyword": "dress rehearsal",
+                "question": "A full practice where everyone wears their concert clothes is the _______.",
+                "options": ["dress rehearsal", "audition", "resting time", "sleeping time"],
+                "answer": "A",
+                "explanation": "",
             },
             {
                 "week": 14,
@@ -7264,7 +7368,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "How beautifully you perform and show the music to the crowd is your overall _______.",
                 "options": ["mistake", "presentation", "secret", "laziness"],
                 "answer": "B",
-                "explanation": "presentation意为\\",
+                "explanation": "presentation意为\"展⽰/呈现\"",
             },
                 ],
                 15: [
@@ -7287,7 +7391,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In a relay race, the team must run and work _______ to win.",
                 "options": ["alone", "together", "against", "separated"],
                 "answer": "B",
-                "explanation": "together意为\\",
+                "explanation": "together意为\"⼀起/共同\"",
             },
             {
                 "week": 2,
@@ -7295,7 +7399,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We shout loudly and _______ to support our friends on the field.",
                 "options": ["sleep", "cry", "cheer", "complain"],
                 "answer": "C",
-                "explanation": "cheer意为\\",
+                "explanation": "cheer意为\"欢呼/加油\"",
             },
             {
                 "week": 2,
@@ -7303,7 +7407,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Listening to the referee and shaking hands shows good _______.",
                 "options": ["cheating", "respect", "foul", "false start"],
                 "answer": "B",
-                "explanation": "respect意为\\",
+                "explanation": "respect意为\"尊重\"",
             },
             {
                 "week": 2,
@@ -7311,7 +7415,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Believing that your partner will definitely catch the ball is having _______ in them.",
                 "options": ["fear", "anger", "trust", "doubt"],
                 "answer": "C",
-                "explanation": "trust意为\\",
+                "explanation": "trust意为\"信任\"",
             },
             {
                 "week": 2,
@@ -7319,7 +7423,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The team captain who guides everyone is the team _______.",
                 "options": ["hurdle", "leader", "shot put", "finish line"],
                 "answer": "B",
-                "explanation": "leader意为\\",
+                "explanation": "leader意为\"领导者/队⻓\"",
             },
                 ],
                 3: [
@@ -7329,7 +7433,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Helping a tired teammate up from the ground is showing great _______.",
                 "options": ["support", "sprint", "pacing", "false start"],
                 "answer": "A",
-                "explanation": "support意为\\",
+                "explanation": "support意为\"⽀持/帮助\"",
             },
             {
                 "week": 3,
@@ -7337,7 +7441,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The running race ends when the winner crosses the white _______.",
                 "options": ["starting block", "finish line", "hoop", "discus"],
                 "answer": "B",
-                "explanation": "finish line意为\\",
+                "explanation": "finish line意为\"终点线\"",
             },
             {
                 "week": 3,
@@ -7345,7 +7449,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Running before the whistle is blown is against the rules and is called a _______.",
                 "options": ["photo finish", "training plan", "false start", "cool-down"],
                 "answer": "C",
-                "explanation": "false start意为\\",
+                "explanation": "false start意为\"抢跑/违规起跑\"",
             },
             {
                 "week": 3,
@@ -7353,7 +7457,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A schedule of daily exercises to prepare for a big game is a _______.",
                 "options": ["finish line", "false start", "training plan", "photo finish"],
                 "answer": "C",
-                "explanation": "training plan意 为\\",
+                "explanation": "training plan意 为\"训练计划\"",
             },
             {
                 "week": 3,
@@ -7361,7 +7465,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A race that is so close that cameras are needed to see who won is a _______.",
                 "options": ["false start", "photo finish", "training plan", "starting block"],
                 "answer": "B",
-                "explanation": "photo finish意为\\",
+                "explanation": "photo finish意为\"照⽚判定胜负/终点摄影\"",
             },
                 ],
                 4: [
@@ -7371,7 +7475,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Passing the ball skillfully to each other to score a goal shows excellent _______.",
                 "options": ["false start", "shot put", "teamwork", "pacing"],
                 "answer": "C",
-                "explanation": "teamwork意 为\\",
+                "explanation": "teamwork意 为\"团队合作\"",
             },
             {
                 "week": 4,
@@ -7379,7 +7483,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Talking loudly and clearly to your teammates on the court is good _______.",
                 "options": ["communication", "endurance", "spin", "lap"],
                 "answer": "A",
-                "explanation": "communication意为\\",
+                "explanation": "communication意为\"沟通/交流\"",
             },
             {
                 "week": 4,
@@ -7387,7 +7491,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A difficult sports task that tests how good you are is a _______.",
                 "options": ["rest", "challenge", "sleep", "cheer"],
                 "answer": "B",
-                "explanation": "challenge意为\\",
+                "explanation": "challenge意为\"挑战\"",
             },
                 ],
                 5: [
@@ -7408,7 +7512,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A smart plan drawn by the coach on a whiteboard to beat the other team is a _______.",
                 "options": ["strategy", "hurdle", "sprint", "spin"],
                 "answer": "A",
-                "explanation": "strategy意为\\",
+                "explanation": "strategy意为\"策略/战 术\"",
             },
             {
                 "week": 7,
@@ -7416,7 +7520,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Waiting calmly without rushing for the perfect moment to pass the ball requires _______.",
                 "options": ["sprinting", "patience", "discus", "shot put"],
                 "answer": "B",
-                "explanation": "patience意 为\\",
+                "explanation": "patience意 为\"耐⼼\"",
             },
             {
                 "week": 7,
@@ -7424,7 +7528,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Changing your game plan quickly when the weather starts to rain shows _______.",
                 "options": ["sprint", "adaptability", "false start", "finish line"],
                 "answer": "B",
-                "explanation": "adaptability意为\\",
+                "explanation": "adaptability意为\"适应⼒/应变能⼒\"",
             },
             {
                 "week": 7,
@@ -7432,7 +7536,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Shaking hands and being polite, even after you lose a match, is good _______.",
                 "options": ["deception", "sportsmanship", "hurdle", "acceleration"],
                 "answer": "B",
-                "explanation": "sportsmanship意为\\",
+                "explanation": "sportsmanship意为\"体育精神\"",
             },
             {
                 "week": 7,
@@ -7440,7 +7544,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Stepping onto the court believing strongly that you will play well shows _______.",
                 "options": ["fear", "confidence", "patience", "strategy"],
                 "answer": "B",
-                "explanation": "confidence意 为\\",
+                "explanation": "confidence意 为\"⾃信\"",
             },
                 ],
                 8: [
@@ -7450,7 +7554,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In basketball, you score points by shooting the ball through the orange metal _______.",
                 "options": ["hoop", "stride", "hurdle", "discus"],
                 "answer": "A",
-                "explanation": "hoop意为\\",
+                "explanation": "hoop意为\"篮筐\"",
             },
             {
                 "week": 8,
@@ -7458,7 +7562,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A plastic fence you must jump over while running a track race is a _______.",
                 "options": ["hoop", "hurdle", "starting block", "bounce"],
                 "answer": "B",
-                "explanation": "hurdle意为\\",
+                "explanation": "hurdle意为\"跨栏\"",
             },
             {
                 "week": 8,
@@ -7466,7 +7570,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A long, powerful step taken by an athlete while running is a _______.",
                 "options": ["stride", "bounce", "hoop", "hurdle"],
                 "answer": "A",
-                "explanation": "stride意为\\",
+                "explanation": "stride意为\"⼤步/步幅\"",
             },
             {
                 "week": 8,
@@ -7474,7 +7578,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A fake move used to trick the defender (like looking left but passing right) is _______.",
                 "options": ["pacing", "deception", "sportsmanship", "finish line"],
                 "answer": "B",
-                "explanation": "deception意为\\",
+                "explanation": "deception意为\"欺骗/假动作\"",
             },
                 ],
                 9: [
@@ -7484,7 +7588,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A field event where a strong athlete throws a heavy metal ball as far as possible is the _______.",
                 "options": ["shot put", "hurdle", "sprinting", "relay"],
                 "answer": "A",
-                "explanation": "shot put意 为\\",
+                "explanation": "shot put意 为\"推铅球\"",
             },
             {
                 "week": 9,
@@ -7492,7 +7596,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Pushing harder to increase your running speed suddenly is _______.",
                 "options": ["pacing", "cool-down", "acceleration", "patience"],
                 "answer": "C",
-                "explanation": "acceleration意为\\",
+                "explanation": "acceleration意为\"加速\"",
             },
             {
                 "week": 9,
@@ -7500,7 +7604,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Hitting a tennis ball diagonally to the opposite corner of the other side is a _______ shot.",
                 "options": ["crosscourt", "shot put", "bounce", "stride"],
                 "answer": "A",
-                "explanation": "crosscourt 意为\\",
+                "explanation": "crosscourt 意为\"斜线球/对⻆线击球\"",
             },
                 ],
                 10: [
@@ -7521,7 +7625,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The physical stamina needed to run a full marathon without stopping is _______.",
                 "options": ["sprint", "reaction time", "endurance", "bounce"],
                 "answer": "C",
-                "explanation": "endurance 意为\\",
+                "explanation": "endurance 意为\"耐⼒\"",
             },
             {
                 "week": 11,
@@ -7529,7 +7633,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The metal pedals that runners push their feet off from to start a sprint is a _______.",
                 "options": ["starting block", "discus", "hurdle", "medal"],
                 "answer": "A",
-                "explanation": "starting block 意为\\",
+                "explanation": "starting block 意为\"起跑器\"",
             },
             {
                 "week": 11,
@@ -7537,7 +7641,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Hitting a badminton birdy in a tall arc to the back of the opponent's court is a _______.",
                 "options": ["low serve", "high serve", "shot put", "false start"],
                 "answer": "B",
-                "explanation": "high serve 意为\\",
+                "explanation": "high serve 意为\"发⾼远球\"",
             },
                 ],
                 12: [
@@ -7547,7 +7651,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Running one complete circle around the running track is running one _______.",
                 "options": ["lap", "sprint", "team", "medal"],
                 "answer": "A",
-                "explanation": "lap意为\\",
+                "explanation": "lap意为\"⼀圈\"",
             },
             {
                 "week": 12,
@@ -7555,7 +7659,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Having enough physical energy to play hard for the whole game is having good _______.",
                 "options": ["save", "stamina", "stopwatch", "strategy"],
                 "answer": "B",
-                "explanation": "stamina意为\\",
+                "explanation": "stamina意为\"体 ⼒/持久⼒\"",
             },
             {
                 "week": 12,
@@ -7563,7 +7667,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The coach uses a digital _______ to measure exactly how fast you ran.",
                 "options": ["starting block", "discus", "stopwatch", "hurdle"],
                 "answer": "C",
-                "explanation": "stopwatch意为\\",
+                "explanation": "stopwatch意为\"秒表\"",
             },
             {
                 "week": 12,
@@ -7571,7 +7675,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Hitting a badminton birdy softly so it flies just barely over the net is a _______.",
                 "options": ["high serve", "low serve", "shot put", "crosscourt"],
                 "answer": "B",
-                "explanation": "low serve意为\\",
+                "explanation": "low serve意为\"发 ⽹前⼩球/低球\"",
             },
                 ],
                 13: [
@@ -7581,7 +7685,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the soccer goalie blocks the ball from going into the net, he makes a great _______.",
                 "options": ["save", "sprint", "lap", "false start"],
                 "answer": "A",
-                "explanation": "save在体育中指⻔将 的\\",
+                "explanation": "save在体育中指⻔将 的\"扑救\"",
             },
             {
                 "week": 13,
@@ -7589,7 +7693,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Doing slow stretching exercises after a hard run to relax your muscles is a _______.",
                 "options": ["starting block", "cool-down", "sprint", "false start"],
                 "answer": "B",
-                "explanation": "cool- down意为\\",
+                "explanation": "cool- down意为\"整理运动/冷⾝运动\"",
             },
             {
                 "week": 13,
@@ -7597,7 +7701,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A badminton shot hit steeply downward but with less power to surprise the opponent is a _______.",
                 "options": ["half-smash", "high serve", "shot put", "discus"],
                 "answer": "A",
-                "explanation": "half-smash意为\\",
+                "explanation": "half-smash意为\"半杀球/轻杀\"",
             },
                 ],
                 14: [
@@ -7607,7 +7711,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The team must attend _______ after school to learn new strategies.",
                 "options": ["practice", "medal", "sleep", "save"],
                 "answer": "A",
-                "explanation": "巩固词汇：practice\\",
+                "explanation": "巩固词汇：practice\"练习/训练\"",
             },
             {
                 "week": 14,
@@ -7615,7 +7719,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "She proudly showed her shiny silver _______ to her family.",
                 "options": ["lap", "discus", "cool-down", "medal"],
                 "answer": "D",
-                "explanation": "巩固词汇：medal\\",
+                "explanation": "巩固词汇：medal\"奖牌\"",
             },
             {
                 "week": 14,
@@ -7623,7 +7727,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A slow walk is a great _______ activity after running very fast.",
                 "options": ["sprint", "relay", "cool-down", "save"],
                 "answer": "C",
-                "explanation": "巩固词汇：cool-down\\",
+                "explanation": "巩固词汇：cool-down\"整理运动\"",
             },
             {
                 "week": 14,
@@ -7631,7 +7735,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A basketball player needs fast _______ to move around the defender.",
                 "options": ["footwork", "spin", "medal", "shot put"],
                 "answer": "A",
-                "explanation": "巩固词汇：footwork\\",
+                "explanation": "巩固词汇：footwork\"步法\"",
             },
                 ],
                 15: [
@@ -7641,7 +7745,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In badminton, after hitting the birdy, you must quickly return to the center _______.",
                 "options": ["base position", "high serve", "shot put", "discus"],
                 "answer": "A",
-                "explanation": "base position意为\\",
+                "explanation": "base position意为\"中心位置/基位\"",
             },
             {
                 "week": 15,
@@ -7662,7 +7766,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A big fight by the people to change the government is a _______.",
                 "options": ["peace", "revolution", "party", "song"],
                 "answer": "B",
-                "explanation": "revolution意为\\",
+                "explanation": "revolution意为\"⾰命\"",
             },
             {
                 "week": 2,
@@ -7670,7 +7774,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the judge treats everyone fairly, it shows true _______.",
                 "options": ["justice", "crime", "unfairness", "stealing"],
                 "answer": "A",
-                "explanation": "justice意为\\",
+                "explanation": "justice意为\"正义/公平\"",
             },
             {
                 "week": 2,
@@ -7678,7 +7782,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Someone who is very sad, poor, and suffering is feeling _______.",
                 "options": ["happy", "excited", "miserable", "joyful"],
                 "answer": "C",
-                "explanation": "miserable意为\\",
+                "explanation": "miserable意为\"悲惨的/痛苦的\"",
             },
             {
                 "week": 2,
@@ -7686,7 +7790,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The poor man in the play stole heavy, shiny _______ candlesticks.",
                 "options": ["wood", "plastic", "silver", "paper"],
                 "answer": "C",
-                "explanation": "silver意为\\",
+                "explanation": "silver意为\"银/银器\"，常指《悲惨世界》中的银烛 台",
             },
             {
                 "week": 2,
@@ -7694,7 +7798,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The police officer in the story must strictly follow the _______.",
                 "options": ["song", "dance", "law", "joke"],
                 "answer": "C",
-                "explanation": "law意为\\",
+                "explanation": "law意为\"法律\"",
             },
                 ],
                 3: [
@@ -7704,7 +7808,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The students built a barricade to start a _______ against the king.",
                 "options": ["revolution", "dance", "party", "joke"],
                 "answer": "A",
-                "explanation": "巩固词汇：revolution意为\\",
+                "explanation": "巩固词汇：revolution意为\"⾰命\"",
             },
             {
                 "week": 3,
@@ -7712,7 +7816,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Those who have no money to buy food or clothes are _______.",
                 "options": ["kings", "queens", "poor people", "rich people"],
                 "answer": "C",
-                "explanation": "poor people意为\\",
+                "explanation": "poor people意为\"穷⼈\"",
             },
             {
                 "week": 3,
@@ -7720,7 +7824,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the students stand together to fight as one team, they are _______.",
                 "options": ["divided", "broken", "united", "separated"],
                 "answer": "C",
-                "explanation": "united意为\\",
+                "explanation": "united意为\"团结的\"",
             },
                 ],
                 4: [
@@ -7746,7 +7850,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A child in the story whose parents have passed away is an _______.",
                 "options": ["adult", "king", "orphan", "teacher"],
                 "answer": "C",
-                "explanation": "orphan意为\\",
+                "explanation": "orphan意为\"孤⼉\"",
             },
             {
                 "week": 4,
@@ -7754,7 +7858,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The rich lady at the ball wore a beautiful and _______ dress.",
                 "options": ["dirty", "ugly", "elegant", "broken"],
                 "answer": "C",
-                "explanation": "elegant意为\\",
+                "explanation": "elegant意为\"优雅的/⾼贵的\"",
             },
                 ],
                 5: [
@@ -7775,7 +7879,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When the character is treated unfairly, he shouts because he feels _______.",
                 "options": ["happy", "sleepy", "angry", "joyful"],
                 "answer": "C",
-                "explanation": "angry意为\\",
+                "explanation": "angry意为\"⽣⽓的\"",
             },
             {
                 "week": 7,
@@ -7783,7 +7887,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The wounded soldier on stage cries out to show his physical _______.",
                 "options": ["joy", "happiness", "pain", "smile"],
                 "answer": "C",
-                "explanation": "pain意为\\",
+                "explanation": "pain意为\"痛苦/疼痛\"",
             },
             {
                 "week": 7,
@@ -7791,7 +7895,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To make sure the back row hears your lines, you must _______.",
                 "options": ["whisper", "project voice", "be silent", "mumble"],
                 "answer": "B",
-                "explanation": "project voice意为\\",
+                "explanation": "project voice意为\"发声/让声 ⾳传远\"",
             },
             {
                 "week": 7,
@@ -7799,7 +7903,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Sadness, joy, and fear are all types of dramatic _______.",
                 "options": ["emotion", "props", "lighting", "costumes"],
                 "answer": "A",
-                "explanation": "补充词汇：emotion意为\\",
+                "explanation": "补充词汇：emotion意为\"情感\"",
             },
                 ],
                 8: [
@@ -7809,7 +7913,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "You hit the loud, sharp musical notes to _______ in the musical.",
                 "options": ["feel angry", "stand angry", "sing angry", "whisper"],
                 "answer": "C",
-                "explanation": "sing angry意为\\",
+                "explanation": "sing angry意为\"⽤愤怒的情感 演唱\"",
             },
             {
                 "week": 8,
@@ -7817,7 +7921,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "You plant your feet firmly and make your body tense to _______.",
                 "options": ["sound angry", "feel angry", "stand angry", "sit down"],
                 "answer": "C",
-                "explanation": "stand angry意为\\",
+                "explanation": "stand angry意为\"站姿 显现出愤怒\"",
             },
             {
                 "week": 8,
@@ -7825,14 +7929,14 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Your speaking tone is loud, harsh, and fast, so you _______ when you talk.",
                 "options": ["stand angry", "look angry", "sound angry", "feel happy"],
                 "answer": "C",
-                "explanation": "sound angry 意为\\",
+                "explanation": "sound angry 意为\"听起来愤怒/声⾳传达愤怒\"",
             },
                 ],
                 9: [
             {
                 "week": 9,
                 "keyword": "feel angry",
-                "question": "Director: \\",
+                "question": "Director: \"Don't just fake it! Use your imagination to truly _______ deep inside!\"",
                 "options": ["look angry", "feel angry", "stand angry", "sound happy"],
                 "answer": "B",
                 "explanation": "巩 固词汇：强调内⼼情感体会",
@@ -7840,7 +7944,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
             {
                 "week": 9,
                 "keyword": "look angry",
-                "question": "Director: \\",
+                "question": "Director: \"Your face is too relaxed. Squeeze your eyebrows together so you _______!\"",
                 "options": ["sound angry", "stand angry", "look angry", "feel sad"],
                 "answer": "C",
                 "explanation": "巩固 词汇：强调⾯部表情",
@@ -7848,7 +7952,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
             {
                 "week": 9,
                 "keyword": "sound angry",
-                "question": "Director: \\",
+                "question": "Director: \"Your dialogue is too soft. Put some growl in your voice so you _______!\"",
                 "options": ["look angry", "sound angry", "feel angry", "stand happy"],
                 "answer": "B",
                 "explanation": "巩固词汇：强调台词声⾳表现",
@@ -7872,7 +7976,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "An actor must deeply _______ the emotion of the character to be believable.",
                 "options": ["ignore", "feel", "drop", "forget"],
                 "answer": "B",
-                "explanation": "feel意为\\",
+                "explanation": "feel意为\"感受/体会\"",
             },
             {
                 "week": 11,
@@ -7880,7 +7984,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When actors make the watchers feel like part of the story, they _______.",
                 "options": ["hide from them", "connect to audience", "run away", "forget lines"],
                 "answer": "B",
-                "explanation": "connect to audience意为\\",
+                "explanation": "connect to audience意为\"与观众建⽴连结\"",
             },
             {
                 "week": 11,
@@ -7888,14 +7992,22 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To speak loud enough for the back row of the theater to hear is to _______ your voice.",
                 "options": ["whisper", "drop", "project", "hide"],
                 "answer": "C",
-                "explanation": "project意为\\",
+                "explanation": "project意为\"发声/投射声 ⾳\"",
+            },
+            {
+                "week": 11,
+                "keyword": "eyeline lifted",
+                "question": "Keeping your chin up so people can see your face means keeping your _______.",
+                "options": ["hands down", "eyeline lifted", "feet together", "voice quiet"],
+                "answer": "B",
+                "explanation": "",
             },
                 ],
                 12: [
             {
                 "week": 12,
                 "keyword": "eye contact",
-                "question": "Director: \\",
+                "question": "Director: \"Don't look at the wall! Make _______ with your partner when you say 'I love you'.\"",
                 "options": ["eye contact", "project", "eyeline lifted", "running"],
                 "answer": "A",
                 "explanation": "巩 固词汇：eye contact",
@@ -7903,7 +8015,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
             {
                 "week": 12,
                 "keyword": "connect to audience",
-                "question": "Director: \\",
+                "question": "Director: \"Walk to the front of the stage and smile to really _______.\"",
                 "options": ["forget lines", "connect to audience", "hide", "sleep"],
                 "answer": "B",
                 "explanation": "巩固 词汇：connect to audience",
@@ -7935,6 +8047,14 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "options": ["eye contact", "project", "hiding", "sleeping"],
                 "answer": "A",
                 "explanation": "巩固词汇：eye contact",
+            },
+            {
+                "week": 14,
+                "keyword": "connect to audience",
+                "question": "Sharing a character's secret thoughts helps to deeply _______ and make them cry.",
+                "options": ["connect to audience", "forget lines", "sleep", "run away"],
+                "answer": "A",
+                "explanation": "",
             },
             {
                 "week": 14,
@@ -7973,7 +8093,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A multiple-choice question is a common _______ used in tests.",
                 "options": ["Answer", "Question Type", "Score", "Data"],
                 "answer": "B",
-                "explanation": "Question Type意为\\",
+                "explanation": "Question Type意为\"题型/问题类型\"",
             },
             {
                 "week": 2,
@@ -7981,7 +8101,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A test question where you write a missing word in a space is a _______ question.",
                 "options": ["Question Type", "Fill in the Blank", "Specific", "Engaging"],
                 "answer": "B",
-                "explanation": "Fill in the Blank意为\\",
+                "explanation": "Fill in the Blank意为\"填空题\"",
             },
             {
                 "week": 2,
@@ -7989,7 +8109,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A good test must be _______ to all students, giving everyone an equal chance.",
                 "options": ["Fair", "Specific", "Engaging", "Keyboard"],
                 "answer": "A",
-                "explanation": "Fair意为\\",
+                "explanation": "Fair意为\"公平的\"",
             },
             {
                 "week": 2,
@@ -7997,7 +8117,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To get the right data, your question must be exactly clear and _______.",
                 "options": ["Fair", "Specific", "Engaging", "Keyboard"],
                 "answer": "B",
-                "explanation": "Specific意为\\",
+                "explanation": "Specific意为\"具体的/明确的\"",
             },
             {
                 "week": 2,
@@ -8005,7 +8125,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "An interactive game is very _______, so students love to play it.",
                 "options": ["Engaging", "Specific", "Fair", "Fill in the Blank"],
                 "answer": "A",
-                "explanation": "Engaging意为\\",
+                "explanation": "Engaging意为\"引⼈⼊胜的/有趣的\"",
             },
                 ],
                 3: [
@@ -8015,7 +8135,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Information you send into a computer system is called _______.",
                 "options": ["Output", "Input", "Feedback", "Score"],
                 "answer": "B",
-                "explanation": "Input意为\\",
+                "explanation": "Input意为\"输⼊\"",
             },
             {
                 "week": 3,
@@ -8023,7 +8143,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The sound coming from the speakers is the computer's _______.",
                 "options": ["Input", "Output", "Keyboard", "User Interface"],
                 "answer": "B",
-                "explanation": "Output意为\\",
+                "explanation": "Output意为\"输出\"",
             },
             {
                 "week": 3,
@@ -8031,7 +8151,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "When you press a button and the screen flashes green, the system is giving you visual _______.",
                 "options": ["Output", "Feedback", "Input", "Keyboard"],
                 "answer": "B",
-                "explanation": "Feedback意为\\",
+                "explanation": "Feedback意为\"反馈\"",
             },
             {
                 "week": 3,
@@ -8039,7 +8159,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The screen menus and buttons that a person uses to control an app is the _______.",
                 "options": ["Keyboard", "User Interface", "Input", "Cycle"],
                 "answer": "B",
-                "explanation": "User Interface 意为\\",
+                "explanation": "User Interface 意为\"⽤⼾界⾯\"",
             },
             {
                 "week": 3,
@@ -8047,7 +8167,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The board with letter and number buttons used to type into a computer is the _______.",
                 "options": ["Screen", "Keyboard", "Mouse", "Speaker"],
                 "answer": "B",
-                "explanation": "Keyboard意 为\\",
+                "explanation": "Keyboard意 为\"键盘\"",
             },
                 ],
                 4: [
@@ -8057,7 +8177,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The monitor or display where you see pictures and text is the computer's _______.",
                 "options": ["Screen", "Mouse", "Speaker", "Cycle"],
                 "answer": "A",
-                "explanation": "Screen意为\\",
+                "explanation": "Screen意为\"屏幕\"",
             },
             {
                 "week": 4,
@@ -8065,7 +8185,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "You need to plug in the _______ to hear the music loudly in the room.",
                 "options": ["Mice", "Screens", "Speakers", "Touchscreens"],
                 "answer": "C",
-                "explanation": "Speakers意为\\",
+                "explanation": "Speakers意为\"扬声器/⾳箱\"",
             },
             {
                 "week": 4,
@@ -8073,7 +8193,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A tablet allows you to use your fingers directly on the display because it has a _______.",
                 "options": ["Mouse", "Keyboard", "Touchscreen", "Speaker"],
                 "answer": "C",
-                "explanation": "Touchscreen意为\\",
+                "explanation": "Touchscreen意为\"触摸屏\"",
             },
             {
                 "week": 4,
@@ -8081,7 +8201,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "In coding, a process that repeats over and over again is a loop or a _______.",
                 "options": ["Cycle", "Mouse", "Screen", "Speaker"],
                 "answer": "A",
-                "explanation": "Cycle意为\\",
+                "explanation": "Cycle意为\"循环\"",
             },
                 ],
                 5: [
@@ -8092,7 +8212,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "options": ["A Variable B) A Score C) A Flowchart D) An Initialization"],
                 "answer": "C",
                 "explanation": "⽤来绘制游戏逻辑的图表是流程图 Flowchart",
-                "passage": "When designing a video game, we first draw a Flowchart to map out the logic. We create a Variable to hold the player's Score. At the start of the game, we do the Initialization, setting the score to 0. We also use a Conditional block, like an \\",
+                "passage": "When designing a video game, we first draw a Flowchart to map out the logic. We create a Variable to hold the player's Score. At the start of the game, we do the Initialization, setting the score to 0. We also use a Conditional block, like an \"If-Then\" statement, so IF the player catches a coin, THEN the score goes up.",
             },
                 ],
                 7: [
@@ -8102,7 +8222,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Creating a new app for the science fair is a big STEAM _______.",
                 "options": ["Project", "Template", "Structure", "Score"],
                 "answer": "A",
-                "explanation": "Project意为\\",
+                "explanation": "Project意为\"项⽬\"",
             },
             {
                 "week": 7,
@@ -8110,7 +8230,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The rules and features the teacher says your app must have are the _______.",
                 "options": ["Requirements", "Templates", "Fields", "Debugs"],
                 "answer": "A",
-                "explanation": "Requirements意为\\",
+                "explanation": "Requirements意为\"要求/需求\"",
             },
             {
                 "week": 7,
@@ -8118,7 +8238,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Organizing the code into clear, logical sections gives it a good _______.",
                 "options": ["Structure", "Template", "Debug", "Table"],
                 "answer": "A",
-                "explanation": "Structure意为\\",
+                "explanation": "Structure意为\"结构\"",
             },
                 ],
                 8: [
@@ -8128,7 +8248,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To find and fix the errors or glitches in your computer code is to _______ it.",
                 "options": ["Debug", "Suggest", "Celebrate", "Template"],
                 "answer": "A",
-                "explanation": "Debug意为\\",
+                "explanation": "Debug意为\"调试/修复漏洞\"",
             },
             {
                 "week": 8,
@@ -8136,7 +8256,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Giving helpful feedback to make a project better is being _______.",
                 "options": ["Constructive", "Engaging", "Specific", "Fair"],
                 "answer": "A",
-                "explanation": "Constructive意为\\",
+                "explanation": "Constructive意为\"建设性的\"",
             },
             {
                 "week": 8,
@@ -8144,7 +8264,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A helpful idea given to a classmate to improve their work is a _______.",
                 "options": ["Suggestion", "Debug", "Template", "Database"],
                 "answer": "A",
-                "explanation": "Suggestion意为\\",
+                "explanation": "Suggestion意为\"建议\"",
             },
             {
                 "week": 8,
@@ -8152,17 +8272,25 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A happy event to cheer for finishing our big project is a _______.",
                 "options": ["Suggestion", "Celebration", "Debug", "Table"],
                 "answer": "B",
-                "explanation": "Celebration意为\\",
+                "explanation": "Celebration意为\"庆祝\"",
             },
                 ],
                 9: [
+            {
+                "week": 9,
+                "keyword": "Data Management",
+                "question": "Organizing and keeping digital information safe is the practice of _______.",
+                "options": ["Data Management", "Peer Testing", "Celebration", "Debug"],
+                "answer": "A",
+                "explanation": "",
+            },
             {
                 "week": 9,
                 "keyword": "Database",
                 "question": "A large, organized computer system for storing and searching data is a _______.",
                 "options": ["Table", "Database", "Record", "Field"],
                 "answer": "B",
-                "explanation": "Database意为\\",
+                "explanation": "Database意为\"数据 库\"",
             },
             {
                 "week": 9,
@@ -8170,15 +8298,15 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "One complete row of data about a single person in a database table is a _______.",
                 "options": ["Field", "Record", "Database", "Template"],
                 "answer": "B",
-                "explanation": "Record意为\\",
+                "explanation": "Record意为\"记录\"",
             },
             {
                 "week": 9,
                 "keyword": "Field",
-                "question": "A single column in a database, like \\",
+                "question": "A single column in a database, like \"First Name\" or \"Age\", is called a _______.",
                 "options": ["Field", "Record", "Table", "Celebration"],
                 "answer": "A",
-                "explanation": "Field意为\\",
+                "explanation": "Field意为\"字段\"",
             },
                 ],
                 10: [
@@ -8199,7 +8327,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To arrange data in alphabetical order from A to Z is to _______ it.",
                 "options": ["Sort", "Filter", "Formula", "Range"],
                 "answer": "A",
-                "explanation": "Sort意为\\",
+                "explanation": "Sort意为\"排序\"",
             },
             {
                 "week": 11,
@@ -8207,7 +8335,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A math equation typed into a spreadsheet cell, like =A1+B1, is a _______.",
                 "options": ["Range", "Filter", "Formula", "Sort"],
                 "answer": "C",
-                "explanation": "Formula意为\\",
+                "explanation": "Formula意为\"公式\"",
             },
             {
                 "week": 11,
@@ -8215,7 +8343,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A built-in calculation word in Excel, like SUM(), is a _______.",
                 "options": ["Sort", "Function", "Filter", "Range"],
                 "answer": "B",
-                "explanation": "Function意为\\",
+                "explanation": "Function意为\"函数\"",
             },
             {
                 "week": 11,
@@ -8223,7 +8351,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A group of selected cells in a spreadsheet, like A1:A5, is a _______.",
                 "options": ["Range", "Formula", "Sort", "Filter"],
                 "answer": "A",
-                "explanation": "Range意为\\",
+                "explanation": "Range意为\"范围/数据区域\"",
             },
                 ],
                 12: [
@@ -8233,7 +8361,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To find the mean or typical score in a list of numbers, we use the _______ function.",
                 "options": ["AVERAGE", "MAX", "MIN", "COUNT"],
                 "answer": "A",
-                "explanation": "AVERAGE意为\\",
+                "explanation": "AVERAGE意为\"求平均 值函数\"",
             },
             {
                 "week": 12,
@@ -8241,7 +8369,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To quickly find the highest number in a column, use the _______ function.",
                 "options": ["COUNT", "MAX", "MIN", "AVERAGE"],
                 "answer": "B",
-                "explanation": "MAX意为\\",
+                "explanation": "MAX意为\"求最⼤值函数\"",
             },
             {
                 "week": 12,
@@ -8249,7 +8377,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To quickly find the lowest score in a test list, use the _______ function.",
                 "options": ["MAX", "MIN", "COUNT", "Calculate"],
                 "answer": "B",
-                "explanation": "MIN意为\\",
+                "explanation": "MIN意为\"求最⼩值函数\"",
             },
             {
                 "week": 12,
@@ -8257,7 +8385,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To find out how many cells actually have numbers in them, use the _______ function.",
                 "options": ["AVERAGE", "MAX", "COUNT", "MIN"],
                 "answer": "C",
-                "explanation": "COUNT意为\\",
+                "explanation": "COUNT意为\"计数函 数\"",
             },
                 ],
                 13: [
@@ -8267,7 +8395,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Turning data into a colorful graph to make it easy to understand is data _______.",
                 "options": ["Visualization", "Database", "Table", "Trend"],
                 "answer": "A",
-                "explanation": "Visualization意 为\\",
+                "explanation": "Visualization意 为\"可视化\"",
             },
             {
                 "week": 13,
@@ -8275,7 +8403,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A graph connecting points with straight lines to show changes over time is a _______.",
                 "options": ["Bar Chart", "Line Chart", "Pie Chart", "Visualization"],
                 "answer": "B",
-                "explanation": "Line Chart意为\\",
+                "explanation": "Line Chart意为\"折线图\"",
             },
             {
                 "week": 13,
@@ -8283,7 +8411,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A circular graph divided into slices to show percentages is a _______.",
                 "options": ["Line Chart", "Bar Chart", "Pie Chart", "Trend"],
                 "answer": "C",
-                "explanation": "Pie Chart意为\\",
+                "explanation": "Pie Chart意为\"饼图\"",
             },
                 ],
                 14: [
@@ -8293,7 +8421,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The horizontal (X) or vertical (Y) line on a graph is an _______.",
                 "options": ["Axis", "Label", "Legend", "Comparison"],
                 "answer": "A",
-                "explanation": "Axis意为\\",
+                "explanation": "Axis意为\"坐标轴\"",
             },
             {
                 "week": 14,
@@ -8301,7 +8429,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The text added to a graph to tell you what the numbers mean is a _______.",
                 "options": ["Legend", "Axis", "Label", "Interpret"],
                 "answer": "C",
-                "explanation": "Label意为\\",
+                "explanation": "Label意为\"标签/数据标签\"",
             },
             {
                 "week": 14,
@@ -8309,7 +8437,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The small key or box that explains what the colors or symbols on a chart mean is the _______.",
                 "options": ["Axis", "Legend", "Label", "Comparison"],
                 "answer": "B",
-                "explanation": "Legend意 为\\",
+                "explanation": "Legend意 为\"图例\"",
             },
             {
                 "week": 14,
@@ -8317,7 +8445,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Looking at two bar charts side-by-side to see the differences is making a _______.",
                 "options": ["Comparison", "Legend", "Axis", "Label"],
                 "answer": "A",
-                "explanation": "Comparison意 为\\",
+                "explanation": "Comparison意 为\"⽐较/对⽐\"",
             },
                 ],
                 15: [
@@ -8340,7 +8468,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The system in our body that breaks down food is the _______ system.",
                 "options": ["nervous", "digestive", "solar", "magnetic"],
                 "answer": "B",
-                "explanation": "digestive意为\\",
+                "explanation": "digestive意为\"消化的/消化系统\"",
             },
             {
                 "week": 2,
@@ -8348,7 +8476,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The bag-like organ that mixes food with acid is the _______.",
                 "options": ["heart", "brain", "stomach", "lung"],
                 "answer": "C",
-                "explanation": "stomach意为\\",
+                "explanation": "stomach意为\"胃\"",
             },
             {
                 "week": 2,
@@ -8356,7 +8484,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The long, narrow tube where most nutrients from food are absorbed into the blood is the _______.",
                 "options": ["small intestine", "large intestine", "lung", "stomach"],
                 "answer": "A",
-                "explanation": "small intestine意为\\",
+                "explanation": "small intestine意为\"小肠\"",
             },
             {
                 "week": 2,
@@ -8364,7 +8492,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The special job or purpose of an organ in the body is its _______.",
                 "options": ["orbit", "diagram", "function", "friction"],
                 "answer": "C",
-                "explanation": "function意为\\",
+                "explanation": "function意为\"功能/作⽤\"",
             },
                 ],
                 3: [
@@ -8374,7 +8502,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Eating the right amount of different foods gives you a healthy _______.",
                 "options": ["orbit", "balance", "gravity", "drag"],
                 "answer": "B",
-                "explanation": "balance意为\\",
+                "explanation": "balance意为\"平衡\"",
             },
             {
                 "week": 3,
@@ -8382,7 +8510,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The types of food that a person usually eats every day is their _______.",
                 "options": ["diagram", "diet", "friction", "thrust"],
                 "answer": "B",
-                "explanation": "diet意为\\",
+                "explanation": "diet意为\"⽇常饮⻝\"",
             },
             {
                 "week": 3,
@@ -8390,7 +8518,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Butter and oils give our body stored energy because they contain _______.",
                 "options": ["vitamins", "carbohydrates", "fats", "magnets"],
                 "answer": "C",
-                "explanation": "fats意为\\",
+                "explanation": "fats意为\"脂肪\"",
             },
             {
                 "week": 3,
@@ -8398,7 +8526,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Fruits and vegetables are full of _______ that keep our body healthy and prevent illness.",
                 "options": ["fats", "vitamins", "forces", "alloys"],
                 "answer": "B",
-                "explanation": "vitamins意为\\",
+                "explanation": "vitamins意为\"维 ⽣素\"",
             },
             {
                 "week": 3,
@@ -8406,7 +8534,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Bread, pasta, and rice are foods rich in _______ that give us quick energy.",
                 "options": ["carbohydrates", "vitamins", "fats", "magnets"],
                 "answer": "A",
-                "explanation": "carbohydrates意 为\\",
+                "explanation": "carbohydrates意 为\"碳⽔化合物\"",
             },
                 ],
                 4: [
@@ -8416,7 +8544,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A push or a pull on an object is a physical _______.",
                 "options": ["force", "diagram", "vitamin", "diet"],
                 "answer": "A",
-                "explanation": "force意为\\",
+                "explanation": "force意为\"⼒/作⽤⼒\"",
             },
             {
                 "week": 4,
@@ -8424,7 +8552,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A magnet will _______ iron objects toward it.",
                 "options": ["push", "digest", "attract", "repel"],
                 "answer": "C",
-                "explanation": "attract意为\\",
+                "explanation": "attract意为\"吸引\"",
             },
             {
                 "week": 4,
@@ -8432,7 +8560,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The upward force from a table holding up a book is the _______ force (or support force).",
                 "options": ["gravity", "normal", "drag", "friction"],
                 "answer": "B",
-                "explanation": "normal⼒在物理 中指垂直⽀撑⾯的\\",
+                "explanation": "normal⼒在物理 中指垂直⽀撑⾯的\"法向⼒/⽀持⼒\"",
             },
                 ],
                 5: [
@@ -8442,7 +8570,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Plants _______ from seeds into tall trees over time.",
                 "options": ["grow", "shrink", "fly", "swim"],
                 "answer": "A",
-                "explanation": "grow意为\\",
+                "explanation": "grow意为\"生长/成长\"",
             },
             {
                 "week": 5,
@@ -8450,7 +8578,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A _______ is a person with a body that needs food and water.",
                 "options": ["human", "robot", "plant", "stone"],
                 "answer": "A",
-                "explanation": "human意为\\",
+                "explanation": "human意为\"人类/人\"",
             },
             {
                 "week": 5,
@@ -8458,7 +8586,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Your _______ has many parts like the heart, brain, and stomach.",
                 "options": ["body", "toy", "book", "car"],
                 "answer": "A",
-                "explanation": "body意为\\",
+                "explanation": "body意为\"身体\"",
             },
             {
                 "week": 5,
@@ -8466,7 +8594,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Eating good food and exercising helps you stay in good _______.",
                 "options": ["health", "trouble", "danger", "sickness"],
                 "answer": "A",
-                "explanation": "health意为\\",
+                "explanation": "health意为\"健康\"",
             },
             {
                 "week": 5,
@@ -8485,7 +8613,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Air _______ is a force that slows down an airplane flying through the sky.",
                 "options": ["upthrust", "drag", "multiple", "diet"],
                 "answer": "B",
-                "explanation": "drag意为\\",
+                "explanation": "drag意为\"阻⼒/空⽓阻⼒\"",
             },
             {
                 "week": 7,
@@ -8493,7 +8621,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The force that tries to stop a box from sliding across the floor is _______.",
                 "options": ["friction", "upthrust", "diet", "vitamin"],
                 "answer": "A",
-                "explanation": "friction意为\\",
+                "explanation": "friction意为\"摩擦⼒\"",
             },
             {
                 "week": 7,
@@ -8501,7 +8629,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The upward force of water that makes a boat float is called _______.",
                 "options": ["gravity", "upthrust", "drag", "friction"],
                 "answer": "B",
-                "explanation": "upthrust意为\\",
+                "explanation": "upthrust意为\"浮⼒/向上推⼒\"",
             },
             {
                 "week": 7,
@@ -8509,7 +8637,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A falling leaf is acted upon by _______ forces, such as gravity and air resistance at the same time.",
                 "options": ["one", "zero", "multiple", "normal"],
                 "answer": "C",
-                "explanation": "multiple意 为\\",
+                "explanation": "multiple意 为\"多重的/多个的\"",
             },
             {
                 "week": 7,
@@ -8517,7 +8645,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Both drag and friction are types of _______ that slow objects down.",
                 "options": ["resistance", "upthrust", "stomach", "diet"],
                 "answer": "A",
-                "explanation": "resistance意为\\",
+                "explanation": "resistance意为\"阻⼒\"",
             },
                 ],
                 8: [
@@ -8527,7 +8655,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The powerful driving force pushing a rocket up into space is _______.",
                 "options": ["drag", "thrust", "friction", "gravity"],
                 "answer": "B",
-                "explanation": "thrust意为\\",
+                "explanation": "thrust意为\"推⼒/驱动⼒\"",
             },
             {
                 "week": 8,
@@ -8535,7 +8663,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To close a door, you must apply a force to _______ it shut.",
                 "options": ["pull", "push", "test", "digest"],
                 "answer": "B",
-                "explanation": "push意为\\",
+                "explanation": "push意为\"推\"",
             },
             {
                 "week": 8,
@@ -8543,7 +8671,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To open a drawer, you must apply a force to _______ it toward you.",
                 "options": ["push", "thrust", "pull", "drag"],
                 "answer": "C",
-                "explanation": "pull意为\\",
+                "explanation": "pull意为\"拉\"",
             },
             {
                 "week": 8,
@@ -8551,7 +8679,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A force can move a physical _______ like a ball or a chair.",
                 "options": ["object", "diet", "vitamin", "sunrise"],
                 "answer": "A",
-                "explanation": "object意为\\",
+                "explanation": "object意为\"物体\"",
             },
             {
                 "week": 8,
@@ -8559,7 +8687,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A strong force can _______ the speed or direction of a moving car.",
                 "options": ["balance", "change", "digest", "orbit"],
                 "answer": "B",
-                "explanation": "change意为\\",
+                "explanation": "change意为\"改变\"",
             },
                 ],
                 9: [
@@ -8569,7 +8697,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Wood, plastic, and metal are different types of physical _______.",
                 "options": ["material", "magnet", "force", "orbit"],
                 "answer": "A",
-                "explanation": "material意为\\",
+                "explanation": "material意为\"材料/物质\"",
             },
             {
                 "week": 9,
@@ -8577,7 +8705,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A piece of metal that attracts iron and steel is a _______.",
                 "options": ["alloy", "magnet", "diet", "season"],
                 "answer": "B",
-                "explanation": "magnet意为\\",
+                "explanation": "magnet意为\"磁铁\"",
             },
             {
                 "week": 9,
@@ -8585,7 +8713,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A strong metal made by mixing two or more elements together, like steel, is an _______.",
                 "options": ["magnet", "alloy", "test", "plant"],
                 "answer": "B",
-                "explanation": "alloy意为\\",
+                "explanation": "alloy意为\"合⾦\"",
             },
             {
                 "week": 9,
@@ -8593,7 +8721,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Scientists must _______ a material to see if it is strong enough.",
                 "options": ["push", "predict", "test", "attract"],
                 "answer": "C",
-                "explanation": "test作动词指\\",
+                "explanation": "test作动词指\"测试/试验\"",
             },
             {
                 "week": 9,
@@ -8601,7 +8729,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Before the experiment, we make a guess to _______ what will happen.",
                 "options": ["test", "predict", "push", "drag"],
                 "answer": "B",
-                "explanation": "predict意为\\",
+                "explanation": "predict意为\"预测\"",
             },
                 ],
                 10: [
@@ -8622,7 +8750,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Iron nails stick to a fridge magnet because they are _______ materials.",
                 "options": ["magnetic", "digestive", "normal", "heavy"],
                 "answer": "A",
-                "explanation": "magnetic意为\\",
+                "explanation": "magnetic意为\"磁性的\"",
             },
             {
                 "week": 11,
@@ -8630,7 +8758,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We use a ruler to _______ how far the toy car rolled.",
                 "options": ["measure", "attract", "change", "predict"],
                 "answer": "A",
-                "explanation": "measure意为\\",
+                "explanation": "measure意为\"测量\"",
             },
             {
                 "week": 11,
@@ -8638,7 +8766,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "After looking at the results, scientists write a final _______ to explain what they learned.",
                 "options": ["magnet", "force", "conclusion", "migration"],
                 "answer": "C",
-                "explanation": "conclusion 意为\\",
+                "explanation": "conclusion 意为\"结论\"",
             },
                 ],
                 12: [
@@ -8648,7 +8776,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Spring, summer, autumn, and winter are the four _______s of the year.",
                 "options": ["seasons", "orbits", "plants", "planets"],
                 "answer": "A",
-                "explanation": "season意为\\",
+                "explanation": "season意为\"季节\"",
             },
             {
                 "week": 12,
@@ -8656,7 +8784,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A tree or a flower that grows in the soil is a _______.",
                 "options": ["animal", "plant", "magnet", "stomach"],
                 "answer": "B",
-                "explanation": "plant意为\\",
+                "explanation": "plant意为\"植物\"",
             },
             {
                 "week": 12,
@@ -8664,7 +8792,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A living creature like a bird, dog, or human is an _______.",
                 "options": ["plant", "alloy", "animal", "season"],
                 "answer": "C",
-                "explanation": "animal意为\\",
+                "explanation": "animal意为\"动物\"",
             },
             {
                 "week": 12,
@@ -8672,7 +8800,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The beautiful blue planet where we live is called _______.",
                 "options": ["Mars", "Earth", "Sun", "Moon"],
                 "answer": "B",
-                "explanation": "Earth意为\\",
+                "explanation": "Earth意为\"地球\"",
             },
             {
                 "week": 12,
@@ -8680,7 +8808,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The invisible path the Earth takes as it travels around the Sun is its _______.",
                 "options": ["season", "orbit", "force", "gravity"],
                 "answer": "B",
-                "explanation": "orbit意为\\",
+                "explanation": "orbit意为\"轨道/绕轨运⾏\"",
             },
                 ],
                 13: [
@@ -8690,7 +8818,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The time in the early morning when the sun first appears is _______.",
                 "options": ["sunset", "sunrise", "orbit", "season"],
                 "answer": "B",
-                "explanation": "sunrise意为\\",
+                "explanation": "sunrise意为\"⽇出\"",
             },
             {
                 "week": 13,
@@ -8698,7 +8826,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Animals grow thicker fur to _______ to the cold winter weather.",
                 "options": ["adapt", "predict", "test", "measure"],
                 "answer": "A",
-                "explanation": "adapt意为\\",
+                "explanation": "adapt意为\"适应\"",
             },
             {
                 "week": 13,
@@ -8706,7 +8834,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The green substance inside leaves that helps plants make food from sunlight is _______.",
                 "options": ["chlorophyll", "vitamin", "carbohydrate", "fat"],
                 "answer": "A",
-                "explanation": "chlorophyll意为\\",
+                "explanation": "chlorophyll意为\"叶绿素\"",
             },
                 ],
                 14: [
@@ -8716,7 +8844,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Lights in our home turn on because _______ flows through the wires.",
                 "options": ["water", "electricity", "air", "sound"],
                 "answer": "B",
-                "explanation": "electricity意为\\",
+                "explanation": "electricity意为\"电/电力\"",
             },
             {
                 "week": 14,
@@ -8724,7 +8852,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Because the Earth rotates, we see _______ in the east every morning.",
                 "options": ["sunset", "sunrise", "season", "plant"],
                 "answer": "B",
-                "explanation": "sunrise意为\\",
+                "explanation": "sunrise意为\"⽇出\"",
             },
             {
                 "week": 14,
@@ -8732,7 +8860,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The sky turns red and orange during a beautiful evening _______.",
                 "options": ["sunrise", "sunset", "season", "orbit"],
                 "answer": "B",
-                "explanation": "sunset意为\\",
+                "explanation": "sunset意为\"⽇落\"",
             },
             {
                 "week": 14,
@@ -8740,7 +8868,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Winter is the coldest _______ of the year.",
                 "options": ["season", "plant", "animal", "orbit"],
                 "answer": "A",
-                "explanation": "season意为\\",
+                "explanation": "season意为\"季节\"",
             },
             {
                 "week": 14,
@@ -8748,7 +8876,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A cactus is a desert _______ that can survive with very little water.",
                 "options": ["plant", "animal", "magnet", "force"],
                 "answer": "A",
-                "explanation": "plant意为\\",
+                "explanation": "plant意为\"植物\"",
             },
             {
                 "week": 14,
@@ -8756,7 +8884,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A polar bear is a large white _______ living in the Arctic.",
                 "options": ["plant", "season", "animal", "Earth"],
                 "answer": "C",
-                "explanation": "animal意为\\",
+                "explanation": "animal意为\"动物\"",
             },
                 ],
                 15: [
@@ -8766,7 +8894,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Wearing a helmet when riding a bike is important for your _______.",
                 "options": ["speed", "safety", "style", "comfort"],
                 "answer": "B",
-                "explanation": "safety意为\\",
+                "explanation": "safety意为\"安全\"",
             },
             {
                 "week": 15,
@@ -8774,7 +8902,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A rose bush has sharp _______s on its stem to protect it from animals.",
                 "options": ["thorns", "flowers", "leaves", "roots"],
                 "answer": "A",
-                "explanation": "thorn意为\\",
+                "explanation": "thorn意为\"刺/荆棘\"",
             },
             {
                 "week": 15,
@@ -8795,7 +8923,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using thick paint to make the water look shiny is a cool visual _______.",
                 "options": ["Measure", "Ruler", "Effect", "Grid"],
                 "answer": "C",
-                "explanation": "Effect意为\\",
+                "explanation": "Effect意为\"效果/视觉效果\"",
             },
             {
                 "week": 2,
@@ -8803,7 +8931,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Making faraway trees smaller to show 3D depth on flat paper is using _______.",
                 "options": ["palette", "perspective", "material", "sculpture"],
                 "answer": "B",
-                "explanation": "perspective 意为\\",
+                "explanation": "perspective 意为\"透视/透视法\"",
             },
             {
                 "week": 2,
@@ -8811,7 +8939,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A painting showing a quiet view of a park is a peaceful _______.",
                 "options": ["scene", "ruler", "cube", "grid"],
                 "answer": "A",
-                "explanation": "scene意为\\",
+                "explanation": "scene意为\"场景/⻛景\"",
             },
             {
                 "week": 2,
@@ -8819,7 +8947,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The part of the picture that looks closest to the viewer is the _______.",
                 "options": ["Background", "focal point", "foreground", "rhythm"],
                 "answer": "C",
-                "explanation": "补充词汇：foreground 意为\\",
+                "explanation": "补充词汇：foreground 意为\"前景\"",
             },
                 ],
                 3: [
@@ -8829,7 +8957,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A beautiful painting of natural mountains and rivers is a _______.",
                 "options": ["cityscape", "Landscape", "portrait", "ruler"],
                 "answer": "B",
-                "explanation": "Landscape意为\\",
+                "explanation": "Landscape意为\"⻛景画\"",
             },
             {
                 "week": 3,
@@ -8837,7 +8965,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A drawing showing tall buildings and busy streets is a _______.",
                 "options": ["Landscape", "Focal point", "cityscape", "palette"],
                 "answer": "C",
-                "explanation": "cityscape意为\\",
+                "explanation": "cityscape意为\"城市⻛景 画\"",
             },
             {
                 "week": 3,
@@ -8845,7 +8973,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The brightest red apple in the painting where your eyes look first is the _______.",
                 "options": ["focal point", "depth", "horizon", "shade"],
                 "answer": "A",
-                "explanation": "focal point意 为\\",
+                "explanation": "focal point意 为\"视觉焦点\"",
             },
             {
                 "week": 3,
@@ -8853,7 +8981,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The straight line far away where the sky seems to meet the land is the _______.",
                 "options": ["grid", "horizon", "palette", "label"],
                 "answer": "B",
-                "explanation": "补充词汇：horizon意为\\",
+                "explanation": "补充词汇：horizon意为\"地平线\"",
             },
             {
                 "week": 3,
@@ -8861,7 +8989,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using perspective helps create the illusion of 3D _______ on flat paper.",
                 "options": ["depth", "acrylic", "layout", "exhibition"],
                 "answer": "A",
-                "explanation": "补充词汇：depth意为\\",
+                "explanation": "补充词汇：depth意为\"深度/纵深感\"",
             },
                 ],
                 4: [
@@ -8871,7 +8999,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A network of crisscrossing squares used to help you copy a drawing accurately is a _______.",
                 "options": ["Grid", "focal point", "tint", "shade"],
                 "answer": "A",
-                "explanation": "Grid意为\\",
+                "explanation": "Grid意为\"⽹格\"",
             },
             {
                 "week": 4,
@@ -8879,7 +9007,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Drawing a person's head the right size compared to their body shows good _______.",
                 "options": ["rhythm", "proportion", "palette", "exhibition"],
                 "answer": "B",
-                "explanation": "proportion 意为\\",
+                "explanation": "proportion 意为\"⽐例\"",
             },
             {
                 "week": 4,
@@ -8887,7 +9015,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A flat, straight tool used to draw straight lines is a _______.",
                 "options": ["palette", "brush", "ruler", "scissors"],
                 "answer": "C",
-                "explanation": "ruler意为\\",
+                "explanation": "ruler意为\"尺⼦\"",
             },
             {
                 "week": 4,
@@ -8895,7 +9023,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "We use a ruler to _______ how long the drawing is.",
                 "options": ["measure", "display", "curate", "arrange"],
                 "answer": "A",
-                "explanation": "补充词汇：measure意为\\",
+                "explanation": "补充词汇：measure意为\"测量\"",
             },
                 ],
                 5: [
@@ -8916,7 +9044,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Drawing a square _______ helps artists copy small photos onto large walls.",
                 "options": ["grid", "line", "proportion", "scale"],
                 "answer": "A",
-                "explanation": "巩固词汇：grid\\",
+                "explanation": "巩固词汇：grid\"⽹格\"",
             },
             {
                 "week": 7,
@@ -8924,7 +9052,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The overall size of an artwork compared to real life is its _______.",
                 "options": ["palette", "line", "scale", "label"],
                 "answer": "C",
-                "explanation": "scale意为\\",
+                "explanation": "scale意为\"⽐例/缩放⽐例\"",
             },
             {
                 "week": 7,
@@ -8932,7 +9060,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A continuous mark made by a pencil moving across paper is a _______.",
                 "options": ["grid", "volume", "line", "sculpture"],
                 "answer": "C",
-                "explanation": "line意为\\",
+                "explanation": "line意为\"线条\"",
             },
             {
                 "week": 7,
@@ -8940,7 +9068,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using a ruler gives you an exact _______ in centimeters.",
                 "options": ["scale", "measurement", "exhibition", "tint"],
                 "answer": "B",
-                "explanation": "measurement意为\\",
+                "explanation": "measurement意为\"测量/尺⼨\"",
             },
                 ],
                 8: [
@@ -8950,7 +9078,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Visual movement in art created by repeating elements is called _______.",
                 "options": ["line", "rhythm", "shape", "value"],
                 "answer": "B",
-                "explanation": "rhythm意为\\",
+                "explanation": "rhythm意为\"节奏/韵律感\"",
             },
             {
                 "week": 8,
@@ -8958,7 +9086,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A zig-zag _______ can make a drawing feel energetic and sharp.",
                 "options": ["line", "value", "exhibition", "gallery"],
                 "answer": "A",
-                "explanation": "巩固词汇：line\\",
+                "explanation": "巩固词汇：line\"线条\"",
             },
             {
                 "week": 8,
@@ -8966,7 +9094,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using the exact same red circle over and over again is called _______.",
                 "options": ["proportion", "repetition", "minimalism", "shading"],
                 "answer": "B",
-                "explanation": "repetition意为\\",
+                "explanation": "repetition意为\"重复\"",
             },
             {
                 "week": 8,
@@ -8974,7 +9102,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A beautiful, repeating design on a shirt or wallpaper is a _______.",
                 "options": ["shade", "shape", "pattern", "critique"],
                 "answer": "C",
-                "explanation": "pattern意为\\",
+                "explanation": "pattern意为\"图案/花纹\"",
             },
             {
                 "week": 8,
@@ -8982,7 +9110,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A 2D enclosed area, like a square or a triangle, is a _______.",
                 "options": ["shape", "line", "scale", "value"],
                 "answer": "A",
-                "explanation": "shape意为\\",
+                "explanation": "shape意为\"形状\"",
             },
                 ],
                 9: [
@@ -8992,7 +9120,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A painting that only uses different shades and tints of the color blue is _______.",
                 "options": ["geometric", "Monochromatic", "optical", "mixed media"],
                 "answer": "B",
-                "explanation": "Monochromatic意为\\",
+                "explanation": "Monochromatic意为\"单⾊的\"",
             },
             {
                 "week": 9,
@@ -9000,7 +9128,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A flat board or tray where an artist mixes their paints is a _______.",
                 "options": ["Palette", "Value", "Shade", "Assemblage"],
                 "answer": "A",
-                "explanation": "Palette意为\\",
+                "explanation": "Palette意为\"调⾊板\"",
             },
             {
                 "week": 9,
@@ -9008,7 +9136,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The lightness or darkness of a specific color is its _______.",
                 "options": ["Value", "Grid", "Shape", "Line"],
                 "answer": "A",
-                "explanation": "Value意为\\",
+                "explanation": "Value意为\"明暗度/⾊彩值\"",
             },
             {
                 "week": 9,
@@ -9016,7 +9144,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you add black to red, you create a darker _______ of red.",
                 "options": ["Tint", "Shade", "Pattern", "Illusion"],
                 "answer": "B",
-                "explanation": "Shade意为\\",
+                "explanation": "Shade意为\"暗⾊/阴影\"，加⿊产⽣",
             },
             {
                 "week": 9,
@@ -9024,7 +9152,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "If you add white to red to make pink, you create a lighter _______ of red.",
                 "options": ["Tint", "Shade", "Rhythm", "Volume"],
                 "answer": "A",
-                "explanation": "Tint意为\\",
+                "explanation": "Tint意为\"浅⾊/⾊彩\"，加⽩产⽣",
             },
                 ],
                 10: [
@@ -9034,6 +9162,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "What is the artwork called when you build it by gluing different 3D scrap objects together?",
                 "options": ["A Sketch B) An Assemblage C) A Proposal D) A Volume"],
                 "answer": "B",
+                "explanation": "",
                 "passage": "Before making a 3D artwork, an artist writes a paper Proposal to explain their idea. Then, they draw a quick pencil Sketch. They use dark and light Shading to make the drawing look like it has 3D Volume and thickness. Finally, they build the real artwork, creating an Assemblage by gluing different 3D scrap objects together.",
             },
                 ],
@@ -9044,7 +9173,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A popular, fast-drying paint made with plastic polymers is _______ paint.",
                 "options": ["Acrylic", "Material", "Sculpture", "Sketch"],
                 "answer": "A",
-                "explanation": "Acrylic意为\\",
+                "explanation": "Acrylic意为\"丙烯颜料\"",
             },
             {
                 "week": 11,
@@ -9052,7 +9181,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using both watercolor paint and colored pencils in one artwork is called _______.",
                 "options": ["Sculpture", "Mixed Media", "Acrylic", "Volume"],
                 "answer": "B",
-                "explanation": "Mixed Media意为\\",
+                "explanation": "Mixed Media意为\"混合媒材\"",
             },
             {
                 "week": 11,
@@ -9060,7 +9189,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A 3D piece of art made by carving clay or stone is a _______.",
                 "options": ["Sketch", "Proposal", "Sculpture", "Label"],
                 "answer": "C",
-                "explanation": "Sculpture意为\\",
+                "explanation": "Sculpture意为\"雕塑\"",
             },
             {
                 "week": 11,
@@ -9068,7 +9197,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Building a 3D artwork by carefully putting wood or metal pieces together is a _______.",
                 "options": ["Shade", "Tint", "Construction", "Monochromatic"],
                 "answer": "C",
-                "explanation": "Construction意为\\",
+                "explanation": "Construction意为\"结构/建构艺术\"",
             },
             {
                 "week": 11,
@@ -9076,7 +9205,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Clay, wood, paper, and paint are different types of art _______.",
                 "options": ["Material", "Scale", "Illusion", "Feedback"],
                 "answer": "A",
-                "explanation": "Material意为\\",
+                "explanation": "Material意为\"材料/媒材\"",
             },
                 ],
                 12: [
@@ -9086,7 +9215,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A public showing of many artworks in a gallery is an art _______.",
                 "options": ["Exhibition", "Acrylic", "Value", "Shade"],
                 "answer": "A",
-                "explanation": "Exhibition意为\\",
+                "explanation": "Exhibition意为\"展览\"",
             },
             {
                 "week": 12,
@@ -9094,7 +9223,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To hang the paintings on the wall so everyone can clearly see them is to _______ them.",
                 "options": ["Display", "Curate", "Label", "Sketch"],
                 "answer": "A",
-                "explanation": "Display意为\\",
+                "explanation": "Display意为\"展⽰/陈 列\"",
             },
             {
                 "week": 12,
@@ -9102,7 +9231,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To carefully select the best artworks and decide the theme for a museum show is to _______.",
                 "options": ["Simplify", "Reduce", "Curate", "Label"],
                 "answer": "C",
-                "explanation": "Curate意为\\",
+                "explanation": "Curate意为\"策 展\"",
             },
             {
                 "week": 12,
@@ -9110,7 +9239,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To place the sculptures in a neat and organized order in the room is to _______ them.",
                 "options": ["Arrange", "Label", "Shade", "Tint"],
                 "answer": "A",
-                "explanation": "Arrange意为\\",
+                "explanation": "Arrange意为\"布置/排列\"",
             },
             {
                 "week": 12,
@@ -9118,7 +9247,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A small card on the wall telling the artist's name and the title of the painting is a _______.",
                 "options": ["Label", "Exhibition", "Material", "Volume"],
                 "answer": "A",
-                "explanation": "Label意为\\",
+                "explanation": "Label意为\"标签/ 说明牌\"",
             },
                 ],
                 13: [
@@ -9128,7 +9257,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A helpful class discussion looking at the strengths and weaknesses of an artwork is a _______.",
                 "options": ["Gallery", "Critique", "Material", "Palette"],
                 "answer": "B",
-                "explanation": "Critique意为\\",
+                "explanation": "Critique意为\"艺术评论/点评\"",
             },
             {
                 "week": 13,
@@ -9136,7 +9265,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Helpful comments and advice given to an artist to improve their work is _______.",
                 "options": ["Feedback", "Exhibition", "Acrylic", "Sculpture"],
                 "answer": "A",
-                "explanation": "Feedback意 为\\",
+                "explanation": "Feedback意 为\"反馈\"",
             },
             {
                 "week": 13,
@@ -9144,7 +9273,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "A quiet room or building where art is hung and shown to the public is a _______.",
                 "options": ["Palette", "Label", "Gallery", "Grid"],
                 "answer": "C",
-                "explanation": "Gallery意为\\",
+                "explanation": "Gallery意为\"画廊/美术馆\"",
             },
             {
                 "week": 13,
@@ -9152,7 +9281,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To think deeply about what your artwork means and how you made it is to _______.",
                 "options": ["reflect", "reduce", "simplify", "shade"],
                 "answer": "A",
-                "explanation": "reflect意为\\",
+                "explanation": "reflect意为\"反思\"",
             },
                 ],
                 14: [
@@ -9162,7 +9291,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To make an artwork less complicated by removing extra details is to _______ it.",
                 "options": ["Simplify", "Arrange", "Display", "Observe"],
                 "answer": "A",
-                "explanation": "Simplify意为\\",
+                "explanation": "Simplify意为\"简化\"",
             },
             {
                 "week": 14,
@@ -9170,7 +9299,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "Using sharp, regular math shapes like perfect squares and triangles is using _______ shapes.",
                 "options": ["Monochromatic", "Geometric", "Mixed", "Acrylic"],
                 "answer": "B",
-                "explanation": "Geometric意为\\",
+                "explanation": "Geometric意为\"⼏何的\"",
             },
             {
                 "week": 14,
@@ -9178,7 +9307,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "To take away unnecessary lines and parts of the drawing is to _______ it.",
                 "options": ["Reduce", "Arrange", "Curate", "Exhibit"],
                 "answer": "A",
-                "explanation": "Reduce意为\\",
+                "explanation": "Reduce意为\"减少/删减\"",
             },
             {
                 "week": 14,
@@ -9186,7 +9315,7 @@ PREDEFINED_QUESTIONS: Dict[str, Dict[str, Dict[int, List[Dict[str, Any]]]]] = {
                 "question": "The most important, core feeling or idea of a subject is its _______.",
                 "options": ["Label", "Gallery", "Essence", "Ruler"],
                 "answer": "C",
-                "explanation": "Essence意为\\",
+                "explanation": "Essence意为\"本质/精髓\"",
             },
                 ],
                 15: [
