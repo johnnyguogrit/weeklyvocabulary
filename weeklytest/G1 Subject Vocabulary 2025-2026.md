@@ -1,0 +1,1432 @@
+G1SubjectVocabulary2025-2026
+
+根据您提供的2025-2026年⼀年级（G1）教学⼤纲，我为您完整梳理了各学科第2⾄15周的每周学科单
+
+词词汇测试，并严格按照每三周为⼀个学习阶段，设计了涵盖前三周词汇的“复习综合测试题”（采
+
+⽤阅读理解的形式）。以下测试旨在考察学⽣在具体学科语境中对学术词汇的掌握程度：
+
+学科：数学(Maths)
+
+【第⼀阶段：第2-5周】
+
+• 第2周(triangle)
+
+◦ 题⼲：Ashapewiththreesidesisa_______.
+
+◦ 选项：A)circleB)triangleC)squareD)line
+
+◦ 正确答案：B
+
+◦ 答案解析：triangle意为“三⻆形”，符合三条边的⼏何特征。
+
+• 第3周(square)
+
+◦ 题⼲：A_______hasfourequalstraightsides.
+
+◦ 选项：A)triangleB)squareC)starD)dot
+
+◦ 正确答案：B
+
+◦ 答案解析：square意为“正⽅形”，符合四条相等的直边的特征。
+
+• 第4周(minus)
+
+◦ 题⼲：Ifwetakeaway1from3,weuse_______.
+
+◦ 选项：A)plusB)totalC)minusD)more
+
+◦ 正确答案：C
+
+◦ 答案解析：minus意为“减去”，在数学运算中表⽰减少或拿⾛。
+
+• 第5周（综合复习测试：涵盖triangle,square,minus,number）
+
+◦ 阅读⽂本：Lookatmyshapes!Ihaveanumberoftoys.Ihaveatrianglewith3sidesand
+
+asquarewith4sides.IfIhave5toysanduseminus2,Ihave3left.
+
+◦ 题⼲：Whatshapehas4sidesinthetext?
+
+◦ 选项：A)triangleB)squareC)circleD)number
+
+◦ 正确答案：B
+
+◦ 答案解析：阅读⽂本中提到“asquarewith4sides”，综合考察了过往三周形状与运算词汇，
+
+及第5周复习周强调的词汇number。
+
+【第⼆阶段：第7-9周】
+
+• 第7周(plus)
+
+◦ 题⼲：Toputtwogroupstogether,weusethe_______sign.
+
+◦ 选项：A)minusB)lessC)plusD)price
+
+◦ 正确答案：C
+
+◦ 答案解析：plus意为“加上”，表⽰把两组物品加在⼀起。
+
+• 第8周(minus)
+
+◦ 题⼲：Ten_______fiveisfive.
+
+◦ 选项：A)plusB)moreC)totalD)minus
+
+◦ 正确答案：D
+
+◦ 答案解析：巩固减法概念，10减去(minus)5等于5。
+
+• 第9周(more)
+
+◦ 题⼲：Fiveapplesis_______thantwoapples.
+
+◦ 选项：A)lessB)moreC)totalD)minus
+
+◦ 正确答案：B
+
+◦ 答案解析：more意为“更多”，⽤于数学⽐较逻辑。
+
+• 第9周末（综合复习测试：涵盖plus,minus,more）
+
+◦ 阅读⽂本：Ihave3apples.Mymomgivesme2moreapples.IuseplustofindIhave5
+
+applesnow.ThenIeat1apple,Iuseminus.
+
+◦ 题⼲：WhatmathsigndoIusewhenmomgivesme2moreapples?
+
+◦ 选项：A)minusB)lessC)plusD)price
+
+◦ 正确答案：C
+
+◦ 答案解析：⽂本中明确说明得到更多(more)苹果时，使⽤加法(plus)。
+
+【第三阶段：第10-12周】
+
+• 第10周(less)
+
+◦ 题⼲：Threeis_______thaneight.
+
+◦ 选项：A)moreB)lessC)totalD)plus
+
+◦ 正确答案：B
+
+◦ 答案解析：less意为“更少”，⽤于基础数值⽐较。
+
+• 第11周(together)
+
+◦ 题⼲：Ifweput2and3_______,weget5.
+
+◦ 选项：A)lessB)differenceC)togetherD)minus
+
+◦ 正确答案：C
+
+◦ 答案解析：together意为“⼀起”，puttogether是加法运算的语境表达。
+
+• 第12周(difference)
+
+◦ 题⼲：The_______between10and6is4.
+
+◦ 选项：A)totalB)differenceC)plusD)together
+
+◦ 正确答案：B
+
+◦ 答案解析：difference特指数学运算中的“差值”。
+
+• 第12周末（综合复习测试：涵盖less,together,difference）
+
+◦ 阅读⽂本：Ihave10pens,andyouhave6pens,whichislessthanmine.Ifweputthem
+
+together,wehave16.Thedifferencebetween10and6is4.
+
+◦ 题⼲：Whatisthedifferencebetweenourpens?
+
+◦ 选项：A)4B)6C)10D)16
+
+◦ 正确答案：A
+
+◦ 答案解析：综合段落中的减法差值逻辑，difference明确指出是4。
+
+【第四阶段：第13-15周】
+
+• 第13周(price)
+
+◦ 题⼲：Youcheckthe_______toseehowmuchatoycosts.
+
+◦ 选项：A)totalB)priceC)numberD)difference
+
+◦ 正确答案：B
+
+◦ 答案解析：price意为“价格”，⽤以表⽰物品的标价。
+
+• 第14周(money)
+
+◦ 题⼲：Weuse_______tobuythingsintheshop.
+
+◦ 选项：A)moneyB)shapeC)minusD)square
+
+◦ 正确答案：A
+
+◦ 答案解析：money意为“⾦钱”，⽤于购买物品。
+
+• 第15周(total)
+
+◦ 题⼲：The_______of4and5is9.
+
+◦ 选项：A)lessB)priceC)totalD)minus
+
+◦ 正确答案：C
+
+◦ 答案解析：total意为“总和”，在加法计算中表⽰结果。
+
+• 第15周末（综合复习测试：涵盖price,money,total）
+
+◦ 阅读⽂本：Wewanttobuyabook.Thepriceis5dollars.Weuseourmoneytopay.Ifwe
+
+buytwobooks,thetotalis10dollars.
+
+◦ 题⼲：Whatdoweusetopayforthebook?
+
+◦ 选项：A)priceB)moneyC)totalD)less
+
+◦ 正确答案：B
+
+◦ 答案解析：⽂本中提到我们使⽤⾦钱(money)来⽀付图书的价格(price)并计算总额(total)。
+
+学科：科学(Science)
+
+【第⼀阶段：第2-5周】
+
+• 第2周(compare)
+
+◦ 题⼲：Toseehowtwoleavesaredifferentisto_______them.
+
+◦ 选项：A)growB)compareC)reflectD)measure
+
+◦ 正确答案：B
+
+◦ 答案解析：compare意为“⽐较”，科学观察中⽤以寻找异同。
+
+• 第3周(grow)
+
+◦ 题⼲：Plantsneedwaterandsunlightto_______bigger.
+
+◦ 选项：A)measureB)growC)reflectD)source
+
+◦ 正确答案：B
+
+◦ 答案解析：grow意为“⽣⻓”。
+
+• 第4周(human)
+
+◦ 题⼲：Youareaperson,whichmeansyouarea_______.
+
+◦ 选项：A)lightB)humanC)sourceD)safety
+
+◦ 正确答案：B
+
+◦ 答案解析：human意为“⼈类”，⽣物学基础分类。
+
+• 第5周（综合复习测试：涵盖compare,human,grow）
+
+◦ 阅读⽂本：Ahumanneedsfoodandwatertogrowbig.Wecanlookatababyandan
+
+adulttocomparethem.
+
+◦ 题⼲：Whatdoesahumanneedtogrowbig?
+
+◦ 选项：A)FoodandwaterB)ToysC)DarknessD)Electricity
+
+◦ 正确答案：A
+
+◦ 答案解析：⽂本提到⼈类(human)需要⻝物和⽔来⽣⻓(grow)并进⾏⽐较(compare)。
+
+【第⼆阶段：第7-9周】
+
+• 第7周(measure)
+
+◦ 题⼲：Weusearulerto_______howtallaplantis.
+
+◦ 选项：A)measureB)growC)reflectD)compare
+
+◦ 正确答案：A
+
+◦ 答案解析：measure意为“测量”。
+
+• 第8周(healthy)
+
+◦ 题⼲：Eatingapplesandcarrotskeepsourbody_______.
+
+◦ 选项：A)darkB)healthyC)sourceD)reflect
+
+◦ 正确答案：B
+
+◦ 答案解析：healthy意为“健康的”。
+
+• 第9周(teeth)
+
+◦ 题⼲：Weuseour_______tochewfood.
+
+◦ 选项：A)eyesB)hairC)teethD)light
+
+◦ 正确答案：C
+
+◦ 答案解析：teeth意为“⽛⻮”。
+
+• 第9周末（综合复习测试：涵盖measure,healthy,teeth）
+
+◦ 阅读⽂本：Tostayhealthy,wemusteatgoodfoodandbrushourteeth.Thedoctorcan
+
+measurehowtallweare.
+
+◦ 题⼲：Whatshouldwebrushtostayhealthy?
+
+◦ 选项：A)OurhandsB)OurhairC)OurteethD)Ourshoes
+
+◦ 正确答案：C
+
+◦ 答案解析：⽂本说明为了保持健康(healthy)，必须每天刷⽛(teeth)。
+
+【第三阶段：第10-12周】
+
+• 第10周(light)
+
+◦ 题⼲：Weneed_______toseethingsinadarkroom.
+
+◦ 选项：A)lightB)waterC)humanD)teeth
+
+◦ 正确答案：A
+
+◦ 答案解析：light意为“光”。
+
+• 第11周(source)
+
+◦ 题⼲：Thesunisthebiggestnatural_______oflight.
+
+◦ 选项：A)sourceB)darknessC)safetyD)human
+
+◦ 正确答案：A
+
+◦ 答案解析：source意为“来源/源头”，太阳是最⼤的光源。
+
+• 第12周(reflect)
+
+◦ 题⼲：Amirrorcan_______lightbacktoyoureyes.
+
+◦ 选项：A)growB)measureC)reflectD)compare
+
+◦ 正确答案：C
+
+◦ 答案解析：reflect意为“反射”，光学基础现象。
+
+• 第12周末（综合复习测试：涵盖light,source,reflect）
+
+◦ 阅读⽂本：Thesunisabigsourceoflight.Whenthelighthitsamirror,themirrorwill
+
+reflectit.
+
+◦ 题⼲：Whatdoesamirrordotolight?
+
+◦ 选项：A)Itgrowsit.B)Iteatsit.C)Itreflectsit.D)Ithidesit.
+
+◦ 正确答案：C
+
+◦ 答案解析：说明镜⼦能反射(reflect)光(light)。
+
+【第四阶段：第13-15周】
+
+• 第13周(darkness)
+
+◦ 题⼲：Whenthereisnolightatall,wearein_______.
+
+◦ 选项：A)darknessB)safetyC)electricityD)source
+
+◦ 正确答案：A
+
+◦ 答案解析：darkness意为“⿊暗”。
+
+• 第14周(electricity)
+
+◦ 题⼲：Weuse_______toturnontheTVandlamps.
+
+◦ 选项：A)darknessB)teethC)electricityD)water
+
+◦ 正确答案：C
+
+◦ 答案解析：electricity意为“电”。
+
+• 第15周(safety)
+
+◦ 题⼲：Donottouchbrokenwiresforyourown_______.
+
+◦ 选项：A)sourceB)safetyC)darknessD)light
+
+◦ 正确答案：B
+
+◦ 答案解析：safety意为“安全”，科学常识强调防触电。
+
+• 第15周末（综合复习测试：涵盖darkness,electricity,safety）
+
+◦ 阅读⽂本：Atnight,thereisdarkness.Weturnonlampsusingelectricity.Butwemust
+
+becarefulwithwiresforoursafety.
+
+◦ 题⼲：Whymustwebecarefulwithwires?
+
+◦ 选项：A)ForfunB)ForoursafetyC)FordarknessD)Forfood
+
+◦ 正确答案：B
+
+◦ 答案解析：强调安全⽤电(electricity)和注意⾃⾝安全(safety)。
+
+学科：STEAM
+
+【第⼀阶段：第2-5周】
+
+• 第2周(TallyChart)
+
+◦ 题⼲：Weusea_______tocountthingswithmarks.
+
+◦ 选项：A)RobotB)TallyChartC)SymbolD)Budget
+
+◦ 正确答案：B
+
+◦ 答案解析：TallyChart意为“画记统计表”。
+
+• 第3周(Algorithm)
+
+◦ 题⼲：Astep-by-stepruletosolveaproblemisan_______.
+
+◦ 选项：A)AlgorithmB)CharacterC)BudgetD)Symbol
+
+◦ 正确答案：A
+
+◦ 答案解析：Algorithm意为“算法”。
+
+• 第4周(Instructions)
+
+◦ 题⼲：Wereadthe_______toknowhowtobuildthetoy.
+
+◦ 选项：A)InstructionsB)RobotC)TallyChartD)Symbol
+
+◦ 正确答案：A
+
+◦ 答案解析：Instructions意为“说明/指令”。
+
+• 第5周（综合复习测试：涵盖TallyChart,Algorithm,Instructions,Robot）
+
+◦ 阅读⽂本：WereadtheInstructionstobuildaRobot.WeuseaTallyCharttocountits
+
+parts.ThenwewriteanAlgorithmtomakeitmove!
+
+◦ 题⼲：WhatdowewritetomaketheRobotmove?
+
+◦ 选项：A)ATallyChartB)AnAlgorithmC)ASymbolD)ABudget
+
+◦ 正确答案：B
+
+◦ 答案解析：⽂本中描述通过写算法(Algorithm)指令(Instructions)使机器⼈(Robot)移动。
+
+【第⼆阶段：第7-9周】
+
+• 第7周(Budget)
+
+◦ 题⼲：Themoneywecanspendonourprojectisour_______.
+
+◦ 选项：A)BudgetB)SymbolC)RobotD)Algorithm
+
+◦ 正确答案：A
+
+◦ 答案解析：Budget意为“预算”。
+
+• 第8周(Calculate)
+
+◦ 题⼲：Wemust_______thenumberstofindthetotalcost.
+
+◦ 选项：A)CalculateB)RepeatC)DanceD)Character
+
+◦ 正确答案：A
+
+◦ 答案解析：Calculate意为“计算”。
+
+• 第9周(Symbol)
+
+◦ 题⼲：Aplussign(+)isamath_______.
+
+◦ 选项：A)RobotB)BudgetC)SymbolD)Character
+
+◦ 正确答案：C
+
+◦ 答案解析：Symbol意为“符号”。
+
+• 第9周末（综合复习测试：涵盖Budget,Calculate,Symbol）
+
+◦ 阅读⽂本：Weneedtobuyparts.WemustcheckourBudget.WeuseamathSymbollike
+
+(+)toCalculatethetotalcost.
+
+◦ 题⼲：Whattellsushowmuchmoneywecanspend?
+
+◦ 选项：A)SymbolB)BudgetC)CalculateD)Robot
+
+◦ 正确答案：B
+
+◦ 答案解析：依靠预算(Budget)知道资⾦情况并进⾏计算(Calculate)。
+
+【第三阶段：第10-12周】
+
+• 第10周(DanceAlgorithm)
+
+◦ 题⼲：Asetofstepstomakearobotdanceisa_______.
+
+◦ 选项：A)DanceAlgorithmB)BudgetC)SymbolD)TallyChart
+
+◦ 正确答案：A
+
+◦ 答案解析：DanceAlgorithm意为“舞蹈算法”。
+
+• 第11周(ScratchJr)
+
+◦ 题⼲：_______isacodingappweuseonthetablet.
+
+◦ 选项：A)BudgetB)ScratchJrC)SymbolD)Character
+
+◦ 正确答案：B
+
+◦ 答案解析：ScratchJr是⼀款著名少⼉编程平台。
+
+• 第12周(Character)
+
+◦ 题⼲：Thecatinourcodinggameisthemain_______.
+
+◦ 选项：A)SymbolB)BudgetC)CharacterD)Algorithm
+
+◦ 正确答案：C
+
+◦ 答案解析：Character意为“⻆⾊”。
+
+• 第12周末（综合复习测试：涵盖DanceAlgorithm,ScratchJr,Character）
+
+◦ 阅读⽂本：WeusetheScratchJrapponthetablet.WecodeacatCharacter.Wegiveita
+
+DanceAlgorithmtomakeitjumpandspin.
+
+◦ 题⼲：Whatisthecatintheappcalled?
+
+◦ 选项：A)ASymbolB)ABudgetC)ACharacterD)AChart
+
+◦ 正确答案：C
+
+◦ 答案解析：通过ScratchJr软件给⻆⾊(Character)写⼊舞蹈算法(DanceAlgorithm)。
+
+【第四阶段：第13-15周】
+
+• 第13周(RepeatBlock)
+
+◦ 题⼲：Tomakethecatjump5timeseasily,weusea_______.
+
+◦ 选项：A)RepeatBlockB)BudgetC)ChoreographerD)Symbol
+
+◦ 正确答案：A
+
+◦ 答案解析：RepeatBlock指编程中的“重复积⽊/循环模块”。
+
+• 第14周(Efficient)
+
+◦ 题⼲：Doingworkquicklyandwellmeansitis_______.
+
+◦ 选项：A)EfficientB)CharacterC)SymbolD)Budget
+
+◦ 正确答案：A
+
+◦ 答案解析：Efficient意为“⾼效的”。
+
+• 第15周(Choreographer)
+
+◦ 题⼲：Apersonwhoplansthedancestepsisa_______.
+
+◦ 选项：A)SymbolB)RobotC)ChoreographerD)Character
+
+◦ 正确答案：C
+
+◦ 答案解析：Choreographer意为“编舞者”。
+
+• 第15周末（综合复习测试：涵盖RepeatBlock,Efficient,Choreographer）
+
+◦ 阅读⽂本：AChoreographerplansthedance.Incoding,usingaRepeatBlockmakesthe
+
+dancecodeshortandEfficient.
+
+◦ 题⼲：Whatmakesthecodeshortandefficient?
+
+◦ 选项：A)AChoreographerB)ARobotC)ARepeatBlockD)ASymbol
+
+◦ 正确答案：C
+
+◦ 答案解析：使⽤重复块(RepeatBlock)让编舞指令更⾼效(Efficient)。
+
+学科：⾳乐(Music)
+
+【第⼀阶段：第2-5周】
+
+• 第2周(Instrument)
+
+◦ 题⼲：Adrumorapianoisamusical_______.
+
+◦ 选项：A)stageB)InstrumentC)audienceD)bow
+
+◦ 正确答案：B
+
+◦ 答案解析：Instrument意为“乐器”。
+
+• 第3周(shake)
+
+◦ 题⼲：Youcan_______atambourine(铃⿎)tomakeasound.
+
+◦ 选项：A)bowB)stageC)shakeD)finish
+
+◦ 正确答案：C
+
+◦ 答案解析：shake意为“摇晃”。
+
+• 第4周(tap)
+
+◦ 题⼲：Youcan_______adrumwithyourhands.
+
+◦ 选项：A)bowB)tapC)audienceD)stage
+
+◦ 正确答案：B
+
+◦ 答案解析：tap意为“轻敲”。
+
+• 第5周（综合复习测试：涵盖Instrument,shake,tap,pattern）
+
+◦ 阅读⽂本：WeplayamusicalInstrument.Ishakethetambourine,andyoutapthedrum.
+
+Wemakeanicemusicalpattern.
+
+◦ 题⼲：Whatdoyoudotothedrum?
+
+◦ 选项：A)shakeitB)tapitC)bowtoitD)performit
+
+◦ 正确答案：B
+
+◦ 答案解析：通过拍打(tap)乐器(Instrument)形成节奏模式(pattern)。
+
+【第⼆阶段：第7-9周】
+
+• 第7周(count)
+
+◦ 题⼲：We_______1,2,3,4tokeepthebeat.
+
+◦ 选项：A)countB)bowC)stageD)perform
+
+◦ 正确答案：A
+
+◦ 答案解析：count意为“数数”。
+
+• 第8周(follow)
+
+◦ 题⼲：Wemust_______theteacher'shandtoplaytogether.
+
+◦ 选项：A)followB)shakeC)tapD)finish
+
+◦ 正确答案：A
+
+◦ 答案解析：follow意为“跟随”。
+
+• 第9周(start)
+
+◦ 题⼲：Whentheteacherpointstous,we_______playing.
+
+◦ 选项：A)finishB)startC)bowD)stage
+
+◦ 正确答案：B
+
+◦ 答案解析：start意为“开始”。
+
+• 第9周末（综合复习测试：涵盖count,follow,start）
+
+◦ 阅读⽂本：Wefollowtheteacher.Wecount1,2,3,4.Thenwestartthesongtogether.
+
+◦ 题⼲：Whatdowedoafterwecount1,2,3,4?
+
+◦ 选项：A)finishthesongB)startthesongC)bowD)shake
+
+◦ 正确答案：B
+
+◦ 答案解析：数完拍⼦(count)后跟随(follow)指挥开始(start)⾳乐。
+
+【第三阶段：第10-12周】
+
+• 第10周(finish)
+
+◦ 题⼲：Westopplayingwhenwe_______thesong.
+
+◦ 选项：A)startB)finishC)countD)practice
+
+◦ 正确答案：B
+
+◦ 答案解析：finish意为“结束/完成”。
+
+• 第11周(practice)
+
+◦ 题⼲：Togetbetteratmusic,wemust_______everyday.
+
+◦ 选项：A)finishB)stageC)practiceD)bow
+
+◦ 正确答案：C
+
+◦ 答案解析：practice意为“练习”。
+
+• 第12周(stage)
+
+◦ 题⼲：Westanduponthebig_______tosingforeveryone.
+
+◦ 选项：A)patternB)instrumentC)stageD)count
+
+◦ 正确答案：C
+
+◦ 答案解析：stage意为“舞台”。
+
+• 第12周末（综合复习测试：涵盖finish,practice,stage）
+
+◦ 阅读⽂本：Wepracticeoursongeveryday.Today,westandonthestage.Wesinguntil
+
+wefinishthesong.
+
+◦ 题⼲：Wheredowestandtosing?
+
+◦ 选项：A)InaboxB)OnthestageC)OnaninstrumentD)Intheaudience
+
+◦ 正确答案：B
+
+◦ 答案解析：在舞台(stage)上演出直到结束(finish)。
+
+【第四阶段：第13-15周】
+
+• 第13周(bow)
+
+◦ 题⼲：Attheend,webendforwardto_______andsaythankyou.
+
+◦ 选项：A)bowB)startC)tapD)count
+
+◦ 正确答案：A
+
+◦ 答案解析：bow意为“鞠躬”。
+
+• 第14周(audience)
+
+◦ 题⼲：Thepeoplewhowatchandclapforusarethe_______.
+
+◦ 选项：A)stageB)instrumentC)audienceD)pattern
+
+◦ 正确答案：C
+
+◦ 答案解析：audience意为“观众”。
+
+• 第15周(perform)
+
+◦ 题⼲：Tosingorplaymusicforpeopleisto_______forthem.
+
+◦ 选项：A)finishB)performC)countD)tap
+
+◦ 正确答案：B
+
+◦ 答案解析：perform意为“表演”。
+
+• 第15周末（综合复习测试：涵盖bow,audience,perform）
+
+◦ 阅读⽂本：Wewillperformagreatsong.Theaudienceclapsforus.Whenwearedone,
+
+webow.
+
+◦ 题⼲：Whoclapsforus?
+
+◦ 选项：A)ThestageB)TheaudienceC)TheinstrumentsD)Thepattern
+
+◦ 正确答案：B
+
+◦ 答案解析：观众(audience)为我们的表演(perform)⿎掌。
+
+学科：表演艺术(PerformingArts)
+
+【第⼀阶段：第2-5周】
+
+• 第2周(Gymnastics)
+
+◦ 题⼲：In_______class,welearntojump,roll,andbalance.
+
+◦ 选项：A)GymnasticsB)audienceC)dialogueD)stage
+
+◦ 正确答案：A
+
+◦ 答案解析：Gymnastics意为“体操”。
+
+• 第3/4周(cartwheel)
+
+◦ 题⼲：A_______isamovewhereyouturnsidewaysonyourhands.
+
+◦ 选项：A)bowB)cartwheelC)stageD)stretch
+
+◦ 正确答案：B
+
+◦ 答案解析：cartwheel意为“侧⼿翻”。
+
+• 第5周（综合复习测试：涵盖Gymnastics,cartwheel）
+
+◦ 阅读⽂本：InGymnastics,wemoveourbodies.Welearnhowtodoasidewaysflipcalled
+
+acartwheel.
+
+◦ 题⼲：Whatsidewaysflipdowelearn?
+
+◦ 选项：A)GymnasticsB)AstretchC)AcartwheelD)Astage
+
+◦ 正确答案：C
+
+◦ 答案解析：侧⼿翻(cartwheel)是体操(Gymnastics)中的基础动作。
+
+【第⼆阶段：第7-9周】
+
+• 第7/8周(cartwheel)
+
+◦ 题⼲：Youneedstrongarmstodoagoodsideways_______.
+
+◦ 选项：A)cartwheelB)audienceC)dialogueD)character
+
+◦ 正确答案：A
+
+◦ 答案解析：继续巩固侧⼿翻技能词汇。
+
+• 第9周(Stretch)
+
+◦ 题⼲：Reachyourarmsuphighto_______yourbody.
+
+◦ 选项：A)StretchB)cartwheelC)singD)bow
+
+◦ 正确答案：A
+
+◦ 答案解析：Stretch意为“伸展/拉伸”。
+
+• 第9周末（综合复习测试：涵盖cartwheel,Stretch）
+
+◦ 阅读⽂本：Beforewedoacartwheel,wemustwarmup.WereachuphightoStretchour
+
+arms.
+
+◦ 题⼲：Whatmustwestretch?
+
+◦ 选项：A)OurcartwheelB)OurarmsC)OurfaceD)Ourdialogue
+
+◦ 正确答案：B
+
+◦ 答案解析：在进⾏⼤动作前必须伸展(Stretch)四肢。
+
+【第三阶段：第10-12周】
+
+• 第10周(cartwheel)
+
+◦ 题⼲：Whendoinga_______,yourhandstouchthefloorwhilefeetgoup.
+
+◦ 选项：A)StretchB)cartwheelC)stageD)play
+
+◦ 正确答案：B
+
+◦ 答案解析：描述侧⼿翻特征。
+
+• 第11/12周(Stretch)
+
+◦ 题⼲：Tomakeyourmuscleslongandwarm,youshould_______.
+
+◦ 选项：A)StretchB)stageC)characterD)play
+
+◦ 正确答案：A
+
+◦ 答案解析：强化拉伸(Stretch)词汇。
+
+• 第12周末（综合复习测试：涵盖cartwheel,Stretch）
+
+◦ 阅读⽂本：WeStretchourarmsandlegsfirst.Nowwearereadytoflipanddoaperfect
+
+cartwheel.
+
+◦ 题⼲：Whydowestretchfirst?
+
+◦ 选项：A)TofalldownB)TogetreadytodoacartwheelC)TosingasongD)Tosleep
+
+◦ 正确答案：B
+
+◦ 答案解析：通过拉伸(Stretch)准备侧⼿翻(cartwheel)。
+
+【第四阶段：第13-15周】
+
+• 第13/14周(Stretch)
+
+◦ 题⼲：Ifyoufeeltight,youneedagood_______toloosenup.
+
+◦ 选项：A)cartwheelB)stretchC)linesD)emotions
+
+◦ 正确答案：B
+
+◦ 答案解析：针对紧绷状态需要拉伸。
+
+• 第15周(Stretch)
+
+◦ 题⼲：Aftertheshow,wedoaslow_______tocooldown.
+
+◦ 选项：A)cartwheelB)StretchC)linesD)emotions
+
+◦ 正确答案：B
+
+◦ 答案解析：下课冷却放松的步骤。
+
+• 第15周末（综合复习测试：涵盖stretch）
+
+◦ 阅读⽂本：Wedoabigcartwheelacrosstheroom.Aftermovingfast,wesitdownand
+
+Stretchourlegstocooldown.
+
+◦ 题⼲：Whendowestretchourlegs?
+
+◦ 选项：A)AftermovingfastB)BeforesleepingC)WhileeatingD)Duringacartwheel
+
+◦ 正确答案：A
+
+◦ 答案解析：理解体育表演后的放松。
+
+学科：戏剧(Drama)
+
+【第⼀阶段：第2-5周】
+
+• 第2周(character)
+
+◦ 题⼲：Apersonoranimalyoupretendtobeinastoryisa_______.
+
+◦ 选项：A)characterB)stageC)stretchD)dialogue
+
+◦ 正确答案：A
+
+◦ 答案解析：character意为“⻆⾊”。
+
+• 第3周(dialogue)
+
+◦ 题⼲：Whentwoactorstalktoeachother,itisa_______.
+
+◦ 选项：A)cartwheelB)dialogueC)stageD)stretch
+
+◦ 正确答案：B
+
+◦ 答案解析：dialogue意为“对话/对⽩”。
+
+• 第4周(hotseating)
+
+◦ 题⼲：In_______,yousitinachairandanswerquestionsasyourcharacter.
+
+◦ 选项：A)hotseatingB)stageC)cartwheelD)stretch
+
+◦ 正确答案：A
+
+◦ 答案解析：hotseating是戏剧中的“焦点⼈物法”。
+
+• 第5周（综合复习测试：涵盖character,dialogue,hotseating）
+
+◦ 阅读⽂本：Youpretendtobeacharacter.Inhotseating,yousitinachair.Youspeakyour
+
+dialogueoutloud.
+
+◦ 题⼲：Whodoyoupretendtobe?
+
+◦ 选项：A)AstageB)AdialogueC)AcharacterD)Achair
+
+◦ 正确答案：C
+
+◦ 答案解析：扮演故事中的⻆⾊(character)。
+
+【第⼆阶段：第7-9周】
+
+• 第7周(emotions)
+
+◦ 题⼲：Happyandsadaredifferent_______weshowonourface.
+
+◦ 选项：A)linesB)actorsC)emotionsD)stages
+
+◦ 正确答案：C
+
+◦ 答案解析：emotions意为“情绪”。
+
+• 第8周(actor)
+
+◦ 题⼲：Apersonwhoperformsinashowisan_______.
+
+◦ 选项：A)emotionsB)actorC)linesD)stage
+
+◦ 正确答案：B
+
+◦ 答案解析：actor意为“演员”。
+
+• 第9周(play)
+
+◦ 题⼲：Astoryactedoutonastageisa_______.
+
+◦ 选项：A)playB)actorC)linesD)stretch
+
+◦ 正确答案：A
+
+◦ 答案解析：play在戏剧语境中意为“戏剧/舞台剧”。
+
+• 第9周末（综合复习测试：涵盖emotions,actor,play）
+
+◦ 阅读⽂本：Theactorperformsinabigplay.Hecriesandsmilestoshowstrongemotions.
+
+◦ 题⼲：Whatdoestheactorperformin?
+
+◦ 选项：A)AplayB)EmotionsC)AcartwheelD)Acharacter
+
+◦ 正确答案：A
+
+◦ 答案解析：演员(actor)在剧(play)中表演强烈的情绪(emotions)。
+
+【第三阶段：第10-12周】
+
+• 第10周(play)
+
+◦ 题⼲：Wearewatchingafunny_______atthetheater.
+
+◦ 选项：A)emotionsB)stretchC)playD)hotseating
+
+◦ 正确答案：C
+
+◦ 答案解析：巩固play的语境理解。
+
+• 第11周(sing)
+
+◦ 题⼲：Inamusicalplay,actorstalkand_______songs.
+
+◦ 选项：A)singB)stretchC)bowD)stage
+
+◦ 正确答案：A
+
+◦ 答案解析：sing意为“唱歌”。
+
+• 第12周(facialexpression)
+
+◦ 题⼲：Asmileisa_______thatshowsyouarehappy.
+
+◦ 选项：A)dialogueB)facialexpressionC)stageD)lines
+
+◦ 正确答案：B
+
+◦ 答案解析：facialexpression意为“⾯部表情”。
+
+• 第12周末（综合复习测试：涵盖play,sing,facialexpression）
+
+◦ 阅读⽂本：Inourplay,wesinghappysongs.Weuseabigsmileasourfacialexpression.
+
+◦ 题⼲：Whatdowedointheplay?
+
+◦ 选项：A)WesleepB)WesinghappysongsC)WecryD)Westretch
+
+◦ 正确答案：B
+
+◦ 答案解析：⾳乐剧(play)包含唱歌(sing)与表情(facialexpression)。
+
+【第四阶段：第13-15周】
+
+• 第13/14周(stagedirections)
+
+◦ 题⼲：_______tellactorswheretowalkonthestage.
+
+◦ 选项：A)StagedirectionsB)LinesC)EmotionsD)Characters
+
+◦ 正确答案：A
+
+◦ 答案解析：stagedirections意为“舞台⾛位指⽰”。
+
+• 第15周(lines)
+
+◦ 题⼲：Actorsmemorizetheir_______sotheyknowwhatwordstosay.
+
+◦ 选项：A)stagedirectionsB)linesC)emotionsD)stages
+
+◦ 正确答案：B
+
+◦ 答案解析：lines意为“台词”。
+
+• 第15周末（综合复习测试：涵盖stagedirections,lines）
+
+◦ 阅读⽂本：Thestagedirectionstelltheactortowalkleft.Then,theactorspeakshislines
+
+loudly.
+
+◦ 题⼲：Whattellstheactortowalkleft?
+
+◦ 选项：A)HislinesB)HisemotionsC)StagedirectionsD)Theplay
+
+◦ 正确答案：C
+
+◦ 答案解析：舞台指⽰(stagedirections)教导⾛位，台词(lines)表达内容。
+
+学科：视觉艺术(VisualArts)
+
+【第⼀阶段：第2-5周】
+
+• 第2周(character)
+
+◦ 题⼲：Theheroinyourdrawingisthemain_______.
+
+◦ 选项：A)settingB)sculptureC)characterD)oval
+
+◦ 正确答案：C
+
+◦ 答案解析：美术故事创作中的character同样意为“⻆⾊”。
+
+• 第3周(setting)
+
+◦ 题⼲：Theplaceorbackgroundintheartisthe_______.
+
+◦ 选项：A)settingB)characterC)sculptureD)line
+
+◦ 正确答案：A
+
+◦ 答案解析：setting指画作的“背景/环境”。
+
+• 第4/5周(sculpture)
+
+◦ 题⼲：A3Dartpiecemadeofclayisa_______.
+
+◦ 选项：A)settingB)characterC)sculptureD)spiral
+
+◦ 正确答案：C
+
+◦ 答案解析：sculpture意为“雕塑”。
+
+• 第5周（综合复习测试：涵盖character,setting,sculpture）
+
+◦ 阅读⽂本：Idrawaherocharacter.Behindhimisaforestsetting.ThenImakea3Dclay
+
+sculpture.
+
+◦ 题⼲：Whatistheforestusedfor?
+
+◦ 选项：A)ThecharacterB)ThesettingC)ThesculptureD)Thespiral
+
+◦ 正确答案：B
+
+◦ 答案解析：森林⽤于画作的背景设置(setting)。
+
+【第⼆阶段：第7-9周】
+
+• 第7周(oval)
+
+◦ 题⼲：Aneggshapeiscalledan_______.
+
+◦ 选项：A)squareB)triangleC)ovalD)spiral
+
+◦ 正确答案：C
+
+◦ 答案解析：oval意为“椭圆形”。
+
+• 第8周(spiral)
+
+◦ 题⼲：Acurvylinethatgoesroundandroundisa_______.
+
+◦ 选项：A)squareB)ovalC)spiralD)collage
+
+◦ 正确答案：C
+
+◦ 答案解析：spiral意为“螺旋形”。
+
+• 第9周(sculpture)
+
+◦ 题⼲：Webuildatallclay_______inartclass.
+
+◦ 选项：A)ovalB)spiralC)sculptureD)setting
+
+◦ 正确答案：C
+
+◦ 答案解析：再次巩固3D艺术概念(sculpture)。
+
+• 第9周末（综合复习测试：涵盖oval,spiral,sculpture）
+
+◦ 阅读⽂本：Ipaintaroundspiralline.Ipaintanegg-shapedoval.Iputmypaintingnextto
+
+myclaysculpture.
+
+◦ 题⼲：Whatshapelookslikeanegg?
+
+◦ 选项：A)AspiralB)AsculptureC)AnovalD)Asquare
+
+◦ 正确答案：C
+
+◦ 答案解析：椭圆形(oval)形似鸡蛋。
+
+【第三阶段：第10-12周】
+
+• 第10周(spiral)
+
+◦ 题⼲：Asnailshelllookslikearound_______.
+
+◦ 选项：A)settingB)spiralC)collageD)oval
+
+◦ 正确答案：B
+
+◦ 答案解析：蜗⽜壳具有螺旋(spiral)形状特征。
+
+• 第11周(collage)
+
+◦ 题⼲：Artmadebygluingcutpapertogetherisa_______.
+
+◦ 选项：A)spiralB)sculptureC)collageD)oval
+
+◦ 正确答案：C
+
+◦ 答案解析：collage意为“拼贴画”。
+
+• 第12周(layout)
+
+◦ 题⼲：Thewayweplacethecutpaperonthepageisourgood_______.
+
+◦ 选项：A)spiralB)layoutC)characterD)oval
+
+◦ 正确答案：B
+
+◦ 答案解析：layout意为“布局/排版”。
+
+• 第12周末（综合复习测试：涵盖spiral,collage,layout）
+
+◦ 阅读⽂本：Wedrawaroundspiral.Thenwecutpaperandglueittomakeacollage.We
+
+plananicelayoutonthepage.
+
+◦ 题⼲：Whatdowemakebygluingcutpaper?
+
+◦ 选项：A)AcollageB)AlayoutC)AspiralD)Anoval
+
+◦ 正确答案：A
+
+◦ 答案解析：粘贴碎纸⽚制作的是拼贴画(collage)。
+
+【第四阶段：第13-15周】
+
+• 第13/14周(yarn)
+
+◦ 题⼲：Athick,softstringusedforknittingorartis_______.
+
+◦ 选项：A)yarnB)sculptureC)ovalD)layout
+
+◦ 正确答案：A
+
+◦ 答案解析：yarn意为“⽑线/粗纱”。
+
+• 第15周(thread)
+
+◦ 题⼲：Averythinstringusedforsewingisa_______.
+
+◦ 选项：A)collageB)yarnC)threadD)oval
+
+◦ 正确答案：C
+
+◦ 答案解析：thread意为“细线/缝线”。
+
+• 第15周末（综合复习测试：涵盖yarn,thread）
+
+◦ 阅读⽂本：Inourcollage,wegluethickyarntomakeatree.Weusethinthreadtomake
+
+smallleaves.
+
+◦ 题⼲：Whatdoweusetomakesmallleaves?
+
+◦ 选项：A)ThickyarnB)ThinthreadC)AcollageD)Anoval
+
+◦ 正确答案：B
+
+◦ 答案解析：在拼贴画(collage)中，细线(thread)⽤于制作⼩叶⼦。
+
+学科：体育(PE)
+
+【第⼀阶段：第2-5周】
+
+• 第2周(together)
+
+◦ 题⼲：InPE,weplaythegame_______withourfriends.
+
+◦ 选项：A)togetherB)cheerC)bounceD)hoop
+
+◦ 正确答案：A
+
+◦ 答案解析：together意为“⼀起”。
+
+• 第3周(cheer)
+
+◦ 题⼲：Weshoutand_______forourteamtowin!
+
+◦ 选项：A)bounceB)cheerC)saveD)relay
+
+◦ 正确答案：B
+
+◦ 答案解析：cheer意为“欢呼/加油”。
+
+• 第4/5周(teamwork)
+
+◦ 题⼲：Workingnicelyinagroupiscalledgood_______.
+
+◦ 选项：A)bounceB)teamworkC)hoopD)save
+
+◦ 正确答案：B
+
+◦ 答案解析：teamwork意为“团队合作”。
+
+• 第5周（综合复习测试：涵盖together,cheer,teamwork）
+
+◦ 阅读⽂本：Weplaytogetheronthefield.Wecheerforourfriends.Thisshowsgood
+
+teamwork.
+
+◦ 题⼲：Whatdoesitshowwhenweplaytogetherandcheer?
+
+◦ 选项：A)AbounceB)GoodteamworkC)AhoopD)Asave
+
+◦ 正确答案：B
+
+◦ 答案解析：⼤家⼀起(together)玩并欢呼(cheer)，体现良好的团队精神(teamwork)。
+
+【第⼆阶段：第7-9周】
+
+• 第7周(communication)
+
+◦ 题⼲：Talkingandlisteningtoyourteamisgood_______.
+
+◦ 选项：A)bounceB)communicationC)relayD)hoop
+
+◦ 正确答案：B
+
+◦ 答案解析：communication意为“沟通”，在体育团队配合中⾄关重要。
+
+• 第8周(hoop)
+
+◦ 题⼲：Wetrytothrowthebasketballintothenetor_______.
+
+◦ 选项：A)relayB)saveC)hoopD)cheer
+
+◦ 正确答案：C
+
+◦ 答案解析：hoop意为“篮筐或呼啦圈”。
+
+• 第9周(bounce)
+
+◦ 题⼲：Whenaballhitsthefloorandcomesup,itwill_______.
+
+◦ 选项：A)cheerB)bounceC)saveD)teamwork
+
+◦ 正确答案：B
+
+◦ 答案解析：bounce意为“弹跳/拍球”。
+
+• 第9周末（综合复习测试：涵盖communication,hoop,bounce）
+
+◦ 阅读⽂本：Weuseclearcommunicationtopasstheball.Webouncetheballonthefloor
+
+andthrowitintothehoop.
+
+◦ 题⼲：Whatdowedototheballonthefloor?
+
+◦ 选项：A)Weeatit.B)Webounceit.C)Wecheerit.D)Wecommunicateit.
+
+◦ 正确答案：B
+
+◦ 答案解析：通过沟通(communication)，拍(bounce)球进⼊篮筐(hoop)。
+
+【第三阶段：第10-12周】
+
+• 第10周(bounce)
+
+◦ 题⼲：Ican_______thebasketballfivetimeswithoutstopping.
+
+◦ 选项：A)bounceB)teamC)saveD)relay
+
+◦ 正确答案：A
+
+◦ 答案解析：继续巩固bounce的使⽤。
+
+• 第11周(practice)
+
+◦ 题⼲：Togetbetteratrunning,youmust_______everyday.
+
+◦ 选项：A)saveB)practiceC)bounceD)hoop
+
+◦ 正确答案：B
+
+◦ 答案解析：practice意为“练习”。
+
+• 第12周(team)
+
+◦ 题⼲：Agroupofplayersplayingagametogetherisa_______.
+
+◦ 选项：A)bounceB)hoopC)teamD)save
+
+◦ 正确答案：C
+
+◦ 答案解析：team意为“队伍”。
+
+• 第12周末（综合复习测试：涵盖bounce,practice,team）
+
+◦ 阅读⽂本：Oursoccerteamwantstowin.Wemustpracticeeveryday.Welearnhowto
+
+kickandbouncetheball.
+
+◦ 题⼲：Whatmustthesoccerteamdoeveryday?
+
+◦ 选项：A)sleepB)practiceC)saveD)hoop
+
+◦ 正确答案：B
+
+◦ 答案解析：球队(team)要想变强必须每天练习(practice)。
+
+【第四阶段：第13-15周】
+
+• 第13周(save)
+
+◦ 题⼲：Whenagoaliestopstheballfromgoinginthenet,itisa_______.
+
+◦ 选项：A)relayB)bounceC)saveD)team
+
+◦ 正确答案：C
+
+◦ 答案解析：save在此处特指守⻔员的“扑救”。
+
+• 第14周(practice)
+
+◦ 题⼲：We_______kickingtheballtoscoreagoal.
+
+◦ 选项：A)practiceB)saveC)bounceD)relay
+
+◦ 正确答案：A
+
+◦ 答案解析：巩固动词practice。
+
+• 第15周(relay)
+
+◦ 题⼲：Aracewhererunnerstaketurnspassingastickisa_______.
+
+◦ 选项：A)saveB)bounceC)relayD)hoop
+
+◦ 正确答案：C
+
+◦ 答案解析：relay意为“接⼒赛”。
+
+• 第15周末（综合复习测试：涵盖save,practice,relay）
+
+◦ 阅读⽂本：Thegoaliemakesagreatsave!Therunnerspracticepassingthestickforthe
+
+teamrelayrace.
+
+◦ 题⼲：Whatkindofracedotherunnerspracticefor?
+
+◦ 选项：A)AswimmingraceB)ArelayraceC)AbouncingraceD)Asavingrace
+
+◦ 正确答案：B
+
+◦ 答案解析：短⽂叙述扑救(save)和跑者练习(practice)为接⼒赛(relay)做准备。
+
