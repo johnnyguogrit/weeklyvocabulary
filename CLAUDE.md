@@ -14,7 +14,7 @@ A gamified vocabulary learning application for Grades 1-5 covering 8 subjects (M
 ## Project Structure
 
 ```
-app/
+app/                              # React frontend app
 ├── src/
 │   ├── App.tsx                 # Main application with all game screens
 │   ├── main.tsx                # Entry point
@@ -36,6 +36,21 @@ app/
 ├── scripts/
 │   └── parseVocabularyMd.cjs   # Parse MD files to TypeScript
 └── weeklytest/                 # Source markdown files
+
+data/                             # Streamlit app data
+├── predefined_questions.py      # Predefined questions (from TS)
+├── question_generator.py       # Question generation logic
+├── translations.py             # Chinese translations
+└── vocabulary_data.py          # Grade/subject vocabulary structure
+
+pages/                           # Streamlit app pages
+├── 0_🏠_Home.py
+├── 4_🎯_Quiz.py                # Quiz page (now uses predefined questions)
+└── ...
+
+scripts/                         # Shared scripts
+├── convert_predefined_questions.py  # TS → Python converter
+└── parseVocabularyMd.cjs        # MD → TypeScript (React)
 ```
 
 ## Architecture
@@ -61,8 +76,9 @@ app/
 
 ### To Add New Vocabulary Questions
 1. Edit markdown files in `weeklytest/` folder
-2. Run: `node scripts/parseVocabularyMd.cjs`
-3. This regenerates `src/data/predefinedQuestions.ts`
+2. Run: `node app/scripts/parseVocabularyMd.cjs` (for React app)
+3. Run: `python scripts/convert_predefined_questions.py` (for Streamlit app)
+4. Both apps will now use the same predefined questions
 
 ### To Add New Grades/Subjects
 1. Update `VOCABULARY_DATA` in `vocabularyData.ts`
@@ -124,3 +140,29 @@ npm run preview      # Preview production build
 - None major; app fully functional for G1-G5
 - Some weeks have multiple questions which appear as separate week entries in TS output
 - Markdown parser handles both G1 format (`• 第N周(keyword)`) and G2+ format (`第N周(keyword-list)`)
+
+## Data Consistency Between Apps
+
+**CRITICAL**: Both React (local) and Streamlit apps MUST use the same predefined questions.
+
+### Data Files
+- **React app**: `app/src/data/predefinedQuestions.ts` (930+ questions)
+- **Streamlit app**: `data/predefined_questions.py` (converted from TS)
+
+### Sync Process
+When updating questions from markdown files:
+1. Edit markdown files in `weeklytest/` folder
+2. Run `node app/scripts/parseVocabularyMd.cjs` → updates React app
+3. Run `python scripts/convert_predefined_questions.py` → updates Streamlit app
+
+### Question Priority
+Both apps follow the same priority:
+1. **Predefined questions** (from markdown) - high quality, human-curated
+2. **Auto-generated questions** (template-based) - fallback only
+
+### Past Issue (RESOLVED)
+Previously, Streamlit was using only auto-generated questions because:
+1. `data/predefined_questions.py` was empty (placeholder)
+2. Quiz page called `generate_questions()` directly instead of `get_subject_data()`
+
+**Solution**: Implemented proper conversion script and updated Quiz page to use `get_subject_data()` which checks predefined questions first.
