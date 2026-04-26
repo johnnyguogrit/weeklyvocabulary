@@ -4,7 +4,7 @@
 
 | Field | Value |
 |-------|-------|
-| Version | 2.2.0 |
+| Version | 2.3.0 |
 | Last Updated | 2026-04-27 |
 | Status | **Stable** |
 
@@ -108,6 +108,7 @@ TypeScript: 5.9.3
 Styling: Tailwind CSS 4
 ORM: Prisma 6.19.3
 Database: PostgreSQL (Supabase) / SQLite (local)
+Authentication: NextAuth v5 (Credentials Provider)
 Package Manager: pnpm
 ```
 
@@ -245,6 +246,51 @@ npx prisma studio   # View database in browser
 }
 ```
 
+### 7.5 Authentication API (`/api/auth`)
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/api/auth/[...nextauth]` | GET/POST | NextAuth handler (sign in/out, session) |
+| `/api/auth/register` | POST | Register new user |
+
+**Register Request:**
+```json
+{
+  "name": "Student Name",
+  "email": "student@example.com",
+  "password": "password123",
+  "role": "STUDENT"
+}
+```
+
+**Demo Accounts:**
+```
+Admin:   admin@school.com / admin123
+Teacher: teacher@school.com / teacher123
+Student: student@school.com / student123
+```
+```json
+{
+  "id": "cm4xxx",
+  "userId": "user-123",
+  "grade": "G1",
+  "subject": "Maths",
+  "difficulty": "EASY",
+  "totalScore": 150,
+  "overallProgress": 33.3,
+  "currentPlantStage": "SAPLING",
+  "weekProgress": [
+    {
+      "weekId": 2,
+      "locked": false,
+      "completed": true,
+      "score": 85,
+      "keywordsMastered": ["triangle", "circle"]
+    }
+  ]
+}
+```
+
 ### 6.3 Data Parser
 ```bash
 cd app/
@@ -255,6 +301,7 @@ node scripts/parseUnifiedVocabulary.cjs
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 2.3.0 | 2026-04-27 | **NEXTAUTH COMPLETE**: Full authentication system<br>- NextAuth v5 (Credentials provider) implemented<br>- Login page with role-based redirect<br>- Middleware route protection<br>- Register API endpoint<br>- Demo accounts (admin/teacher/student)<br>- JWT session strategy |
 | 2.2.0 | 2026-04-27 | **DATABASE API COMPLETE**: Full database integration<br>- Progress API (GET/POST/DELETE) implemented<br>- Quiz API (POST/PUT) with session tracking<br>- Subjects API (GET) with syntax fix<br>- PostgreSQL support (Supabase ready)<br>- Database setup guide and seed script |
 | 2.1.0 | 2026-04-27 | **STREAMLIT REMOVAL**: Streamlit app deprecated and removed<br>- Added parseUnifiedVocabulary.cjs parser<br>- UNIFIED_VOCABULARY.md as single data source<br>- Fixed G5 subject name (Performing Arts & Drama → Performing Arts)<br>- Fixed broken subject names in UNIFIED_VOCABULARY.md<br>- Data sync between React and Next.js apps |
 | 2.0.1 | 2026-04-27 | **BETA RELEASE**: Prisma integration complete<br>- SQLite database configured<br>- Seed data created (teacher/student accounts) |
@@ -265,11 +312,10 @@ node scripts/parseUnifiedVocabulary.cjs
 
 | Issue | Severity | Status |
 |-------|----------|--------|
-| Next.js authentication | Medium | Pending (NextAuth v5) |
 | Data sync automation | Low | Manual copy required |
 
 ## 10. Next Steps
 
-1. **Immediate**: Configure DATABASE_URL and run migrations
-2. **Short-term**: NextAuth v5 authentication
+1. **Immediate**: Run `pnpm db:seed` to create demo accounts
+2. **Short-term**: Build teacher dashboard
 3. **Medium-term**: Production deployment

@@ -3,7 +3,7 @@
 A gamified vocabulary learning application for Grades 1-5 covering 8 academic subjects (Maths, Science, STEAM, Music, Performing Arts, Drama, Visual Arts, PE).
 
 ## Version
-**v2.2.0** (2026-04-27) - Database API Complete
+**v2.3.0** (2026-04-27) - NextAuth Authentication Complete
 
 ## Features
 
@@ -42,10 +42,16 @@ cp .env.example .env
 # Edit .env with your DATABASE_URL
 npx prisma generate
 npx prisma db push
+pnpm db:seed  # Create demo accounts
 
 pnpm dev
 # Access at http://localhost:3000
 ```
+
+**Demo Accounts:**
+- Admin: `admin@school.com` / `admin123`
+- Teacher: `teacher@school.com` / `teacher123`
+- Student: `student@school.com` / `student123`
 
 See [next-app/DATABASE_SETUP.md](next-app/DATABASE_SETUP.md) for detailed database setup.
 
@@ -63,8 +69,8 @@ See [next-app/DATABASE_SETUP.md](next-app/DATABASE_SETUP.md) for detailed databa
 - **React 19** + TypeScript
 - **Prisma** ORM (v6.19.3)
 - **PostgreSQL** (Supabase) / SQLite
-- **REST API** - Progress, Quiz, Subjects endpoints
-- **NextAuth** authentication (pending)
+- **REST API** - Progress, Quiz, Subjects, Auth endpoints
+- **NextAuth v5** - Authentication with role-based access
 
 ## Project Structure
 
@@ -159,7 +165,18 @@ The `UNIFIED_VOCABULARY.md` uses the following format:
 - **Phase 3**: Weeks 11-14
 - **Final**: Week 15
 
-## Recent Updates (v2.2.0)
+## Recent Updates (v2.3.0)
+
+- **NextAuth Complete**: Full authentication system with NextAuth v5
+  - Credentials provider with email/password
+  - Role-based access control (Admin/Teacher/Student)
+  - Protected routes with middleware
+  - Register API for creating users
+  - Demo accounts included
+- **Login Page**: Beautiful gradient UI with role-based redirect
+- **Session Management**: JWT-based session strategy
+
+### Previous Updates (v2.2.0)
 
 - **Database API Complete**: Full REST API for progress tracking
   - `GET/POST/DELETE /api/progress` - Student progress management
