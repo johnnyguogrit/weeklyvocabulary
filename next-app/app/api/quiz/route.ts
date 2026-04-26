@@ -1,13 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getSubjectData } from '@/data/questionGenerator'
+import { prisma } from '@/lib/db'
 
 // POST /api/quiz - Start a new quiz session
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { grade, subject, weekId, difficulty } = body
+    const { userId, grade, subject, weekId, difficulty } = body
 
-    if (!grade || !subject || !weekId) {
+    if (!grade || !subject || weekId === undefined) {
       return NextResponse.json(
         { error: 'Missing required parameters: grade, subject, weekId' },
         { status: 400 }
@@ -22,11 +23,48 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Week not found' }, { status: 404 })
     }
 
-    // Create quiz session (TODO: Implement with Prisma)
-    const sessionId = `session_${Date.now()}`
+    // Create quiz session in database if userId provided
+    let quizSession = null
+    if (userId) {
+      // Get or create student progress
+      let studentProgress = await prisma.studentProgress.findUnique({
+        where: {
+          userId_grade_subject: {
+            userId,
+            grade,
+            subject,
+          },
+        },
+      })
+
+      if (!studentProgress) {
+        studentProgress = await prisma.studentProgress.create({
+          data: {
+            userId,
+            grade,
+            subject,
+            difficulty: difficulty?.toUpperCase() || 'EASY',
+            totalScore: 0,
+            overallProgress: 0,
+            currentPlantStage: 'SEEDLING',
+          },
+        })
+      }
+
+      // Create quiz session
+      quizSession = await prisma.quizSession.create({
+        data: {
+          studentProgressId: studentProgress.id,
+          weekId,
+          difficulty: difficulty?.toUpperCase() || 'EASY',
+          questionsCount: week.questions.length,
+          status: 'IN_PROGRESS',
+        },
+      })
+    }
 
     return NextResponse.json({
-      sessionId,
+      sessionId: quizSession?.id || `session_${Date.now()}`,
       questions: week.questions,
       weekId: week.id,
       weekTitle: week.title,
@@ -35,5 +73,88 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Error creating quiz session:', error)
     return NextResponse.json({ error: 'Failed to create quiz session' }, { status: 500 })
+  }
+}
+
+// PUT /api/quiz - Submit quiz answers
+export async function PUT(request: NextRequest) {
+  try {
+    const body = await request.json()
+    const { sessionId, answers, timeSpent } = body
+
+    if (!sessionId) {
+      return NextResponse.json({ error: 'sessionId is required' }, { status: 400 })
+    })
+
+    // Find quiz session
+    const quizSession = await prisma.quizSession.findUnique({
+      where: { id: sessionId },
+      include: {
+        studentProgress: true,
+      },
+    })
+
+    if (!quizSession) {
+      return NextResponse.json({ error: 'Quiz session not found' }, { status: 404 })
+    }
+
+    // Calculate score
+    let correctCount = 0
+    const results = answers.map((answer: any) => {
+      const isCorrect = answer.selectedOption === answer.correctOption
+      if (isCorrect) correctCount++
+      return {
+        questionId: answer.questionId,
+        selectedOption: answer.selectedOption,
+        isCorrect,
+      }
+    })
+
+    const score = Math.round((correctCount / answers.length) * 100)
+
+    // Update quiz session
+    const updatedSession = await prisma.quizSession.update({
+      where: { id: sessionId },
+      data: {
+        score,
+        correctAnswers: correctCount,
+        timeSpent: timeSpent || 0,
+        status: 'COMPLETED',
+        completedAt: new Date(),
+      },
+    })
+
+    // Update week progress
+    const weekProgress = await prisma.weekProgress.findUnique({
+      where: {
+        studentProgressId_weekId: {
+          studentProgressId: quizSession.studentProgressId,
+          weekId: quizSession.weekId,
+        },
+      },
+    })
+
+    if (weekProgress) {
+      await prisma.weekProgress.update({
+        where: { id: weekProgress.id },
+        data: {
+          questionsCorrect: weekProgress.questionsCorrect + correctCount,
+          questionsTotal: weekProgress.questionsTotal + answers.length,
+          score: weekProgress.score + score,
+          completed: score >= 70, // Pass threshold
+        },
+      })
+    }
+
+    return NextResponse.json({
+      success: true,
+      score,
+      correctCount,
+      totalQuestions: answers.length,
+      passed: score >= 70,
+    })
+  } catch (error) {
+    console.error('Error submitting quiz:', error)
+    return NextResponse.json({ error: 'Failed to submit quiz' }, { status: 500 })
   }
 }

@@ -3,7 +3,7 @@
 A gamified vocabulary learning application for Grades 1-5 covering 8 academic subjects (Maths, Science, STEAM, Music, Performing Arts, Drama, Visual Arts, PE).
 
 ## Version
-**v2.1.0** (2026-04-27) - Stable Release with Data Management Improvements
+**v2.2.0** (2026-04-27) - Database API Complete
 
 ## Features
 
@@ -36,9 +36,18 @@ npm run dev
 ```bash
 cd next-app/
 pnpm install
+
+# Setup database (first time only)
+cp .env.example .env
+# Edit .env with your DATABASE_URL
+npx prisma generate
+npx prisma db push
+
 pnpm dev
 # Access at http://localhost:3000
 ```
+
+See [next-app/DATABASE_SETUP.md](next-app/DATABASE_SETUP.md) for detailed database setup.
 
 ## Tech Stack
 
@@ -52,8 +61,9 @@ pnpm dev
 ### Next.js App (Beta)
 - **Next.js 16** (App Router)
 - **React 19** + TypeScript
-- **Prisma** ORM
-- **SQLite** database
+- **Prisma** ORM (v6.19.3)
+- **PostgreSQL** (Supabase) / SQLite
+- **REST API** - Progress, Quiz, Subjects endpoints
 - **NextAuth** authentication (pending)
 
 ## Project Structure
@@ -149,12 +159,21 @@ The `UNIFIED_VOCABULARY.md` uses the following format:
 - **Phase 3**: Weeks 11-14
 - **Final**: Week 15
 
-## Recent Updates (v2.1.0)
+## Recent Updates (v2.2.0)
+
+- **Database API Complete**: Full REST API for progress tracking
+  - `GET/POST/DELETE /api/progress` - Student progress management
+  - `POST/PUT /api/quiz` - Quiz session tracking
+  - `GET /api/subjects` - Subject data retrieval
+- **PostgreSQL Support**: Supabase-ready database configuration
+- **Setup Guide**: [DATABASE_SETUP.md](next-app/DATABASE_SETUP.md)
+
+### Previous Updates (v2.1.0)
 
 - **Streamlit Removed**: Streamlit application deprecated and removed
 - **New Parser**: Added `parseUnifiedVocabulary.cjs` for unified data management
 - **Data Source**: `UNIFIED_VOCABULARY.md` is now the single source of truth
-- **Bug Fixes**: 
+- **Bug Fixes**:
   - Fixed G5 Performing Arts subject name
   - Fixed broken subject names in UNIFIED_VOCABULARY.md
   - Added 1035 questions with pronunciation guides

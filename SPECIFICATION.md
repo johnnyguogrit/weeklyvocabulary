@@ -4,7 +4,7 @@
 
 | Field | Value |
 |-------|-------|
-| Version | 2.1.0 |
+| Version | 2.2.0 |
 | Last Updated | 2026-04-27 |
 | Status | **Stable** |
 
@@ -106,8 +106,8 @@ Framework: Next.js 16.2.4 (App Router)
 React: 19.2.4
 TypeScript: 5.9.3
 Styling: Tailwind CSS 4
-ORM: Prisma 6.0.0
-Database: SQLite (local)
+ORM: Prisma 6.19.3
+Database: PostgreSQL (Supabase) / SQLite (local)
 Package Manager: pnpm
 ```
 
@@ -191,6 +191,58 @@ pnpm install        # Install dependencies
 pnpm dev            # Start dev server (localhost:3000)
 pnpm build          # Production build
 pnpm start          # Start production server
+
+# Database setup
+npx prisma generate # Generate Prisma client
+npx prisma db push  # Push schema to database
+npx prisma studio   # View database in browser
+```
+
+## 7. API Endpoints
+
+### 7.1 Progress API (`/api/progress`)
+| Method | Query/Body | Description |
+|--------|------------|-------------|
+| GET | `?userId={id}&grade={G1}&subject={Maths}` | Get student progress |
+| GET | `?userId={id}` | Get all progress for user |
+| POST | `{userId, grade, subject, weekId, score, completed, quizData}` | Create/update progress |
+| DELETE | `?userId={id}&grade={G1}&subject={Maths}` | Reset progress |
+
+### 7.2 Quiz API (`/api/quiz`)
+| Method | Body | Description |
+|--------|------|-------------|
+| POST | `{userId, grade, subject, weekId, difficulty}` | Start quiz session |
+| PUT | `{sessionId, answers, timeSpent}` | Submit quiz answers |
+
+### 7.3 Subjects API (`/api/subjects`)
+| Method | Query | Description |
+|--------|-------|-------------|
+| GET | `?grade={G1}` | Get all subjects for grade |
+| GET | `?grade={G1}&subject={Maths}` | Get specific subject data |
+
+### 7.4 Response Examples
+
+**Progress GET Response:**
+```json
+{
+  "id": "cm4xxx",
+  "userId": "user-123",
+  "grade": "G1",
+  "subject": "Maths",
+  "difficulty": "EASY",
+  "totalScore": 150,
+  "overallProgress": 33.3,
+  "currentPlantStage": "SAPLING",
+  "weekProgress": [
+    {
+      "weekId": 2,
+      "locked": false,
+      "completed": true,
+      "score": 85,
+      "keywordsMastered": ["triangle", "circle"]
+    }
+  ]
+}
 ```
 
 ### 6.3 Data Parser
@@ -199,26 +251,25 @@ cd app/
 node scripts/parseUnifiedVocabulary.cjs
 ```
 
-## 7. Version History
+## 8. Version History
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 2.2.0 | 2026-04-27 | **DATABASE API COMPLETE**: Full database integration<br>- Progress API (GET/POST/DELETE) implemented<br>- Quiz API (POST/PUT) with session tracking<br>- Subjects API (GET) with syntax fix<br>- PostgreSQL support (Supabase ready)<br>- Database setup guide and seed script |
 | 2.1.0 | 2026-04-27 | **STREAMLIT REMOVAL**: Streamlit app deprecated and removed<br>- Added parseUnifiedVocabulary.cjs parser<br>- UNIFIED_VOCABULARY.md as single data source<br>- Fixed G5 subject name (Performing Arts & Drama → Performing Arts)<br>- Fixed broken subject names in UNIFIED_VOCABULARY.md<br>- Data sync between React and Next.js apps |
 | 2.0.1 | 2026-04-27 | **BETA RELEASE**: Prisma integration complete<br>- SQLite database configured<br>- Seed data created (teacher/student accounts) |
 | 2.0.0 | 2026-04-27 | **NEXT.JS MIGRATION**: Started migration to Next.js App Router |
 | 1.4.1 | 2026-04-26 | Last legacy version |
 
-## 8. Known Issues
+## 9. Known Issues
 
 | Issue | Severity | Status |
 |-------|----------|--------|
-| Next.js progress API | Medium | In development |
-| Next.js authentication | Medium | Pending |
+| Next.js authentication | Medium | Pending (NextAuth v5) |
 | Data sync automation | Low | Manual copy required |
 
-## 9. Next Steps
+## 10. Next Steps
 
-1. **Immediate**: None - Stable release
-2. **Short-term**: Next.js progress tracking
-3. **Medium-term**: Next.js authentication
-4. **Long-term**: Production deployment
+1. **Immediate**: Configure DATABASE_URL and run migrations
+2. **Short-term**: NextAuth v5 authentication
+3. **Medium-term**: Production deployment
