@@ -1959,96 +1959,6 @@ export const VOCABULARY_DATA: Record<string, Record<string, Record<string, strin
     }
   },
   "G5": {
-    "Drama": {
-      "2": [
-        "revolution",
-        "justice",
-        "miserable",
-        "silver",
-        "law"
-      ],
-      "3": [
-        "France. Revolution",
-        "poor people",
-        "pauper",
-        "united"
-      ],
-      "4": [
-        "poor people",
-        "revolution",
-        "orphan",
-        "elegant",
-        "France"
-      ],
-      "5": [
-        "look angry",
-        "people",
-        "sing",
-        "connect with the audience"
-      ],
-      "7": [
-        "angry",
-        "connect with the audience",
-        "pain",
-        "project voice"
-      ],
-      "8": [
-        "Feel angry",
-        "look angry",
-        "sing angry",
-        "stand angry",
-        "sound angry"
-      ],
-      "9": [
-        "Feel angry",
-        "look angry",
-        "sing angry",
-        "stand angry",
-        "sound angry"
-      ],
-      "10": [
-        "Feel angry",
-        "look angry",
-        "sing angry",
-        "stand angry",
-        "sound angry"
-      ],
-      "11": [
-        "Feel",
-        "eye contact",
-        "connect to audience",
-        "project",
-        "eyeline lifted"
-      ],
-      "12": [
-        "Feel",
-        "eye contact",
-        "connect to audience",
-        "project",
-        "eyeline lifted"
-      ],
-      "13": [
-        "Feel",
-        "eye contact",
-        "connect to audience",
-        "project",
-        "eyeline lifted"
-      ],
-      "14": [
-        "Feel",
-        "eye contact",
-        "connect to audience",
-        "project",
-        "eyeline lifted"
-      ],
-      "15": [
-        "Feel",
-        "eye contact",
-        "connect to audience",
-        "project",
-        "eyeline lifted"
-      ]
-    },
     "Maths": {
       "2": [
         "century",
@@ -2232,99 +2142,6 @@ export const VOCABULARY_DATA: Record<string, Record<string, Record<string, strin
         "growth",
         "achievement",
         "celebration"
-      ]
-    },
-    "PE": {
-      "2": [
-        "together",
-        "cheer",
-        "respect",
-        "trust",
-        "leader"
-      ],
-      "3": [
-        "support",
-        "finish line",
-        "false start",
-        "training plan",
-        "photo finish"
-      ],
-      "4": [
-        "teamwork",
-        "communication",
-        "motivation",
-        "spirit",
-        "challenge"
-      ],
-      "5": [
-        "teamwork",
-        "communication",
-        "motivation",
-        "spirit",
-        "challenge"
-      ],
-      "7": [
-        "strategy",
-        "patience",
-        "adaptability",
-        "sportsmanship",
-        "confidence"
-      ],
-      "8": [
-        "hoop",
-        "hurdle",
-        "sprinting",
-        "stride",
-        "deception"
-      ],
-      "9": [
-        "bounce",
-        "shot put",
-        "pacing",
-        "acceleration",
-        "crosscourt"
-      ],
-      "10": [
-        "bounce",
-        "shot put",
-        "pacing",
-        "stride",
-        "deception"
-      ],
-      "11": [
-        "practice",
-        "discus",
-        "endurance",
-        "starting block",
-        "high serve"
-      ],
-      "12": [
-        "team",
-        "lap",
-        "stamina",
-        "stopwatch",
-        "low serve"
-      ],
-      "13": [
-        "save",
-        "medal",
-        "cool-down",
-        "footwork",
-        "hilf-smash"
-      ],
-      "14": [
-        "practice",
-        "medal",
-        "cool-down",
-        "footwork",
-        "hilf-smash"
-      ],
-      "15": [
-        "relay",
-        "sprint",
-        "reaction time",
-        "spin",
-        "base position"
       ]
     },
     "STEAM": {
@@ -2518,24 +2335,29 @@ export const VOCABULARY_DATA: Record<string, Record<string, Record<string, strin
         "Background",
         "Effect",
         "perspective",
-        "scene"
+        "scene",
+        "foreground"
       ],
       "3": [
         "Landscape",
         "cityscape",
-        "focal point"
+        "focal point",
+        "horizon",
+        "depth"
       ],
       "4": [
         "Grid",
         "proportion",
         "ruler",
-        "equal"
+        "equal",
+        "measure"
       ],
       "5": [
         "vertical",
         "horizontal",
         "diagonal",
-        "rhythm(repeating)"
+        "rhythm(repeating)",
+        "line"
       ],
       "7": [
         "grid",
@@ -2599,6 +2421,191 @@ export const VOCABULARY_DATA: Record<string, Record<string, Record<string, strin
         "Illusion",
         "Pattern",
         "Contrast"
+      ]
+    },
+    "Performing Arts": {
+      "2": [
+        "revolution",
+        "justice",
+        "miserable",
+        "silver",
+        "law"
+      ],
+      "3": [
+        "France",
+        "revolution",
+        "poor people",
+        "pauper",
+        "united"
+      ],
+      "4": [
+        "poor people",
+        "revolution",
+        "orphan",
+        "elegant",
+        "France"
+      ],
+      "5": [
+        "look angry",
+        "people",
+        "sing",
+        "connect with the audience",
+        "miserable"
+      ],
+      "7": [
+        "angry",
+        "connect with the audience",
+        "pain",
+        "project voice"
+      ],
+      "8": [
+        "feel angry",
+        "look angry",
+        "sing angry",
+        "stand angry",
+        "sound angry"
+      ],
+      "9": [
+        "feel angry",
+        "look angry",
+        "sing angry",
+        "stand angry",
+        "sound angry"
+      ],
+      "10": [
+        "feel angry",
+        "look angry",
+        "sing angry",
+        "stand angry",
+        "sound angry"
+      ],
+      "11": [
+        "feel",
+        "eye contact",
+        "connect to audience",
+        "project",
+        "eyeline lifted"
+      ],
+      "12": [
+        "feel",
+        "eye contact",
+        "connect to audience",
+        "project",
+        "eyeline lifted"
+      ],
+      "13": [
+        "feel",
+        "eye contact",
+        "connect to audience",
+        "project",
+        "eyeline lifted"
+      ],
+      "14": [
+        "feel",
+        "eye contact",
+        "connect to audience",
+        "project",
+        "eyeline lifted"
+      ],
+      "15": [
+        "feel",
+        "eye contact",
+        "connect to audience",
+        "project",
+        "eyeline lifted"
+      ]
+    },
+    "PE": {
+      "2": [
+        "together",
+        "cheer",
+        "respect",
+        "trust",
+        "leader"
+      ],
+      "3": [
+        "support",
+        "finish line",
+        "false start",
+        "training plan",
+        "photo finish"
+      ],
+      "4": [
+        "teamwork",
+        "communication",
+        "motivation",
+        "spirit",
+        "challenge"
+      ],
+      "5": [
+        "teamwork",
+        "communication",
+        "motivation",
+        "spirit",
+        "challenge"
+      ],
+      "7": [
+        "strategy",
+        "patience",
+        "adaptability",
+        "sportsmanship",
+        "confidence"
+      ],
+      "8": [
+        "hoop",
+        "hurdle",
+        "sprinting",
+        "stride",
+        "deception"
+      ],
+      "9": [
+        "bounce",
+        "shot put",
+        "pacing",
+        "acceleration",
+        "crosscourt"
+      ],
+      "10": [
+        "bounce",
+        "shot put",
+        "pacing",
+        "stride",
+        "deception"
+      ],
+      "11": [
+        "practice",
+        "discus",
+        "endurance",
+        "starting block",
+        "high serve"
+      ],
+      "12": [
+        "team",
+        "lap",
+        "stamina",
+        "stopwatch",
+        "low serve"
+      ],
+      "13": [
+        "save",
+        "medal",
+        "cool-down",
+        "footwork",
+        "half-smash"
+      ],
+      "14": [
+        "practice",
+        "medal",
+        "cool-down",
+        "footwork",
+        "half-smash"
+      ],
+      "15": [
+        "relay",
+        "sprint",
+        "reaction time",
+        "spin",
+        "base position"
       ]
     }
   }

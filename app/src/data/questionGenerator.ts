@@ -268,6 +268,7 @@ function buildSubjectDataFromPredefined(
   const subjectQuestions = PREDEFINED_QUESTIONS[grade]?.[subject] || {};
 
   const weeks: WeekData[] = [];
+  const passages: ReadingPassage[] = [];
 
   for (const [weekIdStr, keywords] of Object.entries(keywordsByWeek)) {
     const weekId = parseInt(weekIdStr);
@@ -276,29 +277,57 @@ function buildSubjectDataFromPredefined(
     let weekQuestions: Question[] = [];
 
     if (predefined && predefined.length > 0) {
-      // Use predefined questions
-      const pd = predefined[0];
+      // Use ALL predefined questions for this week
+      for (let i = 0; i < predefined.length; i++) {
+        const pd = predefined[i];
+        const correctText = letterToAnswer(pd.options, pd.answer);
 
-      // Build quiz question
-      const correctText = letterToAnswer(pd.options, pd.answer);
-      weekQuestions.push({
-        id: `q-${weekId}-0`,
-        type: 'fillBlank',
-        question: pd.question,
-        options: pd.options,
-        correctAnswer: correctText,
-        explanation: pd.explanation,
-        weekId,
-      });
+        // Check if this question has a reading passage
+        if (pd.passage) {
+          // This is a reading comprehension question
+          // Add it to passages instead of week questions
+          const existingPassage = passages.find(p => p.weekId === weekId);
+          if (existingPassage) {
+            // Add question to existing passage
+            existingPassage.questions.push({
+              question: pd.question,
+              options: pd.options,
+              correctAnswer: correctText,
+              explanation: pd.explanation,
+            });
+          } else {
+            // Create new passage
+            passages.push({
+              weekId,
+              title: `Week ${weekId} Reading`,
+              passage: pd.passage,
+              questions: [{
+                question: pd.question,
+                options: pd.options,
+                correctAnswer: correctText,
+                explanation: pd.explanation,
+              }],
+            });
+          }
+        } else {
+          // Regular quiz question
+          weekQuestions.push({
+            id: `q-${weekId}-${i}`,
+            type: 'fillBlank',
+            question: pd.question,
+            options: pd.options,
+            correctAnswer: correctText,
+            explanation: pd.explanation,
+            weekId,
+          });
+        }
+      }
     }
 
-    // If no predefined or no passage, fall back to auto-generation
+    // If no predefined questions, fall back to auto-generation
     if (weekQuestions.length === 0) {
       weekQuestions = generateQuestions(keywords, weekId, subject);
     }
-
-    // No reading comprehension passages for any grade
-    // Passages are disabled for G1-G5
 
     weeks.push({
       id: weekId,
@@ -310,7 +339,7 @@ function buildSubjectDataFromPredefined(
     });
   }
 
-  return { weeks: weeks.sort((a, b) => a.id - b.id), passages: [] };
+  return { weeks: weeks.sort((a, b) => a.id - b.id), passages };
 }
 
 export function getSubjectData(grade: string, subject: string): SubjectData {

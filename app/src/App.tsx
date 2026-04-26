@@ -540,7 +540,7 @@ function WeekCompleteScreen({ subjectData, week, quizCorrect, quizTotal, quizSco
         <h3 className="text-lg font-bold mb-3" style={{ color: '#1B5E20', fontFamily: 'Nunito' }}>Score Breakdown</h3>
         <div className="space-y-2">
           <div className="flex justify-between"><span style={{ color: '#5D4037' }}>Vocabulary Quiz:</span><span className="font-bold" style={{ color: '#2E7D32' }}>{quizCorrect}/{quizTotal} correct (+{quizScore} pts)</span></div>
-          <div className="flex justify-between"><span style={{ color: '#5D4037' }}>Reading Comprehension:</span><span className="font-bold" style={{ color: '#2E7D32' }}>{readingCorrect}/{readingTotal} correct (+{readingScore} pts)</span></div>
+          {readingTotal > 0 && <div className="flex justify-between"><span style={{ color: '#5D4037' }}>Reading Comprehension:</span><span className="font-bold" style={{ color: '#2E7D32' }}>{readingCorrect}/{readingTotal} correct (+{readingScore} pts)</span></div>}
           {isPerfect && <div className="flex justify-between pt-2 border-t" style={{ borderColor: '#E0E0E0' }}><span style={{ color: '#5D4037' }}>Perfect Week Bonus:</span><span className="font-bold" style={{ color: '#FF8F00' }}>+20 pts</span></div>}
         </div>
         <div className="mt-4 pt-3 border-t" style={{ borderColor: '#E0E0E0' }}>
@@ -718,40 +718,54 @@ function App() {
   const handleDifficultySelect = (diff: Difficulty) => { setPlayer((prev) => ({ ...prev, difficulty: diff })); setScreen('weekMap'); };
   const handleSelectWeek = (weekId: number) => { setPlayer((prev) => ({ ...prev, currentWeek: weekId })); setScreen('quiz'); };
 
+  // Helper function to mark week as completed and unlock next week
+  const markWeekCompleted = (quizCorrect: number, quizTotal: number, quizScore: number, readingCorrect: number, readingTotal: number, readingScore: number) => {
+    const weekId = player.currentWeek!;
+    const grade = player.currentGrade!;
+    const subject = player.currentSubject!;
+    const totalScore = quizScore + readingScore + (quizCorrect + readingCorrect === quizTotal + readingTotal ? 20 : 0);
+
+    setPlayer((p) => {
+      const gradeProg = { ...p.gradeProgress[grade] };
+      const subjectProg = { ...gradeProg.subjects[subject] };
+      const newWeekProgress = subjectProg.weekProgress.map((w) =>
+        w.weekId === weekId ? {
+          ...w, completed: true, score: totalScore, questionsCorrect: quizCorrect,
+          questionsTotal: quizTotal, readingCompCorrect: readingCorrect,
+          readingCompTotal: readingTotal, keywordsMastered: currentSubjectData?.weeks.find((wd) => wd.id === weekId)?.keywords ?? [], locked: false,
+        } : w
+      );
+      const sData = getSubjectData(grade, subject);
+      const weekIndex = sData.weeks.findIndex((w) => w.id === weekId);
+      if (weekIndex >= 0 && weekIndex + 1 < sData.weeks.length) {
+        const nextWeekId = sData.weeks[weekIndex + 1].id;
+        const nextWeek = newWeekProgress.find((w) => w.weekId === nextWeekId);
+        if (nextWeek) nextWeek.locked = false;
+      }
+      const overall = calculateOverallProgress(newWeekProgress);
+      gradeProg.subjects = { ...gradeProg.subjects, [subject]: { ...subjectProg, weekProgress: newWeekProgress, totalScore: newWeekProgress.reduce((sum, w) => sum + w.score, 0), overallProgress: overall, currentPlantStage: getPlantStage(overall) } };
+      return { ...p, gradeProgress: { ...p.gradeProgress, [grade]: gradeProg } };
+    });
+  };
+
   const handleQuizComplete = (correct: number, total: number, score: number) => {
     setWeekScores((prev) => ({ ...prev, quizCorrect: correct, quizTotal: total, quizScore: score }));
-    setScreen('readingComp');
+    // Check if there's a reading passage for this week
+    const passage = currentSubjectData?.passages.find((p) => p.weekId === player.currentWeek);
+    if (passage && passage.questions.length > 0) {
+      setScreen('readingComp');
+    } else {
+      // No reading passage, mark week complete directly
+      setWeekScores((prev) => ({ ...prev, readingCorrect: 0, readingTotal: 0, readingScore: 0 }));
+      markWeekCompleted(correct, total, score, 0, 0, 0);
+      setScreen('weekComplete');
+    }
   };
 
   const handleReadingComplete = (correct: number, total: number, score: number) => {
     setWeekScores((prev) => {
       const newScores = { ...prev, readingCorrect: correct, readingTotal: total, readingScore: score };
-      const weekId = player.currentWeek!;
-      const grade = player.currentGrade!;
-      const subject = player.currentSubject!;
-      const totalScore = newScores.quizScore + newScores.readingScore + (newScores.quizCorrect + newScores.readingCorrect === total + newScores.quizTotal ? 20 : 0);
-
-      setPlayer((p) => {
-        const gradeProg = { ...p.gradeProgress[grade] };
-        const subjectProg = { ...gradeProg.subjects[subject] };
-        const newWeekProgress = subjectProg.weekProgress.map((w) =>
-          w.weekId === weekId ? {
-            ...w, completed: true, score: totalScore, questionsCorrect: newScores.quizCorrect,
-            questionsTotal: newScores.quizTotal, readingCompCorrect: newScores.readingCorrect,
-            readingCompTotal: newScores.readingTotal, keywordsMastered: currentSubjectData?.weeks.find((wd) => wd.id === weekId)?.keywords ?? [], locked: false,
-          } : w
-        );
-        const sData = getSubjectData(grade, subject);
-        const weekIndex = sData.weeks.findIndex((w) => w.id === weekId);
-        if (weekIndex >= 0 && weekIndex + 1 < sData.weeks.length) {
-          const nextWeekId = sData.weeks[weekIndex + 1].id;
-          const nextWeek = newWeekProgress.find((w) => w.weekId === nextWeekId);
-          if (nextWeek) nextWeek.locked = false;
-        }
-        const overall = calculateOverallProgress(newWeekProgress);
-        gradeProg.subjects = { ...gradeProg.subjects, [subject]: { ...subjectProg, weekProgress: newWeekProgress, totalScore: newWeekProgress.reduce((sum, w) => sum + w.score, 0), overallProgress: overall, currentPlantStage: getPlantStage(overall) } };
-        return { ...p, gradeProgress: { ...p.gradeProgress, [grade]: gradeProg } };
-      });
+      markWeekCompleted(newScores.quizCorrect, newScores.quizTotal, newScores.quizScore, correct, total, score);
       return newScores;
     });
     setScreen('weekComplete');
