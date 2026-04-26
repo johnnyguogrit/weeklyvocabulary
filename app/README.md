@@ -68,8 +68,8 @@ app/
 │   └── components/ui/         # Reusable UI components
 ├── public/assets/             # Images and assets
 ├── scripts/                   # Utilities
-│   └── parseVocabularyMd.cjs  # MD to TypeScript parser
-└── weeklytest/               # Source markdown files
+│   └── parseUnifiedVocabulary.cjs  # UNIFIED_VOCABULARY.md to TypeScript parser
+└── ../weeklytest/            # Source markdown files
 ```
 
 ## 📚 Subjects Covered
@@ -97,10 +97,10 @@ app/
 
 ### Adding New Questions
 
-1. Edit markdown files in `weeklytest/`
+1. Edit `../weeklytest/UNIFIED_VOCABULARY.md`
 2. Run the parser:
    ```bash
-   node scripts/parseVocabularyMd.cjs
+   node scripts/parseUnifiedVocabulary.cjs
    ```
 3. The `predefinedQuestions.ts` file will be regenerated
 

@@ -34,23 +34,18 @@ app/                              # React frontend app
 ├── public/
 │   └── assets/                 # Images (badges, hero, etc.)
 ├── scripts/
-│   └── parseVocabularyMd.cjs   # Parse MD files to TypeScript
+│   └── parseUnifiedVocabulary.cjs   # Parse UNIFIED_VOCABULARY.md to TypeScript
 └── weeklytest/                 # Source markdown files
+    └── UNIFIED_VOCABULARY.md   # Master vocabulary question source
 
-data/                             # Streamlit app data
-├── predefined_questions.py      # Predefined questions (from TS)
-├── question_generator.py       # Question generation logic
-├── translations.py             # Chinese translations
-└── vocabulary_data.py          # Grade/subject vocabulary structure
-
-pages/                           # Streamlit app pages
-├── 0_🏠_Home.py
-├── 4_🎯_Quiz.py                # Quiz page (now uses predefined questions)
-└── ...
+next-app/                        # Next.js App Router version (beta)
+├── app/                         # Next.js app directory
+├── data/                        # Shared data files
+└── prisma/                      # Database schema
 
 scripts/                         # Shared scripts
-├── convert_predefined_questions.py  # TS → Python converter
-└── parseVocabularyMd.cjs        # MD → TypeScript (React)
+├── parseUnifiedVocabulary.cjs   # Parse UNIFIED_VOCABULARY.md → predefinedQuestions.ts
+└── check_missing_*.cjs           # Validation utilities
 ```
 
 ## Architecture
@@ -75,10 +70,9 @@ scripts/                         # Shared scripts
 ## Important Files When Adding Content
 
 ### To Add New Vocabulary Questions
-1. Edit markdown files in `weeklytest/` folder
-2. Run: `node app/scripts/parseVocabularyMd.cjs` (for React app)
-3. Run: `python scripts/convert_predefined_questions.py` (for Streamlit app)
-4. Both apps will now use the same predefined questions
+1. Edit `weeklytest/UNIFIED_VOCABULARY.md`
+2. Run: `node app/scripts/parseUnifiedVocabulary.cjs`
+3. This updates `predefinedQuestions.ts` (used by both React and Next.js apps)
 
 ### To Add New Grades/Subjects
 1. Update `VOCABULARY_DATA` in `vocabularyData.ts`
@@ -151,18 +145,11 @@ npm run preview      # Preview production build
 
 ### Sync Process
 When updating questions from markdown files:
-1. Edit markdown files in `weeklytest/` folder
-2. Run `node app/scripts/parseVocabularyMd.cjs` → updates React app
-3. Run `python scripts/convert_predefined_questions.py` → updates Streamlit app
+1. Edit `weeklytest/UNIFIED_VOCABULARY.md`
+2. Run `node app/scripts/parseUnifiedVocabulary.cjs` → updates `predefinedQuestions.ts`
+3. Both React and Next.js apps use the same predefined questions
 
 ### Question Priority
 Both apps follow the same priority:
-1. **Predefined questions** (from markdown) - high quality, human-curated
+1. **Predefined questions** (from UNIFIED_VOCABULARY.md) - high quality, human-curated
 2. **Auto-generated questions** (template-based) - fallback only
-
-### Past Issue (RESOLVED)
-Previously, Streamlit was using only auto-generated questions because:
-1. `data/predefined_questions.py` was empty (placeholder)
-2. Quiz page called `generate_questions()` directly instead of `get_subject_data()`
-
-**Solution**: Implemented proper conversion script and updated Quiz page to use `get_subject_data()` which checks predefined questions first.
