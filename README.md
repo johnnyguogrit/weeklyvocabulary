@@ -3,7 +3,7 @@
 A gamified vocabulary learning application for Grades 1-5 covering 8 academic subjects (Maths, Science, STEAM, Music, Performing Arts, Drama, Visual Arts, PE).
 
 ## Version
-**v2.0.0** (2026-04-26) - Streamlit Edition with User Management
+**v2.1.0** (2026-04-27) - Stable Release with Data Management Improvements
 
 ## Features
 
@@ -12,94 +12,121 @@ A gamified vocabulary learning application for Grades 1-5 covering 8 academic su
 - **5 Grade Levels**: G1 (age 6-7) through G5 (age 10-11)
 - **3 Difficulty Levels**: Easy, Medium, Hard
 - **Gamified Progress**: Plant growth metaphor from seedling to mighty oak
-- **Progress Tracking**: Database-backed progress for each student
-- **Home Access**: Parents and students can access from any web browser
+- **Progress Tracking**: LocalStorage-based progress saving
+- **1035 Questions**: Predefined questions with Chinese translations and pronunciation
 
-### Teacher Features
-- **Class Management**: Create classes with unique 8-letter codes
-- **Student Management**: Bulk-add students with auto-generated animal passwords
-- **Progress Monitoring**: View class statistics and individual student progress
-- **Password Management**: Reset animal passwords for students
+### Teacher Features (Next.js Beta)
+- **Class Management**: Create classes with unique codes
+- **Student Management**: Add students with auto-generated passwords
+- **Progress Monitoring**: View class statistics and individual progress
 
-## Deployment Options
+## Quick Start
 
-### Option 1: Streamlit Cloud (Recommended - Free)
-Best for home access - parents and students can use from any device.
-
-```bash
-# 1. Push code to GitHub
-# 2. Connect repository to https://streamlit.io/cloud
-# 3. Access at https://your-app-name.streamlit.app
-```
-
-### Option 2: Local Development
-
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Run Streamlit app
-streamlit run streamlit_app.py
-
-# Or use the pages directly
-streamlit run pages/0_🏠_Home.py
-```
-
-### Option 3: React App (Original Version)
+### Option 1: React App (Stable - Recommended)
 
 ```bash
 cd app/
 npm install
 npm run dev
+# Access at http://localhost:3001
+```
+
+### Option 2: Next.js App (Beta)
+
+```bash
+cd next-app/
+pnpm install
+pnpm dev
+# Access at http://localhost:3000
 ```
 
 ## Tech Stack
 
-### Streamlit Version (v2.0.0)
-- **Python 3.9+**
-- **Streamlit 1.31** - Web framework
-- **SQLite** - Database for users and progress
-- **Pandas** - Data manipulation
-- **Plotly** - Progress visualization
-
-### React Version (v1.2.1)
+### React App (Stable)
 - **React 19** + TypeScript 5.9
 - **Vite 7** for building
 - **Tailwind CSS** + Radix UI
 - **Framer Motion** animations
+- **localStorage** for progress
+
+### Next.js App (Beta)
+- **Next.js 16** (App Router)
+- **React 19** + TypeScript
+- **Prisma** ORM
+- **SQLite** database
+- **NextAuth** authentication (pending)
 
 ## Project Structure
 
 ```
 weeklyvocabulary/
-├── app/                          # React application
+├── app/                          # React application (Stable)
 │   ├── src/
 │   │   ├── data/                 # Vocabulary and question data
-│   │   │   ├── vocabularyData.ts     # Keywords by grade/subject/week
-│   │   │   ├── predefinedQuestions.ts # Parsed questions from MD files
-│   │   │   ├── translations.ts        # Chinese translations & IPA
-│   │   │   └── questionGenerator.ts   # Question generation logic
+│   │   │   ├── predefinedQuestions.ts  # 1035 questions from UNIFIED_VOCABULARY.md
+│   │   │   ├── vocabularyData.ts       # Keywords by grade/subject/week
+│   │   │   ├── translations.ts         # Chinese translations & IPA
+│   │   │   └── questionGenerator.ts    # Question generation logic
 │   │   ├── types/                # TypeScript type definitions
 │   │   ├── components/           # React components
 │   │   ├── hooks/                # Custom React hooks
 │   │   ├── lib/                  # Utility functions
 │   │   └── App.tsx               # Main application
 │   ├── public/                   # Static assets
-│   └── package.json
-├── weeklytest/                   # Source PDF files and parsing scripts
-│   ├── *.pdf                     # Grade-specific vocabulary PDFs
-│   └── *.md                      # Parsed markdown files
-├── scripts/                      # Utility scripts
+│   └── scripts/
+│       └── parseUnifiedVocabulary.cjs  # Data parser
+├── next-app/                     # Next.js application (Beta)
+│   ├── app/                      # Next.js App Router
+│   ├── data/                     # Shared data files
+│   ├── prisma/                   # Database schema
+│   └── types/                    # TypeScript definitions
+├── weeklytest/                   # Data source
+│   └── UNIFIED_VOCABULARY.md     # Master vocabulary question source
 ├── SPECIFICATION.md              # Detailed technical specification
 └── README.md                     # This file
 ```
 
-## Adding New Vocabulary Questions
+## Data Management
 
-1. Place PDF source files in `weeklytest/` directory
-2. Parse PDFs to markdown: `python weeklytest/parse_pdf_pdfplumber.py`
-3. Run the parser: `cd app/ && node scripts/parseVocabularyMd.cjs`
-4. This regenerates `src/data/predefinedQuestions.ts`
+### Adding New Vocabulary Questions
+
+1. Edit `weeklytest/UNIFIED_VOCABULARY.md`
+2. Run the parser:
+   ```bash
+   cd app && node scripts/parseUnifiedVocabulary.cjs
+   ```
+3. Copy to Next.js:
+   ```bash
+   cp app/src/data/predefinedQuestions.ts next-app/data/
+   ```
+
+### Data Format
+
+The `UNIFIED_VOCABULARY.md` uses the following format:
+
+```markdown
+## G1
+
+### Subject: Maths
+
+**Week 2: review**
+
+> Passage: Look at my shapes! I have a triangle with 3 sides...
+
+**Question:** A shape with three sides is a _______.​
+
+**Options:**
+- A) circle
+- B) triangle
+- C) square
+- D) line​
+
+**Answer:** B
+
+**Explanation:** triangle意为"三角形"，符合三条边的几何特征。
+
+---
+```
 
 ## Game Flow
 
@@ -122,12 +149,36 @@ weeklyvocabulary/
 - **Phase 3**: Weeks 11-14
 - **Final**: Week 15
 
-## Recent Updates (v1.2.1)
+## Recent Updates (v2.1.0)
 
-- Fixed incorrect subject name mapping in predefinedQuestions.ts
-- Added 21 missing predefined questions for G5
-- Corrected keyword names (e.g., "2-dimensional" instead of "dimensional")
-- Added missing questions for: Maths (factor, common, share, mixed number, whole, top view), Science (small intestine, grow, human, body, health, electricity, safety, thorn), STEAM (Question Type, Fair), PE (half-smash, base position)
+- **Streamlit Removed**: Streamlit application deprecated and removed
+- **New Parser**: Added `parseUnifiedVocabulary.cjs` for unified data management
+- **Data Source**: `UNIFIED_VOCABULARY.md` is now the single source of truth
+- **Bug Fixes**: 
+  - Fixed G5 Performing Arts subject name
+  - Fixed broken subject names in UNIFIED_VOCABULARY.md
+  - Added 1035 questions with pronunciation guides
+
+## Subject Coverage
+
+| Subject | Emoji | Color | Code |
+|---------|-------|-------|-------|
+| Mathematics | 🔢 | #2E7D32 | Maths |
+| Science | 🔬 | #1565C0 | Science |
+| STEAM | 💻 | #6A1B9A | STEAM |
+| Music | 🎵 | #E65100 | Music |
+| Performing Arts | 🎭 | #C62828 | Performing Arts |
+| Drama | 🎬 | #5D4037 | Drama |
+| Visual Arts | 🎨 | #AD1457 | Visual Arts |
+| Physical Education | ⚽ | #00695C | PE |
+
+**Note**: G5 uses "Performing Arts" instead of separate "Drama" subject.
+
+## Documentation
+
+- **SPECIFICATION.md** - Detailed technical specification
+- **CLAUDE.md** - Project context for Claude Code
+- **app/README.md** - React app specific documentation
 
 ## License
 
