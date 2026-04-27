@@ -1,8 +1,10 @@
 // Prisma schema for Weekly Vocabulary App (PostgreSQL/Supabase)
 
 generator client {
-  provider = "prisma-client-js"
-  output   = "../generated/client"
+  provider        = "prisma-client-js"
+  output          = "../generated/client"
+  previewFeatures = ["driverAdapters"]
+  engineType      = "library"
 }
 
 datasource db {
