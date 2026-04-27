@@ -1,0 +1,18 @@
+Question: A shape with three sides is a _______.
+Options: ['circle', 'triangle', 'square', 'line']
+Answer: B
+Correct answer text: triangle
+
+--- Explanation Analysis ---
+Has Chinese period (。): True
+Has bullet with space ( • ): True
+Has bullet (U+2022): True
+Has special bullet (◦): True
+
+First 200 chars:
+triangle意为"三角形"，符合三条边的几何特征。 • 第3周 (square) ◦ 题干：A _______ has four equal straight sides. ◦ 选项：A) triangle B) square C) star D) dot ◦ 正确答案：B ◦ 答案解析：square意为"正方形"，符合四条相等的直边的特征。 • 第4周 (minus) ◦ 题干：If we 
+
+Split by 。:
+Sentence 1: triangle意为"三角形"，符合三条边的几何特征
+Sentence 2:  • 第3周 (square) ◦ 题干：A _______ has four equal straight sides. ◦ 选项：A) triangle B) square C) star D) dot ◦ 正确答案：B ◦ 答案解析：square意为"正方形"，符合四条相等的直边的特征
+Sentence 3:  • 第4周 (minus) ◦ 题干：If we take away 1 from 3, we use _______. ◦ 选项：A) plus B) total C) minus D) more ◦ 正确答案：C ◦ 答案解析：minus意为"减去"，在数学运算中表示减少或拿走

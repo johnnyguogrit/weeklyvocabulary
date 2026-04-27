@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+
 import { auth } from '@/lib/auth'
 import { redirect } from 'next/navigation'
 import { prisma } from '@/lib/db'
@@ -68,7 +68,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ grade:
                   : progress.currentPlantStage === 'SAPLING' ? '🌿' : '🌱'
 
             return (
-              <motion.div
+              <div
                 key={subject.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -95,7 +95,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ grade:
                     </CardContent>
                   </Card>
                 </Link>
-              </motion.div>
+              </div>
             )
           })}
         </div>

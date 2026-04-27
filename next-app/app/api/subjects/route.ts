@@ -19,11 +19,13 @@ export async function GET(request: NextRequest) {
     } else {
       // Get all subjects for grade
       const subjects = ['Maths', 'Science', 'STEAM', 'Music', 'Performing Arts', 'Drama', 'Visual Arts', 'PE']
-      const data = subjects.map(subj => ({
-        id: subj.toLowerCase().replace(/\s+/g, '-'),
-        name: subj,
-        ...getSubjectData(grade, subj)
-      }))
+      const data = subjects.map(subj => {
+        const subjectData = getSubjectData(grade, subj)
+        return {
+          ...subjectData,
+          slug: subj.toLowerCase().replace(/\s+/g, '-'),
+        }
+      })
       return NextResponse.json(data)
     }
   } catch (error) {

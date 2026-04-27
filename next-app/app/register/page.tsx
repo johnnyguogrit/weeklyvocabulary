@@ -17,8 +17,7 @@ export default function RegisterPage() {
     name: '',
     email: '',
     password: '',
-    confirmPassword: '',
-    role: 'STUDENT'
+    confirmPassword: ''
   })
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -37,7 +36,7 @@ export default function RegisterPage() {
     setIsLoading(true)
 
     try {
-      // Register
+      // Register as teacher only
       const res = await fetch('/api/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -45,7 +44,7 @@ export default function RegisterPage() {
           name: formData.name,
           email: formData.email,
           password: formData.password,
-          role: formData.role
+          role: 'TEACHER'
         })
       })
 
@@ -58,7 +57,7 @@ export default function RegisterPage() {
         return
       }
 
-      toast.success('Account created! Signing you in...')
+      toast.success('Teacher account created! Signing you in...')
 
       // Auto sign in
       const result = await signIn('credentials', {
@@ -75,9 +74,8 @@ export default function RegisterPage() {
         setIsLoading(false)
       } else if (result?.ok) {
         toast.success('Welcome to Vocabulary Adventure!')
-        // Force a hard redirect to ensure session is loaded
-        const redirectPath = formData.role === 'TEACHER' ? '/teacher' : '/student'
-        window.location.href = redirectPath
+        // Redirect to teacher dashboard
+        window.location.href = '/teacher'
       } else {
         toast.error('Account created. Please login manually.')
         setIsLoading(false)
@@ -92,12 +90,12 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 p-4">
       <Card className="w-full max-w-md shadow-xl">
         <CardHeader className="space-y-1 text-center">
-          <div className="text-5xl mb-4">🌱</div>
-          <CardTitle className="text-2xl font-bold">Create Account</CardTitle>
-          <CardDescription>Join Vocabulary Adventure and start learning!</CardDescription>
+          <div className="text-5xl mb-4">👨‍🏫</div>
+          <CardTitle className="text-2xl font-bold">Teacher Registration</CardTitle>
+          <CardDescription>Create a teacher account to manage your classes</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -119,7 +117,7 @@ export default function RegisterPage() {
               <Input
                 id="email"
                 type="email"
-                placeholder="you@example.com"
+                placeholder="you@school.com"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
@@ -127,28 +125,10 @@ export default function RegisterPage() {
               />
             </div>
 
-            <div className="space-y-2">
-              <Label htmlFor="role">I am a...</Label>
-              <div className="grid grid-cols-2 gap-2">
-                <Button
-                  type="button"
-                  variant={formData.role === 'STUDENT' ? 'default' : 'outline'}
-                  onClick={() => setFormData({ ...formData, role: 'STUDENT' })}
-                  disabled={isLoading}
-                  className="h-12"
-                >
-                  👦 Student
-                </Button>
-                <Button
-                  type="button"
-                  variant={formData.role === 'TEACHER' ? 'default' : 'outline'}
-                  onClick={() => setFormData({ ...formData, role: 'TEACHER' })}
-                  disabled={isLoading}
-                  className="h-12"
-                >
-                  👨‍🏫 Teacher
-                </Button>
-              </div>
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
+              <p className="text-sm text-blue-800">
+                <strong>Note:</strong> Student accounts are created by teachers through class import. Students only need to login with their assigned email and password.
+              </p>
             </div>
 
             <div className="space-y-2">
@@ -179,7 +159,7 @@ export default function RegisterPage() {
             </div>
 
             <Button type="submit" className="w-full" disabled={isLoading}>
-              {isLoading ? 'Creating Account...' : 'Create Account'}
+              {isLoading ? 'Creating Account...' : 'Create Teacher Account'}
             </Button>
           </form>
 

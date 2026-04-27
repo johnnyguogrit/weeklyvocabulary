@@ -54,11 +54,15 @@ export async function POST(request: NextRequest) {
       // Create quiz session
       quizSession = await prisma.quizSession.create({
         data: {
-          studentProgressId: studentProgress.id,
+          userId,
+          grade,
+          subject,
           weekId,
           difficulty: difficulty?.toUpperCase() || 'EASY',
-          questionsCount: week.questions.length,
-          status: 'IN_PROGRESS',
+          currentQuestionIndex: 0,
+          timeRemaining: 0,
+          livesRemaining: difficulty === 'hard' ? 3 : 0,
+          answersHistory: JSON.stringify([]),
         },
       })
     }
@@ -84,14 +88,11 @@ export async function PUT(request: NextRequest) {
 
     if (!sessionId) {
       return NextResponse.json({ error: 'sessionId is required' }, { status: 400 })
-    })
+    }
 
     // Find quiz session
     const quizSession = await prisma.quizSession.findUnique({
       where: { id: sessionId },
-      include: {
-        studentProgress: true,
-      },
     })
 
     if (!quizSession) {
@@ -112,36 +113,87 @@ export async function PUT(request: NextRequest) {
 
     const score = Math.round((correctCount / answers.length) * 100)
 
-    // Update quiz session
-    const updatedSession = await prisma.quizSession.update({
+    // Update quiz session with answers history
+    await prisma.quizSession.update({
       where: { id: sessionId },
       data: {
-        score,
-        correctAnswers: correctCount,
-        timeSpent: timeSpent || 0,
-        status: 'COMPLETED',
-        completedAt: new Date(),
+        answersHistory: JSON.stringify(results),
+        correctCount,
+        scoreThisQuestion: score,
+        isAnswered: true,
+        isCorrect: score >= 70,
       },
     })
 
-    // Update week progress
-    const weekProgress = await prisma.weekProgress.findUnique({
+    // Get student progress
+    const studentProgress = await prisma.studentProgress.findUnique({
       where: {
-        studentProgressId_weekId: {
-          studentProgressId: quizSession.studentProgressId,
-          weekId: quizSession.weekId,
+        userId_grade_subject: {
+          userId: quizSession.userId,
+          grade: quizSession.grade,
+          subject: quizSession.subject,
         },
       },
     })
 
-    if (weekProgress) {
-      await prisma.weekProgress.update({
-        where: { id: weekProgress.id },
+    if (studentProgress) {
+      // Find or create week progress
+      let weekProgress = await prisma.weekProgress.findUnique({
+        where: {
+          studentProgressId_weekId: {
+            studentProgressId: studentProgress.id,
+            weekId: quizSession.weekId,
+          },
+        },
+      })
+
+      if (weekProgress) {
+        // Update existing week progress
+        const newQuestionsTotal = weekProgress.questionsTotal + answers.length
+        const newQuestionsCorrect = weekProgress.questionsCorrect + correctCount
+        const newScore = Math.round((newQuestionsCorrect / newQuestionsTotal) * 100)
+
+        await prisma.weekProgress.update({
+          where: { id: weekProgress.id },
+          data: {
+            questionsCorrect: newQuestionsCorrect,
+            questionsTotal: newQuestionsTotal,
+            score: newScore,
+            completed: newScore >= 70,
+          },
+        })
+      } else {
+        // Create new week progress
+        await prisma.weekProgress.create({
+          data: {
+            studentProgressId: studentProgress.id,
+            weekId: quizSession.weekId,
+            locked: false,
+            completed: score >= 70,
+            score: score,
+            questionsCorrect: correctCount,
+            questionsTotal: answers.length,
+            readingCompCorrect: 0,
+            readingCompTotal: 0,
+            keywordsMastered: JSON.stringify([]),
+          },
+        })
+      }
+
+      // Update overall progress
+      const allWeekProgress = await prisma.weekProgress.findMany({
+        where: { studentProgressId: studentProgress.id },
+      })
+
+      const totalWeeks = allWeekProgress.length
+      const completedWeeks = allWeekProgress.filter(wp => wp.completed).length
+      const avgScore = allWeekProgress.reduce((sum, wp) => sum + wp.score, 0) / totalWeeks
+
+      await prisma.studentProgress.update({
+        where: { id: studentProgress.id },
         data: {
-          questionsCorrect: weekProgress.questionsCorrect + correctCount,
-          questionsTotal: weekProgress.questionsTotal + answers.length,
-          score: weekProgress.score + score,
-          completed: score >= 70, // Pass threshold
+          overallProgress: Math.round((completedWeeks / totalWeeks) * 100),
+          totalScore: avgScore,
         },
       })
     }

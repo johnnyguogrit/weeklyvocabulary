@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { signOut } from 'next-auth/react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
@@ -9,7 +10,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { toast } from 'sonner'
-import { Plus, Users, Trash2 } from 'lucide-react'
+import { Plus, Users, Trash2, LogOut } from 'lucide-react'
 import Link from 'next/link'
 
 interface Class {
@@ -28,6 +29,10 @@ export default function ClassesPage() {
     name: '',
     grade: 'G1'
   })
+
+  const handleLogout = async () => {
+    await signOut({ callbackUrl: '/login' })
+  }
 
   useEffect(() => {
     fetchClasses()
@@ -91,9 +96,15 @@ export default function ClassesPage() {
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center gap-4">
-            <Link href="/teacher" className="text-gray-600 hover:text-gray-900">← Back</Link>
-            <h1 className="text-2xl font-bold text-gray-900">Classes</h1>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <Link href="/teacher" className="text-gray-600 hover:text-gray-900">← Back</Link>
+              <h1 className="text-2xl font-bold text-gray-900">Classes</h1>
+            </div>
+            <Button variant="outline" size="sm" onClick={handleLogout}>
+              <LogOut className="h-4 w-4 mr-2" />
+              Sign Out
+            </Button>
           </div>
         </div>
       </header>

@@ -14,14 +14,20 @@ export default auth((req) => {
     return NextResponse.redirect(new URL('/login', req.url))
   }
 
-  // Redirect to dashboard if already logged in
+  // Redirect based on role if logged in and on auth pages
   if (isLoggedIn && (pathname === '/login' || pathname === '/register')) {
-    return NextResponse.redirect(new URL('/dashboard', req.url))
+    const role = userRole || 'STUDENT'
+    const dashboard = role === 'TEACHER' || role === 'ADMIN' ? '/teacher' : '/student'
+    return NextResponse.redirect(new URL(dashboard, req.url))
   }
 
   // Role-based route protection
   if (pathname.startsWith('/teacher') && userRole !== 'TEACHER' && userRole !== 'ADMIN') {
-    return NextResponse.redirect(new URL('/dashboard', req.url))
+    return NextResponse.redirect(new URL('/student', req.url))
+  }
+
+  if (pathname.startsWith('/student') && userRole === 'TEACHER') {
+    return NextResponse.redirect(new URL('/teacher', req.url))
   }
 
   return NextResponse.next()

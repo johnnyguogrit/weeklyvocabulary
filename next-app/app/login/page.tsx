@@ -10,9 +10,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { toast } from 'sonner'
 import Link from 'next/link'
 
+type UserRole = 'STUDENT' | 'TEACHER'
+
 export default function LoginPage() {
   const router = useRouter()
   const [isLoading, setIsLoading] = useState(false)
+  const [role, setRole] = useState<UserRole>('STUDENT')
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -26,6 +29,7 @@ export default function LoginPage() {
       const result = await signIn('credentials', {
         email: formData.email,
         password: formData.password,
+        role: role,
         redirect: false
       })
 
@@ -36,8 +40,9 @@ export default function LoginPage() {
         toast.error(`Login failed: ${result.error}`)
       } else if (result?.ok) {
         toast.success('Login successful! Redirecting...')
-        // Force a hard redirect to ensure session is loaded
-        window.location.href = '/dashboard'
+        // Redirect based on role
+        const redirectUrl = role === 'TEACHER' ? '/teacher' : '/student'
+        window.location.href = redirectUrl
       } else {
         toast.error('Unknown error occurred')
       }
@@ -53,18 +58,50 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 p-4">
       <Card className="w-full max-w-md shadow-xl">
         <CardHeader className="space-y-1 text-center">
-          <div className="text-5xl mb-4">🌱</div>
-          <CardTitle className="text-2xl font-bold">Vocabulary Adventure</CardTitle>
-          <CardDescription>Sign in to continue your learning journey</CardDescription>
+          <div className="text-5xl mb-4">{role === 'TEACHER' ? '👨‍🏫' : '👦'}</div>
+          <CardTitle className="text-2xl font-bold">
+            {role === 'TEACHER' ? 'Teacher Portal' : 'Student Portal'}
+          </CardTitle>
+          <CardDescription>
+            {role === 'TEACHER'
+              ? 'Sign in to manage your classes'
+              : 'Sign in to continue your learning journey'}
+          </CardDescription>
         </CardHeader>
         <CardContent>
+          {/* Role Tabs */}
+          <div className="flex mb-6 bg-gray-100 rounded-lg p-1">
+            <button
+              type="button"
+              onClick={() => setRole('STUDENT')}
+              className={`flex-1 py-2 px-4 rounded-md text-sm font-medium transition-all ${
+                role === 'STUDENT'
+                  ? 'bg-white text-blue-600 shadow-sm'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              👦 Student
+            </button>
+            <button
+              type="button"
+              onClick={() => setRole('TEACHER')}
+              className={`flex-1 py-2 px-4 rounded-md text-sm font-medium transition-all ${
+                role === 'TEACHER'
+                  ? 'bg-white text-blue-600 shadow-sm'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              👨‍🏫 Teacher
+            </button>
+          </div>
+
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
               <Input
                 id="email"
                 type="email"
-                placeholder="student@example.com"
+                placeholder={role === 'TEACHER' ? 'teacher@school.com' : 'student@school.com'}
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
@@ -91,15 +128,18 @@ export default function LoginPage() {
           <div className="mt-6 text-center text-sm">
             <span className="text-gray-600">Don't have an account? </span>
             <Link href="/register" className="text-blue-600 hover:underline font-medium">
-              Sign Up
+              Teacher Sign Up
             </Link>
           </div>
 
           <div className="mt-4 text-center text-sm text-muted-foreground">
             <p>Demo Accounts:</p>
             <div className="mt-2 space-y-1 text-xs">
-              <p>👨‍🏫 Teacher: teacher@school.com / teacher123</p>
-              <p>👦 Student: student@school.com / student123</p>
+              {role === 'TEACHER' ? (
+                <p>👨‍🏫 Teacher: teacher@school.com / teacher123</p>
+              ) : (
+                <p>👦 Student: student@school.com / student123</p>
+              )}
             </div>
           </div>
         </CardContent>

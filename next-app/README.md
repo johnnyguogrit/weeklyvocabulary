@@ -4,14 +4,14 @@ A gamified vocabulary learning application for Grades 1-5 covering 8 subjects (M
 
 ## Version
 
-**Current Version:** v2.6.1
+**Current Version:** v2.7.0
 
 ## Tech Stack
 
 - **Frontend:** Next.js 16 (App Router), React 19, TypeScript 5.9
 - **UI:** Tailwind CSS 4, Radix UI components, Framer Motion animations
 - **Authentication:** NextAuth v5 (beta) with JWT strategy
-- **Database:** PostgreSQL with Prisma ORM
+- **Database:** PostgreSQL (Supabase) with Prisma ORM
 - **State Management:** React hooks, Server Actions
 - **Styling:** Tailwind CSS with custom themes
 
@@ -37,9 +37,9 @@ next-app/
 │   └── teacher/               # Teacher portal
 │       ├── page.tsx           # Teacher dashboard
 │       └── classes/           # Class management
-├── data/                      # Shared vocabulary data
 ├── lib/
 │   ├── auth.ts               # NextAuth configuration
+│   ├── auth.config.ts        # Auth config for v5 (edge-compatible)
 │   └── db.ts                 # Prisma client
 ├── prisma/
 │   └── schema.prisma         # Database schema
@@ -80,28 +80,38 @@ npm install
 
 2. **Set up Supabase:**
    - Create project at https://supabase.com
-   - Go to Database → Connection string
-   - Copy connection strings
+   - Go to Settings → Database → Connection string
+   - Copy the **Transaction mode** connection string (Pooler, port 6543)
 
-3. **Configure `.env`:**
+3. **Configure `.env.local`:**
 ```env
-# From Supabase Connection Pooling (port 6543)
+# Database - Supabase Pooler (recommended for Next.js)
 DATABASE_URL="postgresql://postgres.projectid:password@aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres"
-
-# From Supabase Direct connection (port 5432)
 DIRECT_URL="postgresql://postgres:password@db.projectid.supabase.co:5432/postgres"
 
-# Generate with: openssl rand -base64 32
+# NextAuth v5
+AUTH_SECRET="your-generated-secret"
+AUTH_URL="http://localhost:3000"
+
+# For compatibility
 NEXTAUTH_SECRET="your-generated-secret"
 NEXTAUTH_URL="http://localhost:3000"
+
+NODE_ENV="development"
+```
+
+Generate `AUTH_SECRET`:
+```bash
+openssl rand -base64 32
 ```
 
 4. **Create database tables:**
-   - Option A: Run `npx prisma db push` (if connection works)
-   - Option B: Manually run SQL in Supabase SQL Editor (see DEPLOYMENT.md)
+   - Run SQL scripts from Supabase SQL Editor (see DEPLOYMENT.md)
+   - Or run `npx prisma db push` if connection works
 
 5. **Start development:**
 ```bash
+npx prisma generate
 npm run dev
 ```
 
@@ -112,8 +122,6 @@ Visit `http://localhost:3000`
 ```bash
 npm run dev
 ```
-
-Visit `http://localhost:3000`
 
 ### Build
 
@@ -126,7 +134,7 @@ npm start
 
 ### Authentication
 - `POST /api/auth/register` - Register new teacher
-- `GET /api/auth/session` - Get current session
+- `GET/POST /api/auth/[...nextauth]` - NextAuth handler
 
 ### Progress
 - `GET /api/progress?userId=&grade=&subject=` - Get progress
@@ -135,6 +143,9 @@ npm start
 
 ### Quiz
 - `GET /api/quiz?grade=&subject=&weekId=` - Get quiz questions
+
+### Subjects
+- `GET /api/subjects` - Get all subjects
 
 ### Teacher
 - `GET /api/teacher/classes` - List classes
@@ -159,6 +170,23 @@ npm start
 - Week 2 is unlocked by default
 - Completing a week (70%+) automatically creates and unlocks the next week
 
+## Authentication Flow
+
+### Teacher Registration & Login
+1. Navigate to `/register`
+2. Fill in name, email, password
+3. Account created with role `TEACHER`
+4. Auto-signed in and redirected to `/teacher`
+
+### Student Login
+1. Navigate to `/login`
+2. Enter email and password
+3. Redirected to `/student` based on role
+
+### Role-Based Routing
+- Teachers → `/teacher` dashboard
+- Students → `/student` welcome page
+
 ## Deployment
 
 ### Vercel (Recommended)
@@ -174,40 +202,37 @@ npm start
    ```env
    DATABASE_URL=postgresql://postgres.projectid:password@aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres
    DIRECT_URL=postgresql://postgres:password@db.projectid.supabase.co:5432/postgres
-   NEXTAUTH_SECRET=your-generated-secret
-   NEXTAUTH_URL=https://your-app.vercel.app
+   AUTH_SECRET=your-generated-secret
+   AUTH_URL=https://your-app.vercel.app
    ```
 
 4. **Deploy**
 
-### Other Platforms
-
-Use the same environment variables for any Node.js hosting platform.
-
-**See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed Supabase setup instructions.**
-
 ## Version History
 
-### v2.6.1 (2026-04-27)
+### v2.7.0 (2026-04-27)
 - **Bug Fixes:**
-  - Fixed week unlock after completion
-  - Fixed progress saving (completion percentage calculation)
-  - Fixed average score calculation (excludes unattempted weeks)
-  - Changed "Total Points" to "Average Score" for clarity
+  - Fixed NextAuth v5 configuration (auth.config.ts)
+  - Fixed role-based routing (teacher redirects to /teacher)
+  - Fixed database connection (Supabase Pooler)
+  - Fixed middleware deprecation warning
 - **Infrastructure:**
-  - Migrated from SQLite to Supabase PostgreSQL
-  - Added Supabase deployment documentation
-  - Fixed Next.js 16 compatibility (removed deprecated eslint config)
+  - Added `lib/auth.config.ts` for NextAuth v5 compatibility
+  - Updated `.env.local` with AUTH_SECRET/AUTH_URL
+  - Migrated to Supabase Pooler connection
+
+### v2.6.1 (2026-04-27)
+- Fixed week unlock after completion
+- Fixed progress saving (completion percentage calculation)
+- Fixed average score calculation (excludes unattempted weeks)
+- Changed "Total Points" to "Average Score" for clarity
 
 ### v2.6.0 (2026-04-25)
-- **New Features:**
-  - Teacher-only registration
-  - Single student addition
-  - Bulk student import via Excel
-  - Class roster export
-- **Removed:**
-  - Student self-registration
-  - Standalone students directory
+- Teacher-only registration
+- Single student addition
+- Bulk student import via Excel
+- Class roster export
+- Removed student self-registration
 
 ### v2.5.0
 - Complete Teacher and Student Portals

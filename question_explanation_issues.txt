@@ -1,0 +1,592 @@
+
+G1/Performing Arts/Week 10/Q1
+  issue: Explanation doesn't mention answer 'cartwheel'
+  question: When doing a _______, your hands touch the floor w
+  answer: cartwheel
+  first_sentence: 描述侧手翻特征
+
+G1/Performing Arts/Week 15/Q1
+  issue: Explanation doesn't mention answer 'Stretch'
+  question: After the show, we do a slow _______ to cool down.
+  answer: Stretch
+  first_sentence: 下课冷却放松的步骤
+
+G1/Tally Chart/Week 2/Q1
+  issue: Explanation doesn't mention answer 'Symbol'
+  question: We use a _______ to count things with marks.
+  answer: Symbol
+  first_sentence: Tally Chart意为"画记统计表"
+
+G1/Tally Chart/Week 7/Q1
+  issue: Explanation doesn't mention answer 'Symbol'
+  question: The money we can spend on our project is our _____
+  answer: Symbol
+  first_sentence: Budget意为"预算"
+
+G1/Tally Chart/Week 10/Q1
+  issue: Explanation doesn't mention answer 'Symbol'
+  question: A set of steps to make a robot dance is a _______.
+  answer: Symbol
+  first_sentence: Dance Algorithm意为"舞蹈算法"
+
+G1/Tally Chart/Week 13/Q1
+  issue: Explanation doesn't mention answer 'Symbol'
+  question: To make the cat jump 5 times easily, we use a ____
+  answer: Symbol
+  first_sentence: Repeat Block指编程中的"重复积木/循环模块"
+
+G2/Drama/Week 5/Q1
+  issue: Invalid answer index: C
+  question: What kind of question can only be answered with "y
+
+G2/Drama/Week 14/Q1
+  issue: Explanation doesn't mention answer 'stage left'
+  question: Please enter from _______ to start the scene.
+  answer: stage left
+  first_sentence: 巩固舞台⽅位词汇：舞台左侧
+
+G2/Drama/Week 14/Q2
+  issue: Explanation doesn't mention answer 'stage right'
+  question: Walk across the stage and exit through _______.
+  answer: stage right
+  first_sentence: 巩固舞台⽅位词汇：舞台右侧
+
+G2/Drama/Week 15/Q1
+  issue: Invalid answer index: C
+  question: How an actor uses their body to move and show thei
+
+G2/Maths/Week 5/Q1
+  issue: Invalid answer index: C
+  question: What do we do to the numbers in math class?
+
+G2/Maths/Week 13/Q2
+  issue: No explanation
+  question: 8 is 3 _______ than 5.
+  answer: more
+
+G2/Maths/Week 15/Q1
+  issue: Invalid answer index: C
+  question: What do we do if we want to share the points equal
+
+G2/Music/Week 5/Q1
+  issue: Invalid answer index: B
+  question: What do we do to the drum to make a loud sound?
+
+G2/Music/Week 15/Q1
+  issue: Invalid answer index: C
+  question: What do we do to show we are paying attention to t
+
+G2/PE/Week 5/Q1
+  issue: Invalid answer index: C
+  question: What do we use to talk to each other clearly?
+
+G2/PE/Week 15/Q1
+  issue: Invalid answer index: D
+  question: A race where teammates take turns passing a stick 
+
+G2/Performing Arts/Week 2/Q2
+  issue: Explanation doesn't mention answer 'straight back'
+  question: Harry Potter uses a wooden stick called a _______ 
+  answer: straight back
+  first_sentence: wand意为"魔杖"
+
+G2/Performing Arts/Week 5/Q1
+  issue: Invalid answer index: B
+  question: What tool do we hold in our hands to do magic?
+
+G2/Performing Arts/Week 15/Q1
+  issue: Invalid answer index: B
+  question: Who laughs and claps at the end of the show?
+
+G2/Science/Week 5/Q1
+  issue: Invalid answer index: B
+  question: What is unique and not the same for every person?
+
+G2/Science/Week 15/Q1
+  issue: Invalid answer index: B
+  question: What power makes the toy robot move?
+
+G2/Visual Arts/Week 5/Q1
+  issue: Invalid answer index: B
+  question: What drawing do I make by looking at myself in a m
+
+G2/Visual Arts/Week 10/Q2
+  issue: No explanation
+  question: Blue and orange look very bright together because 
+  answer: complementary color
+
+G2/Visual Arts/Week 14/Q2
+  issue: Explanation doesn't mention answer 'symmetry'
+  question: Showing your inside feelings in your art is an ___
+  answer: symmetry
+  first_sentence: expression意为"表达/表现"
+
+G2/Visual Arts/Week 15/Q1
+  issue: Invalid answer index: B
+  question: What kind of art uses shapes and colors but does n
+
+G3/Code, Program, Pseudocode/Week 5/Q1
+  issue: Invalid answer index: B
+  question: What do we call a repeat block placed inside anoth
+
+G3/Code, Program, Pseudocode/Week 10/Q1
+  issue: Invalid answer index: C
+  question: What are the 25 small lights on the micro:bit call
+
+G3/Code, Program, Pseudocode/Week 13/Q1
+  issue: No explanation
+  question: The component that measures how hot or cold the ai
+  answer: Temperature Sensor
+
+G3/Code, Program, Pseudocode/Week 15/Q1
+  issue: Invalid answer index: C
+  question: What is the early, rough model of our project call
+
+G3/Drama/Week 5/Q1
+  issue: Invalid answer index: C
+  question: What is the drama game where you sit in a chair an
+
+G3/Drama/Week 10/Q1
+  issue: No explanation
+  question: What is the live story acted out in the theater ca
+  answer: A play B) A line C) A prop D) A tone of voice
+
+G3/Drama/Week 15/Q1
+  issue: Invalid answer index: B
+  question: Where does the actor go when the scene is over and
+
+G3/Maths/Week 3/Q2
+  issue: No explanation
+  question: 2 + 3 is _______ to 5.
+  answer: equal
+
+G3/Maths/Week 5/Q1
+  issue: Invalid answer index: C
+  question: What do we do to find the answer of 3 groups of 10
+
+G3/Maths/Week 10/Q1
+  issue: Invalid answer index: B
+  question: What do we measure to build a fence around the gar
+
+G3/Maths/Week 15/Q1
+  issue: Invalid answer index: C
+  question: What kind of number is $3.50 with a dot in it?
+
+G3/Music/Week 5/Q1
+  issue: Invalid answer index: B
+  question: What is it called when the same melody is repeated
+
+G3/Music/Week 10/Q1
+  issue: Invalid answer index: C
+  question: What does sitting up straight with a tall back sho
+
+G3/Music/Week 15/Q1
+  issue: Invalid answer index: D
+  question: What is it called when the teacher tells us how we
+
+G3/PE/Week 5/Q1
+  issue: Invalid answer index: C
+  question: What do we show when we help our friends in the ga
+
+G3/PE/Week 10/Q1
+  issue: Invalid answer index: D
+  question: What sport uses a heavy metal ball?
+
+G3/PE/Week 14/Q2
+  issue: Explanation doesn't mention answer 'cool-down'
+  question: Always take 5 minutes for a slow _______ so your m
+  answer: cool-down
+  first_sentence: 巩固词汇：cool- down意为"整理运动"
+
+G3/PE/Week 15/Q1
+  issue: Invalid answer index: B
+  question: What is a race where team partners pass a stick ca
+
+G3/Performing Arts/Week 5/Q1
+  issue: Invalid answer index: C
+  question: How do the wizards cross the stage?
+
+G3/Performing Arts/Week 10/Q1
+  issue: Invalid answer index: D
+  question: What does the hero do so no one hears his footstep
+
+G3/Performing Arts/Week 15/Q1
+  issue: Invalid answer index: B
+  question: How does the hero dodge the attack?
+
+G3/Science/Week 5/Q1
+  issue: Invalid answer index: C
+  question: Which animal group has dry scales and lays eggs?
+
+G3/Science/Week 10/Q1
+  issue: Invalid answer index: C
+  question: What is the invisible force that pulls things down
+
+G3/Science/Week 15/Q1
+  issue: Invalid answer index: D
+  question: Which light metal is often used to make soda cans?
+
+G3/Visual Arts/Week 5/Q1
+  issue: Invalid answer index: C
+  question: What is a painting of a face from the side view ca
+
+G3/Visual Arts/Week 10/Q1
+  issue: Invalid answer index: C
+  question: What do we make by gluing small colored squares to
+
+G3/Visual Arts/Week 12/Q1
+  issue: Explanation doesn't mention answer 'three-dimensional'
+  question: A clay bowl pops out and has real depth, so it is 
+  answer: three-dimensional
+  first_sentence: 巩固词汇：⽴体的
+
+G3/Visual Arts/Week 12/Q2
+  issue: Explanation doesn't mention answer 'flat'
+  question: A picture painted on a smooth wall is _______.
+  answer: flat
+  first_sentence: 巩固词汇：平⾯的
+
+G3/Visual Arts/Week 14/Q1
+  issue: Explanation doesn't mention answer 'three-dimensional'
+  question: A box is _______ because it is not just a drawing 
+  answer: three-dimensional
+  first_sentence: 巩固词汇：三维的
+
+G3/Visual Arts/Week 14/Q2
+  issue: Explanation doesn't mention answer 'flat'
+  question: A piece of printer paper is thin and _______.
+  answer: flat
+  first_sentence: 巩固词汇：平的
+
+G3/Visual Arts/Week 15/Q1
+  issue: Invalid answer index: B
+  question: What tool do we use to hold the strings tight?
+
+G4/Digital Tools, Information, Accurate, Organize/Week 5/Q1
+  issue: Invalid answer index: B
+  question: What do we call the number that appears the most o
+
+G4/Digital Tools, Information, Accurate, Organize/Week 10/Q1
+  issue: Invalid answer index: C
+  question: What device helps direct the data to the correct p
+
+G4/Digital Tools, Information, Accurate, Organize/Week 15/Q1
+  issue: Explanation doesn't mention answer 'Scalability B) Security C) Layout D) Network Design'
+  question: What do we call the ability of a network to easily
+  answer: Scalability B) Security C) Layout D) Network Design
+  first_sentence: ⽹络能够轻松扩⼤规模的能⼒被称为可扩展性 Scalability
+
+G4/Drama/Week 5/Q1
+  issue: Invalid answer index: B
+  question: What kind of question lets you talk a lot instead 
+
+G4/Drama/Week 10/Q1
+  issue: Invalid answer index: B
+  question: What object does the actor hold in his hand?
+
+G4/Drama/Week 15/Q1
+  issue: Invalid answer index: B
+  question: What is the plan of where actors stand and move ca
+
+G4/Maths/Week 3/Q3
+  issue: Explanation doesn't mention answer 'operations'
+  question: Addition and multiplication are basic math _______
+  answer: operations
+  first_sentence: operation意为"运算"
+
+G4/Maths/Week 5/Q1
+  issue: Explanation doesn't mention answer 'Compare them B) Add them C) Bracket them D) Divide them'
+  question: What do we do when we want to see if 4.2 is greate
+  answer: Compare them B) Add them C) Bracket them D) Divide them
+  first_sentence: 判断哪个更⼤需要⽐较 compare 它们
+
+G4/Maths/Week 9/Q2
+  issue: Explanation doesn't mention answer 'metres'
+  question: The length of our classroom is about 10 _______s.
+  answer: metres
+  first_sentence: metre意为"⽶"
+
+G4/Maths/Week 9/Q3
+  issue: Explanation doesn't mention answer 'kilometres'
+  question: We drove for 5 _______s to get to the park.
+  answer: kilometres
+  first_sentence: kilometre意为"千⽶/公⾥"
+
+G4/Maths/Week 10/Q1
+  issue: Invalid answer index: B
+  question: What do we call the outside length around a garden
+
+G4/Maths/Week 11/Q3
+  issue: Explanation doesn't mention answer 'sides'
+  question: A square has four straight _______s of the same le
+  answer: sides
+  first_sentence: side意为"边"
+
+G4/Maths/Week 11/Q4
+  issue: Explanation doesn't mention answer 'corners'
+  question: A rectangle has four sharp _______s where the side
+  answer: corners
+  first_sentence: corner意为"⻆/顶点"
+
+G4/Maths/Week 15/Q1
+  issue: Explanation doesn't mention answer 'We convert it B) We compare it C) We subtract it D) We round it'
+  question: What do we do when we change the format from 1/2 i
+  answer: We convert it B) We compare it C) We subtract it D) We round it
+  first_sentence: 将1/2转换成0
+
+G4/Music/Week 5/Q1
+  issue: Invalid answer index: B
+  question: What do we call the main tune of the song that you
+
+G4/Music/Week 10/Q1
+  issue: Invalid answer index: B
+  question: What do we do to fix a mistake when a note sounds 
+
+G4/Music/Week 11/Q1
+  issue: No explanation
+  question: The personality or mood a piece of music portrays 
+  answer: musical character
+
+G4/Music/Week 15/Q1
+  issue: Invalid answer index: C
+  question: What do we call the thinking time where we look ba
+
+G4/PE/Week 5/Q1
+  issue: Invalid answer index: C
+  question: What do we show when we help our friends in the ga
+
+G4/PE/Week 10/Q1
+  issue: Invalid answer index: D
+  question: What event uses a heavy metal ball?
+
+G4/PE/Week 15/Q1
+  issue: Invalid answer index: C
+  question: What describes how quickly we start moving when th
+
+G4/Performing Arts/Week 5/Q1
+  issue: Invalid answer index: B
+  question: What kind of movement does the actor make to dance
+
+G4/Performing Arts/Week 8/Q3
+  issue: No explanation
+  question: When actors act like best friends and trust each o
+  answer: character connection
+
+G4/Performing Arts/Week 10/Q1
+  issue: Invalid answer index: C
+  question: What kind of posture does the naughty student use 
+
+G4/Performing Arts/Week 15/Q1
+  issue: Invalid answer index: B
+  question: What word describes the monkeys that love to play 
+
+G4/Science/Week 5/Q1
+  issue: Invalid answer index: C
+  question: What natural event causes the ground to shake viol
+
+G4/Science/Week 10/Q1
+  issue: Invalid answer index: C
+  question: What happens when light hits a smooth, shiny mirro
+
+G4/Science/Week 15/Q1
+  issue: Invalid answer index: D
+  question: What dark shape is created on the ground when an o
+
+G4/Visual Arts/Week 5/Q1
+  issue: Invalid answer index: B
+  question: What do we call a small, single shape that gets re
+
+G4/Visual Arts/Week 9/Q2
+  issue: No explanation
+  question: Red and green are opposite on the color wheel, mak
+  answer: complementary color
+
+G4/Visual Arts/Week 10/Q1
+  issue: Invalid answer index: C
+  question: What is the art of writing beautifully with a brus
+
+G4/Visual Arts/Week 12/Q1
+  issue: Explanation doesn't mention answer 'paper-cutting'
+  question: Creating snowflakes from folded paper is a type of
+  answer: paper-cutting
+  first_sentence: 巩固词汇：paper- cutting"剪纸"
+
+G4/Visual Arts/Week 14/Q1
+  issue: Explanation doesn't mention answer 'paper-cutting'
+  question: We made a beautiful butterfly using the _______ te
+  answer: paper-cutting
+  first_sentence: 巩固词汇：paper- cutting
+
+G4/Visual Arts/Week 15/Q1
+  issue: Explanation doesn't mention answer 'A sketch B) A layout C) Typography D) A font design'
+  question: What is a quick, rough pencil drawing called?
+  answer: A sketch B) A layout C) Typography D) A font design
+  first_sentence: 快速粗糙的铅笔画被称为草图 sketch
+
+G5/Maths/Week 5/Q4
+  issue: Invalid answer index: B
+  question: Why can we easily share 12 apples equally among 3 
+
+G5/Maths/Week 10/Q2
+  issue: Invalid answer index: B
+  question: What must the slices be like when we divide a whol
+
+G5/Maths/Week 12/Q3
+  issue: Explanation doesn't mention answer 'centimetres'
+  question: We use a ruler to measure small things in _______s
+  answer: centimetres
+  first_sentence: centimetre意为"厘⽶"
+
+G5/Maths/Week 15/Q2
+  issue: Invalid answer index: C
+  question: Which tool do we use to show how temperatures chan
+
+G5/Music/Week 4/Q2
+  issue: Explanation doesn't mention answer 'consonants'
+  question: Letters like T, P, and K that make crisp sounds in
+  answer: consonants
+  first_sentence: consonant意为"辅⾳"
+
+G5/Music/Week 5/Q1
+  issue: Invalid answer index: C
+  question: What muscle do we use to push the air when singing
+
+G5/Music/Week 10/Q1
+  issue: Invalid answer index: B
+  question: What do we call it when we practice a part of the 
+
+G5/Music/Week 12/Q3
+  issue: No explanation
+  question: Keeping your eyes on the conductor and not looking
+  answer: stage focus
+
+G5/Music/Week 12/Q5
+  issue: No explanation
+  question: When a performer has a powerful energy that makes 
+  answer: presence
+
+G5/Music/Week 14/Q3
+  issue: No explanation
+  question: A full practice where everyone wears their concert
+  answer: dress rehearsal
+
+G5/Music/Week 15/Q1
+  issue: Invalid answer index: C
+  question: What do we do to talk about what we did well and w
+
+G5/PE/Week 5/Q1
+  issue: Explanation doesn't mention answer 'Good communication B) A false start C) A photo finish D) A hurdle'
+  question: What helps players talk to each other and pass the
+  answer: Good communication B) A false start C) A photo finish D) A hurdle
+  first_sentence: 帮助队员互相交谈并完美传球的是良好的沟通 communication
+
+G5/PE/Week 10/Q1
+  issue: Explanation doesn't mention answer 'Good pacing B) Deception C) A shot put D) A bounce'
+  question: What helps a runner not get tired too fast during 
+  answer: Good pacing B) Deception C) A shot put D) A bounce
+  first_sentence: 在⻓跑中不⾄于太快疲劳的⽅法是良好的配速 pacing
+
+G5/PE/Week 13/Q2
+  issue: Explanation doesn't mention answer 'cool-down'
+  question: Doing slow stretching exercises after a hard run t
+  answer: cool-down
+  first_sentence: cool- down意为"整理运动/冷⾝运动"
+
+G5/PE/Week 15/Q2
+  issue: Invalid answer index: B
+  question: What helps a runner start moving instantly when th
+
+G5/Performing Arts & Drama/Week 5/Q1
+  issue: Invalid answer index: C
+  question: What do the actors do to show their strong feeling
+
+G5/Performing Arts & Drama/Week 9/Q1
+  issue: Explanation doesn't mention answer 'feel angry'
+  question: Director: "Don't just fake it! Use your imaginatio
+  answer: feel angry
+  first_sentence: 巩 固词汇：强调内⼼情感体会
+
+G5/Performing Arts & Drama/Week 9/Q2
+  issue: Explanation doesn't mention answer 'look angry'
+  question: Director: "Your face is too relaxed. Squeeze your 
+  answer: look angry
+  first_sentence: 巩固 词汇：强调⾯部表情
+
+G5/Performing Arts & Drama/Week 9/Q3
+  issue: Explanation doesn't mention answer 'sound angry'
+  question: Director: "Your dialogue is too soft. Put some gro
+  answer: sound angry
+  first_sentence: 巩固词汇：强调台词声⾳表现
+
+G5/Performing Arts & Drama/Week 10/Q1
+  issue: Explanation doesn't mention answer 'Stand angry B) Sound angry C) Sing angry D) Feel happy'
+  question: What does the actor do with his muscles and postur
+  answer: Stand angry B) Sound angry C) Sing angry D) Feel happy
+  first_sentence: 运⽤肌⾁和姿势来展现愤怒即为站出愤怒的姿态 stand angry
+
+G5/Performing Arts & Drama/Week 11/Q4
+  issue: No explanation
+  question: Keeping your chin up so people can see your face m
+  answer: eyeline lifted
+
+G5/Performing Arts & Drama/Week 14/Q3
+  issue: No explanation
+  question: Sharing a character's secret thoughts helps to dee
+  answer: connect to audience
+
+G5/Performing Arts & Drama/Week 15/Q1
+  issue: Invalid answer index: C
+  question: What must the actor do to ensure his voice is loud
+
+G5/STEAM/Week 5/Q1
+  issue: Invalid answer index: C
+  question: What is the drawing used to map out the logic of t
+
+G5/STEAM/Week 9/Q1
+  issue: No explanation
+  question: Organizing and keeping digital information safe is
+  answer: Data Management
+
+G5/STEAM/Week 10/Q1
+  issue: Invalid answer index: C
+  question: Who is a regular person that helps report data for
+
+G5/STEAM/Week 15/Q1
+  issue: Invalid answer index: C
+  question: What do we call the slides and visuals we create t
+
+G5/Science/Week 5/Q5
+  issue: Invalid answer index: B
+  question: Which organ is part of the digestive system mentio
+
+G5/Science/Week 10/Q1
+  issue: Invalid answer index: D
+  question: What force pushes you up when you are swimming in 
+
+G5/Science/Week 12/Q1
+  issue: Explanation doesn't mention answer 'seasons'
+  question: Spring, summer, autumn, and winter are the four __
+  answer: seasons
+  first_sentence: season意为"季节"
+
+G5/Science/Week 15/Q2
+  issue: Explanation doesn't mention answer 'thorns'
+  question: A rose bush has sharp _______s on its stem to prot
+  answer: thorns
+  first_sentence: thorn意为"刺/荆棘"
+
+G5/Science/Week 15/Q3
+  issue: Invalid answer index: C
+  question: What special part does a rose bush grow to protect
+
+G5/Visual Arts/Week 5/Q1
+  issue: Invalid answer index: B
+  question: What kind of mark goes straight from left to right
+
+G5/Visual Arts/Week 10/Q1
+  issue: Invalid answer index: B
+  question: What is the artwork called when you build it by gl
+
+G5/Visual Arts/Week 15/Q1
+  issue: Invalid answer index: B
+  question: What do artists use to play tricks on your eyes an

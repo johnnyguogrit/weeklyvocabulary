@@ -3,7 +3,9 @@ import { auth } from '@/lib/auth'
 import { redirect } from 'next/navigation'
 import { prisma } from '@/lib/db'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Users, BookOpen, Trophy, TrendingUp } from 'lucide-react'
+import { Users, BookOpen, Trophy, TrendingUp, LogOut } from 'lucide-react'
+import { logoutAction } from '@/lib/actions'
+import { Button } from '@/components/ui/button'
 
 export default async function TeacherPage() {
   const session = await auth()
@@ -46,10 +48,11 @@ export default async function TeacherPage() {
               <h1 className="text-2xl font-bold text-gray-900">Teacher Portal</h1>
               <p className="text-gray-600">Welcome, {session.user.name}</p>
             </div>
-            <form action="/api/auth/signout" method="POST">
-              <button type="submit" className="text-sm text-gray-600 hover:text-gray-900">
+            <form action={logoutAction}>
+              <Button type="submit" variant="outline" size="sm">
+                <LogOut className="h-4 w-4 mr-2" />
                 Sign Out
-              </button>
+              </Button>
             </form>
           </div>
         </div>

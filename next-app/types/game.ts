@@ -98,3 +98,30 @@ export const DIFFICULTY_CONFIG = {
   medium: { timer: 30, hints: true, label: 'Brave Scholar', emoji: '🌿', description: '30 seconds per question' },
   hard: { timer: 15, hints: false, label: 'Math Master', emoji: '🌳', description: '15 seconds, no hints!' },
 };
+
+export const SUBJECT_CONFIG: Record<string, { name: string; emoji: string; color: string; description: string }> = {
+  Maths: { name: 'Maths', emoji: '🔢', color: '#3B82F6', description: 'Mathematics and numeracy' },
+  Science: { name: 'Science', emoji: '🔬', color: '#10B981', description: 'Scientific discovery' },
+  STEAM: { name: 'STEAM', emoji: '⚙️', color: '#8B5CF6', description: 'Science, Technology, Engineering, Arts, Math' },
+  Music: { name: 'Music', emoji: '🎵', color: '#EC4899', description: 'Musical learning' },
+  'Performing Arts': { name: 'Performing Arts', emoji: '🎭', color: '#F59E0B', description: 'Drama and performance' },
+  Drama: { name: 'Drama', emoji: '🎭', color: '#F59E0B', description: 'Dramatic arts' },
+  'Visual Arts': { name: 'Visual Arts', emoji: '🎨', color: '#EF4444', description: 'Art and design' },
+  PE: { name: 'PE', emoji: '⚽', color: '#06B6D4', description: 'Physical Education' },
+};
+
+export const WEEK_NAMES: Record<number, string> = {
+  2: 'Review Week 1',
+  3: 'Review Week 2',
+  4: 'Review Week 3',
+  5: 'Review Week 4',
+  7: 'Week 1',
+  8: 'Week 2',
+  9: 'Week 3',
+  10: 'Week 4',
+  11: 'Week 5',
+  12: 'Week 6',
+  13: 'Week 7',
+  14: 'Week 8',
+  15: 'Challenge Week',
+};

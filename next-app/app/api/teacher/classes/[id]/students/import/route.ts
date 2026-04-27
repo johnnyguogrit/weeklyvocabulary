@@ -45,7 +45,8 @@ export async function POST(
       total: data.length,
       success: 0,
       failed: 0,
-      errors: [] as Array<{ row: number; email: string; error: string }>
+      errors: [] as Array<{ row: number; email: string; error: string }>,
+      students: [] as Array<{ name: string; email: string; password: string }>
     }
 
     // Process each row
@@ -117,12 +118,18 @@ export async function POST(
               classId: id,
               studentId: user.id,
               parentEmail: parentEmail || null,
-              parentPhone: parentPhone || null
+              parentPhone: parentPhone ? String(parentPhone) : null
             }
           })
         }
 
         results.success++
+        // Add student to results with password info
+        results.students.push({
+          name: user.name,
+          email: user.email,
+          password: password || 'password123'
+        })
       } catch (error: any) {
         results.failed++
         results.errors.push({
