@@ -1,0 +1,10 @@
+{
+  "name": "weeklyvocabulary",
+  "private": true,
+  "scripts": {
+    "build": "cd next-app && pnpm build",
+    "dev": "cd next-app && pnpm dev",
+    "start": "cd next-app && pnpm start",
+    "install": "cd next-app && pnpm install"
+  }
+}
