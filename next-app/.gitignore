@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Prisma temp files (but keep generated client for Vercel)
+node_modules/.pnpm/@prisma+client@*/node_modules/.prisma/client/*.tmp*
