@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+
 import { auth } from '@/lib/auth'
 import { redirect } from 'next/navigation'
 import { prisma } from '@/lib/db'
@@ -58,7 +58,7 @@ export default async function WeekMapPage({ params }: { params: Promise<{ grade:
   })
 
   if (!progress) {
-    progress = await prisma.studentProgress.create({
+    await prisma.studentProgress.create({
       data: {
         userId: session.user.id,
         grade: grade.toUpperCase(),
@@ -72,14 +72,34 @@ export default async function WeekMapPage({ params }: { params: Promise<{ grade:
             weekId: w.id,
             locked: w.id !== 2,
             completed: false,
-            score: 0
+            score: 0,
+            questionsCorrect: 0,
+            questionsTotal: 0,
+            readingCompCorrect: 0,
+            readingCompTotal: 0,
+            keywordsMastered: JSON.stringify([])
           }))
+        }
+      },
+    })
+    // Re-fetch with include
+    progress = await prisma.studentProgress.findUnique({
+      where: {
+        userId_grade_subject: {
+          userId: session.user.id,
+          grade: grade.toUpperCase(),
+          subject: subject
         }
       },
       include: {
         weekProgress: true
       }
     })
+  }
+
+  // Progress should exist now (either found or created)
+  if (!progress) {
+    redirect('/login')
   }
 
   const weekProgressMap = new Map(progress.weekProgress.map(wp => [wp.weekId, wp]))
@@ -102,8 +122,8 @@ export default async function WeekMapPage({ params }: { params: Promise<{ grade:
               </div>
             </div>
             <div className="text-right">
-              <div className="text-3xl font-bold">{progress.totalScore}</div>
-              <div className="text-sm text-white/80">Total Points</div>
+              <div className="text-3xl font-bold">{progress.totalScore}%</div>
+              <div className="text-sm text-white/80">Average Score</div>
             </div>
           </div>
         </div>

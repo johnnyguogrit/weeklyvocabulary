@@ -1,237 +1,184 @@
-# Weekly Vocabulary Adventure - Next.js
+# Weekly Vocabulary Learning System
 
-> **Version**: 2.6.0 | **Status**: Stable
+A gamified vocabulary learning application for Grades 1-5 covering 8 subjects (Maths, Science, STEAM, Music, Performing Arts, Drama, Visual Arts, PE).
 
-A gamified vocabulary learning application for Grades 1-5, built with Next.js 16, Prisma, and SQLite.
+## Version
 
-## Features
-
-### Student Portal
-- 🎮 **Gamified Learning**: Quiz-based vocabulary learning with points, stages, and rewards
-- 📚 **8 Subjects**: Maths, Science, STEAM, Music, Performing Arts, Drama, Visual Arts, PE
-- 📊 **Progress Tracking**: Track student progress with plant growth stages
-- 🎯 **Difficulty Levels**: Easy, Medium, Hard with different timers and hints
-- 📖 **Reading Comprehension**: Vocabulary in context passages
-
-### Teacher Portal
-- 👨‍🏫 **Dashboard**: Overview of classes and student progress
-- 🏫 **Class Management**: Create and manage classes
-- 👥 **Student Enrollment**: Add/remove students from classes
-- 📥 **Bulk Import**: Import students from Excel files
-- 📤 **Bulk Export**: Export student data to Excel
-- 👨‍👩‍👧 **Parent Contacts**: Store parent email and phone
-- 📈 **Progress Monitoring**: View individual student progress by subject
-
-### Authentication
-- 🔐 **NextAuth v5**: Secure authentication system
-- 👤 **Role-based Access**: Separate portals for teachers and students
-- 🔄 **Session Management**: JWT-based sessions
+**Current Version:** v2.6.1
 
 ## Tech Stack
 
-- **Framework**: Next.js 16 (App Router)
-- **Language**: TypeScript 5.9
-- **Styling**: Tailwind CSS 4
-- **UI Components**: Radix UI
-- **ORM**: Prisma 6.0
-- **Database**: SQLite (local) / PostgreSQL (production)
-- **Authentication**: NextAuth v5
-- **Animations**: Framer Motion
-- **Package Manager**: pnpm
+- **Frontend:** Next.js 16 (App Router), React 19, TypeScript 5.9
+- **UI:** Tailwind CSS 4, Radix UI components, Framer Motion animations
+- **Authentication:** NextAuth v5 (beta) with JWT strategy
+- **Database:** PostgreSQL with Prisma ORM
+- **State Management:** React hooks, Server Actions
+- **Styling:** Tailwind CSS with custom themes
+
+## Project Structure
+
+```
+next-app/
+├── app/
+│   ├── api/
+│   │   ├── auth/              # NextAuth authentication
+│   │   ├── progress/          # Student progress tracking
+│   │   ├── quiz/              # Quiz questions API
+│   │   ├── subjects/          # Subject data API
+│   │   └── teacher/           # Teacher management APIs
+│   ├── login/                 # Login page
+│   ├── register/              # Teacher registration (v2.6+)
+│   ├── student/               # Student portal
+│   │   ├── [grade]/           # Grade selection
+│   │   │   ├── [subject]/     # Subject week map
+│   │   │   │   └── [weekId]/  # Quiz page
+│   │   │   └── page.tsx       # Subject selection
+│   │   └── page.tsx           # Student welcome
+│   └── teacher/               # Teacher portal
+│       ├── page.tsx           # Teacher dashboard
+│       └── classes/           # Class management
+├── data/                      # Shared vocabulary data
+├── lib/
+│   ├── auth.ts               # NextAuth configuration
+│   └── db.ts                 # Prisma client
+├── prisma/
+│   └── schema.prisma         # Database schema
+└── types/                    # TypeScript definitions
+```
+
+## Features
+
+### For Students
+- **Grade Selection:** G1-G5 (G5 excludes Drama)
+- **8 Subjects:** Maths, Science, STEAM, Music, Performing Arts, Drama, Visual Arts, PE
+- **13 Weeks per Subject:** Weeks 2-5, 7-10, 11-14, 15
+- **3 Difficulty Levels:** Easy (no timer), Medium (30s), Hard (15s, 3 lives)
+- **Progress Tracking:** Automatic save, plant growth gamification
+- **Immediate Feedback:** Explanations after each answer
+
+### For Teachers
+- **Class Management:** Create and manage classes by grade
+- **Student Management:**
+  - Add single students
+  - Bulk import via Excel/CSV
+  - Export class roster
+- **Progress Monitoring:** View student progress across subjects
 
 ## Getting Started
 
 ### Prerequisites
-
-- Node.js 20+
-- pnpm (recommended) or npm
+- Node.js 18+
+- PostgreSQL database
 
 ### Installation
 
 ```bash
-# Install dependencies
-pnpm install
+cd next-app
+npm install
+```
 
+### Environment Variables
+
+Create `.env` file:
+
+```env
+DATABASE_URL="postgresql://user:password@localhost:5432/vocabdb"
+NEXTAUTH_SECRET="your-secret-here"
+NEXTAUTH_URL="http://localhost:3000"
+```
+
+### Database Setup
+
+```bash
 # Generate Prisma client
 npx prisma generate
 
-# Push database schema
-npx prisma db push
+# Run migrations
+npx prisma migrate dev
 
-# Seed database (optional)
-npx tsx prisma/seed.ts
+# (Optional) Seed database
+npx tsx scripts/seed-db.ts
 ```
 
 ### Development
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Visit `http://localhost:3000`
 
-## Database
-
-### Seed Accounts
-
-After running the seed script, use these accounts:
-
-| Role | Email | Password |
-|------|-------|----------|
-| Teacher | teacher@school.com | teacher123 |
-| Student | student@school.com | student123 |
-
-Or register new accounts via `/register` page.
-
-### Database Commands
+### Build
 
 ```bash
-# Generate Prisma client
-npx prisma generate
-
-# Push schema changes
-npx prisma db push
-
-# Open database UI
-npx prisma studio
-
-# Reset database
-rm prisma/dev.db
-npx prisma db push
-npx tsx prisma/seed.ts
+npm run build
+npm start
 ```
 
-### Migration to PostgreSQL
+## API Endpoints
 
-1. Create a Supabase project
-2. Update `.env` with your DATABASE_URL
-3. Update `prisma/schema.prisma`: `provider = "postgresql"`
-4. Run `npx prisma db push`
+### Authentication
+- `POST /api/auth/register` - Register new teacher
+- `GET /api/auth/session` - Get current session
 
-## Project Structure
+### Progress
+- `GET /api/progress?userId=&grade=&subject=` - Get progress
+- `POST /api/progress` - Save/update progress
+- `DELETE /api/progress` - Reset progress
 
-```
-├── app/                    # Next.js App Router
-│   ├── login/              # Login page
-│   ├── register/           # Registration page
-│   ├── student/            # Student portal
-│   │   ├── grades/         # Grade selection
-│   │   └── subjects/       # Subject & week selection
-│   ├── teacher/            # Teacher portal
-│   │   ├── classes/        # Class management
-│   │   └── students/       # Student directory
-│   └── api/                # API routes
-├── components/             # React components
-│   └── ui/                 # Radix UI components
-├── data/                   # Question and vocabulary data
-├── lib/                    # Utilities (db, auth, utils)
-├── prisma/                 # Database schema and seeds
-└── types/                  # TypeScript definitions
-```
+### Quiz
+- `GET /api/quiz?grade=&subject=&weekId=` - Get quiz questions
 
-## API Routes
-
-### Public APIs
-- `GET /api/subjects` - Get subject data
-- `POST /api/auth/register` - Register new user
-
-### Student APIs (Authenticated)
-- `GET /api/progress` - Get student progress
-- `POST /api/progress` - Update student progress
-- `POST /api/quiz` - Start quiz session
-- `PUT /api/quiz` - Submit quiz answers
-
-### Excel Import/Export
-
-**Import Template Format:**
-| Column | Required | Description |
-|--------|----------|-------------|
-| Email | ✓ | Student email (unique) |
-| FirstName | ✓ | First name |
-| LastName | ✓ | Last name |
-| Grade | ✓ | G1, G2, G3, G4, or G5 |
-| Password | - | Defaults to password123 |
-| ParentEmail | - | Parent contact email |
-| ParentPhone | - | Parent contact phone |
-
-**Features:**
-- Download template from class page
-- Upload .xlsx, .xls, or .csv files
-- View import results with success/failure counts
-- Error log for failed rows
-- Export class roster with progress stats
-
-### Teacher APIs (Authenticated)
-- `GET /api/teacher/dashboard` - Get dashboard stats
-- `GET /api/teacher/classes` - List all classes
-- `POST /api/teacher/classes` - Create new class
-- `GET /api/teacher/classes/[id]` - Get class details
-- `DELETE /api/teacher/classes/[id]` - Delete class
-- `POST /api/teacher/classes/[id]/students` - Add student to class
+### Teacher
+- `GET /api/teacher/classes` - List classes
+- `POST /api/teacher/classes` - Create class
+- `POST /api/teacher/classes/[id]/students/import` - Bulk import
+- `POST /api/teacher/classes/[id]/students/enroll-existing` - Add student
 - `DELETE /api/teacher/classes/[id]/students/[studentId]` - Remove student
-- `POST /api/teacher/classes/[id]/students/import` - Bulk import from Excel
-- `GET /api/teacher/classes/[id]/students/export` - Export to Excel
-- `GET /api/teacher/students` - List all students (for enrollment)
+- `GET /api/teacher/classes/[id]/students/export` - Export roster
 
-## Game Mechanics
-
-### Difficulty Levels
-
-| Level | Timer | Hints |
-|-------|-------|-------|
-| Easy | None | Yes |
-| Medium | 30s | Yes |
-| Hard | 15s | No |
+## Progress System
 
 ### Scoring
+- **Average Score:** Calculated from attempted weeks only
+- **Completion Threshold:** 70% accuracy required to unlock next week
+- **Plant Growth:**
+  - 0-20%: 🌱 Seedling
+  - 21-50%: 🌿 Sapling
+  - 51-80%: 🌳 Young Tree
+  - 81-100%: 🌳✨ Mighty Oak
 
-- Correct answer: +10 points
-- Speed bonus: +5 points (under 10s)
-- Perfect week: +20 bonus points
+### Week Unlocking
+- Week 2 is unlocked by default
+- Completing a week (70%+) automatically creates and unlocks the next week
 
-### Progress Stages
+## Version History
 
-| Progress | Stage | Emoji |
-|----------|-------|-------|
-| 0-20% | Seedling | 🌱 |
-| 21-50% | Sapling | 🌿 |
-| 51-80% | Young Tree | 🌳 |
-| 81-100% | Mighty Oak | 🌳✨ |
+### v2.6.1 (2026-04-27)
+- **Bug Fixes:**
+  - Fixed week unlock after completion
+  - Fixed progress saving (completion percentage calculation)
+  - Fixed average score calculation (excludes unattempted weeks)
+  - Changed "Total Points" to "Average Score" for clarity
 
-## Deployment
+### v2.6.0 (2026-04-25)
+- **New Features:**
+  - Teacher-only registration
+  - Single student addition
+  - Bulk student import via Excel
+  - Class roster export
+- **Removed:**
+  - Student self-registration
+  - Standalone students directory
 
-### Vercel (Recommended)
+### v2.5.0
+- Complete Teacher and Student Portals
 
-```bash
-# Install Vercel CLI
-npm i -g vercel
+### v2.4.0
+- Teacher Dashboard and Student Game UI
 
-# Deploy
-vercel
-```
-
-### Environment Variables
-
-Set these in your deployment platform:
-
-```env
-DATABASE_URL=your_database_url
-NEXTAUTH_SECRET=your_secret_key
-NEXTAUTH_URL=your_domain_url
-```
-
-## Legacy Apps
-
-The original Vite + React app and Streamlit app are preserved in the parent directory:
-
-- **React App**: `../app/` - Local frontend
-- **Streamlit App**: `../pages/` - Teacher interface
-
-## Contributing
-
-1. Edit question data in `weeklytest/*.md`
-2. Run parser: `node ../app/scripts/parseVocabularyMd.cjs`
-3. Data is automatically available in Next.js app
+### v2.3.0
+- NextAuth v5 authentication
 
 ## License
 

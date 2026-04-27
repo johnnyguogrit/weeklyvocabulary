@@ -6,6 +6,16 @@
 - **Test Date**: 2026-04-27
 - **Version**: 2.6.0
 
+## Important Flow Notes
+
+**v2.6.0+ Changes:**
+- **Student Self-Registration**: DISABLED - Only teachers can register
+- **Student Creation**: Teachers create student accounts directly within class pages
+- **No Standalone Students**: No `/teacher/students` directory - all students must belong to a class
+- **Two Ways to Add Students**:
+  1. **Add Single**: Create one student at a time via dialog form
+  2. **Import Excel**: Bulk create students from Excel/CSV file
+
 ---
 
 ## Test Scenario 1: Teacher Registration & Class Setup
@@ -69,27 +79,33 @@
 
 ---
 
-### TC-003: Add Single Student to Class
+### TC-003: Add Single Student (Create New Account)
 
 | Field | Value |
 |-------|-------|
 | **Test ID** | TC-003 |
-| **Title** | Add existing student to class |
+| **Title** | Create new student account and add to class |
 | **Priority** | High |
-| **Preconditions** | Class exists, student accounts exist |
+| **Preconditions** | Class exists |
 
 **Steps:**
 
 1. Navigate to class detail page (`/teacher/classes/[class-id]`)
-2. Click "Add Student" button
-3. Browse student directory
-4. Select student: `student1@example.com`
-5. Click "Add to Class"
+2. Click "Add Single" button
+3. Fill in student details:
+   - First Name: `Diana`
+   - Last Name: `Ho`
+   - Email: `diana.ho@example.com`
+   - Password: (leave empty for default)
+   - Parent Email: `parent.diana@example.com`
+   - Parent Phone: `+852-98765433`
+4. Click "Add Student"
 
 **Expected Result:**
-- Success message: "Student enrolled successfully"
+- Success message: "Student added successfully!"
 - Student appears in class roster
 - Student count updates to 1
+- Student card shows: Diana Ho (diana.ho@example.com)
 
 **Actual Result:** _________________
 
@@ -110,9 +126,9 @@
 
 ```csv
 Email,FirstName,LastName,Grade,Password,ParentEmail,ParentPhone
-student.test1@example.com,Alice,Chan,G1,Pass123,parent1@example.com,+852-98765432
-student.test2@example.com,Bob,Wong,G1,Pass456,parent2@example.com,+852-87654321
-student.test3@example.com,Charlie,Lee,G1,Pass789,parent3@example.com,+852-76543210
+alice.chan@example.com,Alice,Chan,G1,Pass123,parent.alice@example.com,+852-98765432
+bob.wong@example.com,Bob,Wong,G1,Pass456,parent.bob@example.com,+852-87654321
+charlie.lee@example.com,Charlie,Lee,G1,Pass789,parent.charlie@example.com,+852-76543210
 ```
 
 **Steps:**
@@ -130,6 +146,8 @@ student.test3@example.com,Charlie,Lee,G1,Pass789,parent3@example.com,+852-765432
 - Success message: "Imported 3 students successfully"
 - All 3 students appear in class roster
 - Student count updates to 4 (1 from TC-003 + 3 imported)
+
+**Note:** Students are created directly during import - no standalone student accounts exist
 
 **Actual Result:** _________________
 
@@ -192,7 +210,7 @@ student.test3@example.com,Charlie,Lee,G1,Pass789,parent3@example.com,+852-765432
 
 ---
 
-### TC-007: Remove Student from Class
+### TC-006: View Student Progress in Class
 
 | Field | Value |
 |-------|-------|
@@ -204,7 +222,7 @@ student.test3@example.com,Charlie,Lee,G1,Pass789,parent3@example.com,+852-765432
 **Steps:**
 
 1. Navigate to class detail page
-2. Find student: `student.test3@example.com`
+2. Find student: `charlie.lee@example.com`
 3. Click trash icon (Remove button)
 4. Confirm removal in dialog
 
@@ -236,14 +254,14 @@ student.test3@example.com,Charlie,Lee,G1,Pass789,parent3@example.com,+852-765432
 1. Navigate to http://localhost:3000
 2. Click "Login" button
 3. Enter credentials:
-   - Email: `student.test1@example.com`
+   - Email: `alice.chan@example.com`
    - Password: `Pass123`
 4. Click "Sign In"
 
 **Expected Result:**
 - Login successful
 - Redirected to student welcome page (`/student`)
-- Welcome message displays student name
+- Welcome message displays student name: "Alice Chan"
 
 **Actual Result:** _________________
 
@@ -525,7 +543,7 @@ student.test3@example.com,Charlie,Lee,G1,Pass789,parent3@example.com,+852-765432
 
 1. Login as teacher (`teacher.test@example.com`)
 2. Navigate to "G1 Test Class 2026"
-3. Find student: `student.test1@example.com`
+3. Find student: `alice.chan@example.com`
 4. Check progress displayed on student card
 
 **Expected Result:**
@@ -576,12 +594,14 @@ student.test3@example.com,Charlie,Lee,G1,Pass789,parent3@example.com,+852-765432
 | Role | Teacher |
 
 ### Student Accounts
-| Name | Email | Password | Grade |
-|------|-------|----------|-------|
-| Alice Chan | student.test1@example.com | Pass123 | G1 |
-| Bob Wong | student.test2@example.com | Pass456 | G1 |
-| Charlie Lee | student.test3@example.com | Pass789 | G1 |
-| Diana Ho | student1@example.com | (existing) | G1 |
+| Name | Email | Password | Grade | Created Via |
+|------|-------|----------|-------|-------------|
+| Diana Ho | diana.ho@example.com | password123 (default) | G1 | TC-003 (Add Single) |
+| Alice Chan | alice.chan@example.com | Pass123 | G1 | TC-004 (Import) |
+| Bob Wong | bob.wong@example.com | Pass456 | G1 | TC-004 (Import) |
+| Charlie Lee | charlie.lee@example.com | Pass789 | G1 | TC-004 (Import) |
+
+**Note:** All students are created by teachers and automatically enrolled in a class. No standalone "student directory" exists.
 
 ---
 
@@ -599,4 +619,101 @@ If any test fails, document below:
 
 | Date | Tester | Pass | Fail | Blocked | Notes |
 |------|--------|------|------|---------|-------|
-| 2026-04-27 | | | | | |
+| 2026-04-27 | Claude | 3 | 0 | 0 | v2.6.0 - Student registration disabled |
+
+---
+
+## Test Results - 2026-04-27
+
+### ✅ TC-REG-001: Student Self-Registration Disabled
+**Status:** PASS
+
+**Verification:**
+- Register page only shows "Teacher Registration"
+- Note displayed: "Student accounts are created by teachers through class import"
+- No student role selection option available
+- Attempting to register as student returns error
+
+---
+
+### ✅ TC-REG-002: No Standalone Students Page
+**Status:** PASS
+
+**Verification:**
+- `/teacher/students` route removed
+- `/api/teacher/students` API endpoint removed
+- Navigation no longer references students directory
+
+---
+
+### ✅ TC-REG-003: Class Page Student Management
+**Status:** PASS
+
+**Verification:**
+- "Add Single" button available for individual student creation
+- "Import" button available for bulk Excel import
+- "Export" button for downloading class roster
+- "Template" button for downloading import template
+- All operations happen within class context - no orphan students
+
+---
+
+## Bug Fixes - 2026-04-27 (v2.6.1)
+
+### 🐛 BUG-001: Progress Not Saving After Quiz Completion
+**Status:** FIXED
+
+**Issues:**
+1. Completing a week did not unlock the next week
+2. "Grade 5 • 0/13 weeks completed" was not updating
+3. Total Score was not updating
+4. Vocabulary Garden progress bar was not updating
+
+**Root Causes:**
+1. Completion calculation used cumulative score instead of accuracy percentage
+2. Next week was not being created when completing a week (only updated if existed)
+3. Total score was averaged over ALL weeks (including unattempted weeks with 0 score)
+
+**Fixes Applied:**
+| File | Change |
+|------|--------|
+| `app/student/[grade]/[subject]/[weekId]/page.tsx` | Fixed completion calculation using accuracy |
+| `app/api/progress/route.ts` | Changed `updateMany` to `upsert` for next week creation |
+| `app/api/progress/route.ts` | Total score now only counts attempted weeks |
+| `app/student/[grade]/[subject]/page.tsx` | Label changed from "Total Points" to "Average Score" |
+
+**Verification Steps:**
+1. Complete Week 2 with 70%+ accuracy
+2. Verify Week 3 is unlocked and visible
+3. Verify "Grade 5 • 1/13 weeks completed" updates
+4. Verify "Average Score" shows correct percentage
+5. Verify progress bar updates correctly
+
+---
+
+## API Changes Summary
+
+### New Endpoints
+- `POST /api/teacher/classes/[id]/students/enroll-existing` - Enroll student by email to class
+
+### Removed Endpoints
+- `GET /api/teacher/students` - No longer needed (no student directory)
+- `DELETE /api/teacher/students/[id]` - Use class-specific endpoint instead
+
+### Existing Endpoints (Unchanged)
+- `POST /api/teacher/classes/[id]/students/import` - Bulk import students
+- `GET /api/teacher/classes/[id]/students/export` - Export class roster
+- `DELETE /api/teacher/classes/[id]/students/[studentId]` - Remove from class
+
+---
+
+## Files Modified
+
+| File | Change |
+|------|--------|
+| `next-app/app/register/page.tsx` | Removed student registration option |
+| `next-app/app/teacher/students/page.tsx` | **DELETED** |
+| `next-app/app/api/teacher/students/route.ts` | **DELETED** |
+| `next-app/app/teacher/classes/[id]/page.tsx` | Added single student creation dialog |
+| `next-app/app/api/teacher/classes/[id]/students/enroll-existing/route.ts` | **NEW** - Enroll by email |
+| `TEST_CASES.md` | Updated to reflect new flow | |

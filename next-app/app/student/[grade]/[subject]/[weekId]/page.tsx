@@ -10,17 +10,7 @@ import { toast } from 'sonner'
 import { ChevronLeft, Clock, Trophy, Heart, Lightbulb } from 'lucide-react'
 import confetti from 'canvas-confetti'
 import { getSubjectData } from '@/data/questionGenerator'
-
-interface Question {
-  id: string
-  week: number
-  keyword: string
-  question: string
-  options: string[]
-  answer: string
-  explanation: string
-  passage?: string
-}
+import type { Question } from '@/types/game'
 
 export default function QuizPage() {
   const router = useRouter()
@@ -82,7 +72,7 @@ export default function QuizPage() {
   const handleAnswer = useCallback(async (option: string | null) => {
     if (showResult) return
 
-    const correct = option === currentQuestion?.answer
+    const correct = option === currentQuestion?.correctAnswer
     const newScore = correct ? score + 10 : score
     const newCorrectCount = correct ? correctCount + 1 : correctCount
 
@@ -104,23 +94,35 @@ export default function QuizPage() {
     try {
       const totalQuestions = questions.length
       const isLastQuestion = currentIndex === totalQuestions - 1
-      const completed = isLastQuestion && (newScore / totalQuestions) >= 0.7
+      // 修复: 使用正确率而非累计分数来判断完成
+      const accuracy = newCorrectCount / totalQuestions
+      const completed = isLastQuestion && accuracy >= 0.7
 
-      await fetch('/api/progress', {
+      const response = await fetch('/api/progress', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
         body: JSON.stringify({
           grade,
           subject,
           weekId,
-          score: newScore,
+          score: Math.round(accuracy * 100),
           completed,
           quizData: {
             questionsCorrect: newCorrectCount,
-            questionsTotal: currentIndex + 1
+            questionsTotal: totalQuestions,
+            keywordsMastered: []
           }
         })
       })
+
+      if (!response.ok) {
+        const error = await response.json()
+        console.error('Failed to save progress:', error)
+      } else {
+        const result = await response.json()
+        console.log('Progress saved:', result)
+      }
     } catch (error) {
       console.error('Failed to save progress:', error)
     }
@@ -141,7 +143,7 @@ export default function QuizPage() {
   const handleHint = () => {
     if (hintsUsed < 3 && !showResult && difficulty !== 'HARD') {
       setHintsUsed(prev => prev + 1)
-      toast.success(`Hint: The answer is "${currentQuestion?.answer}"`)
+      toast.success(`Hint: The answer is "${currentQuestion?.correctAnswer}"`)
     }
   }
 
@@ -208,8 +210,8 @@ export default function QuizPage() {
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                    Keyword: {currentQuestion?.keyword}
+                  <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
+                    Week {weekId}
                   </span>
                   {difficulty !== 'HARD' && (
                     <Button
@@ -224,12 +226,6 @@ export default function QuizPage() {
                   )}
                 </div>
 
-                {currentQuestion?.passage && (
-                  <div className="mb-6 p-4 bg-amber-50 rounded-lg border border-amber-200">
-                    <p className="text-gray-700 text-sm leading-relaxed">{currentQuestion.passage}</p>
-                  </div>
-                )}
-
                 <h2 className="text-xl font-semibold text-gray-900 mb-6">
                   {currentQuestion?.question}
                 </h2>
@@ -237,15 +233,16 @@ export default function QuizPage() {
                 <div className="space-y-3">
                   {currentQuestion?.options.map((option, index) => {
                     const label = getOptionLabel(index)
-                    const isSelected = selectedOption === label
-                    const isCorrectAnswer = label === currentQuestion.answer
+                    const isSelected = selectedOption === option
+                    // Compare the actual option text with correctAnswer
+                    const isCorrectAnswer = option === currentQuestion.correctAnswer
                     const showCorrect = showResult && isCorrectAnswer
                     const showWrong = showResult && isSelected && !isCorrectAnswer
 
                     return (
                       <motion.button
                         key={index}
-                        onClick={() => !showResult && handleAnswer(label)}
+                        onClick={() => !showResult && handleAnswer(option)}
                         disabled={showResult}
                         whileHover={{ scale: showResult ? 1 : 1.02 }}
                         whileTap={{ scale: showResult ? 1 : 0.98 }}

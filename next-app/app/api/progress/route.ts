@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/db';
+import { auth } from '@/lib/auth';
 
 // GET /api/progress - Get student progress
 export async function GET(request: NextRequest) {
@@ -97,12 +98,29 @@ export async function GET(request: NextRequest) {
 // POST /api/progress - Create or update student progress
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
-    const { userId, grade, subject, weekId, score, completed, quizData } = body;
+    const session = await auth();
+    if (!session?.user) {
+      console.error('[Progress API] Unauthorized access attempt');
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
 
-    if (!userId || !grade || !subject) {
+    const body = await request.json();
+    const { grade, subject, weekId, score, completed, quizData } = body;
+    const userId = session.user.id;
+
+    console.log('[Progress API] Saving progress:', {
+      userId,
+      grade,
+      subject,
+      weekId,
+      score,
+      completed,
+      quizData
+    });
+
+    if (!grade || !subject) {
       return NextResponse.json(
-        { error: 'userId, grade, and subject are required' },
+        { error: 'grade and subject are required' },
         { status: 400 }
       );
     }
@@ -156,6 +174,7 @@ export async function POST(request: NextRequest) {
             locked: weekNum > 2, // First week (2) is unlocked by default
             completed: completed || false,
             score: score || 0,
+            keywordsMastered: JSON.stringify(quizData?.keywordsMastered || []),
           },
         });
       } else {
@@ -194,17 +213,33 @@ export async function POST(request: NextRequest) {
 
       // Unlock next week if current week is completed
       if (completed && weekProgress) {
-        // Find next week
         const nextWeekId = weekNum + 1;
-        await prisma.weekProgress.updateMany({
+        console.log(`[Progress API] Week ${weekNum} completed, unlocking week ${nextWeekId}`);
+        // Use upsert to create the next week if it doesn't exist, or unlock if it does
+        await prisma.weekProgress.upsert({
           where: {
+            studentProgressId_weekId: {
+              studentProgressId: studentProgress.id,
+              weekId: nextWeekId,
+            },
+          },
+          create: {
             studentProgressId: studentProgress.id,
             weekId: nextWeekId,
+            locked: false, // Unlock the next week
+            completed: false,
+            score: 0,
+            questionsCorrect: 0,
+            questionsTotal: 0,
+            readingCompCorrect: 0,
+            readingCompTotal: 0,
+            keywordsMastered: JSON.stringify([]),
           },
-          data: {
-            locked: false,
+          update: {
+            locked: false, // Unlock if it already exists
           },
         });
+        console.log(`[Progress API] Week ${nextWeekId} unlocked`);
       }
 
       // Recalculate overall progress
@@ -214,7 +249,7 @@ export async function POST(request: NextRequest) {
 
       const completedWeeks = allWeeks.filter((w) => w.completed).length;
       const totalWeeks = allWeeks.length;
-      const overallProgress = totalWeeks > 0 ? (completedWeeks / totalWeeks) * 100 : 0;
+      const overallProgress = totalWeeks > 0 ? Math.round((completedWeeks / totalWeeks) * 100) : 0;
 
       // Calculate plant stage
       let currentPlantStage = 'SEEDLING';
@@ -222,8 +257,11 @@ export async function POST(request: NextRequest) {
       else if (overallProgress >= 51) currentPlantStage = 'YOUNG_TREE';
       else if (overallProgress >= 21) currentPlantStage = 'SAPLING';
 
-      // Calculate total score
-      const totalScore = allWeeks.reduce((sum, w) => sum + w.score, 0);
+      // Calculate average score across attempted weeks only (exclude weeks with no questions)
+      const attemptedWeeks = allWeeks.filter((w) => w.questionsTotal > 0);
+      const averageScore = attemptedWeeks.length > 0
+        ? Math.round(attemptedWeeks.reduce((sum, w) => sum + w.score, 0) / attemptedWeeks.length)
+        : 0;
 
       // Update StudentProgress
       studentProgress = await prisma.studentProgress.update({
@@ -231,10 +269,18 @@ export async function POST(request: NextRequest) {
         data: {
           overallProgress,
           currentPlantStage,
-          totalScore,
+          totalScore: averageScore,
         },
       });
     }
+
+    console.log('[Progress API] Final state:', {
+      totalScore: studentProgress.totalScore,
+      overallProgress: studentProgress.overallProgress,
+      currentPlantStage: studentProgress.currentPlantStage,
+      completedWeeks,
+      totalWeeks
+    });
 
     return NextResponse.json({
       success: true,
