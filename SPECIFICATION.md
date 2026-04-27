@@ -4,7 +4,7 @@
 
 | Field | Value |
 |-------|-------|
-| Version | 2.5.0 |
+| Version | 2.6.0 |
 | Last Updated | 2026-04-27 |
 | Status | **Stable** |
 
@@ -84,7 +84,7 @@ next-app/
 │   │   ├── page.tsx               # Dashboard overview
 │   │   ├── classes/               # Class management
 │   │   │   ├── page.tsx           # Class list
-│   │   │   └── [id]/page.tsx      # Class details + students
+│   │   │   └── [id]/page.tsx      # Class details + students + import/export
 │   │   └── students/              # Student directory
 │   │       └── page.tsx           # All students (for enrollment)
 │   ├── api/                       # API Routes
@@ -255,7 +255,37 @@ npx prisma studio   # View database in browser
 | `/api/teacher/classes/[id]` | DELETE | Delete a class |
 | `/api/teacher/classes/[id]/students` | POST | Add student to class |
 | `/api/teacher/classes/[id]/students/[studentId]` | DELETE | Remove student from class |
+| `/api/teacher/classes/[id]/students/import` | POST | Bulk import students from Excel |
+| `/api/teacher/classes/[id]/students/export` | GET | Export students to Excel |
 | `/api/teacher/students` | GET | Get all students (for enrollment) |
+
+### 7.6 Bulk Import/Excel Format
+**Excel Template Columns:**
+| Column | Required | Description |
+|--------|----------|-------------|
+| Email | Yes | Student email address (must be unique) |
+| FirstName | Yes | Student first name |
+| LastName | Yes | Student last name |
+| Grade | Yes | Grade level (G1, G2, G3, G4, G5) |
+| Password | No | Student password (default: password123) |
+| ParentEmail | No | Parent contact email |
+| ParentPhone | No | Parent contact phone |
+
+**Import Response:**
+```json
+{
+  "success": true,
+  "results": {
+    "total": 25,
+    "success": 23,
+    "failed": 2,
+    "errors": [
+      {"row": 5, "email": "invalid@", "error": "Invalid email format"},
+      {"row": 12, "email": "duplicate@example.com", "error": "Email already exists"}
+    ]
+  }
+}
+```
 
 ### 7.4 Response Examples
 
@@ -337,6 +367,7 @@ node scripts/parseUnifiedVocabulary.cjs
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 2.6.0 | 2026-04-27 | **BULK IMPORT/EXPORT**: Excel-based student management<br>- ImportBatch model for tracking bulk operations<br>- Excel import API (POST /students/import)<br>- Excel export API (GET /students/export)<br>- Parent contact fields (parentEmail, parentPhone)<br>- Download template functionality<br>- Import results display with error logging<br>- xlsx library integration |
 | 2.5.0 | 2026-04-27 | **TEACHER/STUDENT PORTAL COMPLETE**: Full portal implementation<br>- Student welcome screen with grade/subject selection<br>- Week map with progress visualization<br>- Quiz interface with difficulty levels<br>- Reading comprehension section<br>- Teacher dashboard with class management<br>- Student enrollment system<br>- Class detail view with student roster<br>- Progress tracking per student/subject |
 | 2.4.0 | 2026-04-27 | **UI COMPONENTS ADDED**: Radix UI integration<br>- Dialog, Select, Popover, Dropdown Menu<br>- Progress, Scroll Area, Separator, Tabs<br>- Label, Slot components<br>- Form components with validation |
 | 2.3.0 | 2026-04-27 | **NEXTAUTH COMPLETE**: Full authentication system<br>- NextAuth v5 (Credentials provider) implemented<br>- Login page with role-based redirect<br>- Middleware route protection<br>- Register API endpoint<br>- Demo accounts (admin/teacher/student)<br>- JWT session strategy |

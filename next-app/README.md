@@ -1,6 +1,6 @@
 # Weekly Vocabulary Adventure - Next.js
 
-> **Version**: 2.5.0 | **Status**: Stable
+> **Version**: 2.6.0 | **Status**: Stable
 
 A gamified vocabulary learning application for Grades 1-5, built with Next.js 16, Prisma, and SQLite.
 
@@ -17,6 +17,9 @@ A gamified vocabulary learning application for Grades 1-5, built with Next.js 16
 - 👨‍🏫 **Dashboard**: Overview of classes and student progress
 - 🏫 **Class Management**: Create and manage classes
 - 👥 **Student Enrollment**: Add/remove students from classes
+- 📥 **Bulk Import**: Import students from Excel files
+- 📤 **Bulk Export**: Export student data to Excel
+- 👨‍👩‍👧 **Parent Contacts**: Store parent email and phone
 - 📈 **Progress Monitoring**: View individual student progress by subject
 
 ### Authentication
@@ -138,6 +141,26 @@ npx tsx prisma/seed.ts
 - `POST /api/quiz` - Start quiz session
 - `PUT /api/quiz` - Submit quiz answers
 
+### Excel Import/Export
+
+**Import Template Format:**
+| Column | Required | Description |
+|--------|----------|-------------|
+| Email | ✓ | Student email (unique) |
+| FirstName | ✓ | First name |
+| LastName | ✓ | Last name |
+| Grade | ✓ | G1, G2, G3, G4, or G5 |
+| Password | - | Defaults to password123 |
+| ParentEmail | - | Parent contact email |
+| ParentPhone | - | Parent contact phone |
+
+**Features:**
+- Download template from class page
+- Upload .xlsx, .xls, or .csv files
+- View import results with success/failure counts
+- Error log for failed rows
+- Export class roster with progress stats
+
 ### Teacher APIs (Authenticated)
 - `GET /api/teacher/dashboard` - Get dashboard stats
 - `GET /api/teacher/classes` - List all classes
@@ -146,6 +169,8 @@ npx tsx prisma/seed.ts
 - `DELETE /api/teacher/classes/[id]` - Delete class
 - `POST /api/teacher/classes/[id]/students` - Add student to class
 - `DELETE /api/teacher/classes/[id]/students/[studentId]` - Remove student
+- `POST /api/teacher/classes/[id]/students/import` - Bulk import from Excel
+- `GET /api/teacher/classes/[id]/students/export` - Export to Excel
 - `GET /api/teacher/students` - List all students (for enrollment)
 
 ## Game Mechanics

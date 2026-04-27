@@ -27,6 +27,7 @@ model User {
   sessions        Session[]
   enrollments     Enrollment[]
   quizSessions    QuizSession[]
+  importBatches   ImportBatch[]    @relation("ImportBatchTeacher")
 
   @@index([email])
 }
@@ -134,7 +135,8 @@ model Class {
   updatedAt DateTime @updatedAt
 
   // Relations
-  enrollments Enrollment[]
+  enrollments  Enrollment[]
+  importBatches ImportBatch[]
 
   @@index([teacherId])
 }
@@ -146,7 +148,13 @@ model Enrollment {
   studentId  String
   student    User     @relation(fields: [studentId], references: [id], onDelete: Cascade)
 
-  enrolledAt DateTime @default(now())
+  enrolledAt   DateTime    @default(now())
+  parentEmail  String?     // Parent contact email
+  parentPhone  String?     // Parent contact phone
+  importBatchId String?    // Track which import batch added this student
+  comments     String?     // Teacher notes
+
+  importBatch ImportBatch? @relation(fields: [importBatchId], references: [id])
 
   @@unique([classId, studentId])
   @@index([studentId])
@@ -184,4 +192,23 @@ model QuizSession {
   completedAt DateTime?
 
   @@index([userId, status])
+}
+
+// Bulk student import tracking
+model ImportBatch {
+  id           String   @id @default(cuid())
+  teacherId    String
+  teacher      User     @relation("ImportBatchTeacher", fields: [teacherId], references: [id])
+  classId      String
+  class        Class    @relation(fields: [classId], references: [id])
+  fileName     String   // Original filename
+  recordsCount Int      // Total records in file
+  successCount Int      // Successfully imported
+  failureCount Int      // Failed records
+  errorLog     String?  // JSON array: [{row, email, error}]
+  createdAt    DateTime @default(now())
+
+  enrollments  Enrollment[]
+
+  @@index([teacherId, createdAt])
 }

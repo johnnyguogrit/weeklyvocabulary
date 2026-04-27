@@ -22,11 +22,7 @@ export async function GET(
           include: {
             student: {
               include: {
-                studentProgress: {
-                  include: {
-                    weekProgress: true
-                  }
-                }
+                studentProgress: true
               }
             }
           }
