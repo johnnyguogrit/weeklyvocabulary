@@ -1,12 +1,42 @@
-import { auth } from '@/lib/auth'
 import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
+import { jwtDecode } from 'jwt-decode'
 
-export const runtime = 'nodejs'
+// Session cookie name from NextAuth
+const SESSION_COOKIE_NAME = 'next-auth.session-token'
+const SECURE_SESSION_COOKIE_NAME = '__Secure-next-auth.session-token'
 
-export default auth((req) => {
+interface JWTPayload {
+  id: string
+  email: string
+  name?: string
+  picture?: string
+  role?: string
+  iat: number
+  exp: number
+}
+
+function getSessionToken(req: NextRequest): string | null {
+  // Try both cookie names (http vs https)
+  const token = req.cookies.get(SESSION_COOKIE_NAME)?.value ||
+                req.cookies.get(SECURE_SESSION_COOKIE_NAME)?.value
+  return token || null
+}
+
+function decodeSession(token: string): JWTPayload | null {
+  try {
+    return jwtDecode<JWTPayload>(token)
+  } catch {
+    return null
+  }
+}
+
+export default function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl
-  const isLoggedIn = !!req.auth
-  const userRole = (req.auth?.user as any)?.role
+  const token = getSessionToken(req)
+  const session = token ? decodeSession(token) : null
+  const isLoggedIn = !!session
+  const userRole = session?.role
 
   // Public routes
   const isPublicRoute = pathname === '/login' || pathname === '/register' || pathname === '/'
@@ -33,7 +63,7 @@ export default auth((req) => {
   }
 
   return NextResponse.next()
-})
+}
 
 export const config = {
   matcher: [
