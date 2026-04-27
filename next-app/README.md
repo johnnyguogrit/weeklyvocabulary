@@ -68,37 +68,44 @@ next-app/
 
 ### Prerequisites
 - Node.js 18+
-- PostgreSQL database
+- Supabase account (free tier works)
 
-### Installation
+### Quick Start with Supabase
 
+1. **Clone and install:**
 ```bash
 cd next-app
 npm install
 ```
 
-### Environment Variables
+2. **Set up Supabase:**
+   - Create project at https://supabase.com
+   - Go to Database → Connection string
+   - Copy connection strings
 
-Create `.env` file:
-
+3. **Configure `.env`:**
 ```env
-DATABASE_URL="postgresql://user:password@localhost:5432/vocabdb"
-NEXTAUTH_SECRET="your-secret-here"
+# From Supabase Connection Pooling (port 6543)
+DATABASE_URL="postgresql://postgres.projectid:password@aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres"
+
+# From Supabase Direct connection (port 5432)
+DIRECT_URL="postgresql://postgres:password@db.projectid.supabase.co:5432/postgres"
+
+# Generate with: openssl rand -base64 32
+NEXTAUTH_SECRET="your-generated-secret"
 NEXTAUTH_URL="http://localhost:3000"
 ```
 
-### Database Setup
+4. **Create database tables:**
+   - Option A: Run `npx prisma db push` (if connection works)
+   - Option B: Manually run SQL in Supabase SQL Editor (see DEPLOYMENT.md)
 
+5. **Start development:**
 ```bash
-# Generate Prisma client
-npx prisma generate
-
-# Run migrations
-npx prisma migrate dev
-
-# (Optional) Seed database
-npx tsx scripts/seed-db.ts
+npm run dev
 ```
+
+Visit `http://localhost:3000`
 
 ### Development
 
@@ -152,6 +159,33 @@ npm start
 - Week 2 is unlocked by default
 - Completing a week (70%+) automatically creates and unlocks the next week
 
+## Deployment
+
+### Vercel (Recommended)
+
+1. **Push code to GitHub**
+
+2. **Import in Vercel:**
+   - Go to https://vercel.com/new
+   - Import your repository
+   - Framework preset: **Next.js**
+
+3. **Configure Environment Variables:**
+   ```env
+   DATABASE_URL=postgresql://postgres.projectid:password@aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres
+   DIRECT_URL=postgresql://postgres:password@db.projectid.supabase.co:5432/postgres
+   NEXTAUTH_SECRET=your-generated-secret
+   NEXTAUTH_URL=https://your-app.vercel.app
+   ```
+
+4. **Deploy**
+
+### Other Platforms
+
+Use the same environment variables for any Node.js hosting platform.
+
+**See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed Supabase setup instructions.**
+
 ## Version History
 
 ### v2.6.1 (2026-04-27)
@@ -160,6 +194,10 @@ npm start
   - Fixed progress saving (completion percentage calculation)
   - Fixed average score calculation (excludes unattempted weeks)
   - Changed "Total Points" to "Average Score" for clarity
+- **Infrastructure:**
+  - Migrated from SQLite to Supabase PostgreSQL
+  - Added Supabase deployment documentation
+  - Fixed Next.js 16 compatibility (removed deprecated eslint config)
 
 ### v2.6.0 (2026-04-25)
 - **New Features:**

@@ -4,7 +4,8 @@
 
 - **URL**: http://localhost:3000
 - **Test Date**: 2026-04-27
-- **Version**: 2.6.0
+- **Version**: 2.6.1
+- **Database**: Supabase PostgreSQL (Project: weeklyvocabulary)
 
 ## Important Flow Notes
 
@@ -716,4 +717,72 @@ If any test fails, document below:
 | `next-app/app/api/teacher/students/route.ts` | **DELETED** |
 | `next-app/app/teacher/classes/[id]/page.tsx` | Added single student creation dialog |
 | `next-app/app/api/teacher/classes/[id]/students/enroll-existing/route.ts` | **NEW** - Enroll by email |
-| `TEST_CASES.md` | Updated to reflect new flow | |
+| `TEST_CASES.md` | Updated to reflect new flow |
+
+---
+
+## Deployment - Supabase Setup (v2.6.1)
+
+### Supabase Project Configuration
+
+| Setting | Value |
+|---------|-------|
+| **Project Name** | weeklyvocabulary |
+| **Project ID** | udczwafhjuewnzvrcvdq |
+| **Region** | Southeast Asia (Singapore) |
+| **Database** | PostgreSQL |
+| **Status** | Active |
+
+### Connection Strings
+
+**Direct Connection (Port 5432):**
+```
+postgresql://postgres:[PASSWORD]@db.udczwafhjuewnzvrcvdq.supabase.co:5432/postgres
+```
+
+**Connection Pooler (Port 6543):**
+```
+postgresql://postgres.udczwafhjuewnzvrcvdq:[PASSWORD]@aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres
+```
+
+### Environment Variables Required
+
+```env
+DATABASE_URL="postgresql://postgres.udczwafhjuewnzvrcvdq:[PASSWORD]@aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres"
+DIRECT_URL="postgresql://postgres:[PASSWORD]@db.udczwafhjuewnzvrcvdq.supabase.co:5432/postgres"
+NEXTAUTH_SECRET="[GENERATED_SECRET]"
+NEXTAUTH_URL="http://localhost:3000"
+```
+
+### Database Tables Created
+
+All tables manually created via Supabase SQL Editor:
+- `User` - User accounts (teachers/students)
+- `Class` - Teacher classes
+- `Enrollment` - Student-class relationships
+- `StudentProgress` - Student learning progress
+- `WeekProgress` - Week-by-week progress
+- `QuizSession` - Active quiz sessions
+- `ImportBatch` - Bulk import tracking
+
+### Local Development
+
+```bash
+cd next-app
+npm run dev
+# Access at http://localhost:3001 (or 3000)
+```
+
+### Production Deployment (Vercel)
+
+1. Push code to Git repository
+2. Import project in Vercel
+3. Configure environment variables:
+   - `DATABASE_URL` (Supabase Pooler URL)
+   - `DIRECT_URL` (Supabase Direct URL)
+   - `NEXTAUTH_SECRET` (Generate with `openssl rand -base64 32`)
+   - `NEXTAUTH_URL` (Production domain, e.g., `https://your-app.vercel.app`)
+
+---
+
+## Version History
