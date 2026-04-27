@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { auth } from '@/lib/auth'
 import { redirect } from 'next/navigation'
 import { prisma } from '@/lib/db'
@@ -113,17 +114,17 @@ export default async function TeacherPage() {
             {classes.length === 0 ? (
               <div className="text-center py-12">
                 <p className="text-gray-500 mb-4">No classes yet. Create your first class!</p>
-                <a
+                <Link
                   href="/teacher/classes"
                   className="inline-flex items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
                 >
                   Create Class
-                </a>
+                </Link>
               </div>
             ) : (
               <div className="space-y-4">
                 {classes.map((cls) => (
-                  <a
+                  <Link
                     key={cls.id}
                     href={`/teacher/classes/${cls.id}`}
                     className="block p-4 rounded-lg border hover:bg-gray-50 transition-colors"
@@ -135,7 +136,7 @@ export default async function TeacherPage() {
                       </div>
                       <span className="text-gray-400">→</span>
                     </div>
-                  </a>
+                  </Link>
                 ))}
               </div>
             )}

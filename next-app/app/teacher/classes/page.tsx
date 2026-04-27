@@ -10,6 +10,7 @@ import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { toast } from 'sonner'
 import { Plus, Users, Trash2 } from 'lucide-react'
+import Link from 'next/link'
 
 interface Class {
   id: string
@@ -88,60 +89,60 @@ export default function ClassesPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
-      {/* Header */}
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <a href="/teacher" className="text-gray-600 hover:text-gray-900">← Back</a>
-              <h1 className="text-2xl font-bold text-gray-900">Classes</h1>
-            </div>
-            <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-              <DialogTrigger asChild>
-                <Button>
-                  <Plus className="h-4 w-4 mr-2" />
-                  New Class
-                </Button>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>Create New Class</DialogTitle>
-                </DialogHeader>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Class Name</Label>
-                    <Input
-                      id="name"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="e.g., G1 Maths Class A"
-                      required
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="grade">Grade</Label>
-                    <Select value={formData.grade} onValueChange={(v) => setFormData({ ...formData, grade: v })}>
-                      <SelectTrigger>
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="G1">Grade 1</SelectItem>
-                        <SelectItem value="G2">Grade 2</SelectItem>
-                        <SelectItem value="G3">Grade 3</SelectItem>
-                        <SelectItem value="G4">Grade 4</SelectItem>
-                        <SelectItem value="G5">Grade 5</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <Button type="submit" className="w-full">Create Class</Button>
-                </form>
-              </DialogContent>
-            </Dialog>
+          <div className="flex items-center gap-4">
+            <Link href="/teacher" className="text-gray-600 hover:text-gray-900">← Back</Link>
+            <h1 className="text-2xl font-bold text-gray-900">Classes</h1>
           </div>
         </div>
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex justify-end mb-6">
+          <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+            <DialogTrigger asChild>
+              <Button>
+                <Plus className="h-4 w-4 mr-2" />
+                New Class
+              </Button>
+            </DialogTrigger>
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle>Create New Class</DialogTitle>
+              </DialogHeader>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="space-y-2">
+                  <Label htmlFor="name">Class Name</Label>
+                  <Input
+                    id="name"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    placeholder="e.g., G1 Maths Class A"
+                    required
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="grade">Grade</Label>
+                  <Select value={formData.grade} onValueChange={(v) => setFormData({ ...formData, grade: v })}>
+                    <SelectTrigger>
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="G1">Grade 1</SelectItem>
+                      <SelectItem value="G2">Grade 2</SelectItem>
+                      <SelectItem value="G3">Grade 3</SelectItem>
+                      <SelectItem value="G4">Grade 4</SelectItem>
+                      <SelectItem value="G5">Grade 5</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <Button type="submit" className="w-full">Create Class</Button>
+              </form>
+            </DialogContent>
+          </Dialog>
+        </div>
+
         {classes.length === 0 ? (
           <Card>
             <CardContent className="text-center py-12">

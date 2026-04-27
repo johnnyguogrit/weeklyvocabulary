@@ -22,19 +22,6 @@ interface Question {
   passage?: string
 }
 
-interface QuizState {
-  questions: Question[]
-  currentIndex: number
-  score: number
-  correctCount: number
-  selectedOption: string | null
-  showResult: boolean
-  isCorrect: boolean | null
-  timeRemaining: number
-  lives: number
-  hintsUsed: number
-}
-
 export default function QuizPage() {
   const router = useRouter()
   const params = useParams()
@@ -42,23 +29,19 @@ export default function QuizPage() {
   const subject = params.subject as string
   const weekId = parseInt(params.weekId as string)
 
-  const [quizState, setQuizState] = useState<QuizState>({
-    questions: [],
-    currentIndex: 0,
-    score: 0,
-    correctCount: 0,
-    selectedOption: null,
-    showResult: false,
-    isCorrect: null,
-    timeRemaining: 30,
-    lives: 3,
-    hintsUsed: 0,
-  })
-
-  const [isLoading, setIsLoading] = useState(true)
+  const [questions, setQuestions] = useState<Question[]>([])
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [score, setScore] = useState(0)
+  const [correctCount, setCorrectCount] = useState(0)
+  const [selectedOption, setSelectedOption] = useState<string | null>(null)
+  const [showResult, setShowResult] = useState(false)
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null)
+  const [timeRemaining, setTimeRemaining] = useState(30)
+  const [lives, setLives] = useState(3)
+  const [hintsUsed, setHintsUsed] = useState(0)
   const [difficulty, setDifficulty] = useState<'EASY' | 'MEDIUM' | 'HARD'>('EASY')
+  const [isLoading, setIsLoading] = useState(true)
 
-  // Load questions
   useEffect(() => {
     const loadQuestions = () => {
       try {
@@ -69,7 +52,7 @@ export default function QuizPage() {
           router.back()
           return
         }
-        setQuizState(prev => ({ ...prev, questions: week.questions }))
+        setQuestions(week.questions)
         setIsLoading(false)
       } catch (error) {
         toast.error('Failed to load questions')
@@ -79,67 +62,49 @@ export default function QuizPage() {
     loadQuestions()
   }, [grade, subject, weekId, router])
 
-  // Timer
   useEffect(() => {
-    if (difficulty === 'EASY' || quizState.showResult || quizState.timeRemaining <= 0) return
+    if (difficulty === 'EASY' || showResult || timeRemaining <= 0) return
 
     const timer = setInterval(() => {
-      setQuizState(prev => {
-        if (prev.timeRemaining <= 1) {
-          // Time's up - treat as wrong answer
+      setTimeRemaining(prev => {
+        if (prev <= 1) {
           handleAnswer(null)
-          return { ...prev, timeRemaining: 30 }
+          return 30
         }
-        return { ...prev, timeRemaining: prev.timeRemaining - 1 }
+        return prev - 1
       })
     }, 1000)
-
     return () => clearInterval(timer)
-  }, [difficulty, quizState.showResult, quizState.timeRemaining])
+  }, [difficulty, showResult, timeRemaining])
 
-  // Update difficulty timer settings
-  useEffect(() => {
-    if (difficulty === 'EASY') {
-      setQuizState(prev => ({ ...prev, timeRemaining: 0, lives: 999 }))
-    } else if (difficulty === 'MEDIUM') {
-      setQuizState(prev => ({ ...prev, timeRemaining: 30, lives: 999 }))
-    } else {
-      setQuizState(prev => ({ ...prev, timeRemaining: 15, lives: 3 }))
-    }
-  }, [difficulty])
-
-  const currentQuestion = quizState.questions[quizState.currentIndex]
+  const currentQuestion = questions[currentIndex]
 
   const handleAnswer = useCallback(async (option: string | null) => {
-    if (quizState.showResult) return
+    if (showResult) return
 
-    const isCorrect = option === currentQuestion?.answer
-    const newScore = isCorrect ? quizState.score + 10 : quizState.score
-    const newCorrectCount = isCorrect ? quizState.correctCount + 1 : quizState.correctCount
+    const correct = option === currentQuestion?.answer
+    const newScore = correct ? score + 10 : score
+    const newCorrectCount = correct ? correctCount + 1 : correctCount
 
-    setQuizState(prev => ({
-      ...prev,
-      selectedOption: option,
-      showResult: true,
-      isCorrect,
-      score: newScore,
-      correctCount: newCorrectCount,
-      lives: isCorrect ? prev.lives : prev.lives - 1,
-    }))
+    setSelectedOption(option)
+    setShowResult(true)
+    setIsCorrect(correct)
+    setScore(newScore)
+    setCorrectCount(newCorrectCount)
+    setLives(correct ? lives : lives - 1)
 
-    if (isCorrect) {
+    if (correct) {
       confetti({ particleCount: 50, spread: 60, origin: { y: 0.7 } })
     }
 
-    // Save progress after each question
     await saveProgress(newScore, newCorrectCount)
-  }, [quizState, currentQuestion])
+  }, [showResult, currentQuestion, score, correctCount, lives])
 
-  const saveProgress = async (score: number, correctCount: number) => {
+  const saveProgress = async (newScore: number, newCorrectCount: number) => {
     try {
-      const totalQuestions = quizState.questions.length
-      const isLastQuestion = quizState.currentIndex === totalQuestions - 1
-      const completed = isLastQuestion && (score / totalQuestions) >= 0.7
+      const totalQuestions = questions.length
+      const isLastQuestion = currentIndex === totalQuestions - 1
+      const completed = isLastQuestion && (newScore / totalQuestions) >= 0.7
 
       await fetch('/api/progress', {
         method: 'POST',
@@ -148,11 +113,11 @@ export default function QuizPage() {
           grade,
           subject,
           weekId,
-          score,
+          score: newScore,
           completed,
           quizData: {
-            questionsCorrect: correctCount,
-            questionsTotal: quizState.currentIndex + 1
+            questionsCorrect: newCorrectCount,
+            questionsTotal: currentIndex + 1
           }
         })
       })
@@ -162,25 +127,21 @@ export default function QuizPage() {
   }
 
   const handleNext = () => {
-    if (quizState.currentIndex < quizState.questions.length - 1) {
-      setQuizState(prev => ({
-        ...prev,
-        currentIndex: prev.currentIndex + 1,
-        selectedOption: null,
-        showResult: false,
-        isCorrect: null,
-        timeRemaining: difficulty === 'HARD' ? 15 : difficulty === 'MEDIUM' ? 30 : 0,
-      }))
+    if (currentIndex < questions.length - 1) {
+      setCurrentIndex(prev => prev + 1)
+      setSelectedOption(null)
+      setShowResult(false)
+      setIsCorrect(null)
+      setTimeRemaining(difficulty === 'HARD' ? 15 : difficulty === 'MEDIUM' ? 30 : 0)
     } else {
-      // Quiz complete
       router.push(`/student/${params.grade}/${params.subject}`)
     }
   }
 
   const handleHint = () => {
-    if (quizState.hintsUsed < 3 && !quizState.showResult && difficulty !== 'HARD') {
-      setQuizState(prev => ({ ...prev, hintsUsed: prev.hintsUsed + 1 }))
-      toast.success(`Hint: The answer starts with "${currentQuestion?.answer}"`)
+    if (hintsUsed < 3 && !showResult && difficulty !== 'HARD') {
+      setHintsUsed(prev => prev + 1)
+      toast.success(`Hint: The answer is "${currentQuestion?.answer}"`)
     }
   }
 
@@ -197,11 +158,10 @@ export default function QuizPage() {
     )
   }
 
-  const progress = ((quizState.currentIndex + 1) / quizState.questions.length) * 100
+  const progress = ((currentIndex + 1) / questions.length) * 100
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
-      {/* Header */}
       <header className="bg-white shadow-sm border-b sticky top-0 z-10">
         <div className="max-w-4xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between mb-2">
@@ -210,27 +170,27 @@ export default function QuizPage() {
             </button>
             <div className="flex items-center gap-4">
               {difficulty !== 'EASY' && (
-                <div className={`flex items-center gap-1 ${quizState.timeRemaining <= 5 ? 'text-red-600' : 'text-gray-600'}`}>
+                <div className={`flex items-center gap-1 ${timeRemaining <= 5 ? 'text-red-600' : 'text-gray-600'}`}>
                   <Clock className="h-5 w-5" />
-                  <span className="font-semibold">{quizState.timeRemaining}s</span>
+                  <span className="font-semibold">{timeRemaining}s</span>
                 </div>
               )}
               {difficulty === 'HARD' && (
                 <div className="flex items-center gap-1 text-red-500">
                   <Heart className="h-5 w-5" />
-                  <span className="font-semibold">{quizState.lives}</span>
+                  <span className="font-semibold">{lives}</span>
                 </div>
               )}
               <div className="flex items-center gap-1 text-yellow-600">
                 <Trophy className="h-5 w-5" />
-                <span className="font-semibold">{quizState.score}</span>
+                <span className="font-semibold">{score}</span>
               </div>
             </div>
           </div>
           <div className="flex items-center gap-4">
             <Progress value={progress} className="h-2 flex-1" />
             <span className="text-sm text-gray-600 whitespace-nowrap">
-              {quizState.currentIndex + 1} / {quizState.questions.length}
+              {currentIndex + 1} / {questions.length}
             </span>
           </div>
         </div>
@@ -239,7 +199,7 @@ export default function QuizPage() {
       <main className="max-w-4xl mx-auto px-4 py-8">
         <AnimatePresence mode="wait">
           <motion.div
-            key={quizState.currentIndex}
+            key={currentIndex}
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -50 }}
@@ -247,7 +207,6 @@ export default function QuizPage() {
           >
             <Card>
               <CardContent className="p-6">
-                {/* Keyword badge */}
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
                     Keyword: {currentQuestion?.keyword}
@@ -257,42 +216,39 @@ export default function QuizPage() {
                       variant="ghost"
                       size="sm"
                       onClick={handleHint}
-                      disabled={quizState.showResult || quizState.hintsUsed >= 3}
+                      disabled={showResult || hintsUsed >= 3}
                     >
                       <Lightbulb className="h-4 w-4 mr-2" />
-                      Hint ({3 - quizState.hintsUsed})
+                      Hint ({3 - hintsUsed})
                     </Button>
                   )}
                 </div>
 
-                {/* Passage if available */}
                 {currentQuestion?.passage && (
                   <div className="mb-6 p-4 bg-amber-50 rounded-lg border border-amber-200">
                     <p className="text-gray-700 text-sm leading-relaxed">{currentQuestion.passage}</p>
                   </div>
                 )}
 
-                {/* Question */}
                 <h2 className="text-xl font-semibold text-gray-900 mb-6">
                   {currentQuestion?.question}
                 </h2>
 
-                {/* Options */}
                 <div className="space-y-3">
                   {currentQuestion?.options.map((option, index) => {
                     const label = getOptionLabel(index)
-                    const isSelected = quizState.selectedOption === label
+                    const isSelected = selectedOption === label
                     const isCorrectAnswer = label === currentQuestion.answer
-                    const showCorrect = quizState.showResult && isCorrectAnswer
-                    const showWrong = quizState.showResult && isSelected && !isCorrectAnswer
+                    const showCorrect = showResult && isCorrectAnswer
+                    const showWrong = showResult && isSelected && !isCorrectAnswer
 
                     return (
                       <motion.button
                         key={index}
-                        onClick={() => !quizState.showResult && handleAnswer(label)}
-                        disabled={quizState.showResult}
-                        whileHover={{ scale: quizState.showResult ? 1 : 1.02 }}
-                        whileTap={{ scale: quizState.showResult ? 1 : 0.98 }}
+                        onClick={() => !showResult && handleAnswer(label)}
+                        disabled={showResult}
+                        whileHover={{ scale: showResult ? 1 : 1.02 }}
+                        whileTap={{ scale: showResult ? 1 : 0.98 }}
                         className={`w-full p-4 text-left rounded-lg border-2 transition-all ${
                           showCorrect
                             ? 'border-green-500 bg-green-50'
@@ -301,7 +257,7 @@ export default function QuizPage() {
                               : isSelected
                                 ? 'border-blue-500 bg-blue-50'
                                 : 'border-gray-200 hover:border-gray-300 bg-white'
-                        } ${quizState.showResult ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+                        } ${showResult ? 'cursor-not-allowed' : 'cursor-pointer'}`}
                       >
                         <div className="flex items-center gap-3">
                           <span className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-semibold ${
@@ -322,8 +278,7 @@ export default function QuizPage() {
                   })}
                 </div>
 
-                {/* Result & Explanation */}
-                {quizState.showResult && (
+                {showResult && (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -331,17 +286,17 @@ export default function QuizPage() {
                   >
                     <div className="flex items-start gap-3">
                       <span className="text-2xl">
-                        {quizState.isCorrect ? '🎉' : '😔'}
+                        {isCorrect ? '🎉' : '😔'}
                       </span>
                       <div className="flex-1">
-                        <p className={`font-semibold ${quizState.isCorrect ? 'text-green-700' : 'text-red-700'}`}>
-                          {quizState.isCorrect ? 'Correct!' : 'Not quite right'}
+                        <p className={`font-semibold ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
+                          {isCorrect ? 'Correct!' : 'Not quite right'}
                         </p>
                         <p className="text-gray-700 mt-1">{currentQuestion?.explanation}</p>
                       </div>
                     </div>
                     <Button onClick={handleNext} className="w-full mt-4">
-                      {quizState.currentIndex < quizState.questions.length - 1 ? 'Next Question' : 'Finish Quiz'}
+                      {currentIndex < questions.length - 1 ? 'Next Question' : 'Finish Quiz'}
                     </Button>
                   </motion.div>
                 )}

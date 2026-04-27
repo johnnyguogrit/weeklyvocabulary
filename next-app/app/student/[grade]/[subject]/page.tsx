@@ -4,10 +4,9 @@ import { auth } from '@/lib/auth'
 import { redirect } from 'next/navigation'
 import { prisma } from '@/lib/db'
 import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Lock, CheckCircle, Play } from 'lucide-react'
+import { Progress } from '@/components/ui/progress'
+import { Lock, CheckCircle } from 'lucide-react'
 
-// Week configuration
 const WEEK_CONFIG = [
   { id: 2, emoji: '🌱', title: 'Week 2', color: 'bg-green-100 border-green-300 text-green-700' },
   { id: 3, emoji: '🌿', title: 'Week 3', color: 'bg-green-100 border-green-300 text-green-700' },
@@ -45,7 +44,6 @@ export default async function WeekMapPage({ params }: { params: Promise<{ grade:
 
   const subjectInfo = SUBJECT_INFO[subject] || { name: subject, emoji: '📚', color: 'from-gray-500 to-gray-700' }
 
-  // Get or create progress for this grade/subject
   let progress = await prisma.studentProgress.findUnique({
     where: {
       userId_grade_subject: {
@@ -59,7 +57,6 @@ export default async function WeekMapPage({ params }: { params: Promise<{ grade:
     }
   })
 
-  // Create progress if doesn't exist
   if (!progress) {
     progress = await prisma.studentProgress.create({
       data: {
@@ -73,7 +70,7 @@ export default async function WeekMapPage({ params }: { params: Promise<{ grade:
         weekProgress: {
           create: WEEK_CONFIG.map(w => ({
             weekId: w.id,
-            locked: w.id !== 2, // Only week 2 is unlocked
+            locked: w.id !== 2,
             completed: false,
             score: 0
           }))
@@ -91,7 +88,6 @@ export default async function WeekMapPage({ params }: { params: Promise<{ grade:
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
-      {/* Header */}
       <header className={`bg-gradient-to-r ${subjectInfo.color} text-white shadow-lg`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
@@ -114,7 +110,6 @@ export default async function WeekMapPage({ params }: { params: Promise<{ grade:
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Plant Progress */}
         <Card className="mb-8">
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
@@ -128,16 +123,9 @@ export default async function WeekMapPage({ params }: { params: Promise<{ grade:
                     : progress.currentPlantStage === 'YOUNG_TREE' ? '🌳'
                       : progress.currentPlantStage === 'SAPLING' ? '🌿' : '🌱'}
                 </div>
-                <p className="text-sm font-medium text-gray-700">
-                  {progress.currentPlantStage.replace(/_/g, ' ').toLowerCase()}
-                </p>
               </div>
             </div>
             <div className="mt-4">
-              <div className="flex justify-between text-sm mb-1">
-                <span className="text-gray-600">Overall Progress</span>
-                <span className="font-medium">{Math.round(progress.overallProgress)}%</span>
-              </div>
               <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
                 <div
                   className="h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full transition-all duration-500"
@@ -148,57 +136,31 @@ export default async function WeekMapPage({ params }: { params: Promise<{ grade:
           </CardContent>
         </Card>
 
-        {/* Week Map */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {WEEK_CONFIG.map((week, index) => {
+          {WEEK_CONFIG.map((week) => {
             const wp = weekProgressMap.get(week.id)
             const isLocked = wp?.locked ?? true
             const isCompleted = wp?.completed ?? false
 
             return (
-              <motion.div
-                key={week.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.03, duration: 0.2 }}
-              >
-                <Card className={`${isLocked ? 'opacity-60' : ''} hover:shadow-lg transition-all`}>
-                  <CardContent className="p-4">
-                    <div className={`border-2 rounded-lg p-4 ${week.color} ${isLocked ? 'bg-gray-50' : ''}`}>
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="text-3xl">{isLocked ? '🔒' : week.emoji}</span>
-                        {isCompleted && <CheckCircle className="h-6 w-6 text-green-600" />}
-                      </div>
-                      <h3 className="font-semibold mb-1">{week.title}</h3>
-                      {wp && (
-                        <div className="text-sm text-gray-600">
-                          Score: {wp.score} points
-                        </div>
-                      )}
+              <Card key={week.id} className={`${isLocked ? 'opacity-60' : ''} hover:shadow-lg transition-all`}>
+                <CardContent className="p-4">
+                  <div className={`border-2 rounded-lg p-4 ${week.color} ${isLocked ? 'bg-gray-50' : ''}`}>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-3xl">{isLocked ? '🔒' : week.emoji}</span>
+                      {isCompleted && <CheckCircle className="h-6 w-6 text-green-600" />}
                     </div>
-                    {!isLocked && (
-                      <Link href={`/student/${grade}/${subject}/${week.id}`}>
-                        <Button className="w-full mt-3" variant={isCompleted ? 'outline' : 'default'}>
-                          {isCompleted ? (
-                            <>Play Again</>
-                          ) : (
-                            <>
-                              <Play className="h-4 w-4 mr-2" />
-                              Start Quiz
-                            </>
-                          )}
-                        </Button>
-                      </Link>
-                    )}
-                    {isLocked && (
-                      <Button className="w-full mt-3" variant="outline" disabled>
-                        <Lock className="h-4 w-4 mr-2" />
-                        Locked
-                      </Button>
-                    )}
-                  </CardContent>
-                </Card>
-              </motion.div>
+                    <h3 className="font-semibold">{week.title}</h3>
+                  </div>
+                  {!isLocked && (
+                    <Link href={`/student/${grade}/${subject}/${week.id}`}>
+                      <button className="w-full mt-3 px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 text-sm font-medium">
+                        {isCompleted ? 'Play Again' : 'Start Quiz'}
+                      </button>
+                    </Link>
+                  )}
+                </CardContent>
+              </Card>
             )
           })}
         </div>

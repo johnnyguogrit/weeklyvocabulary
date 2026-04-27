@@ -4,7 +4,7 @@
 
 | Field | Value |
 |-------|-------|
-| Version | 2.3.0 |
+| Version | 2.5.0 |
 | Last Updated | 2026-04-27 |
 | Status | **Stable** |
 
@@ -72,29 +72,47 @@ Package Manager: npm
 ```
 next-app/
 ├── app/
-│   ├── (student)/                 # Student portal route group
-│   │   ├── layout.tsx             # Student layout
+│   ├── login/                     # Login page
+│   │   └── page.tsx               # Unified login for all roles
+│   ├── register/                  # Registration page
+│   │   └── page.tsx               # Student registration
+│   ├── student/                   # Student portal (new simplified structure)
 │   │   ├── page.tsx               # Welcome screen
-│   │   └── grades/[grade]/        # Grade → Subject selection
-│   ├── (teacher)/                 # Teacher portal route group
-│   │   ├── layout.tsx             # Teacher layout
-│   │   ├── page.tsx               # Dashboard
-│   │   └── students/              # Student management
+│   │   ├── grades/[grade]/        # Grade selection
+│   │   └── subjects/[subject]/    # Subject → Week selection
+│   ├── teacher/                   # Teacher portal
+│   │   ├── page.tsx               # Dashboard overview
+│   │   ├── classes/               # Class management
+│   │   │   ├── page.tsx           # Class list
+│   │   │   └── [id]/page.tsx      # Class details + students
+│   │   └── students/              # Student directory
+│   │       └── page.tsx           # All students (for enrollment)
 │   ├── api/                       # API Routes
+│   │   ├── auth/[...nextauth]/    # NextAuth handler
+│   │   ├── auth/register/route.ts # User registration
 │   │   ├── subjects/route.ts      # Subject data
 │   │   ├── progress/route.ts      # Progress tracking
-│   │   └── quiz/route.ts          # Quiz sessions
-│   └── layout.tsx                 # Root layout
-├── data/                          # Migrated from app/src/data/
+│   │   ├── quiz/route.ts          # Quiz sessions
+│   │   └── teacher/               # Teacher APIs
+│   │       ├── classes/route.ts   # CRUD for classes
+│   │       ├── classes/[id]/      # Class details API
+│   │       ├── students/route.ts  # All students
+│   │       └── dashboard/route.ts # Dashboard stats
+│   ├── layout.tsx                 # Root layout
+│   └── page.tsx                   # Landing/home page
+├── components/
+│   └── ui/                        # Radix UI components
+├── data/                          # Vocabulary data
 │   ├── predefinedQuestions.ts
 │   ├── vocabularyData.ts
 │   ├── questionGenerator.ts
 │   └── translations.ts
 ├── lib/                           # Utilities
+│   ├── auth.ts                    # NextAuth configuration
 │   ├── db.ts                      # Prisma client
 │   └── utils.ts
 ├── prisma/
-│   ├── schema.prisma              # Database schema (SQLite)
+│   ├── schema.prisma              # Database schema
 │   └── seed.ts                    # Seed data script
 └── types/                         # TypeScript definitions
     └── game.ts
@@ -201,7 +219,13 @@ npx prisma studio   # View database in browser
 
 ## 7. API Endpoints
 
-### 7.1 Progress API (`/api/progress`)
+### 7.1 Authentication APIs
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/api/auth/[...nextauth]` | GET/POST | NextAuth handler (sign in/out, session) |
+| `/api/auth/register` | POST | Register new user (student/teacher) |
+
+### 7.2 Progress API (`/api/progress`)
 | Method | Query/Body | Description |
 |--------|------------|-------------|
 | GET | `?userId={id}&grade={G1}&subject={Maths}` | Get student progress |
@@ -209,17 +233,29 @@ npx prisma studio   # View database in browser
 | POST | `{userId, grade, subject, weekId, score, completed, quizData}` | Create/update progress |
 | DELETE | `?userId={id}&grade={G1}&subject={Maths}` | Reset progress |
 
-### 7.2 Quiz API (`/api/quiz`)
+### 7.3 Quiz API (`/api/quiz`)
 | Method | Body | Description |
 |--------|------|-------------|
 | POST | `{userId, grade, subject, weekId, difficulty}` | Start quiz session |
 | PUT | `{sessionId, answers, timeSpent}` | Submit quiz answers |
 
-### 7.3 Subjects API (`/api/subjects`)
+### 7.4 Subjects API (`/api/subjects`)
 | Method | Query | Description |
 |--------|-------|-------------|
 | GET | `?grade={G1}` | Get all subjects for grade |
 | GET | `?grade={G1}&subject={Maths}` | Get specific subject data |
+
+### 7.5 Teacher APIs
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/api/teacher/dashboard` | GET | Get teacher dashboard stats |
+| `/api/teacher/classes` | GET | Get all classes for teacher |
+| `/api/teacher/classes` | POST | Create new class |
+| `/api/teacher/classes/[id]` | GET | Get class details with students |
+| `/api/teacher/classes/[id]` | DELETE | Delete a class |
+| `/api/teacher/classes/[id]/students` | POST | Add student to class |
+| `/api/teacher/classes/[id]/students/[studentId]` | DELETE | Remove student from class |
+| `/api/teacher/students` | GET | Get all students (for enrollment) |
 
 ### 7.4 Response Examples
 
@@ -301,6 +337,8 @@ node scripts/parseUnifiedVocabulary.cjs
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 2.5.0 | 2026-04-27 | **TEACHER/STUDENT PORTAL COMPLETE**: Full portal implementation<br>- Student welcome screen with grade/subject selection<br>- Week map with progress visualization<br>- Quiz interface with difficulty levels<br>- Reading comprehension section<br>- Teacher dashboard with class management<br>- Student enrollment system<br>- Class detail view with student roster<br>- Progress tracking per student/subject |
+| 2.4.0 | 2026-04-27 | **UI COMPONENTS ADDED**: Radix UI integration<br>- Dialog, Select, Popover, Dropdown Menu<br>- Progress, Scroll Area, Separator, Tabs<br>- Label, Slot components<br>- Form components with validation |
 | 2.3.0 | 2026-04-27 | **NEXTAUTH COMPLETE**: Full authentication system<br>- NextAuth v5 (Credentials provider) implemented<br>- Login page with role-based redirect<br>- Middleware route protection<br>- Register API endpoint<br>- Demo accounts (admin/teacher/student)<br>- JWT session strategy |
 | 2.2.0 | 2026-04-27 | **DATABASE API COMPLETE**: Full database integration<br>- Progress API (GET/POST/DELETE) implemented<br>- Quiz API (POST/PUT) with session tracking<br>- Subjects API (GET) with syntax fix<br>- PostgreSQL support (Supabase ready)<br>- Database setup guide and seed script |
 | 2.1.0 | 2026-04-27 | **STREAMLIT REMOVAL**: Streamlit app deprecated and removed<br>- Added parseUnifiedVocabulary.cjs parser<br>- UNIFIED_VOCABULARY.md as single data source<br>- Fixed G5 subject name (Performing Arts & Drama → Performing Arts)<br>- Fixed broken subject names in UNIFIED_VOCABULARY.md<br>- Data sync between React and Next.js apps |
@@ -316,6 +354,6 @@ node scripts/parseUnifiedVocabulary.cjs
 
 ## 10. Next Steps
 
-1. **Immediate**: Run `pnpm db:seed` to create demo accounts
-2. **Short-term**: Build teacher dashboard
-3. **Medium-term**: Production deployment
+1. **Complete**: Teacher and student portals fully functional
+2. **Short-term**: Add reading comprehension content
+3. **Medium-term**: Production deployment (Vercel/Supabase)

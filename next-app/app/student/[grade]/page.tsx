@@ -17,7 +17,6 @@ const SUBJECTS = [
   { id: 'PE', name: 'Physical Education', emoji: '⚽', color: 'from-teal-500 to-teal-700' },
 ]
 
-// G5 uses "Performing Arts" instead of separate "Drama"
 function getSubjectsForGrade(grade: string) {
   if (grade === 'G5') {
     return SUBJECTS.filter(s => s.id !== 'Drama')
@@ -35,7 +34,6 @@ export default async function SubjectPage({ params }: { params: Promise<{ grade:
 
   const subjects = getSubjectsForGrade(grade)
 
-  // Get progress for this grade
   const progressData = await prisma.studentProgress.findMany({
     where: {
       userId: session.user.id,
@@ -47,16 +45,13 @@ export default async function SubjectPage({ params }: { params: Promise<{ grade:
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
-      {/* Header */}
       <header className="bg-white/80 backdrop-blur-sm shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <Link href="/student" className="text-gray-600 hover:text-gray-900">← Back</Link>
-              <div>
-                <h1 className="text-xl font-bold text-gray-900">Choose a Subject</h1>
-                <p className="text-sm text-gray-600">Grade {grade.replace('G', '')}</p>
-              </div>
+          <div className="flex items-center gap-4">
+            <Link href="/student" className="text-gray-600 hover:text-gray-900">← Back</Link>
+            <div>
+              <h1 className="text-xl font-bold text-gray-900">Choose a Subject</h1>
+              <p className="text-sm text-gray-600">Grade {grade.replace('G', '')}</p>
             </div>
           </div>
         </div>

@@ -1,23 +1,40 @@
 # Weekly Vocabulary Adventure - Next.js
 
+> **Version**: 2.5.0 | **Status**: Stable
+
 A gamified vocabulary learning application for Grades 1-5, built with Next.js 16, Prisma, and SQLite.
 
 ## Features
 
+### Student Portal
 - 🎮 **Gamified Learning**: Quiz-based vocabulary learning with points, stages, and rewards
 - 📚 **8 Subjects**: Maths, Science, STEAM, Music, Performing Arts, Drama, Visual Arts, PE
 - 📊 **Progress Tracking**: Track student progress with plant growth stages
-- 👨‍🏫 **Teacher Portal**: Dashboard for managing students and viewing progress
-- 💾 **Database**: SQLite with Prisma ORM (easily migrate to PostgreSQL)
+- 🎯 **Difficulty Levels**: Easy, Medium, Hard with different timers and hints
+- 📖 **Reading Comprehension**: Vocabulary in context passages
+
+### Teacher Portal
+- 👨‍🏫 **Dashboard**: Overview of classes and student progress
+- 🏫 **Class Management**: Create and manage classes
+- 👥 **Student Enrollment**: Add/remove students from classes
+- 📈 **Progress Monitoring**: View individual student progress by subject
+
+### Authentication
+- 🔐 **NextAuth v5**: Secure authentication system
+- 👤 **Role-based Access**: Separate portals for teachers and students
+- 🔄 **Session Management**: JWT-based sessions
 
 ## Tech Stack
 
 - **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript 5.9
 - **Styling**: Tailwind CSS 4
+- **UI Components**: Radix UI
 - **ORM**: Prisma 6.0
 - **Database**: SQLite (local) / PostgreSQL (production)
+- **Authentication**: NextAuth v5
 - **Animations**: Framer Motion
+- **Package Manager**: pnpm
 
 ## Getting Started
 
@@ -54,8 +71,14 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Seed Accounts
 
-- **Teacher**: `teacher@example.com` / `password123`
-- **Student**: `student@example.com`
+After running the seed script, use these accounts:
+
+| Role | Email | Password |
+|------|-------|----------|
+| Teacher | teacher@school.com | teacher123 |
+| Student | student@school.com | student123 |
+
+Or register new accounts via `/register` page.
 
 ### Database Commands
 
@@ -86,22 +109,44 @@ npx tsx prisma/seed.ts
 
 ```
 ├── app/                    # Next.js App Router
-│   ├── (student)/          # Student portal
-│   ├── (teacher)/          # Teacher portal
+│   ├── login/              # Login page
+│   ├── register/           # Registration page
+│   ├── student/            # Student portal
+│   │   ├── grades/         # Grade selection
+│   │   └── subjects/       # Subject & week selection
+│   ├── teacher/            # Teacher portal
+│   │   ├── classes/        # Class management
+│   │   └── students/       # Student directory
 │   └── api/                # API routes
+├── components/             # React components
+│   └── ui/                 # Radix UI components
 ├── data/                   # Question and vocabulary data
 ├── lib/                    # Utilities (db, auth, utils)
 ├── prisma/                 # Database schema and seeds
-├── components/             # React components
 └── types/                  # TypeScript definitions
 ```
 
 ## API Routes
 
+### Public APIs
 - `GET /api/subjects` - Get subject data
+- `POST /api/auth/register` - Register new user
+
+### Student APIs (Authenticated)
 - `GET /api/progress` - Get student progress
 - `POST /api/progress` - Update student progress
 - `POST /api/quiz` - Start quiz session
+- `PUT /api/quiz` - Submit quiz answers
+
+### Teacher APIs (Authenticated)
+- `GET /api/teacher/dashboard` - Get dashboard stats
+- `GET /api/teacher/classes` - List all classes
+- `POST /api/teacher/classes` - Create new class
+- `GET /api/teacher/classes/[id]` - Get class details
+- `DELETE /api/teacher/classes/[id]` - Delete class
+- `POST /api/teacher/classes/[id]/students` - Add student to class
+- `DELETE /api/teacher/classes/[id]/students/[studentId]` - Remove student
+- `GET /api/teacher/students` - List all students (for enrollment)
 
 ## Game Mechanics
 

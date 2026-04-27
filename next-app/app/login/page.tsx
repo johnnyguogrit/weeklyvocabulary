@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { toast } from 'sonner'
+import Link from 'next/link'
 
 export default function LoginPage() {
   const router = useRouter()
@@ -28,14 +29,20 @@ export default function LoginPage() {
         redirect: false
       })
 
+      console.log('Sign in result:', result)
+
       if (result?.error) {
-        toast.error('Invalid email or password')
+        console.error('Sign in error:', result.error)
+        toast.error(`Login failed: ${result.error}`)
+      } else if (result?.ok) {
+        toast.success('Login successful! Redirecting...')
+        // Force a hard redirect to ensure session is loaded
+        window.location.href = '/dashboard'
       } else {
-        toast.success('Login successful!')
-        router.push('/dashboard')
-        router.refresh()
+        toast.error('Unknown error occurred')
       }
     } catch (error) {
+      console.error('Login exception:', error)
       toast.error('Something went wrong')
     } finally {
       setIsLoading(false)
@@ -81,7 +88,14 @@ export default function LoginPage() {
             </Button>
           </form>
 
-          <div className="mt-6 text-center text-sm text-muted-foreground">
+          <div className="mt-6 text-center text-sm">
+            <span className="text-gray-600">Don't have an account? </span>
+            <Link href="/register" className="text-blue-600 hover:underline font-medium">
+              Sign Up
+            </Link>
+          </div>
+
+          <div className="mt-4 text-center text-sm text-muted-foreground">
             <p>Demo Accounts:</p>
             <div className="mt-2 space-y-1 text-xs">
               <p>👨‍🏫 Teacher: teacher@school.com / teacher123</p>

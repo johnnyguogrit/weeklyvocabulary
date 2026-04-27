@@ -7,7 +7,7 @@ export default auth((req) => {
   const userRole = (req.auth?.user as any)?.role
 
   // Public routes
-  const isPublicRoute = pathname === '/login' || pathname === '/'
+  const isPublicRoute = pathname === '/login' || pathname === '/register' || pathname === '/'
 
   // Redirect to login if not authenticated
   if (!isLoggedIn && !isPublicRoute) {
@@ -15,7 +15,7 @@ export default auth((req) => {
   }
 
   // Redirect to dashboard if already logged in
-  if (isLoggedIn && pathname === '/login') {
+  if (isLoggedIn && (pathname === '/login' || pathname === '/register')) {
     return NextResponse.redirect(new URL('/dashboard', req.url))
   }
 
