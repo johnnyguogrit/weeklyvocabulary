@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 flex flex-col items-center justify-center p-4" suppressHydrationWarning>
       <div className="text-center max-w-2xl">
         <div className="text-8xl mb-6 animate-bounce">🌱</div>
         <h1 className="text-5xl font-bold text-gray-900 mb-4">
