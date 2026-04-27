@@ -2,8 +2,11 @@
 
 A gamified vocabulary learning application for Grades 1-5 covering 8 academic subjects (Maths, Science, STEAM, Music, Performing Arts, Drama, Visual Arts, PE).
 
+## 🚀 Live Demo
+**Production:** https://weeklyvocabulary.vercel.app
+
 ## Version
-**v2.3.0** (2026-04-27) - NextAuth Authentication Complete
+**v3.0.0** (2026-04-28) - Production Release on Vercel
 
 ## Features
 
@@ -12,26 +15,19 @@ A gamified vocabulary learning application for Grades 1-5 covering 8 academic su
 - **5 Grade Levels**: G1 (age 6-7) through G5 (age 10-11)
 - **3 Difficulty Levels**: Easy, Medium, Hard
 - **Gamified Progress**: Plant growth metaphor from seedling to mighty oak
-- **Progress Tracking**: LocalStorage-based progress saving
-- **1035 Questions**: Predefined questions with Chinese translations and pronunciation
+- **Authentication**: Secure login with role-based access (Student/Teacher/Admin)
+- **Progress Tracking**: Database-backed progress saving
 
-### Teacher Features (Next.js Beta)
-- **Class Management**: Create classes with unique codes
-- **Student Management**: Add students with auto-generated passwords
-- **Progress Monitoring**: View class statistics and individual progress
+### Teacher Features
+- **Dashboard**: Overview of classes, students, and progress statistics
+- **Class Management**: Create and manage classes with unique codes
+- **Student Enrollment**: Add students individually or bulk import via Excel
+- **Progress Monitoring**: View individual student progress per subject
+- **Bulk Import/Export**: Excel-based student management
 
 ## Quick Start
 
-### Option 1: React App (Stable - Recommended)
-
-```bash
-cd app/
-npm install
-npm run dev
-# Access at http://localhost:3001
-```
-
-### Option 2: Next.js App (Beta)
+### Local Development (Next.js)
 
 ```bash
 cd next-app/
@@ -53,52 +49,93 @@ pnpm dev
 - Teacher: `teacher@school.com` / `teacher123`
 - Student: `student@school.com` / `student123`
 
-See [next-app/DATABASE_SETUP.md](next-app/DATABASE_SETUP.md) for detailed database setup.
+### React App (Standalone - Not Deployed)
+
+```bash
+cd app/
+npm install
+npm run dev
+# Access at http://localhost:3001
+```
 
 ## Tech Stack
 
-### React App (Stable)
-- **React 19** + TypeScript 5.9
-- **Vite 7** for building
-- **Tailwind CSS** + Radix UI
-- **Framer Motion** animations
-- **localStorage** for progress
+### Production (Vercel)
+- **Next.js 16.2.4** (App Router)
+- **React 19.2.4** + TypeScript 5.9.3
+- **Tailwind CSS 3.4** (v3 for Vercel compatibility)
+- **Prisma 6.19.3** ORM
+- **PostgreSQL** (Supabase)
+- **NextAuth v5** (JWT strategy, Credentials provider)
+- **pnpm** package manager
 
-### Next.js App (Beta)
-- **Next.js 16** (App Router)
-- **React 19** + TypeScript
-- **Prisma** ORM (v6.19.3)
-- **PostgreSQL** (Supabase) / SQLite
-- **REST API** - Progress, Quiz, Subjects, Auth endpoints
-- **NextAuth v5** - Authentication with role-based access
+### Local Development
+- **React 19** + Vite 7 (standalone app)
+- **Next.js 16** + Turbopack (full-featured app)
+- **SQLite** (local database alternative)
+
+## Deployment
+
+### Vercel Configuration
+
+| Setting | Value |
+|---------|-------|
+| **Root Directory** | `next-app` |
+| **Framework Preset** | `Next.js` |
+| **Build Command** | (auto-detected) |
+| **Install Command** | (auto-detected) |
+
+### Environment Variables
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `DATABASE_URL` | Yes | PostgreSQL connection string |
+| `DIRECT_URL` | Yes | Direct database connection (Supabase) |
+| `NEXTAUTH_SECRET` | Yes | NextAuth JWT secret |
+| `NEXTAUTH_URL` | Yes | Production URL |
+
+### Manual Deployment
+
+```bash
+cd next-app
+vercel --prod
+```
+
+See [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) for detailed deployment guide.
 
 ## Project Structure
 
 ```
 weeklyvocabulary/
-├── app/                          # React application (Stable)
-│   ├── src/
-│   │   ├── data/                 # Vocabulary and question data
-│   │   │   ├── predefinedQuestions.ts  # 1035 questions from UNIFIED_VOCABULARY.md
-│   │   │   ├── vocabularyData.ts       # Keywords by grade/subject/week
-│   │   │   ├── translations.ts         # Chinese translations & IPA
-│   │   │   └── questionGenerator.ts    # Question generation logic
-│   │   ├── types/                # TypeScript type definitions
-│   │   ├── components/           # React components
-│   │   ├── hooks/                # Custom React hooks
-│   │   ├── lib/                  # Utility functions
-│   │   └── App.tsx               # Main application
-│   ├── public/                   # Static assets
-│   └── scripts/
-│       └── parseUnifiedVocabulary.cjs  # Data parser
-├── next-app/                     # Next.js application (Beta)
+├── next-app/                     # Next.js application (Production)
 │   ├── app/                      # Next.js App Router
-│   ├── data/                     # Shared data files
+│   │   ├── (auth)/               # Auth group (login, register)
+│   │   ├── student/              # Student portal
+│   │   │   ├── layout.tsx        # Auth check for students
+│   │   │   └── [grade]/[subject]/  # Subject & week pages
+│   │   ├── teacher/              # Teacher portal
+│   │   │   ├── layout.tsx        # Auth check for teachers
+│   │   │   ├── classes/          # Class management
+│   │   │   └── [id]/             # Class details
+│   │   └── api/                  # API routes
+│   │       ├── auth/             # NextAuth endpoints
+│   │       ├── progress/         # Progress tracking
+│   │       ├── quiz/             # Quiz sessions
+│   │       └── teacher/          # Teacher APIs
+│   ├── components/ui/            # Radix UI components
+│   ├── data/                     # Vocabulary data
+│   ├── lib/                      # Utilities (auth, db)
 │   ├── prisma/                   # Database schema
-│   └── types/                    # TypeScript definitions
+│   └── generated/client/         # Prisma Client (committed)
+├── app/                          # React application (Local)
+│   └── src/
+│       ├── data/                 # Vocabulary data
+│       └── App.tsx               # Main game
 ├── weeklytest/                   # Data source
-│   └── UNIFIED_VOCABULARY.md     # Master vocabulary question source
-├── SPECIFICATION.md              # Detailed technical specification
+│   └── UNIFIED_VOCABULARY.md     # Master vocabulary
+├── VERCEL_DEPLOYMENT.md          # Deployment guide
+├── SPECIFICATION.md              # Technical specification
+├── TEST_CASES.md                 # Test cases
 └── README.md                     # This file
 ```
 
@@ -116,105 +153,28 @@ weeklyvocabulary/
    cp app/src/data/predefinedQuestions.ts next-app/data/
    ```
 
-### Data Format
-
-The `UNIFIED_VOCABULARY.md` uses the following format:
-
-```markdown
-## G1
-
-### Subject: Maths
-
-**Week 2: review**
-
-> Passage: Look at my shapes! I have a triangle with 3 sides...
-
-**Question:** A shape with three sides is a _______.​
-
-**Options:**
-- A) circle
-- B) triangle
-- C) square
-- D) line​
-
-**Answer:** B
-
-**Explanation:** triangle意为"三角形"，符合三条边的几何特征。
-
----
-```
-
 ## Game Flow
 
-1. **Welcome** → Grade Select → Subject Select → Difficulty Select
-2. **Week Map** → Quiz → Week Complete
-3. **Final Results** when all weeks completed
+1. **Login** → Role selection (Student/Teacher)
+2. **Student**: Grade → Subject → Week → Quiz
+3. **Teacher**: Dashboard → Classes → Students → Progress
 
-## Difficulty Settings
+## Recent Updates (v3.0.0)
 
-| Level | Timer | Hints | Lives |
-|-------|-------|-------|-------|
-| Easy | None | Yes | Unlimited |
-| Medium | 30s | Yes | Unlimited |
-| Hard | 15s | No | 3 |
-
-## Week Structure
-
-- **Phase 1**: Weeks 2-5 (Review at Week 5)
-- **Phase 2**: Weeks 7-10
-- **Phase 3**: Weeks 11-14
-- **Final**: Week 15
-
-## Recent Updates (v2.3.0)
-
-- **NextAuth Complete**: Full authentication system with NextAuth v5
-  - Credentials provider with email/password
-  - Role-based access control (Admin/Teacher/Student)
-  - Protected routes with middleware
-  - Register API for creating users
-  - Demo accounts included
-- **Login Page**: Beautiful gradient UI with role-based redirect
-- **Session Management**: JWT-based session strategy
-
-### Previous Updates (v2.2.0)
-
-- **Database API Complete**: Full REST API for progress tracking
-  - `GET/POST/DELETE /api/progress` - Student progress management
-  - `POST/PUT /api/quiz` - Quiz session tracking
-  - `GET /api/subjects` - Subject data retrieval
-- **PostgreSQL Support**: Supabase-ready database configuration
-- **Setup Guide**: [DATABASE_SETUP.md](next-app/DATABASE_SETUP.md)
-
-### Previous Updates (v2.1.0)
-
-- **Streamlit Removed**: Streamlit application deprecated and removed
-- **New Parser**: Added `parseUnifiedVocabulary.cjs` for unified data management
-- **Data Source**: `UNIFIED_VOCABULARY.md` is now the single source of truth
-- **Bug Fixes**:
-  - Fixed G5 Performing Arts subject name
-  - Fixed broken subject names in UNIFIED_VOCABULARY.md
-  - Added 1035 questions with pronunciation guides
-
-## Subject Coverage
-
-| Subject | Emoji | Color | Code |
-|---------|-------|-------|-------|
-| Mathematics | 🔢 | #2E7D32 | Maths |
-| Science | 🔬 | #1565C0 | Science |
-| STEAM | 💻 | #6A1B9A | STEAM |
-| Music | 🎵 | #E65100 | Music |
-| Performing Arts | 🎭 | #C62828 | Performing Arts |
-| Drama | 🎬 | #5D4037 | Drama |
-| Visual Arts | 🎨 | #AD1457 | Visual Arts |
-| Physical Education | ⚽ | #00695C | PE |
-
-**Note**: G5 uses "Performing Arts" instead of separate "Drama" subject.
+- 🎉 **PRODUCTION RELEASE**: Deployed to Vercel
+- ✅ **Authentication**: NextAuth v5 with role-based access
+- ✅ **Database**: PostgreSQL on Supabase
+- ✅ **Teacher Portal**: Full class and student management
+- ✅ **Student Portal**: Grade/subject selection with progress tracking
+- ✅ **Bulk Import**: Excel-based student enrollment
+- ✅ **Progress Tracking**: Database-backed progress saving
 
 ## Documentation
 
-- **SPECIFICATION.md** - Detailed technical specification
-- **CLAUDE.md** - Project context for Claude Code
-- **app/README.md** - React app specific documentation
+- **[SPECIFICATION.md](SPECIFICATION.md)** - Detailed technical specification
+- **[VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md)** - Deployment experience & troubleshooting
+- **[TEST_CASES.md](TEST_CASES.md)** - Test cases
+- **[CLAUDE.md](CLAUDE.md)** - Project context for AI assistants
 
 ## License
 

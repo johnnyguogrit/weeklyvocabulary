@@ -2,10 +2,15 @@
 
 ## Test Environment
 
-- **URL**: http://localhost:3000
-- **Test Date**: 2026-04-27
-- **Version**: 2.7.0
+### Production (Vercel)
+- **URL**: https://weeklyvocabulary.vercel.app
+- **Test Date**: 2026-04-28
+- **Version**: 3.0.0
 - **Database**: Supabase PostgreSQL (Project: weeklyvocabulary)
+
+### Local Development
+- **URL**: http://localhost:3000
+- **Database**: Supabase PostgreSQL / SQLite
 
 ## Important Flow Notes
 
@@ -425,9 +430,45 @@ Error: "Can't reach database server at `db.udczwafhjuewnzvrcvdq.supabase.co:5432
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v3.0.0 | 2026-04-28 | **PRODUCTION RELEASE** - Deployed to Vercel, Tailwind v3 compatibility, Prisma Client location fix |
 | v2.7.0 | 2026-04-27 | Fixed auth routing, database connection |
 | v2.6.1 | 2026-04-27 | Fixed progress saving, week unlock |
 | v2.6.0 | 2026-04-25 | Teacher-only registration |
+
+---
+
+## Production Deployment - v3.0.0 (2026-04-28)
+
+### Deployment Details
+- **Platform**: Vercel
+- **Framework**: Next.js 16.2.4 (App Router)
+- **Runtime**: Node.js (not Edge)
+- **Build**: Turbopack
+- **Root Directory**: `next-app/`
+
+### Key Changes for Production
+1. **Tailwind CSS v3**: Downgraded from v4 for Vercel compatibility
+2. **Prisma Client**: Custom output location (`generated/client`) committed to git
+3. **Edge Runtime**: Disabled - using Node.js runtime for Prisma compatibility
+4. **Environment Variables**: Configured in Vercel Dashboard
+
+### Vercel Configuration
+| Setting | Value |
+|---------|-------|
+| Root Directory | `next-app` |
+| Framework Preset | `Next.js` |
+| Build Command | (auto-detected: `pnpm run build`) |
+| Install Command | (auto-detected: `pnpm install`) |
+
+### Demo Accounts (Production)
+| Role | Email | Password |
+|------|-------|----------|
+| Admin | admin@school.com | admin123 |
+| Teacher | teacher@school.com | teacher123 |
+| Student | student@school.com | student123 |
+
+### Known Issues
+- None major - fully functional on Vercel
 
 ---
 
@@ -435,4 +476,5 @@ Error: "Can't reach database server at `db.udczwafhjuewnzvrcvdq.supabase.co:5432
 
 | Date | Tester | Pass | Fail | Blocked | Notes |
 |------|--------|------|------|---------|-------|
+| 2026-04-28 | Claude | - | - | - | v3.0.0 - Production deployment on Vercel |
 | 2026-04-27 | Claude | - | - | - | v2.7.0 - Auth fixes |
