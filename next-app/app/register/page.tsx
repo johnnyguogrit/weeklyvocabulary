@@ -76,7 +76,8 @@ export default function RegisterPage() {
       } else if (result?.ok) {
         toast.success('Welcome to Vocabulary Adventure!')
         // Force a hard redirect to ensure session is loaded
-        window.location.href = '/dashboard'
+        const redirectPath = formData.role === 'TEACHER' ? '/teacher' : '/student'
+        window.location.href = redirectPath
       } else {
         toast.error('Account created. Please login manually.')
         setIsLoading(false)
