@@ -100,23 +100,12 @@ export async function POST(request: NextRequest) {
   try {
     const session = await auth();
     if (!session?.user) {
-      console.error('[Progress API] Unauthorized access attempt');
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
     const body = await request.json();
     const { grade, subject, weekId, score, completed, quizData } = body;
     const userId = session.user.id;
-
-    console.log('[Progress API] Saving progress:', {
-      userId,
-      grade,
-      subject,
-      weekId,
-      score,
-      completed,
-      quizData
-    });
 
     if (!grade || !subject) {
       return NextResponse.json(
@@ -214,7 +203,6 @@ export async function POST(request: NextRequest) {
       // Unlock next week if current week is completed
       if (completed && weekProgress) {
         const nextWeekId = weekNum + 1;
-        console.log(`[Progress API] Week ${weekNum} completed, unlocking week ${nextWeekId}`);
         // Use upsert to create the next week if it doesn't exist, or unlock if it does
         await prisma.weekProgress.upsert({
           where: {
@@ -239,7 +227,6 @@ export async function POST(request: NextRequest) {
             locked: false, // Unlock if it already exists
           },
         });
-        console.log(`[Progress API] Week ${nextWeekId} unlocked`);
       }
 
       // Recalculate overall progress
@@ -273,14 +260,6 @@ export async function POST(request: NextRequest) {
         },
       });
     }
-
-    console.log('[Progress API] Final state:', {
-      totalScore: studentProgress.totalScore,
-      overallProgress: studentProgress.overallProgress,
-      currentPlantStage: studentProgress.currentPlantStage,
-      completedWeeks,
-      totalWeeks
-    });
 
     return NextResponse.json({
       success: true,

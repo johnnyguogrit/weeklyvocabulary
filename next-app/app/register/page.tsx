@@ -49,7 +49,6 @@ export default function RegisterPage() {
       })
 
       const data = await res.json()
-      console.log('Register response:', data)
 
       if (!res.ok) {
         toast.error(data.error || 'Registration failed')
@@ -66,7 +65,6 @@ export default function RegisterPage() {
         redirect: false
       })
 
-      console.log('Auto sign in result:', result)
 
       if (result?.error) {
         console.error('Auto sign in error:', result.error)
