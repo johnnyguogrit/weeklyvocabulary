@@ -1,18 +1,7 @@
 import Link from 'next/link'
-import { redirect } from 'next/navigation'
-import { auth } from '@/lib/auth'
 import { Button } from '@/components/ui/button'
 
-export default async function Home() {
-  const session = await auth()
-
-  // Redirect if already logged in
-  if (session?.user) {
-    const userRole = (session.user as any).role
-    const dashboard = (userRole === 'TEACHER' || userRole === 'ADMIN') ? '/teacher' : '/student'
-    redirect(dashboard)
-  }
-
+export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 flex flex-col items-center justify-center p-4">
       <div className="text-center max-w-2xl">
