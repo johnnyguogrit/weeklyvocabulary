@@ -118,7 +118,8 @@ export async function POST(
               classId: id,
               studentId: user.id,
               parentEmail: parentEmail || null,
-              parentPhone: parentPhone ? String(parentPhone) : null
+              parentPhone: parentPhone ? String(parentPhone) : null,
+              initialPassword: password || 'password123'
             }
           })
         }

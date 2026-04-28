@@ -206,7 +206,8 @@ exports.Prisma.EnrollmentScalarFieldEnum = {
   parentEmail: 'parentEmail',
   parentPhone: 'parentPhone',
   importBatchId: 'importBatchId',
-  comments: 'comments'
+  comments: 'comments',
+  initialPassword: 'initialPassword'
 };
 
 exports.Prisma.QuizSessionScalarFieldEnum = {

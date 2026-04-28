@@ -16,7 +16,7 @@ export async function POST(
 
   try {
     const body = await request.json()
-    const { email, parentEmail, parentPhone } = body
+    const { email, parentEmail, parentPhone, initialPassword } = body
 
     if (!email) {
       return NextResponse.json({ error: 'Email required' }, { status: 400 })
@@ -65,7 +65,8 @@ export async function POST(
         classId: id,
         studentId: student.id,
         parentEmail: parentEmail || null,
-        parentPhone: parentPhone || null
+        parentPhone: parentPhone || null,
+        initialPassword: initialPassword || null
       }
     })
 

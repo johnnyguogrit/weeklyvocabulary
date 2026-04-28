@@ -9895,6 +9895,7 @@ export namespace Prisma {
     parentPhone: string | null
     importBatchId: string | null
     comments: string | null
+    initialPassword: string | null
   }
 
   export type EnrollmentMaxAggregateOutputType = {
@@ -9906,6 +9907,7 @@ export namespace Prisma {
     parentPhone: string | null
     importBatchId: string | null
     comments: string | null
+    initialPassword: string | null
   }
 
   export type EnrollmentCountAggregateOutputType = {
@@ -9917,6 +9919,7 @@ export namespace Prisma {
     parentPhone: number
     importBatchId: number
     comments: number
+    initialPassword: number
     _all: number
   }
 
@@ -9930,6 +9933,7 @@ export namespace Prisma {
     parentPhone?: true
     importBatchId?: true
     comments?: true
+    initialPassword?: true
   }
 
   export type EnrollmentMaxAggregateInputType = {
@@ -9941,6 +9945,7 @@ export namespace Prisma {
     parentPhone?: true
     importBatchId?: true
     comments?: true
+    initialPassword?: true
   }
 
   export type EnrollmentCountAggregateInputType = {
@@ -9952,6 +9957,7 @@ export namespace Prisma {
     parentPhone?: true
     importBatchId?: true
     comments?: true
+    initialPassword?: true
     _all?: true
   }
 
@@ -10036,6 +10042,7 @@ export namespace Prisma {
     parentPhone: string | null
     importBatchId: string | null
     comments: string | null
+    initialPassword: string | null
     _count: EnrollmentCountAggregateOutputType | null
     _min: EnrollmentMinAggregateOutputType | null
     _max: EnrollmentMaxAggregateOutputType | null
@@ -10064,6 +10071,7 @@ export namespace Prisma {
     parentPhone?: boolean
     importBatchId?: boolean
     comments?: boolean
+    initialPassword?: boolean
     class?: boolean | ClassDefaultArgs<ExtArgs>
     student?: boolean | UserDefaultArgs<ExtArgs>
     importBatch?: boolean | Enrollment$importBatchArgs<ExtArgs>
@@ -10078,6 +10086,7 @@ export namespace Prisma {
     parentPhone?: boolean
     importBatchId?: boolean
     comments?: boolean
+    initialPassword?: boolean
     class?: boolean | ClassDefaultArgs<ExtArgs>
     student?: boolean | UserDefaultArgs<ExtArgs>
     importBatch?: boolean | Enrollment$importBatchArgs<ExtArgs>
@@ -10092,6 +10101,7 @@ export namespace Prisma {
     parentPhone?: boolean
     importBatchId?: boolean
     comments?: boolean
+    initialPassword?: boolean
     class?: boolean | ClassDefaultArgs<ExtArgs>
     student?: boolean | UserDefaultArgs<ExtArgs>
     importBatch?: boolean | Enrollment$importBatchArgs<ExtArgs>
@@ -10106,9 +10116,10 @@ export namespace Prisma {
     parentPhone?: boolean
     importBatchId?: boolean
     comments?: boolean
+    initialPassword?: boolean
   }
 
-  export type EnrollmentOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "classId" | "studentId" | "enrolledAt" | "parentEmail" | "parentPhone" | "importBatchId" | "comments", ExtArgs["result"]["enrollment"]>
+  export type EnrollmentOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "classId" | "studentId" | "enrolledAt" | "parentEmail" | "parentPhone" | "importBatchId" | "comments" | "initialPassword", ExtArgs["result"]["enrollment"]>
   export type EnrollmentInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     class?: boolean | ClassDefaultArgs<ExtArgs>
     student?: boolean | UserDefaultArgs<ExtArgs>
@@ -10141,6 +10152,7 @@ export namespace Prisma {
       parentPhone: string | null
       importBatchId: string | null
       comments: string | null
+      initialPassword: string | null
     }, ExtArgs["result"]["enrollment"]>
     composites: {}
   }
@@ -10575,6 +10587,7 @@ export namespace Prisma {
     readonly parentPhone: FieldRef<"Enrollment", 'String'>
     readonly importBatchId: FieldRef<"Enrollment", 'String'>
     readonly comments: FieldRef<"Enrollment", 'String'>
+    readonly initialPassword: FieldRef<"Enrollment", 'String'>
   }
     
 
@@ -13616,7 +13629,8 @@ export namespace Prisma {
     parentEmail: 'parentEmail',
     parentPhone: 'parentPhone',
     importBatchId: 'importBatchId',
-    comments: 'comments'
+    comments: 'comments',
+    initialPassword: 'initialPassword'
   };
 
   export type EnrollmentScalarFieldEnum = (typeof EnrollmentScalarFieldEnum)[keyof typeof EnrollmentScalarFieldEnum]
@@ -14293,6 +14307,7 @@ export namespace Prisma {
     parentPhone?: StringNullableFilter<"Enrollment"> | string | null
     importBatchId?: StringNullableFilter<"Enrollment"> | string | null
     comments?: StringNullableFilter<"Enrollment"> | string | null
+    initialPassword?: StringNullableFilter<"Enrollment"> | string | null
     class?: XOR<ClassScalarRelationFilter, ClassWhereInput>
     student?: XOR<UserScalarRelationFilter, UserWhereInput>
     importBatch?: XOR<ImportBatchNullableScalarRelationFilter, ImportBatchWhereInput> | null
@@ -14307,6 +14322,7 @@ export namespace Prisma {
     parentPhone?: SortOrderInput | SortOrder
     importBatchId?: SortOrderInput | SortOrder
     comments?: SortOrderInput | SortOrder
+    initialPassword?: SortOrderInput | SortOrder
     class?: ClassOrderByWithRelationInput
     student?: UserOrderByWithRelationInput
     importBatch?: ImportBatchOrderByWithRelationInput
@@ -14325,6 +14341,7 @@ export namespace Prisma {
     parentPhone?: StringNullableFilter<"Enrollment"> | string | null
     importBatchId?: StringNullableFilter<"Enrollment"> | string | null
     comments?: StringNullableFilter<"Enrollment"> | string | null
+    initialPassword?: StringNullableFilter<"Enrollment"> | string | null
     class?: XOR<ClassScalarRelationFilter, ClassWhereInput>
     student?: XOR<UserScalarRelationFilter, UserWhereInput>
     importBatch?: XOR<ImportBatchNullableScalarRelationFilter, ImportBatchWhereInput> | null
@@ -14339,6 +14356,7 @@ export namespace Prisma {
     parentPhone?: SortOrderInput | SortOrder
     importBatchId?: SortOrderInput | SortOrder
     comments?: SortOrderInput | SortOrder
+    initialPassword?: SortOrderInput | SortOrder
     _count?: EnrollmentCountOrderByAggregateInput
     _max?: EnrollmentMaxOrderByAggregateInput
     _min?: EnrollmentMinOrderByAggregateInput
@@ -14356,6 +14374,7 @@ export namespace Prisma {
     parentPhone?: StringNullableWithAggregatesFilter<"Enrollment"> | string | null
     importBatchId?: StringNullableWithAggregatesFilter<"Enrollment"> | string | null
     comments?: StringNullableWithAggregatesFilter<"Enrollment"> | string | null
+    initialPassword?: StringNullableWithAggregatesFilter<"Enrollment"> | string | null
   }
 
   export type QuizSessionWhereInput = {
@@ -15148,6 +15167,7 @@ export namespace Prisma {
     parentEmail?: string | null
     parentPhone?: string | null
     comments?: string | null
+    initialPassword?: string | null
     class: ClassCreateNestedOneWithoutEnrollmentsInput
     student: UserCreateNestedOneWithoutEnrollmentsInput
     importBatch?: ImportBatchCreateNestedOneWithoutEnrollmentsInput
@@ -15162,6 +15182,7 @@ export namespace Prisma {
     parentPhone?: string | null
     importBatchId?: string | null
     comments?: string | null
+    initialPassword?: string | null
   }
 
   export type EnrollmentUpdateInput = {
@@ -15170,6 +15191,7 @@ export namespace Prisma {
     parentEmail?: NullableStringFieldUpdateOperationsInput | string | null
     parentPhone?: NullableStringFieldUpdateOperationsInput | string | null
     comments?: NullableStringFieldUpdateOperationsInput | string | null
+    initialPassword?: NullableStringFieldUpdateOperationsInput | string | null
     class?: ClassUpdateOneRequiredWithoutEnrollmentsNestedInput
     student?: UserUpdateOneRequiredWithoutEnrollmentsNestedInput
     importBatch?: ImportBatchUpdateOneWithoutEnrollmentsNestedInput
@@ -15184,6 +15206,7 @@ export namespace Prisma {
     parentPhone?: NullableStringFieldUpdateOperationsInput | string | null
     importBatchId?: NullableStringFieldUpdateOperationsInput | string | null
     comments?: NullableStringFieldUpdateOperationsInput | string | null
+    initialPassword?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type EnrollmentCreateManyInput = {
@@ -15195,6 +15218,7 @@ export namespace Prisma {
     parentPhone?: string | null
     importBatchId?: string | null
     comments?: string | null
+    initialPassword?: string | null
   }
 
   export type EnrollmentUpdateManyMutationInput = {
@@ -15203,6 +15227,7 @@ export namespace Prisma {
     parentEmail?: NullableStringFieldUpdateOperationsInput | string | null
     parentPhone?: NullableStringFieldUpdateOperationsInput | string | null
     comments?: NullableStringFieldUpdateOperationsInput | string | null
+    initialPassword?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type EnrollmentUncheckedUpdateManyInput = {
@@ -15214,6 +15239,7 @@ export namespace Prisma {
     parentPhone?: NullableStringFieldUpdateOperationsInput | string | null
     importBatchId?: NullableStringFieldUpdateOperationsInput | string | null
     comments?: NullableStringFieldUpdateOperationsInput | string | null
+    initialPassword?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type QuizSessionCreateInput = {
@@ -16047,6 +16073,7 @@ export namespace Prisma {
     parentPhone?: SortOrder
     importBatchId?: SortOrder
     comments?: SortOrder
+    initialPassword?: SortOrder
   }
 
   export type EnrollmentMaxOrderByAggregateInput = {
@@ -16058,6 +16085,7 @@ export namespace Prisma {
     parentPhone?: SortOrder
     importBatchId?: SortOrder
     comments?: SortOrder
+    initialPassword?: SortOrder
   }
 
   export type EnrollmentMinOrderByAggregateInput = {
@@ -16069,6 +16097,7 @@ export namespace Prisma {
     parentPhone?: SortOrder
     importBatchId?: SortOrder
     comments?: SortOrder
+    initialPassword?: SortOrder
   }
 
   export type DateTimeNullableFilter<$PrismaModel = never> = {
@@ -17241,6 +17270,7 @@ export namespace Prisma {
     parentEmail?: string | null
     parentPhone?: string | null
     comments?: string | null
+    initialPassword?: string | null
     class: ClassCreateNestedOneWithoutEnrollmentsInput
     importBatch?: ImportBatchCreateNestedOneWithoutEnrollmentsInput
   }
@@ -17253,6 +17283,7 @@ export namespace Prisma {
     parentPhone?: string | null
     importBatchId?: string | null
     comments?: string | null
+    initialPassword?: string | null
   }
 
   export type EnrollmentCreateOrConnectWithoutStudentInput = {
@@ -17499,6 +17530,7 @@ export namespace Prisma {
     parentPhone?: StringNullableFilter<"Enrollment"> | string | null
     importBatchId?: StringNullableFilter<"Enrollment"> | string | null
     comments?: StringNullableFilter<"Enrollment"> | string | null
+    initialPassword?: StringNullableFilter<"Enrollment"> | string | null
   }
 
   export type QuizSessionUpsertWithWhereUniqueWithoutUserInput = {
@@ -18013,6 +18045,7 @@ export namespace Prisma {
     parentEmail?: string | null
     parentPhone?: string | null
     comments?: string | null
+    initialPassword?: string | null
     student: UserCreateNestedOneWithoutEnrollmentsInput
     importBatch?: ImportBatchCreateNestedOneWithoutEnrollmentsInput
   }
@@ -18025,6 +18058,7 @@ export namespace Prisma {
     parentPhone?: string | null
     importBatchId?: string | null
     comments?: string | null
+    initialPassword?: string | null
   }
 
   export type EnrollmentCreateOrConnectWithoutClassInput = {
@@ -18506,6 +18540,7 @@ export namespace Prisma {
     parentEmail?: string | null
     parentPhone?: string | null
     comments?: string | null
+    initialPassword?: string | null
     class: ClassCreateNestedOneWithoutEnrollmentsInput
     student: UserCreateNestedOneWithoutEnrollmentsInput
   }
@@ -18518,6 +18553,7 @@ export namespace Prisma {
     parentEmail?: string | null
     parentPhone?: string | null
     comments?: string | null
+    initialPassword?: string | null
   }
 
   export type EnrollmentCreateOrConnectWithoutImportBatchInput = {
@@ -18670,6 +18706,7 @@ export namespace Prisma {
     parentPhone?: string | null
     importBatchId?: string | null
     comments?: string | null
+    initialPassword?: string | null
   }
 
   export type QuizSessionCreateManyUserInput = {
@@ -18836,6 +18873,7 @@ export namespace Prisma {
     parentEmail?: NullableStringFieldUpdateOperationsInput | string | null
     parentPhone?: NullableStringFieldUpdateOperationsInput | string | null
     comments?: NullableStringFieldUpdateOperationsInput | string | null
+    initialPassword?: NullableStringFieldUpdateOperationsInput | string | null
     class?: ClassUpdateOneRequiredWithoutEnrollmentsNestedInput
     importBatch?: ImportBatchUpdateOneWithoutEnrollmentsNestedInput
   }
@@ -18848,6 +18886,7 @@ export namespace Prisma {
     parentPhone?: NullableStringFieldUpdateOperationsInput | string | null
     importBatchId?: NullableStringFieldUpdateOperationsInput | string | null
     comments?: NullableStringFieldUpdateOperationsInput | string | null
+    initialPassword?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type EnrollmentUncheckedUpdateManyWithoutStudentInput = {
@@ -18858,6 +18897,7 @@ export namespace Prisma {
     parentPhone?: NullableStringFieldUpdateOperationsInput | string | null
     importBatchId?: NullableStringFieldUpdateOperationsInput | string | null
     comments?: NullableStringFieldUpdateOperationsInput | string | null
+    initialPassword?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type QuizSessionUpdateWithoutUserInput = {
@@ -19026,6 +19066,7 @@ export namespace Prisma {
     parentPhone?: string | null
     importBatchId?: string | null
     comments?: string | null
+    initialPassword?: string | null
   }
 
   export type ImportBatchCreateManyClassInput = {
@@ -19045,6 +19086,7 @@ export namespace Prisma {
     parentEmail?: NullableStringFieldUpdateOperationsInput | string | null
     parentPhone?: NullableStringFieldUpdateOperationsInput | string | null
     comments?: NullableStringFieldUpdateOperationsInput | string | null
+    initialPassword?: NullableStringFieldUpdateOperationsInput | string | null
     student?: UserUpdateOneRequiredWithoutEnrollmentsNestedInput
     importBatch?: ImportBatchUpdateOneWithoutEnrollmentsNestedInput
   }
@@ -19057,6 +19099,7 @@ export namespace Prisma {
     parentPhone?: NullableStringFieldUpdateOperationsInput | string | null
     importBatchId?: NullableStringFieldUpdateOperationsInput | string | null
     comments?: NullableStringFieldUpdateOperationsInput | string | null
+    initialPassword?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type EnrollmentUncheckedUpdateManyWithoutClassInput = {
@@ -19067,6 +19110,7 @@ export namespace Prisma {
     parentPhone?: NullableStringFieldUpdateOperationsInput | string | null
     importBatchId?: NullableStringFieldUpdateOperationsInput | string | null
     comments?: NullableStringFieldUpdateOperationsInput | string | null
+    initialPassword?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type ImportBatchUpdateWithoutClassInput = {
@@ -19112,6 +19156,7 @@ export namespace Prisma {
     parentEmail?: string | null
     parentPhone?: string | null
     comments?: string | null
+    initialPassword?: string | null
   }
 
   export type EnrollmentUpdateWithoutImportBatchInput = {
@@ -19120,6 +19165,7 @@ export namespace Prisma {
     parentEmail?: NullableStringFieldUpdateOperationsInput | string | null
     parentPhone?: NullableStringFieldUpdateOperationsInput | string | null
     comments?: NullableStringFieldUpdateOperationsInput | string | null
+    initialPassword?: NullableStringFieldUpdateOperationsInput | string | null
     class?: ClassUpdateOneRequiredWithoutEnrollmentsNestedInput
     student?: UserUpdateOneRequiredWithoutEnrollmentsNestedInput
   }
@@ -19132,6 +19178,7 @@ export namespace Prisma {
     parentEmail?: NullableStringFieldUpdateOperationsInput | string | null
     parentPhone?: NullableStringFieldUpdateOperationsInput | string | null
     comments?: NullableStringFieldUpdateOperationsInput | string | null
+    initialPassword?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type EnrollmentUncheckedUpdateManyWithoutImportBatchInput = {
@@ -19142,6 +19189,7 @@ export namespace Prisma {
     parentEmail?: NullableStringFieldUpdateOperationsInput | string | null
     parentPhone?: NullableStringFieldUpdateOperationsInput | string | null
     comments?: NullableStringFieldUpdateOperationsInput | string | null
+    initialPassword?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
 

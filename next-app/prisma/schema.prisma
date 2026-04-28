@@ -152,11 +152,12 @@ model Enrollment {
   studentId  String
   student    User     @relation(fields: [studentId], references: [id], onDelete: Cascade)
 
-  enrolledAt   DateTime    @default(now())
-  parentEmail  String?     // Parent contact email
-  parentPhone  String?     // Parent contact phone
-  importBatchId String?    // Track which import batch added this student
-  comments     String?     // Teacher notes
+  enrolledAt      DateTime    @default(now())
+  parentEmail     String?     // Parent contact email
+  parentPhone     String?     // Parent contact phone
+  importBatchId   String?     // Track which import batch added this student
+  comments        String?     // Teacher notes
+  initialPassword String?     @db.Text // Initial password for teacher reference
 
   importBatch ImportBatch? @relation(fields: [importBatchId], references: [id])
 

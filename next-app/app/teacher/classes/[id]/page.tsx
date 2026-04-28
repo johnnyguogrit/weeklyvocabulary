@@ -33,6 +33,7 @@ interface ClassData {
     id: string
     parentEmail?: string
     parentPhone?: string
+    initialPassword?: string
     student: Student
   }[]
 }
@@ -265,7 +266,8 @@ export default function ClassDetailPage() {
         body: JSON.stringify({
           email: newStudent.email,
           parentEmail: newStudent.parentEmail || null,
-          parentPhone: newStudent.parentPhone || null
+          parentPhone: newStudent.parentPhone || null,
+          initialPassword: passwordUsed
         })
       })
 
@@ -527,7 +529,7 @@ export default function ClassDetailPage() {
               </div>
             ) : (
               <div className="space-y-4">
-                {classData.enrollments.map(({ student, id, parentEmail, parentPhone }) => (
+                {classData.enrollments.map(({ student, id, parentEmail, parentPhone, initialPassword }) => (
                   <div
                     key={student.id}
                     className="flex items-center justify-between p-4 rounded-lg border hover:bg-gray-50"
@@ -561,20 +563,25 @@ export default function ClassDetailPage() {
                             : 0}% avg progress
                         </p>
                       </div>
-                      {/* Show password button if recently imported */}
-                      {recentPasswords[student.email] && (
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          onClick={() => {
-                            navigator.clipboard.writeText(recentPasswords[student.email])
-                            toast.success('Password copied to clipboard')
-                          }}
-                          className="text-blue-600 hover:text-blue-700 hover:bg-blue-50"
-                          title="Copy password"
-                        >
-                          <Copy className="h-4 w-4" />
-                        </Button>
+                      {/* Show password button if stored in database or recently imported */}
+                      {(initialPassword || recentPasswords[student.email]) && (
+                        <div className="flex items-center gap-2">
+                          <code className="text-xs bg-gray-100 px-2 py-1 rounded text-gray-700">
+                            {initialPassword || recentPasswords[student.email]}
+                          </code>
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            onClick={() => {
+                              navigator.clipboard.writeText(initialPassword || recentPasswords[student.email])
+                              toast.success('Password copied to clipboard')
+                            }}
+                            className="text-blue-600 hover:text-blue-700 hover:bg-blue-50"
+                            title="Copy password"
+                          >
+                            <Copy className="h-4 w-4" />
+                          </Button>
+                        </div>
                       )}
                       <button
                         onClick={() => handleRemoveStudent(student.id)}
