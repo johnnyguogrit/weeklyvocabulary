@@ -11,12 +11,33 @@ import { ChevronLeft, Clock, Trophy, Heart, Lightbulb } from 'lucide-react'
 import confetti from 'canvas-confetti'
 import { getSubjectData } from '@/data/questionGenerator'
 import type { Question } from '@/types/game'
+import { subjectToSlug } from '@/lib/subjectUtils'
 
 export default function QuizPage() {
   const router = useRouter()
   const params = useParams()
   const grade = (params.grade as string)?.toUpperCase()
-  const subject = params.subject as string
+  const rawSubject = params.subject as string
+
+  // Normalize subject name to match data keys (e.g., "maths" -> "Maths", "visual-arts" -> "Visual Arts")
+  const normalizeSubject = (subject: string): string => {
+    const subjectMap: Record<string, string> = {
+      'maths': 'Maths',
+      'science': 'Science',
+      'steam': 'STEAM',
+      'music': 'Music',
+      'performing-arts': 'Performing Arts',
+      'drama': 'Drama',
+      'visual-arts': 'Visual Arts',
+      'pe': 'PE',
+    }
+    const normalized = subjectMap[subject.toLowerCase()] || subject
+    console.log('[normalizeSubject]', { input: subject, output: normalized })
+    return normalized
+  }
+
+  const subject = normalizeSubject(rawSubject)
+  console.log('[QuizPage Init]', { grade, rawSubject, subject })
   const weekId = parseInt(params.weekId as string)
 
   const [questions, setQuestions] = useState<Question[]>([])
@@ -35,16 +56,27 @@ export default function QuizPage() {
   useEffect(() => {
     const loadQuestions = () => {
       try {
+        console.log('[QuizPage] Loading questions:', { grade, subject, weekId })
         const data = getSubjectData(grade, subject)
+        console.log('[QuizPage] getSubjectData result:', {
+          weeksCount: data.weeks.length,
+          weekIds: data.weeks.map(w => w.id),
+          week2Questions: data.weeks.find(w => w.id === 2)?.questions.length || 0
+        })
         const week = data.weeks.find(w => w.id === weekId)
         if (!week || week.questions.length === 0) {
           toast.error('No questions found for this week')
           router.back()
           return
         }
+        console.log('[QuizPage] Week questions:', {
+          weekId,
+          firstQuestion: week.questions[0]
+        })
         setQuestions(week.questions)
         setIsLoading(false)
       } catch (error) {
+        console.error('[QuizPage] Error loading questions:', error)
         toast.error('Failed to load questions')
         router.back()
       }
@@ -52,49 +84,13 @@ export default function QuizPage() {
     loadQuestions()
   }, [grade, subject, weekId, router])
 
-  useEffect(() => {
-    if (difficulty === 'EASY' || showResult || timeRemaining <= 0) return
-
-    const timer = setInterval(() => {
-      setTimeRemaining(prev => {
-        if (prev <= 1) {
-          handleAnswer(null)
-          return 30
-        }
-        return prev - 1
-      })
-    }, 1000)
-    return () => clearInterval(timer)
-  }, [difficulty, showResult, timeRemaining])
-
   const currentQuestion = questions[currentIndex]
 
-  const handleAnswer = useCallback(async (option: string | null) => {
-    if (showResult) return
-
-    const correct = option === currentQuestion?.correctAnswer
-    const newScore = correct ? score + 10 : score
-    const newCorrectCount = correct ? correctCount + 1 : correctCount
-
-    setSelectedOption(option)
-    setShowResult(true)
-    setIsCorrect(correct)
-    setScore(newScore)
-    setCorrectCount(newCorrectCount)
-    setLives(correct ? lives : lives - 1)
-
-    if (correct) {
-      confetti({ particleCount: 50, spread: 60, origin: { y: 0.7 } })
-    }
-
-    await saveProgress(newScore, newCorrectCount)
-  }, [showResult, currentQuestion, score, correctCount, lives])
-
-  const saveProgress = async (newScore: number, newCorrectCount: number) => {
+  // Save progress to API - must be defined before other callbacks that use it
+  const saveProgress = useCallback(async (newScore: number, newCorrectCount: number) => {
     try {
       const totalQuestions = questions.length
       const isLastQuestion = currentIndex === totalQuestions - 1
-      // 修复: 使用正确率而非累计分数来判断完成
       const accuracy = newCorrectCount / totalQuestions
       const completed = isLastQuestion && accuracy >= 0.7
 
@@ -116,17 +112,65 @@ export default function QuizPage() {
         })
       })
 
-      if (!response.ok) {
-        const error = await response.json()
-        console.error('Failed to save progress:', error)
-      } else {
+      if (response.ok) {
         const result = await response.json()
         console.log('Progress saved:', result)
       }
     } catch (error) {
       console.error('Failed to save progress:', error)
     }
-  }
+  }, [questions, currentIndex, grade, subject, weekId])
+
+  // Handle time running out - auto-mark as wrong
+  const handleTimeUp = useCallback(async () => {
+    if (showResult) return
+
+    const newScore = score
+    const newCorrectCount = correctCount
+
+    setSelectedOption(null)
+    setShowResult(true)
+    setIsCorrect(false)
+    setLives(prev => prev - 1)
+
+    await saveProgress(newScore, newCorrectCount)
+  }, [showResult, score, correctCount, saveProgress])
+
+  useEffect(() => {
+    if (difficulty === 'EASY' || showResult || timeRemaining <= 0) return
+
+    const timer = setInterval(() => {
+      setTimeRemaining(prev => {
+        if (prev <= 1) {
+          handleTimeUp()
+          return difficulty === 'HARD' ? 15 : difficulty === 'MEDIUM' ? 30 : 0
+        }
+        return prev - 1
+      })
+    }, 1000)
+    return () => clearInterval(timer)
+  }, [difficulty, showResult, timeRemaining, handleTimeUp])
+
+  const handleAnswer = useCallback(async (option: string | null) => {
+    if (showResult) return
+
+    const correct = option === currentQuestion?.correctAnswer
+    const newScore = correct ? score + 10 : score
+    const newCorrectCount = correct ? correctCount + 1 : correctCount
+
+    setSelectedOption(option)
+    setShowResult(true)
+    setIsCorrect(correct)
+    setScore(newScore)
+    setCorrectCount(newCorrectCount)
+    setLives(correct ? lives : lives - 1)
+
+    if (correct) {
+      confetti({ particleCount: 50, spread: 60, origin: { y: 0.7 } })
+    }
+
+    await saveProgress(newScore, newCorrectCount)
+  }, [showResult, currentQuestion, score, correctCount, lives, saveProgress])
 
   const handleNext = () => {
     if (currentIndex < questions.length - 1) {
@@ -136,7 +180,7 @@ export default function QuizPage() {
       setIsCorrect(null)
       setTimeRemaining(difficulty === 'HARD' ? 15 : difficulty === 'MEDIUM' ? 30 : 0)
     } else {
-      router.push(`/student/${params.grade}/${params.subject}`)
+      router.push(`/student/${grade}/${subjectToSlug(subject)}`)
     }
   }
 

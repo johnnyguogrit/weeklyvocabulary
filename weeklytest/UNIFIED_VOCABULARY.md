@@ -4,45 +4,151 @@
 
 ### Subject: Maths
 
-**Week 2: review**
+**Week 2: triangle**
 
-> Passage: Look at my shapes! I have a number of toys. I have a triangle with 3 sides and a square with 4 sides. If I have 5 toys and use minus 2, I have 3 left.​
-
-**Question:** A shape with three sides is a _______.​
+**Question:** A shape with three sides is a _______.
 
 **Options:**
 - A) circle
 - B) triangle
 - C) square
-- D) line​
+- D) line
 
 **Answer:** B
 
-**Explanation:** triangle意为“三角形”，符合三条边的几何特征。​ • 第3周 (square)​ ◦ 题干：A _______ has four equal straight sides.​ ◦ 选项：A) triangle B) square C) star D) dot​ ◦ 正确答案：B​ ◦ 答案解析：square意为“正方形”，符合四条相等的直边的特征。​ • 第4周 (minus)​ ◦ 题干：If we take away 1 from 3, we use _______.​ ◦ 选项：A) plus B) total C) minus D) more​ ◦ 正确答案：C​ ◦ 答案解析：minus意为“减去”，在数学运算中表示减少或拿走。​ • 第5周（综合复习测试：涵盖 triangle, square, minus, number）​ ◦ 阅读文本：Look at my shapes! I have a number of toys. I have a triangle with 3 sides and a square with 4 sides. If I have 5 toys and use minus 2, I have 3 left.​ ◦ 题干：What shape has 4 sides in the text?​ ◦ 选项：A) triangle B) square C) circle D) number​ ◦ 正确答案：B​ ◦ 答案解析：阅读文本中提到“a square with 4 sides”，综合考察了过往三周形状与运算词汇， 及第5周复习周强调的词汇number。​ 【第二阶段：第7-9周】​
+**Explanation:** triangle意为”三角形”
 
 ---
 
-**Week 7: review**
+**Week 3: square**
 
-> Passage: I have 3 apples. My mom gives me 2 more apples. I use plus to find I have 5 apples now. Then I eat 1 apple, I use minus.​
+**Question:** A _______ has four equal straight sides.
 
-**Question:** To put two groups together, we use the _______ sign.​
+**Options:**
+- A) triangle
+- B) square
+- C) star
+- D) dot
+
+**Answer:** B
+
+**Explanation:** square意为”正方形”
+
+---
+
+**Week 4: minus**
+
+**Question:** If we take away 1 from 3, we use _______.
+
+**Options:**
+- A) plus
+- B) total
+- C) minus
+- D) more
+
+**Answer:** C
+
+**Explanation:** minus意为”减去”
+
+---
+
+**Week 5: number**
+
+**Question:** We use a _______ to count how many toys we have.
+
+**Options:**
+- A) shape
+- B) color
+- C) number
+- D) line
+
+**Answer:** C
+
+**Explanation:** number意为”数字”
+
+**Week 5: review**
+
+> Passage: Look at my shapes! I have a number of toys. I have a triangle with 3 sides and a square with 4 sides. If I have 5 toys and use minus 2, I have 3 left.
+
+**Question:** What shape has 4 sides in the text?
+
+**Options:**
+- A) triangle
+- B) square
+- C) circle
+- D) number
+
+**Answer:** B
+
+**Explanation:** The text mentions “a square with 4 sides”
+
+---
+
+**Week 7: plus**
+
+**Question:** To put two groups together, we use the _______ sign.
 
 **Options:**
 - A) minus
 - B) less
 - C) plus
-- D) price​
+- D) price
 
 **Answer:** C
 
-**Explanation:** plus意为“加上”，表示把两组物品加在一起。​ • 第8周 (minus)​ ◦ 题干：Ten _______ five is five.​ ◦ 选项：A) plus B) more C) total D) minus​ ◦ 正确答案：D​ ◦ 答案解析：巩固减法概念，10减去(minus)5等于5。​ • 第9周 (more)​ ◦ 题干：Five apples is _______ than two apples.​ ◦ 选项：A) less B) more C) total D) minus​ ◦ 正确答案：B​ ◦ 答案解析：more意为“更多”，用于数学比较逻辑。​ • 第9周末（综合复习测试：涵盖 plus, minus, more）​ ◦ 阅读文本：I have 3 apples. My mom gives me 2 more apples. I use plus to find I have 5 apples now. Then I eat 1 apple, I use minus.​ ◦ 题干：What math sign do I use when mom gives me 2 more apples?​ ◦ 选项：A) minus B) less C) plus D) price​ ◦ 正确答案：C​ ◦ 答案解析：文本中明确说明得到更多(more)苹果时，使用加法(plus)。​ 【第三阶段：第10-12周】​
+**Explanation:** plus意为”加上”
 
 ---
 
-**Week 10: review**
+**Week 8: minus**
 
-> Passage: I have 10 pens, and you have 6 pens, which is less than mine. If we put them together, we have 16. The difference between 10 and 6 is 4.​
+**Question:** Ten _______ five is five.
+
+**Options:**
+- A) plus
+- B) more
+- C) total
+- D) minus
+
+**Answer:** D
+
+**Explanation:** minus意为”减去”
+
+---
+
+**Week 9: more**
+
+**Question:** Five apples is _______ than two apples.
+
+**Options:**
+- A) less
+- B) more
+- C) total
+- D) minus
+
+**Answer:** B
+
+**Explanation:** more意为”更多”
+
+**Week 9: review**
+
+> Passage: I have 3 apples. My mom gives me 2 more apples. I use plus to find I have 5 apples now. Then I eat 1 apple, I use minus.
+
+**Question:** What math sign do I use when mom gives me 2 more apples?
+
+**Options:**
+- A) minus
+- B) less
+- C) plus
+- D) price
+
+**Answer:** C
+
+**Explanation:** When we get more apples, we use plus.
+
+---
+
+**Week 10: less**
 
 **Question:** Three is _______ than eight.
 
@@ -50,91 +156,323 @@
 - A) more
 - B) less
 - C) total
-- D) plus​
+- D) plus
 
 **Answer:** B
 
-**Explanation:** less意为“更少”，用于基础数值比较。​ • 第11周 (together)​ ◦ 题干：If we put 2 and 3 _______, we get 5.​ ◦ 选项：A) less B) difference C) together D) minus​ ◦ 正确答案：C​ ◦ 答案解析：together意为“一起”，put together是加法运算的语境表达。​ • 第12周 (difference)​ ◦ 题干：The _______ between 10 and 6 is 4.​ ◦ 选项：A) total B) difference C) plus D) together​ ◦ 正确答案：B​ ◦ 答案解析：difference特指数学运算中的“差值”。​ • 第12周末（综合复习测试：涵盖 less, together, difference）​ ◦ 阅读文本：I have 10 pens, and you have 6 pens, which is less than mine. If we put them together, we have 16. The difference between 10 and 6 is 4.​ ◦ 题干：What is the difference between our pens?​ ◦ 选项：A) 4 B) 6 C) 10 D) 16​ ◦ 正确答案：A​ ◦ 答案解析：综合段落中的减法差值逻辑，difference明确指出是4。​ 【第四阶段：第13-15周】​
+**Explanation:** less意为”更少”
 
 ---
 
-**Week 13: review**
+**Week 11: together**
 
-> Passage: We want to buy a book. The price is 5 dollars. We use our money to pay. If we buy two books, the total is 10 dollars.​
+**Question:** If we put 2 and 3 _______, we get 5.
 
-**Question:** You check the _______ to see how much a toy costs.​
+**Options:**
+- A) less
+- B) difference
+- C) together
+- D) minus
+
+**Answer:** C
+
+**Explanation:** together意为”一起”
+
+---
+
+**Week 12: difference**
+
+**Question:** The _______ between 10 and 6 is 4.
+
+**Options:**
+- A) total
+- B) difference
+- C) plus
+- D) together
+
+**Answer:** B
+
+**Explanation:** difference意为”差值”
+
+**Week 12: review**
+
+> Passage: I have 10 pens, and you have 6 pens, which is less than mine. If we put them together, we have 16. The difference between 10 and 6 is 4.
+
+**Question:** What is the difference between our pens?
+
+**Options:**
+- A) 4
+- B) 6
+- C) 10
+- D) 16
+
+**Answer:** A
+
+**Explanation:** The difference between 10 and 6 is 4.
+
+---
+
+**Week 13: price**
+
+**Question:** You check the _______ to see how much a toy costs.
 
 **Options:**
 - A) total
 - B) price
 - C) number
-- D) difference​
+- D) difference
 
 **Answer:** B
 
-**Explanation:** price意为“价格”，用以表示物品的标价。​ • 第14周 (money)​ ◦ 题干：We use _______ to buy things in the shop.​ ◦ 选项：A) money B) shape C) minus D) square​ ◦ 正确答案：A​ ◦ 答案解析：money意为“金钱”，用于购买物品。​ • 第15周 (total)​ ◦ 题干：The _______ of 4 and 5 is 9.​ ◦ 选项：A) less B) price C) total D) minus​ ◦ 正确答案：C​ ◦ 答案解析：total意为“总和”，在加法计算中表示结果。​ • 第15周末（综合复习测试：涵盖 price, money, total）​ ◦ 阅读文本：We want to buy a book. The price is 5 dollars. We use our money to pay. If we buy two books, the total is 10 dollars.​ ◦ 题干：What do we use to pay for the book?​ ◦ 选项：A) price B) money C) total D) less​ ◦ 正确答案：B​ ◦ 答案解析：文本中提到我们使用金钱(money)来支付图书的价格(price)并计算总额(total)。​
+**Explanation:** price意为”价格”
+
+---
+
+**Week 14: money**
+
+**Question:** We use _______ to buy things in the shop.
+
+**Options:**
+- A) money
+- B) shape
+- C) minus
+- D) square
+
+**Answer:** A
+
+**Explanation:** money意为”金钱”
+
+---
+
+**Week 15: total**
+
+**Question:** The _______ of 4 and 5 is 9.
+
+**Options:**
+- A) less
+- B) price
+- C) total
+- D) minus
+
+**Answer:** C
+
+**Explanation:** total意为”总和”
+
+**Week 15: review**
+
+> Passage: We want to buy a book. The price is 5 dollars. We use our money to pay. If we buy two books, the total is 10 dollars.
+
+**Question:** What do we use to pay for the book?
+
+**Options:**
+- A) price
+- B) money
+- C) total
+- D) less
+
+**Answer:** B
+
+**Explanation:** We use money to pay for the book.
 
 ---
 
 ### Subject: Science
 
-**Week 2: review**
+**Week 2: compare**
 
-> Passage: A human needs food and water to grow big. We can look at a baby and an adult to compare them.​
-
-**Question:** To see how two leaves are different is to _______ them.​
+**Question:** To see how two leaves are different is to _______ them.
 
 **Options:**
 - A) grow
 - B) compare
 - C) reflect
-- D) measure​
+- D) measure
 
 **Answer:** B
 
-**Explanation:** compare意为“比较”，科学观察中用以寻找异同。​ • 第3周 (grow)​ ◦ 题干：Plants need water and sunlight to _______ bigger.​ ◦ 选项：A) measure B) grow C) reflect D) source​ ◦ 正确答案：B​ ◦ 答案解析：grow意为“生长”。​ • 第4周 (human)​ ◦ 题干：You are a person, which means you are a _______.​ ◦ 选项：A) light B) human C) source D) safety​ ◦ 正确答案：B​ ◦ 答案解析：human意为“人类”，生物学基础分类。​ • 第5周（综合复习测试：涵盖 compare, human, grow）​ ◦ 阅读文本：A human needs food and water to grow big. We can look at a baby and an adult to compare them.​ ◦ 题干：What does a human need to grow big?​ ◦ 选项：A) Food and water B) Toys C) Darkness D) Electricity​ ◦ 正确答案：A​ ◦ 答案解析：文本提到人类(human)需要食物和水来生长(grow)并进行比较(compare)。​ 【第二阶段：第7-9周】​
+**Explanation:** compare意为”比较”
 
 ---
 
-**Week 7: review**
+**Week 3: grow**
 
-> Passage: To stay healthy, we must eat good food and brush our teeth. The doctor can measure how tall we are.​
-
-**Question:** We use a ruler to _______ how tall a plant is.​
+**Question:** Plants need water and sunlight to _______ bigger.
 
 **Options:**
 - A) measure
 - B) grow
 - C) reflect
-- D) compare​
+- D) source
 
-**Answer:** A
+**Answer:** B
 
-**Explanation:** measure意为“测量”。​ • 第8周 (healthy)​ ◦ 题干：Eating apples and carrots keeps our body _______.​ ◦ 选项：A) dark B) healthy C) source D) reflect​ ◦ 正确答案：B​ ◦ 答案解析：healthy意为“健康的”。​ • 第9周 (teeth)​ ◦ 题干：We use our _______ to chew food.​ ◦ 选项：A) eyes B) hair C) teeth D) light​ ◦ 正确答案：C​ ◦ 答案解析：teeth意为“牙齿”。​ • 第9周末（综合复习测试：涵盖 measure, healthy, teeth）​ ◦ 阅读文本：To stay healthy, we must eat good food and brush our teeth. The doctor can measure how tall we are.​ ◦ 题干：What should we brush to stay healthy? ◦ 选项：A) Our hands B) Our hair C) Our teeth D) Our shoes​ ◦ 正确答案：C​ ◦ 答案解析：文本说明为了保持健康(healthy)，必须每天刷牙(teeth)。​ 【第三阶段：第10-12周】​
+**Explanation:** grow意为”生长”
 
 ---
 
-**Week 10: review**
+**Week 4: human**
 
-> Passage: The sun is a big source of light. When the light hits a mirror, the mirror will reflect it.​
+**Question:** You are a person, which means you are a _______.
 
-**Question:** We need _______ to see things in a dark room.​
+**Options:**
+- A) light
+- B) human
+- C) source
+- D) safety
+
+**Answer:** B
+
+**Explanation:** human意为”人类”
+
+---
+
+**Week 5: review**
+
+> Passage: A human needs food and water to grow big. We can look at a baby and an adult to compare them.
+
+**Question:** What does a human need to grow big?
+
+**Options:**
+- A) Food and water
+- B) Toys
+- C) Darkness
+- D) Electricity
+
+**Answer:** A
+
+**Explanation:** A human needs food and water to grow.
+
+---
+
+**Week 7: measure**
+
+**Question:** We use a ruler to _______ how tall a plant is.
+
+**Options:**
+- A) measure
+- B) grow
+- C) reflect
+- D) compare
+
+**Answer:** A
+
+**Explanation:** measure意为”测量”
+
+---
+
+**Week 8: healthy**
+
+**Question:** Eating apples and carrots keeps our body _______.
+
+**Options:**
+- A) dark
+- B) healthy
+- C) source
+- D) reflect
+
+**Answer:** B
+
+**Explanation:** healthy意为”健康的”
+
+---
+
+**Week 9: teeth**
+
+**Question:** We use our _______ to chew food.
+
+**Options:**
+- A) eyes
+- B) hair
+- C) teeth
+- D) light
+
+**Answer:** C
+
+**Explanation:** teeth意为”牙齿”
+
+**Week 9: review**
+
+> Passage: To stay healthy, we must eat good food and brush our teeth. The doctor can measure how tall we are.
+
+**Question:** What should we brush to stay healthy?
+
+**Options:**
+- A) Our hands
+- B) Our hair
+- C) Our teeth
+- D) Our shoes
+
+**Answer:** C
+
+**Explanation:** We brush our teeth to stay healthy.
+
+---
+
+**Week 10: light**
+
+**Question:** We need _______ to see things in a dark room.
 
 **Options:**
 - A) light
 - B) water
 - C) human
-- D) teeth​
+- D) teeth
 
 **Answer:** A
 
-**Explanation:** light意为“光”。​ • 第11周 (source)​ ◦ 题干：The sun is the biggest natural _______ of light.​ ◦ 选项：A) source B) darkness C) safety D) human​ ◦ 正确答案：A​ ◦ 答案解析：source意为“来源/源头”，太阳是最大的光源。​ • 第12周 (reflect)​ ◦ 题干：A mirror can _______ light back to your eyes.​ ◦ 选项：A) grow B) measure C) reflect D) compare​ ◦ 正确答案：C​ ◦ 答案解析：reflect意为“反射”，光学基础现象。​ • 第12周末（综合复习测试：涵盖 light, source, reflect）​ ◦ 阅读文本：The sun is a big source of light. When the light hits a mirror, the mirror will reflect it.​ ◦ 题干：What does a mirror do to light?​ ◦ 选项：A) It grows it. B) It eats it. C) It reflects it. D) It hides it.​ ◦ 正确答案：C​ ◦ 答案解析：说明镜子能反射(reflect)光(light)。​ 【第四阶段：第13-15周】​
+**Explanation:** light意为”光”
 
 ---
 
-**Week 13: review**
+**Week 11: source**
 
-> Passage: At night, there is darkness. We turn on lamps using electricity. But we must be careful with wires for our safety.​
+**Question:** The sun is the biggest natural _______ of light.
+
+**Options:**
+- A) source
+- B) darkness
+- C) safety
+- D) human
+
+**Answer:** A
+
+**Explanation:** source意为”来源/源头”
+
+---
+
+**Week 12: reflect**
+
+**Question:** A mirror can _______ light back to your eyes.
+
+**Options:**
+- A) grow
+- B) measure
+- C) reflect
+- D) compare
+
+**Answer:** C
+
+**Explanation:** reflect意为”反射”
+
+**Week 12: review**
+
+> Passage: The sun is a big source of light. When the light hits a mirror, the mirror will reflect it.
+
+**Question:** What does a mirror do to light?
+
+**Options:**
+- A) It grows it
+- B) It eats it
+- C) It reflects it
+- D) It hides it
+
+**Answer:** C
+
+**Explanation:** A mirror reflects light.
+
+---
+
+**Week 13: darkness**
 
 **Question:** When there is no light at all, we are in _______.
 
@@ -142,21 +480,67 @@
 - A) darkness
 - B) safety
 - C) electricity
-- D) source​
+- D) source
 
 **Answer:** A
 
-**Explanation:** darkness意为“黑暗”。​ • 第14周 (electricity)​ ◦ 题干：We use _______ to turn on the TV and lamps.​ ◦ 选项：A) darkness B) teeth C) electricity D) water​ ◦ 正确答案：C​ ◦ 答案解析：electricity意为“电”。​ • 第15周 (safety)​ ◦ 题干：Do not touch broken wires for your own _______.​ ◦ 选项：A) source B) safety C) darkness D) light​ ◦ 正确答案：B​ ◦ 答案解析：safety意为“安全”，科学常识强调防触电。​ • 第15周末（综合复习测试：涵盖 darkness, electricity, safety）​ ◦ 阅读文本：At night, there is darkness. We turn on lamps using electricity. But we must be careful with wires for our safety.​ ◦ 题干：Why must we be careful with wires?​ ◦ 选项：A) For fun B) For our safety C) For darkness D) For food​ ◦ 正确答案：B​ ◦ 答案解析：强调安全用电(electricity)和注意自身安全(safety)。​
+**Explanation:** darkness意为”黑暗”
 
 ---
 
-### Subject: Tally Chart
+**Week 14: electricity**
 
-**Week 2: review**
+**Question:** We use _______ to turn on the TV and lamps.
 
-> Passage: We read the Instructions to build a Robot. We use a Tally Chart to count its parts. Then we write an Algorithm to make it move!​
+**Options:**
+- A) darkness
+- B) teeth
+- C) electricity
+- D) water
 
-**Question:** We use a _______ to count things with marks.​
+**Answer:** C
+
+**Explanation:** electricity意为”电”
+
+---
+
+**Week 15: safety**
+
+**Question:** Do not touch broken wires for your own _______.
+
+**Options:**
+- A) source
+- B) safety
+- C) darkness
+- D) light
+
+**Answer:** B
+
+**Explanation:** safety意为”安全”
+
+**Week 15: review**
+
+> Passage: At night, there is darkness. We turn on lamps using electricity. But we must be careful with wires for our safety.
+
+**Question:** Why must we be careful with wires?
+
+**Options:**
+- A) For fun
+- B) For our safety
+- C) For darkness
+- D) For food
+
+**Answer:** B
+
+**Explanation:** We must be careful with wires for our safety.
+
+---
+
+### Subject: STEAM
+
+**Week 2: Tally Chart**
+
+**Question:** We use a _______ to count things with marks.
 
 **Options:**
 - A) Robot
@@ -164,15 +548,63 @@
 
 **Answer:** B
 
-**Explanation:** Tally Chart意为“画记统计表”。​ • 第3周 (Algorithm)​ ◦ 题干：A step-by-step rule to solve a problem is an _______.​ ◦ 选项：A) Algorithm B) Character C) Budget D) Symbol​ ◦ 正确答案：A​ ◦ 答案解析：Algorithm意为“算法”。​ • 第4周 (Instructions)​ ◦ 题干：We read the _______ to know how to build the toy.​ ◦ 选项：A) Instructions B) Robot C) Tally Chart D) Symbol​ ◦ 正确答案：A​ ◦ 答案解析：Instructions意为“说明/指令”。​ • 第5周（综合复习测试：涵盖 Tally Chart, Algorithm, Instructions, Robot）​ ◦ 阅读文本：We read the Instructions to build a Robot. We use a Tally Chart to count its parts. Then we write an Algorithm to make it move!​ ◦ 题干：What do we write to make the Robot move?​ ◦ 选项：A) A Tally Chart B) An Algorithm C) A Symbol D) A Budget​ ◦ 正确答案：B​ ◦ 答案解析：文本中描述通过写算法(Algorithm)指令(Instructions)使机器人(Robot)移动。​ 【第二阶段：第7-9周】​
+**Explanation:** Tally Chart意为”画记统计表”
 
 ---
 
-**Week 7: review**
+**Week 3: Algorithm**
 
-> Passage: We need to buy parts. We must check our Budget. We use a math Symbol like (+) to Calculate the total cost.​
+**Question:** A step-by-step rule to solve a problem is an _______.
 
-**Question:** The money we can spend on our project is our _______.​
+**Options:**
+- A) Algorithm
+- B) Character
+- C) Budget
+- D) Symbol
+
+**Answer:** A
+
+**Explanation:** Algorithm意为”算法”
+
+---
+
+**Week 4: Instructions**
+
+**Question:** We read the _______ to know how to build the toy.
+
+**Options:**
+- A) Instructions
+- B) Robot
+- C) Tally Chart
+- D) Symbol
+
+**Answer:** A
+
+**Explanation:** Instructions意为”说明/指令”
+
+---
+
+**Week 5: review**
+
+> Passage: We read the Instructions to build a Robot. We use a Tally Chart to count its parts. Then we write an Algorithm to make it move!
+
+**Question:** What do we write to make the Robot move?
+
+**Options:**
+- A) A Tally Chart
+- B) An Algorithm
+- C) A Symbol
+- D) A Budget
+
+**Answer:** B
+
+**Explanation:** We write an Algorithm to make the Robot move.
+
+---
+
+**Week 7: Budget**
+
+**Question:** The money we can spend on our project is our _______.
 
 **Options:**
 - A) Symbol
@@ -180,119 +612,393 @@
 
 **Answer:** A
 
-**Explanation:** Budget意为“预算”。​ • 第8周 (Calculate)​ ◦ 题干：We must _______ the numbers to find the total cost.​ ◦ 选项：A) Calculate B) Repeat C) Dance D) Character​ ◦ 正确答案：A​ ◦ 答案解析：Calculate意为“计算”。​ • 第9周 (Symbol)​ ◦ 题干：A plus sign (+) is a math _______.​ ◦ 选项：A) Robot B) Budget C) Symbol D) Character​ ◦ 正确答案：C​ ◦ 答案解析：Symbol意为“符号”。​ • 第9周末（综合复习测试：涵盖 Budget, Calculate, Symbol）​ ◦ 阅读文本：We need to buy parts. We must check our Budget. We use a math Symbol like (+) to Calculate the total cost.​ ◦ 题干：What tells us how much money we can spend?​ ◦ 选项：A) Symbol B) Budget C) Calculate D) Robot​ ◦ 正确答案：B​ ◦ 答案解析：依靠预算(Budget)知道资金情况并进行计算(Calculate)。​ 【第三阶段：第10-12周】​
+**Explanation:** Budget意为”预算”
 
 ---
 
-**Week 10: review**
+**Week 8: Calculate**
 
-> Passage: We use the ScratchJr app on the tablet. We code a cat Character. We give it a Dance Algorithm to make it jump and spin.​
+**Question:** We must _______ the numbers to find the total cost.
 
-**Question:** A set of steps to make a robot dance is a _______.​
+**Options:**
+- A) Calculate
+- B) Repeat
+- C) Dance
+- D) Character
+
+**Answer:** A
+
+**Explanation:** Calculate意为”计算”
+
+---
+
+**Week 9: Symbol**
+
+**Question:** A plus sign (+) is a math _______.
+
+**Options:**
+- A) Robot
+- B) Budget
+- C) Symbol
+- D) Character
+
+**Answer:** C
+
+**Explanation:** Symbol意为”符号”
+
+**Week 9: review**
+
+> Passage: We need to buy parts. We must check our Budget. We use a math Symbol like (+) to Calculate the total cost.
+
+**Question:** What tells us how much money we can spend?
+
+**Options:**
+- A) Symbol
+- B) Budget
+- C) Calculate
+- D) Robot
+
+**Answer:** B
+
+**Explanation:** Our Budget tells us how much money we can spend.
+
+---
+
+**Week 10: Dance Algorithm**
+
+**Question:** A set of steps to make a robot dance is a _______.
 
 **Options:**
 - A) Symbol
 
 **Answer:** A
 
-**Explanation:** Dance Algorithm意为“舞蹈算法”。​ • 第11周 (ScratchJr)​ ◦ 题干：_______ is a coding app we use on the tablet.​ ◦ 选项：A) Budget B) ScratchJr C) Symbol D) Character​ ◦ 正确答案：B​ ◦ 答案解析：ScratchJr是一款著名少儿编程平台。​ • 第12周 (Character)​ ◦ 题干：The cat in our coding game is the main _______.​ ◦ 选项：A) Symbol B) Budget C) Character D) Algorithm​ ◦ 正确答案：C​ ◦ 答案解析：Character意为“角色”。​ • 第12周末（综合复习测试：涵盖 Dance Algorithm, ScratchJr, Character）​ ◦ 阅读文本：We use the ScratchJr app on the tablet. We code a cat Character. We give it a Dance Algorithm to make it jump and spin.​ ◦ 题干：What is the cat in the app called?​ ◦ 选项：A) A Symbol B) A Budget C) A Character D) A Chart​ ◦ 正确答案：C​ ◦ 答案解析：通过ScratchJr软件给角色(Character)写入舞蹈算法(Dance Algorithm)。​ 【第四阶段：第13-15周】​
+**Explanation:** Dance Algorithm意为”舞蹈算法”
 
 ---
 
-**Week 13: review**
+**Week 11: ScratchJr**
 
-> Passage: A Choreographer plans the dance. In coding, using a Repeat Block makes the dance code short and Efficient.​
-
-**Question:** To make the cat jump 5 times easily, we use a _______.​
+**Question:** _______ is a coding app we use on the tablet.
 
 **Options:**
-- A) Symbol​
+- A) Budget
+- B) ScratchJr
+- C) Symbol
+- D) Character
+
+**Answer:** B
+
+**Explanation:** ScratchJr是一款著名少儿编程平台
+
+---
+
+**Week 12: Character**
+
+**Question:** The cat in our coding game is the main _______.
+
+**Options:**
+- A) Symbol
+- B) Budget
+- C) Character
+- D) Algorithm
+
+**Answer:** C
+
+**Explanation:** Character意为”角色”
+
+**Week 12: review**
+
+> Passage: We use the ScratchJr app on the tablet. We code a cat Character. We give it a Dance Algorithm to make it jump and spin.
+
+**Question:** What is the cat in the app called?
+
+**Options:**
+- A) A Symbol
+- B) A Budget
+- C) A Character
+- D) A Chart
+
+**Answer:** C
+
+**Explanation:** The cat is called a Character.
+
+---
+
+**Week 13: Repeat Block**
+
+**Question:** To make the cat jump 5 times easily, we use a _______.
+
+**Options:**
+- A) Symbol
 
 **Answer:** A
 
-**Explanation:** Repeat Block指编程中的“重复积木/循环模块”。​ • 第14周 (Efficient)​ ◦ 题干：Doing work quickly and well means it is _______.​ ◦ 选项：A) Efficient B) Character C) Symbol D) Budget​ ◦ 正确答案：A​ ◦ 答案解析：Efficient意为“高效的”。​ • 第15周 (Choreographer)​ ◦ 题干：A person who plans the dance steps is a _______.​ ◦ 选项：A) Symbol B) Robot C) Choreographer D) Character​ ◦ 正确答案：C​ ◦ 答案解析：Choreographer意为“编舞者”。​ • 第15周末（综合复习测试：涵盖 Repeat Block, Efficient, Choreographer）​ ◦ 阅读文本：A Choreographer plans the dance. In coding, using a Repeat Block makes the dance code short and Efficient.​ ◦ 题干：What makes the code short and efficient?​ ◦ 选项：A) A Choreographer B) A Robot C) A Repeat Block D) A Symbol​ ◦ 正确答案：C​ ◦ 答案解析：使用重复块(Repeat Block)让编舞指令更高效(Efficient)。​
+**Explanation:** Repeat Block指编程中的”重复积木/循环模块”
+
+---
+
+**Week 14: Efficient**
+
+**Question:** Doing work quickly and well means it is _______.
+
+**Options:**
+- A) Efficient
+- B) Character
+- C) Symbol
+- D) Budget
+
+**Answer:** A
+
+**Explanation:** Efficient意为”高效的”
+
+---
+
+**Week 15: Choreographer**
+
+**Question:** A person who plans the dance steps is a _______.
+
+**Options:**
+- A) Symbol
+- B) Robot
+- C) Choreographer
+- D) Character
+
+**Answer:** C
+
+**Explanation:** Choreographer意为”编舞者”
+
+**Week 15: review**
+
+> Passage: A Choreographer plans the dance. In coding, using a Repeat Block makes the dance code short and Efficient.
+
+**Question:** What makes the code short and efficient?
+
+**Options:**
+- A) A Choreographer
+- B) A Robot
+- C) A Repeat Block
+- D) A Symbol
+
+**Answer:** C
+
+**Explanation:** A Repeat Block makes the code short and efficient.
 
 ---
 
 ### Subject: Music
 
-**Week 2: review**
+**Week 2: Instrument**
 
-> Passage: We play a musical Instrument. I shake the tambourine, and you tap the drum. We make a nice musical pattern.​
-
-**Question:** A drum or a piano is a musical _______.​
+**Question:** A drum or a piano is a musical _______.
 
 **Options:**
 - A) stage
 - B) Instrument
 - C) audience
-- D) bow​
+- D) bow
 
 **Answer:** B
 
-**Explanation:** Instrument意为“乐器”。​ • 第3周 (shake)​ ◦ 题干：You can _______ a tambourine (铃鼓) to make a sound.​ ◦ 选项：A) bow B) stage C) shake D) finish​ ◦ 正确答案：C​ ◦ 答案解析：shake意为“摇晃”。​ • 第4周 (tap)​ ◦ 题干：You can _______ a drum with your hands.​ ◦ 选项：A) bow B) tap C) audience D) stage​ ◦ 正确答案：B​ ◦ 答案解析：tap意为“轻敲”。​ • 第5周（综合复习测试：涵盖 Instrument, shake, tap, pattern）​ ◦ 阅读文本：We play a musical Instrument. I shake the tambourine, and you tap the drum. We make a nice musical pattern.​ ◦ 题干：What do you do to the drum?​ ◦ 选项：A) shake it B) tap it C) bow to it D) perform it​ ◦ 正确答案：B​ ◦ 答案解析：通过拍打(tap)乐器(Instrument)形成节奏模式(pattern)。​ 【第二阶段：第7-9周】​
+**Explanation:** Instrument意为”乐器”
 
 ---
 
-**Week 7: review**
+**Week 3: shake**
 
-> Passage: We follow the teacher. We count 1, 2, 3, 4. Then we start the song together.​
+**Question:** You can _______ a tambourine to make a sound.
 
-**Question:** We _______ 1, 2, 3, 4 to keep the beat.​
+**Options:**
+- A) bow
+- B) stage
+- C) shake
+- D) finish
+
+**Answer:** C
+
+**Explanation:** shake意为”摇晃”
+
+---
+
+**Week 4: tap**
+
+**Question:** You can _______ a drum with your hands.
+
+**Options:**
+- A) bow
+- B) tap
+- C) audience
+- D) stage
+
+**Answer:** B
+
+**Explanation:** tap意为”轻敲”
+
+---
+
+**Week 5: pattern**
+
+**Question:** When music repeats the same notes again and again, it makes a _______.
+
+**Options:**
+- A) pattern
+- B) shake
+- C) tap
+- D) bow
+
+**Answer:** A
+
+**Explanation:** pattern意为”节奏型/模式”
+
+---
+
+**Week 7: count**
+
+**Question:** We _______ 1, 2, 3, 4 to keep the beat.
 
 **Options:**
 - A) count
 - B) bow
 - C) stage
-- D) perform​
+- D) perform
 
 **Answer:** A
 
-**Explanation:** count意为“数数”。​ • 第8周 (follow)​ ◦ 题干：We must _______ the teacher's hand to play together.​ ◦ 选项：A) follow B) shake C) tap D) finish​ ◦ 正确答案：A​ ◦ 答案解析：follow意为“跟随”。​ • 第9周 (start)​ ◦ 题干：When the teacher points to us, we _______ playing.​ ◦ 选项：A) finish B) start C) bow D) stage​ ◦ 正确答案：B​ ◦ 答案解析：start意为“开始”。​ • 第9周末（综合复习测试：涵盖 count, follow, start）​ ◦ 阅读文本：We follow the teacher. We count 1, 2, 3, 4. Then we start the song together.​ ◦ 题干：What do we do after we count 1, 2, 3, 4?​ ◦ 选项：A) finish the song B) start the song C) bow D) shake​ ◦ 正确答案：B​ ◦ 答案解析：数完拍子(count)后跟随(follow)指挥开始(start)音乐。​ 【第三阶段：第10-12周】​
+**Explanation:** count意为”数数”
 
 ---
 
-**Week 10: review**
+**Week 8: follow**
 
-> Passage: We practice our song every day. Today, we stand on the stage. We sing until we finish the song.​
+**Question:** We must _______ the teacher's hand to play together.
 
-**Question:** We stop playing when we _______ the song.​
+**Options:**
+- A) follow
+- B) shake
+- C) tap
+- D) finish
+
+**Answer:** A
+
+**Explanation:** follow意为”跟随”
+
+---
+
+**Week 9: start**
+
+**Question:** When the teacher points to us, we _______ playing.
+
+**Options:**
+- A) finish
+- B) start
+- C) bow
+- D) stage
+
+**Answer:** B
+
+**Explanation:** start意为”开始”
+
+---
+
+**Week 10: finish**
+
+**Question:** We stop playing when we _______ the song.
 
 **Options:**
 - A) start
 - B) finish
 - C) count
-- D) practice​
+- D) practice
 
 **Answer:** B
 
-**Explanation:** finish意为“结束/完成”。​ • 第11周 (practice)​ ◦ 题干：To get better at music, we must _______ every day.​ ◦ 选项：A) finish B) stage C) practice D) bow​ ◦ 正确答案：C​ ◦ 答案解析：practice意为“练习”。​ • 第12周 (stage)​ ◦ 题干：We stand up on the big _______ to sing for everyone.​ ◦ 选项：A) pattern B) instrument C) stage D) count​ ◦ 正确答案：C​ ◦ 答案解析：stage意为“舞台”。​ • 第12周末（综合复习测试：涵盖 finish, practice, stage）​ ◦ 阅读文本：We practice our song every day. Today, we stand on the stage. We sing until we finish the song.​ ◦ 题干：Where do we stand to sing?​ ◦ 选项：A) In a box B) On the stage C) On an instrument D) In the audience​ ◦ 正确答案：B​ ◦ 答案解析：在舞台(stage)上演出直到结束(finish)。​ 【第四阶段：第13-15周】​
+**Explanation:** finish意为”结束/完成”
 
 ---
 
-**Week 13: review**
+**Week 11: practice**
 
-> Passage: We will perform a great song. The audience claps for us. When we are done, we bow.​
+**Question:** To get better at music, we must _______ every day.
 
-**Question:** At the end, we bend forward to _______ and say thank you.​
+**Options:**
+- A) finish
+- B) stage
+- C) practice
+- D) bow
+
+**Answer:** C
+
+**Explanation:** practice意为”练习”
+
+---
+
+**Week 12: stage**
+
+**Question:** We stand up on the big _______ to sing for everyone.
+
+**Options:**
+- A) pattern
+- B) instrument
+- C) stage
+- D) count
+
+**Answer:** C
+
+**Explanation:** stage意为”舞台”
+
+---
+
+**Week 13: bow**
+
+**Question:** At the end of the show, we bend forward to _______ and say thank you.
 
 **Options:**
 - A) bow
 - B) start
 - C) tap
-- D) count​
+- D) count
 
 **Answer:** A
 
-**Explanation:** bow意为“鞠躬”。​ • 第14周 (audience)​ ◦ 题干：The people who watch and clap for us are the _______.​ ◦ 选项：A) stage B) instrument C) audience D) pattern​ ◦ 正确答案：C​ ◦ 答案解析：audience意为“观众”。​ • 第15周 (perform)​ ◦ 题干：To sing or play music for people is to _______ for them.​ ◦ 选项：A) finish B) perform C) count D) tap​ ◦ 正确答案：B​ ◦ 答案解析：perform意为“表演”。​ • 第15周末（综合复习测试：涵盖 bow, audience, perform）​ ◦ 阅读文本：We will perform a great song. The audience claps for us. When we are done, we bow.​ ◦ 题干：Who claps for us?​ ◦ 选项：A) The stage B) The audience C) The instruments D) The pattern​ ◦ 正确答案：B​ ◦ 答案解析：观众(audience)为我们的表演(perform)鼓掌。​
+**Explanation:** bow意为”鞠躬”
+
+---
+
+**Week 14: audience**
+
+**Question:** The people who watch and clap for us are the _______.
+
+**Options:**
+- A) stage
+- B) instrument
+- C) audience
+- D) pattern
+
+**Answer:** C
+
+**Explanation:** audience意为”观众”
+
+---
+
+**Week 15: perform**
+
+**Question:** To sing or play music for people is to _______ for them.
+
+**Options:**
+- A) finish
+- B) perform
+- C) count
+- D) tap
+
+**Answer:** B
+
+**Explanation:** perform意为”表演”
 
 ---
 
 ### Subject: Performing Arts
 
-**Week 2: review**
-
-> Passage: In Gymnastics, we move our bodies. We learn how to do a sideways flip called a cartwheel.​
+**Week 2: Gymnastics**
 
 **Question:** In _______ class, we learn to jump, roll, and balance.
 
@@ -300,11 +1006,203 @@
 - A) Gymnastics
 - B) audience
 - C) dialogue
-- D) stage​
+- D) stage
 
 **Answer:** A
 
-**Explanation:** Gymnastics意为“体操”。​ • 第3/4周 (cartwheel)​ ◦ 题干：A _______ is a move where you turn sideways on your hands.​ ◦ 选项：A) bow B) cartwheel C) stage D) stretch​ ◦ 正确答案：B​ ◦ 答案解析：cartwheel意为“侧手翻”。​ • 第5周（综合复习测试：涵盖 Gymnastics, cartwheel）​ ◦ 阅读文本：In Gymnastics, we move our bodies. We learn how to do a sideways flip called a cartwheel.​ ◦ 题干：What sideways flip do we learn?​ ◦ 选项：A) Gymnastics B) A stretch C) A cartwheel D) A stage​ ◦ 正确答案：C​ ◦ 答案解析：侧手翻(cartwheel)是体操(Gymnastics)中的基础动作。​ 【第二阶段：第7-9周】​ • 第7/8周 (cartwheel)​ ◦ 题干：You need strong arms to do a good sideways _______.​ ◦ 选项：A) cartwheel B) audience C) dialogue D) character​ ◦ 正确答案：A​ ◦ 答案解析：继续巩固侧手翻技能词汇。
+**Explanation:** Gymnastics意为”体操”
+
+---
+
+**Week 3: cartwheel**
+
+**Question:** A _______ is a move where you turn sideways on your hands.
+
+**Options:**
+- A) bow
+- B) cartwheel
+- C) stage
+- D) stretch
+
+**Answer:** B
+
+**Explanation:** cartwheel意为”侧手翻”
+
+---
+
+**Week 4: Cartwheel**
+
+**Question:** You need strong arms to do a good sideways _______.
+
+**Options:**
+- A) bow
+- B) cartwheel
+- C) audience
+- D) dialogue
+
+**Answer:** B
+
+**Explanation:** cartwheel意为”侧手翻”
+
+---
+
+**Week 5: cartwheel**
+
+**Question:** What sideways flip do we learn in Gymnastics?
+
+**Options:**
+- A) A stretch
+- B) A cartwheel
+- C) A bow
+- D) A stage
+
+**Answer:** B
+
+**Explanation:** cartwheel意为”侧手翻”
+
+---
+
+**Week 7: cartwheel**
+
+**Question:** To do a good _______, put your hands on the ground and kick your legs over.
+
+**Options:**
+- A) cartwheel
+- B) audience
+- C) dialogue
+- D) character
+
+**Answer:** A
+
+**Explanation:** cartwheel意为”侧手翻”
+
+---
+
+**Week 8: Cartwheel**
+
+**Question:** In a _______, your hands touch the floor while your feet go up in the air.
+
+**Options:**
+- A) stretch
+- B) cartwheel
+- C) bow
+- D) stage
+
+**Answer:** B
+
+**Explanation:** cartwheel意为”侧手翻”
+
+---
+
+**Week 9: Stretch**
+
+**Question:** Reach your arms up high to _______ your body.
+
+**Options:**
+- A) Stretch
+- B) cartwheel
+- C) sing
+- D) bow
+
+**Answer:** A
+
+**Explanation:** Stretch意为”伸展/拉伸”
+
+---
+
+**Week 10: cartwheel**
+
+**Question:** When doing a _______, your hands touch the floor while feet go up.
+
+**Options:**
+- A) Stretch
+- B) cartwheel
+- C) stage
+- D) play
+
+**Answer:** B
+
+**Explanation:** cartwheel意为”侧手翻”
+
+---
+
+**Week 11: Stretch**
+
+**Question:** To make your muscles long and warm, you should _______.
+
+**Options:**
+- A) Stretch
+- B) stage
+- C) character
+- D) play
+
+**Answer:** A
+
+**Explanation:** Stretch意为”伸展/拉伸”
+
+---
+
+**Week 12: Stretch**
+
+**Question:** Why do we stretch before exercise?
+
+**Options:**
+- A) To fall down
+- B) To get ready to move
+- C) To sleep
+- D) To eat
+
+**Answer:** B
+
+**Explanation:** Stretch意为”伸展/拉伸”
+
+---
+
+**Week 13: stretch**
+
+**Question:** If you feel tight, you need a good _______ to loosen up.
+
+**Options:**
+- A) cartwheel
+- B) stretch
+- C) lines
+- D) emotions
+
+**Answer:** B
+
+**Explanation:** stretch意为”伸展/拉伸”
+
+---
+
+**Week 14: stretch**
+
+**Question:** After moving fast, we sit down and _______ our legs to cool down.
+
+**Options:**
+- A) cartwheel
+- B) stretch
+- C) lines
+- D) emotions
+
+**Answer:** B
+
+**Explanation:** stretch意为”伸展/拉伸”
+
+---
+
+**Week 15: Stretch**
+
+**Question:** After the show, we do a slow _______ to cool down.
+
+**Options:**
+- A) cartwheel
+- B) Stretch
+- C) lines
+- D) emotions
+
+**Answer:** B
+
+**Explanation:** Stretch意为”伸展/拉伸”
 
 ---
 
@@ -364,75 +1262,235 @@
 
 ### Subject: Drama
 
-**Week 2: review**
+**Week 2: character**
 
-> Passage: You pretend to be a character. In hot seating, you sit in a chair. You speak your dialogue out loud.​
-
-**Question:** A person or animal you pretend to be in a story is a _______.​
+**Question:** A person or animal you pretend to be in a story is a _______.
 
 **Options:**
 - A) character
 - B) stage
 - C) stretch
-- D) dialogue​
+- D) dialogue
 
 **Answer:** A
 
-**Explanation:** character意为“角色”。​ • 第3周 (dialogue)​ ◦ 题干：When two actors talk to each other, it is a _______.​ ◦ 选项：A) cartwheel B) dialogue C) stage D) stretch​ ◦ 正确答案：B​ ◦ 答案解析：dialogue意为“对话/对白”。​ • 第4周 (hot seating)​ ◦ 题干：In _______, you sit in a chair and answer questions as your character.​ ◦ 选项：A) hot seating B) stage C) cartwheel D) stretch ◦ 正确答案：A​ ◦ 答案解析：hot seating是戏剧中的“焦点人物法”。​ • 第5周（综合复习测试：涵盖 character, dialogue, hot seating）​ ◦ 阅读文本：You pretend to be a character. In hot seating, you sit in a chair. You speak your dialogue out loud.​ ◦ 题干：Who do you pretend to be?​ ◦ 选项：A) A stage B) A dialogue C) A character D) A chair​ ◦ 正确答案：C​ ◦ 答案解析：扮演故事中的角色(character)。​ 【第二阶段：第7-9周】​
+**Explanation:** character意为”角色”
 
 ---
 
-**Week 7: review**
+**Week 3: dialogue**
 
-> Passage: The actor performs in a big play. He cries and smiles to show strong emotions.​
+**Question:** When two actors talk to each other, it is a _______.
 
-**Question:** Happy and sad are different _______ we show on our face.​
+**Options:**
+- A) cartwheel
+- B) dialogue
+- C) stage
+- D) stretch
+
+**Answer:** B
+
+**Explanation:** dialogue意为”对话/对白”
+
+---
+
+**Week 4: hot seating**
+
+**Question:** In _______, you sit in a chair and answer questions as your character.
+
+**Options:**
+- A) hot seating
+- B) stage
+- C) cartwheel
+- D) stretch
+
+**Answer:** A
+
+**Explanation:** hot seating是戏剧中的”焦点人物法”
+
+---
+
+**Week 5: review**
+
+> Passage: You pretend to be a character. In hot seating, you sit in a chair. You speak your dialogue out loud.
+
+**Question:** Who do you pretend to be?
+
+**Options:**
+- A) A stage
+- B) A dialogue
+- C) A character
+- D) A chair
+
+**Answer:** C
+
+**Explanation:** 综合复习测试：涵盖 character, dialogue, hot seating
+
+---
+
+**Week 7: emotions**
+
+**Question:** Happy and sad are different _______ we show on our face.
 
 **Options:**
 - A) lines
 - B) actors
 - C) emotions
-- D) stages​
+- D) stages
 
 **Answer:** C
 
-**Explanation:** emotions意为“情绪”。​ • 第8周 (actor)​ ◦ 题干：A person who performs in a show is an _______.​ ◦ 选项：A) emotions B) actor C) lines D) stage​ ◦ 正确答案：B​ ◦ 答案解析：actor意为“演员”。​ • 第9周 (play)​ ◦ 题干：A story acted out on a stage is a _______.​ ◦ 选项：A) play B) actor C) lines D) stretch​ ◦ 正确答案：A​ ◦ 答案解析：play在戏剧语境中意为“戏剧/舞台剧”。​ • 第9周末（综合复习测试：涵盖 emotions, actor, play）​ ◦ 阅读文本：The actor performs in a big play. He cries and smiles to show strong emotions.​ ◦ 题干：What does the actor perform in?​ ◦ 选项：A) A play B) Emotions C) A cartwheel D) A character​ ◦ 正确答案：A​ ◦ 答案解析：演员(actor)在剧(play)中表演强烈的情绪(emotions)。​ 【第三阶段：第10-12周】​
+**Explanation:** emotions意为”情绪”
 
 ---
 
-**Week 10: review**
+**Week 8: actor**
 
-> Passage: In our play, we sing happy songs. We use a big smile as our facial expression.​
+**Question:** A person who performs in a show is an _______.
 
-**Question:** We are watching a funny _______ at the theater.​
+**Options:**
+- A) emotions
+- B) actor
+- C) lines
+- D) stage
+
+**Answer:** B
+
+**Explanation:** actor意为”演员”
+
+---
+
+**Week 9: play**
+
+**Question:** A story acted out on a stage is a _______.
+
+**Options:**
+- A) play
+- B) actor
+- C) lines
+- D) stretch
+
+**Answer:** A
+
+**Explanation:** play在戏剧语境中意为”戏剧/舞台剧”
+
+---
+
+**Week 9: review**
+
+> Passage: The actor performs in a big play. He cries and smiles to show strong emotions.
+
+**Question:** What does the actor perform in?
+
+**Options:**
+- A) A play
+- B) Emotions
+- C) A cartwheel
+- D) A character
+
+**Answer:** A
+
+**Explanation:** 综合复习测试：涵盖 emotions, actor, play
+
+---
+
+**Week 10: play**
+
+**Question:** We are watching a funny _______ at the theater.
 
 **Options:**
 - A) emotions
 - B) stretch
 - C) play
-- D) hot seating​
+- D) hot seating
 
 **Answer:** C
 
-**Explanation:** 巩固play的语境理解。​ • 第11周 (sing)​ ◦ 题干：In a musical play, actors talk and _______ songs.​ ◦ 选项：A) sing B) stretch C) bow D) stage​ ◦ 正确答案：A​ ◦ 答案解析：sing意为“唱歌”。​ • 第12周 (facial expression)​ ◦ 题干：A smile is a _______ that shows you are happy.​ ◦ 选项：A) dialogue B) facial expression C) stage D) lines​ ◦ 正确答案：B​ ◦ 答案解析：facial expression意为“面部表情”。​ • 第12周末（综合复习测试：涵盖 play, sing, facial expression）​ ◦ 阅读文本：In our play, we sing happy songs. We use a big smile as our facial expression.​ ◦ 题干：What do we do in the play?​ ◦ 选项：A) We sleep B) We sing happy songs C) We cry D) We stretch​ ◦ 正确答案：B​ ◦ 答案解析：音乐剧(play)包含唱歌(sing)与表情(facial expression)。​ 【第四阶段：第13-15周】​ • 第13/14周 (stage directions)​ ◦ 题干：_______ tell actors where to walk on the stage. ◦ 选项：A) Stage directions B) Lines C) Emotions D) Characters​ ◦ 正确答案：A​ ◦ 答案解析：stage directions意为“舞台走位指示”。​
+**Explanation:** play在戏剧语境中意为”戏剧/舞台剧”
+
+---
+
+**Week 11: sing**
+
+**Question:** In a musical play, actors talk and _______ songs.
+
+**Options:**
+- A) sing
+- B) stretch
+- C) bow
+- D) stage
+
+**Answer:** A
+
+**Explanation:** sing意为”唱歌”
+
+---
+
+**Week 12: review**
+
+> Passage: In our play, we sing happy songs. We use a big smile as our facial expression.
+
+**Question:** What do we do in the play?
+
+**Options:**
+- A) We sleep
+- B) We sing happy songs
+- C) We cry
+- D) We stretch
+
+**Answer:** B
+
+**Explanation:** 综合复习测试：涵盖 play, sing, facial expression
+
+---
+
+**Week 13: stage directions**
+
+**Question:** _______ tell actors where to walk on the stage.
+
+**Options:**
+- A) Stage directions
+- B) Lines
+- C) Emotions
+- D) Characters
+
+**Answer:** A
+
+**Explanation:** stage directions意为”舞台走位指示”
+
+---
+
+**Week 14: stage directions**
+
+**Question:** The stage directions tell the actor to walk where?
+
+**Options:**
+- A) To sit down
+- B) Left or right
+- C) To jump
+- D) To sleep
+
+**Answer:** B
+
+**Explanation:** stage directions意为”舞台走位指示”
 
 ---
 
 **Week 15: review**
 
-> Passage: The stage directions tell the actor to walk left. Then, the actor speaks his lines loudly.​
+> Passage: The stage directions tell the actor to walk left. Then, the actor speaks his lines loudly.
 
-**Question:** Actors memorize their _______ so they know what words to say.​
+**Question:** What tells the actor to walk left?
 
 **Options:**
-- A) stage directions
-- B) lines
-- C) emotions
-- D) stages​
+- A) His lines
+- B) His emotions
+- C) Stage directions
+- D) The play
 
-**Answer:** B
+**Answer:** C
 
-**Explanation:** lines意为“台词”。​ • 第15周末（综合复习测试：涵盖 stage directions, lines）​ ◦ 阅读文本：The stage directions tell the actor to walk left. Then, the actor speaks his lines loudly.​ ◦ 题干：What tells the actor to walk left?​ ◦ 选项：A) His lines B) His emotions C) Stage directions D) The play​ ◦ 正确答案：C​ ◦ 答案解析：舞台指示(stage directions)教导走位，台词(lines)表达内容。​
+**Explanation:** 综合复习测试：涵盖 stage directions, lines
 
 ---
 
@@ -452,25 +1510,121 @@
 
 **Answer:** C
 
-**Explanation:** 美术故事创作中的character同样意为“角色”。​ • 第3周 (setting)​ ◦ 题干：The place or background in the art is the _______.​ ◦ 选项：A) setting B) character C) sculpture D) line​ ◦ 正确答案：A​ ◦ 答案解析：setting指画作的“背景/环境”。​ • 第4/5周 (sculpture)​ ◦ 题干：A 3D art piece made of clay is a _______.​ ◦ 选项：A) setting B) character C) sculpture D) spiral​ ◦ 正确答案：C​ ◦ 答案解析：sculpture意为“雕塑”。​ • 第5周（综合复习测试：涵盖 character, setting, sculpture）​ ◦ 阅读文本：I draw a hero character. Behind him is a forest setting. Then I make a 3D clay sculpture.​ ◦ 题干：What is the forest used for?​ ◦ 选项：A) The character B) The setting C) The sculpture D) The spiral​ ◦ 正确答案：B​ ◦ 答案解析：森林用于画作的背景设置(setting)。​ 【第二阶段：第7-9周】​
+---
+
+**Week 3: setting**
+
+**Question:** The place or background in the art is the _______.
+
+**Options:**
+- A) setting
+- B) character
+- C) sculpture
+- D) line
+
+**Answer:** A
+
+**Explanation:** setting指画作的”背景/环境”
 
 ---
 
-**Week 7: review**
+**Week 4: sculpture**
 
-> Passage: I paint a round spiral line. I paint an egg-shaped oval. I put my painting next to my clay sculpture.​
+**Question:** A 3D art piece made of clay is a _______.
 
-**Question:** An egg shape is called an _______.​
+**Options:**
+- A) setting
+- B) character
+- C) sculpture
+- D) spiral
+
+**Answer:** C
+
+**Explanation:** sculpture意为”雕塑”
+
+---
+
+**Week 5: review**
+
+> Passage: I draw a hero character. Behind him is a forest setting. Then I make a 3D clay sculpture.
+
+**Question:** What is the forest used for?
+
+**Options:**
+- A) The character
+- B) The setting
+- C) The sculpture
+- D) The spiral
+
+**Answer:** B
+
+**Explanation:** 综合复习测试：涵盖 character, setting, sculpture
+
+---
+
+**Week 7: oval**
+
+**Question:** An egg shape is called an _______.
 
 **Options:**
 - A) square
 - B) triangle
 - C) oval
-- D) spiral​
+- D) spiral
 
 **Answer:** C
 
-**Explanation:** oval意为“椭圆形”。​ • 第8周 (spiral)​ ◦ 题干：A curvy line that goes round and round is a _______.​ ◦ 选项：A) square B) oval C) spiral D) collage​ ◦ 正确答案：C​ ◦ 答案解析：spiral意为“螺旋形”。​ • 第9周 (sculpture)​ ◦ 题干：We build a tall clay _______ in art class.​ ◦ 选项：A) oval B) spiral C) sculpture D) setting​ ◦ 正确答案：C​ ◦ 答案解析：再次巩固3D艺术概念(sculpture)。​ • 第9周末（综合复习测试：涵盖 oval, spiral, sculpture）​ ◦ 阅读文本：I paint a round spiral line. I paint an egg-shaped oval. I put my painting next to my clay sculpture.​ ◦ 题干：What shape looks like an egg?​ ◦ 选项：A) A spiral B) A sculpture C) An oval D) A square​ ◦ 正确答案：C​ ◦ 答案解析：椭圆形(oval)形似鸡蛋。​ 【第三阶段：第10-12周】​
+**Explanation:** oval意为”椭圆形”
+
+---
+
+**Week 8: spiral**
+
+**Question:** A curvy line that goes round and round is a _______.
+
+**Options:**
+- A) square
+- B) oval
+- C) spiral
+- D) collage
+
+**Answer:** C
+
+**Explanation:** spiral意为”螺旋形”
+
+---
+
+**Week 9: sculpture**
+
+**Question:** We build a tall clay _______ in art class.
+
+**Options:**
+- A) oval
+- B) spiral
+- C) sculpture
+- D) setting
+
+**Answer:** C
+
+**Explanation:** sculpture意为”雕塑”
+
+---
+
+**Week 9: review**
+
+> Passage: I paint a round spiral line. I paint an egg-shaped oval. I put my painting next to my clay sculpture.
+
+**Question:** What shape looks like an egg?
+
+**Options:**
+- A) A spiral
+- B) A sculpture
+- C) An oval
+- D) A square
+
+**Answer:** C
+
+**Explanation:** 综合复习测试：涵盖 oval, spiral, sculpture
 
 ---
 
@@ -488,7 +1642,87 @@
 
 **Answer:** B
 
-**Explanation:** 蜗牛壳具有螺旋(spiral)形状特征。​ • 第11周 (collage)​ ◦ 题干：Art made by gluing cut paper together is a _______.​ ◦ 选项：A) spiral B) sculpture C) collage D) oval​ ◦ 正确答案：C​ ◦ 答案解析：collage意为“拼贴画”。​ • 第12周 (layout)​ ◦ 题干：The way we place the cut paper on the page is our good _______.​ ◦ 选项：A) spiral B) layout C) character D) oval​ ◦ 正确答案：B​ ◦ 答案解析：layout意为“布局/排版”。​ • 第12周末（综合复习测试：涵盖 spiral, collage, layout）​ ◦ 阅读文本：We draw a round spiral. Then we cut paper and glue it to make a collage. We plan a nice layout on the page.​ ◦ 题干：What do we make by gluing cut paper?​ ◦ 选项：A) A collage B) A layout C) A spiral D) An oval ◦ 正确答案：A​ ◦ 答案解析：粘贴碎纸片制作的是拼贴画(collage)。​ 【第四阶段：第13-15周】​ • 第13/14周 (yarn)​ ◦ 题干：A thick, soft string used for knitting or art is _______.​ ◦ 选项：A) yarn B) sculpture C) oval D) layout​ ◦ 正确答案：A​ ◦ 答案解析：yarn意为“毛线/粗纱”。​
+---
+
+**Week 11: collage**
+
+**Question:** Art made by gluing cut paper together is a _______.
+
+**Options:**
+- A) spiral
+- B) sculpture
+- C) collage
+- D) oval
+
+**Answer:** C
+
+**Explanation:** collage意为”拼贴画”
+
+---
+
+**Week 12: layout**
+
+**Question:** The way we place the cut paper on the page is our good _______.
+
+**Options:**
+- A) spiral
+- B) layout
+- C) character
+- D) oval
+
+**Answer:** B
+
+**Explanation:** layout意为”布局/排版”
+
+---
+
+**Week 12: review**
+
+> Passage: We draw a round spiral. Then we cut paper and glue it to make a collage. We plan a nice layout on the page.
+
+**Question:** What do we make by gluing cut paper?
+
+**Options:**
+- A) A collage
+- B) A layout
+- C) A spiral
+- D) An oval
+
+**Answer:** A
+
+**Explanation:** 综合复习测试：涵盖 spiral, collage, layout
+
+---
+
+**Week 13: yarn**
+
+**Question:** A thick, soft string used for knitting or art is _______.
+
+**Options:**
+- A) yarn
+- B) sculpture
+- C) oval
+- D) layout
+
+**Answer:** A
+
+**Explanation:** yarn意为”毛线/粗纱”
+
+---
+
+**Week 14: yarn**
+
+**Question:** In our collage, we glue thick _______ to make a tree.
+
+**Options:**
+- A) collage
+- B) yarn
+- C) thread
+- D) oval
+
+**Answer:** B
+
+**Explanation:** yarn意为”毛线/粗纱”
 
 ---
 
@@ -506,7 +1740,25 @@
 
 **Answer:** C
 
-**Explanation:** thread意为“细线/缝线”。​ • 第15周末（综合复习测试：涵盖 yarn, thread）​ ◦ 阅读文本：In our collage, we glue thick yarn to make a tree. We use thin thread to make small leaves.​ ◦ 题干：What do we use to make small leaves?​ ◦ 选项：A) Thick yarn B) Thin thread C) A collage D) An oval​ ◦ 正确答案：B​ ◦ 答案解析：在拼贴画(collage)中，细线(thread)用于制作小叶子。​
+**Explanation:** thread意为”细线/缝线”
+
+---
+
+**Week 15: review**
+
+> Passage: In our collage, we glue thick yarn to make a tree. We use thin thread to make small leaves.
+
+**Question:** What do we use to make small leaves?
+
+**Options:**
+- A) Thick yarn
+- B) Thin thread
+- C) A collage
+- D) An oval
+
+**Answer:** B
+
+**Explanation:** 综合复习测试：涵盖 yarn, thread
 
 ---
 
@@ -526,7 +1778,57 @@
 
 **Answer:** A
 
-**Explanation:** together意为“一起”。​ • 第3周 (cheer)​ ◦ 题干：We shout and _______ for our team to win! ◦ 选项：A) bounce B) cheer C) save D) relay​ ◦ 正确答案：B​ ◦ 答案解析：cheer意为“欢呼/加油”。​ • 第4/5周 (teamwork)​ ◦ 题干：Working nicely in a group is called good _______.​ ◦ 选项：A) bounce B) teamwork C) hoop D) save​ ◦ 正确答案：B​ ◦ 答案解析：teamwork意为“团队合作”。​ • 第5周（综合复习测试：涵盖 together, cheer, teamwork）​ ◦ 阅读文本：We play together on the field. We cheer for our friends. This shows good teamwork.​ ◦ 题干：What does it show when we play together and cheer?​ ◦ 选项：A) A bounce B) Good teamwork C) A hoop D) A save​ ◦ 正确答案：B​ ◦ 答案解析：大家一起(together)玩并欢呼(cheer)，体现良好的团队精神(teamwork)。​ 【第二阶段：第7-9周】​
+**Explanation:** together意为”一起”
+
+---
+
+**Week 3: cheer**
+
+**Question:** We shout and _______ for our team to win!
+
+**Options:**
+- A) bounce
+- B) cheer
+- C) save
+- D) relay
+
+**Answer:** B
+
+**Explanation:** cheer意为”欢呼/加油”
+
+---
+
+**Week 4: teamwork**
+
+**Question:** Working nicely in a group is called good _______.
+
+**Options:**
+- A) bounce
+- B) teamwork
+- C) hoop
+- D) save
+
+**Answer:** B
+
+**Explanation:** teamwork意为”团队合作”
+
+---
+
+**Week 5: review**
+
+> Passage: We play together on the field. We cheer for our friends. This shows good teamwork.
+
+**Question:** What does it show when we play together and cheer?
+
+**Options:**
+- A) A bounce
+- B) Good teamwork
+- C) A hoop
+- D) A save
+
+**Answer:** B
+
+**Explanation:** 综合复习测试：涵盖 together, cheer, teamwork
 
 ---
 
@@ -544,7 +1846,57 @@
 
 **Answer:** B
 
-**Explanation:** communication意为“沟通”，在体育团队配合中至关重要。​ • 第8周 (hoop)​ ◦ 题干：We try to throw the basketball into the net or _______. ◦ 选项：A) relay B) save C) hoop D) cheer​ ◦ 正确答案：C​ ◦ 答案解析：hoop意为“篮筐或呼啦圈”。​ • 第9周 (bounce)​ ◦ 题干：When a ball hits the floor and comes up, it will _______.​ ◦ 选项：A) cheer B) bounce C) save D) teamwork​ ◦ 正确答案：B​ ◦ 答案解析：bounce意为“弹跳/拍球”。​ • 第9周末（综合复习测试：涵盖 communication, hoop, bounce）​ ◦ 阅读文本：We use clear communication to pass the ball. We bounce the ball on the floor and throw it into the hoop.​ ◦ 题干：What do we do to the ball on the floor?​ ◦ 选项：A) We eat it. B) We bounce it. C) We cheer it. D) We communicate it.​ ◦ 正确答案：B​ ◦ 答案解析：通过沟通(communication)，拍(bounce)球进入篮筐(hoop)。​ 【第三阶段：第10-12周】​
+**Explanation:** communication意为”沟通”，在体育团队配合中至关重要
+
+---
+
+**Week 8: hoop**
+
+**Question:** We try to throw the basketball into the net or _______.
+
+**Options:**
+- A) relay
+- B) save
+- C) hoop
+- D) cheer
+
+**Answer:** C
+
+**Explanation:** hoop意为”篮筐或呼啦圈”
+
+---
+
+**Week 9: bounce**
+
+**Question:** When a ball hits the floor and comes up, it will _______.
+
+**Options:**
+- A) cheer
+- B) bounce
+- C) save
+- D) teamwork
+
+**Answer:** B
+
+**Explanation:** bounce意为”弹跳/拍球”
+
+---
+
+**Week 9: review**
+
+> Passage: We use clear communication to pass the ball. We bounce the ball on the floor and throw it into the hoop.
+
+**Question:** What do we do to the ball on the floor?
+
+**Options:**
+- A) We eat it
+- B) We bounce it
+- C) We cheer it
+- D) We communicate it
+
+**Answer:** B
+
+**Explanation:** 综合复习测试：涵盖 communication, hoop, bounce
 
 ---
 
@@ -562,7 +1914,57 @@
 
 **Answer:** A
 
-**Explanation:** 继续巩固bounce的使用。​ • 第11周 (practice)​ ◦ 题干：To get better at running, you must _______ every day.​ ◦ 选项：A) save B) practice C) bounce D) hoop​ ◦ 正确答案：B​ ◦ 答案解析：practice意为“练习”。​ • 第12周 (team)​ ◦ 题干：A group of players playing a game together is a _______.​ ◦ 选项：A) bounce B) hoop C) team D) save​ ◦ 正确答案：C​ ◦ 答案解析：team意为“队伍”。​ • 第12周末（综合复习测试：涵盖 bounce, practice, team）​ ◦ 阅读文本：Our soccer team wants to win. We must practice every day. We learn how to kick and bounce the ball.​ ◦ 题干：What must the soccer team do every day?​ ◦ 选项：A) sleep B) practice C) save D) hoop​ ◦ 正确答案：B​ ◦ 答案解析：球队(team)要想变强必须每天练习(practice)。​ 【第四阶段：第13-15周】​
+**Explanation:** 继续巩固bounce的使用
+
+---
+
+**Week 11: practice**
+
+**Question:** To get better at running, you must _______ every day.
+
+**Options:**
+- A) save
+- B) practice
+- C) bounce
+- D) hoop
+
+**Answer:** B
+
+**Explanation:** practice意为”练习”
+
+---
+
+**Week 12: team**
+
+**Question:** A group of players playing a game together is a _______.
+
+**Options:**
+- A) bounce
+- B) hoop
+- C) team
+- D) save
+
+**Answer:** C
+
+**Explanation:** team意为”队伍”
+
+---
+
+**Week 12: review**
+
+> Passage: Our soccer team wants to win. We must practice every day. We learn how to kick and bounce the ball.
+
+**Question:** What must the soccer team do every day?
+
+**Options:**
+- A) sleep
+- B) practice
+- C) save
+- D) hoop
+
+**Answer:** B
+
+**Explanation:** 综合复习测试：涵盖 bounce, practice, team
 
 ---
 
@@ -580,7 +1982,41 @@
 
 **Answer:** C
 
-**Explanation:** save在此处特指守门员的“扑救”。​ • 第14周 (practice)​ ◦ 题干：We _______ kicking the ball to score a goal.​ ◦ 选项：A) practice B) save C) bounce D) relay​ ◦ 正确答案：A​ ◦ 答案解析：巩固动词practice。​ • 第15周 (relay)​ ◦ 题干：A race where runners take turns passing a stick is a _______.​ ◦ 选项：A) save B) bounce C) relay D) hoop​ ◦ 正确答案：C​ ◦ 答案解析：relay意为“接力赛”。​ • 第15周末（综合复习测试：涵盖 save, practice, relay）​ ◦ 阅读文本：The goalie makes a great save! The runners practice passing the stick for the team relay race.​ ◦ 题干：What kind of race do the runners practice for?​ ◦ 选项：A) A swimming race B) A relay race C) A bouncing race D) A saving race​ ◦ 正确答案：B​ ◦ 答案解析：短文叙述扑救(save)和跑者练习(practice)为接力赛(relay)做准备。​
+**Explanation:** save在此处特指守门员的”扑救”
+
+---
+
+**Week 14: practice**
+
+**Question:** We _______ kicking the ball to score a goal.
+
+**Options:**
+- A) practice
+- B) save
+- C) bounce
+- D) relay
+
+**Answer:** A
+
+**Explanation:** practice意为”练习”
+
+---
+
+**Week 15: review**
+
+> Passage: The goalie makes a great save! The runners practice passing the stick for the team relay race.
+
+**Question:** What kind of race do the runners practice for?
+
+**Options:**
+- A) A swimming race
+- B) A relay race
+- C) A bouncing race
+- D) A saving race
+
+**Answer:** B
+
+**Explanation:** 综合复习测试：涵盖 save, practice, relay
 
 ---
 

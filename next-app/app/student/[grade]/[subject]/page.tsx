@@ -6,6 +6,7 @@ import { prisma } from '@/lib/db'
 import { Card, CardContent } from '@/components/ui/card'
 import { Progress } from '@/components/ui/progress'
 import { Lock, CheckCircle } from 'lucide-react'
+import { normalizeSubject, subjectToSlug } from '@/lib/subjectUtils'
 
 const WEEK_CONFIG = [
   { id: 2, emoji: '🌱', title: 'Week 2', color: 'bg-green-100 border-green-300 text-green-700' },
@@ -36,19 +37,23 @@ const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string 
 
 export default async function WeekMapPage({ params }: { params: Promise<{ grade: string; subject: string }> }) {
   const session = await auth()
-  const { grade, subject } = await params
+  const { grade, subject: rawSubject } = await params
 
   if (!session?.user) {
     redirect('/login')
   }
 
+  // Normalize subject name to match data keys (e.g., "maths" -> "Maths")
+  const subject = normalizeSubject(rawSubject)
+
   const subjectInfo = SUBJECT_INFO[subject] || { name: subject, emoji: '📚', color: 'from-gray-500 to-gray-700' }
+  const normalizedGrade = grade.toUpperCase()
 
   let progress = await prisma.studentProgress.findUnique({
     where: {
       userId_grade_subject: {
         userId: session.user.id,
-        grade: grade.toUpperCase(),
+        grade: normalizedGrade,
         subject: subject
       }
     },
@@ -61,7 +66,7 @@ export default async function WeekMapPage({ params }: { params: Promise<{ grade:
     await prisma.studentProgress.create({
       data: {
         userId: session.user.id,
-        grade: grade.toUpperCase(),
+        grade: normalizedGrade,
         subject: subject,
         difficulty: 'EASY',
         totalScore: 0,
@@ -87,7 +92,7 @@ export default async function WeekMapPage({ params }: { params: Promise<{ grade:
       where: {
         userId_grade_subject: {
           userId: session.user.id,
-          grade: grade.toUpperCase(),
+          grade: normalizedGrade,
           subject: subject
         }
       },
@@ -173,7 +178,7 @@ export default async function WeekMapPage({ params }: { params: Promise<{ grade:
                     <h3 className="font-semibold">{week.title}</h3>
                   </div>
                   {!isLocked && (
-                    <Link href={`/student/${grade}/${subject}/${week.id}`}>
+                    <Link href={`/student/${normalizedGrade}/${subjectToSlug(subject)}/${week.id}`}>
                       <button className="w-full mt-3 px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 text-sm font-medium">
                         {isCompleted ? 'Play Again' : 'Start Quiz'}
                       </button>

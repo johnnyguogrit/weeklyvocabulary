@@ -381,6 +381,11 @@ function main() {
   const outputPath = path.join(__dirname, '../src/data/predefinedQuestions.ts');
   fs.writeFileSync(outputPath, ts, 'utf-8');
   console.log(`\nGenerated: ${outputPath}`);
+
+  // Also write to next-app directory
+  const outputPath2 = path.join(__dirname, '../../next-app/data/predefinedQuestions.ts');
+  fs.writeFileSync(outputPath2, ts, 'utf-8');
+  console.log(`Generated: ${outputPath2}`);
 }
 
 main();

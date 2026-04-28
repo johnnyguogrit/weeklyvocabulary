@@ -5,6 +5,7 @@ import { redirect } from 'next/navigation'
 import { prisma } from '@/lib/db'
 import { Card, CardContent } from '@/components/ui/card'
 import { Progress } from '@/components/ui/progress'
+import { subjectToSlug } from '@/lib/subjectUtils'
 
 const SUBJECTS = [
   { id: 'Maths', name: 'Mathematics', emoji: '🔢', color: 'from-green-500 to-green-700' },
@@ -74,7 +75,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ grade:
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05, duration: 0.3 }}
               >
-                <Link href={`/student/${grade}/${subject.id}`} className="block h-full">
+                <Link href={`/student/${grade}/${subjectToSlug(subject.id)}`} className="block h-full">
                   <Card className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <CardContent className="p-6">
                       <div className={`bg-gradient-to-br ${subject.color} rounded-xl p-4 text-white mb-4`}>

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getSubjectData } from '@/data/questionGenerator'
+import { normalizeSubject, subjectToSlug } from '@/lib/subjectUtils'
 
 // GET /api/subjects - Get subject data for a grade
 export async function GET(request: NextRequest) {
@@ -14,7 +15,8 @@ export async function GET(request: NextRequest) {
 
     if (subject) {
       // Get specific subject data
-      const data = getSubjectData(grade, subject)
+      const normalizedSubject = normalizeSubject(subject)
+      const data = getSubjectData(grade, normalizedSubject)
       return NextResponse.json(data)
     } else {
       // Get all subjects for grade
@@ -23,7 +25,7 @@ export async function GET(request: NextRequest) {
         const subjectData = getSubjectData(grade, subj)
         return {
           ...subjectData,
-          slug: subj.toLowerCase().replace(/\s+/g, '-'),
+          slug: subjectToSlug(subj),
         }
       })
       return NextResponse.json(data)

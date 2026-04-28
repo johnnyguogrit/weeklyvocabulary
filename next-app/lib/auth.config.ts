@@ -15,7 +15,8 @@ export const authConfig: NextAuthConfig = {
     Credentials({
       credentials: {
         email: { label: "Email", type: "email" },
-        password: { label: "Password", type: "password" }
+        password: { label: "Password", type: "password" },
+        role: { label: "Role", type: "text" }
       },
       async authorize(credentials) {
         const email = credentials?.email as string | undefined

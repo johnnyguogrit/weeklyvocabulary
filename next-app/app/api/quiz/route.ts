@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getSubjectData } from '@/data/questionGenerator'
 import { prisma } from '@/lib/db'
+import { normalizeSubject } from '@/lib/subjectUtils'
 
 // POST /api/quiz - Start a new quiz session
 export async function POST(request: NextRequest) {
@@ -15,8 +16,11 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Normalize subject name to match data keys
+    const normalizedSubject = normalizeSubject(subject)
+
     // Get subject data
-    const subjectData = getSubjectData(grade, subject)
+    const subjectData = getSubjectData(grade, normalizedSubject)
     const week = subjectData.weeks.find(w => w.id === weekId)
 
     if (!week) {
@@ -32,7 +36,7 @@ export async function POST(request: NextRequest) {
           userId_grade_subject: {
             userId,
             grade,
-            subject,
+            subject: normalizedSubject,
           },
         },
       })
@@ -42,7 +46,7 @@ export async function POST(request: NextRequest) {
           data: {
             userId,
             grade,
-            subject,
+            subject: normalizedSubject,
             difficulty: difficulty?.toUpperCase() || 'EASY',
             totalScore: 0,
             overallProgress: 0,
@@ -56,7 +60,7 @@ export async function POST(request: NextRequest) {
         data: {
           userId,
           grade,
-          subject,
+          subject: normalizedSubject,
           weekId,
           difficulty: difficulty?.toUpperCase() || 'EASY',
           currentQuestionIndex: 0,

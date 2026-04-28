@@ -346,6 +346,7 @@ export function getSubjectData(grade: string, subject: string): SubjectData {
   const gradeData = VOCABULARY_DATA[grade];
   const subjectData = gradeData?.[subject];
   if (!subjectData) {
+    console.log('[getSubjectData] No subjectData found:', { grade, subject, hasGradeData: !!gradeData, gradeKeys: gradeData ? Object.keys(gradeData) : [] });
     return { id: subject, name: subject, emoji: '📚', color: '#666', description: '', weeks: [], passages: [] };
   }
 
@@ -353,6 +354,14 @@ export function getSubjectData(grade: string, subject: string): SubjectData {
 
   // Use predefined questions if available for this grade and subject
   const gradePredefined = PREDEFINED_QUESTIONS[grade]?.[subject];
+  console.log('[getSubjectData] Checking predefined questions:', {
+    grade,
+    subject,
+    hasGradePredefined: !!gradePredefined,
+    predefinedWeeks: gradePredefined ? Object.keys(gradePredefined) : [],
+    willUsePredefined: gradePredefined && Object.keys(gradePredefined).length > 0
+  });
+
   if (gradePredefined && Object.keys(gradePredefined).length > 0) {
     const { weeks, passages } = buildSubjectDataFromPredefined(grade, subject, subjectData);
     return {
