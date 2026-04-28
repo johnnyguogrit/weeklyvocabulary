@@ -86,15 +86,22 @@ export default function QuizPage() {
 
   const currentQuestion = questions[currentIndex]
 
-  // Save progress to API - must be defined before other callbacks that use it
-  const saveProgress = useCallback(async (newScore: number, newCorrectCount: number) => {
-    try {
-      const totalQuestions = questions.length
-      const isLastQuestion = currentIndex === totalQuestions - 1
-      const accuracy = newCorrectCount / totalQuestions
-      const completed = isLastQuestion && accuracy >= 0.7
+  // Handle time running out - auto-mark as wrong
+  const handleTimeUp = useCallback(async () => {
+    if (showResult) return
 
-      const response = await fetch('/api/progress', {
+    const isLastQuestion = currentIndex === questions.length - 1
+    const accuracy = correctCount / questions.length
+    const completed = isLastQuestion && accuracy >= 0.7
+
+    setSelectedOption(null)
+    setShowResult(true)
+    setIsCorrect(false)
+    setLives(prev => prev - 1)
+
+    // Save progress
+    try {
+      await fetch('/api/progress', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -105,36 +112,17 @@ export default function QuizPage() {
           score: Math.round(accuracy * 100),
           completed,
           quizData: {
-            questionsCorrect: newCorrectCount,
-            questionsTotal: totalQuestions,
+            questionsCorrect: correctCount,
+            questionsTotal: questions.length,
             keywordsMastered: []
           }
         })
       })
-
-      if (response.ok) {
-        const result = await response.json()
-        console.log('Progress saved:', result)
-      }
+      console.log('[QuizPage] Progress saved after time up')
     } catch (error) {
-      console.error('Failed to save progress:', error)
+      console.error('[QuizPage] Failed to save progress:', error)
     }
-  }, [questions, currentIndex, grade, subject, weekId])
-
-  // Handle time running out - auto-mark as wrong
-  const handleTimeUp = useCallback(async () => {
-    if (showResult) return
-
-    const newScore = score
-    const newCorrectCount = correctCount
-
-    setSelectedOption(null)
-    setShowResult(true)
-    setIsCorrect(false)
-    setLives(prev => prev - 1)
-
-    await saveProgress(newScore, newCorrectCount)
-  }, [showResult, score, correctCount, saveProgress])
+  }, [showResult, correctCount, questions, currentIndex, grade, subject, weekId])
 
   useEffect(() => {
     if (difficulty === 'EASY' || showResult || timeRemaining <= 0) return
@@ -157,6 +145,7 @@ export default function QuizPage() {
     const correct = option === currentQuestion?.correctAnswer
     const newScore = correct ? score + 10 : score
     const newCorrectCount = correct ? correctCount + 1 : correctCount
+    const isLastQuestion = currentIndex === questions.length - 1
 
     setSelectedOption(option)
     setShowResult(true)
@@ -169,10 +158,44 @@ export default function QuizPage() {
       confetti({ particleCount: 50, spread: 60, origin: { y: 0.7 } })
     }
 
-    await saveProgress(newScore, newCorrectCount)
-  }, [showResult, currentQuestion, score, correctCount, lives, saveProgress])
+    // Save progress - await to ensure it completes before user can click Next
+    const accuracy = newCorrectCount / questions.length
+    const completed = isLastQuestion && accuracy >= 0.7
+    console.log('[QuizPage] Saving progress after answer:', {
+      weekId,
+      currentIndex,
+      totalQuestions: questions.length,
+      isLastQuestion,
+      correct,
+      accuracy,
+      completed
+    })
 
-  const handleNext = () => {
+    try {
+      await fetch('/api/progress', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify({
+          grade,
+          subject,
+          weekId,
+          score: Math.round(accuracy * 100),
+          completed,
+          quizData: {
+            questionsCorrect: newCorrectCount,
+            questionsTotal: questions.length,
+            keywordsMastered: []
+          }
+        })
+      })
+      console.log('[QuizPage] Progress saved successfully')
+    } catch (error) {
+      console.error('[QuizPage] Failed to save progress:', error)
+    }
+  }, [showResult, currentQuestion, score, correctCount, lives, questions, currentIndex, grade, subject, weekId])
+
+  const handleNext = async () => {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(prev => prev + 1)
       setSelectedOption(null)
@@ -180,7 +203,45 @@ export default function QuizPage() {
       setIsCorrect(null)
       setTimeRemaining(difficulty === 'HARD' ? 15 : difficulty === 'MEDIUM' ? 30 : 0)
     } else {
-      router.push(`/student/${grade}/${subjectToSlug(subject)}`)
+      // Final save before redirecting
+      const accuracy = correctCount / questions.length
+      const completed = accuracy >= 0.7
+      console.log('[QuizPage] Finishing quiz:', {
+        weekId,
+        correctCount,
+        totalQuestions: questions.length,
+        accuracy,
+        completed,
+        redirectUrl: `/student/${grade}/${subjectToSlug(subject)}`
+      })
+
+      // Save final progress
+      try {
+        await fetch('/api/progress', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'include',
+          body: JSON.stringify({
+            grade,
+            subject,
+            weekId,
+            score: Math.round(accuracy * 100),
+            completed,
+            quizData: {
+              questionsCorrect: correctCount,
+              questionsTotal: questions.length,
+              keywordsMastered: []
+            }
+          })
+        })
+        console.log('[QuizPage] Final progress saved, redirecting...')
+      } catch (error) {
+        console.error('[QuizPage] Failed to save final progress:', error)
+      }
+
+      // Force a hard refresh to ensure the subject page shows updated progress
+      const redirectUrl = `/student/${grade}/${subjectToSlug(subject)}`
+      window.location.href = redirectUrl
     }
   }
 
