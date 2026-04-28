@@ -4,7 +4,7 @@
 
 | Field | Value |
 |-------|-------|
-| Version | 3.0.0 |
+| Version | 3.0.1 |
 | Last Updated | 2026-04-28 |
 | Status | **Production** |
 
@@ -236,9 +236,10 @@ vercel logs
 ### 6.4 Environment Variables
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `DATABASE_URL` | Yes | PostgreSQL connection string |
-| `DIRECT_URL` | Yes | Direct database connection (Supabase) |
-| `NEXTAUTH_SECRET` | Yes | NextAuth JWT secret |
+| `DATABASE_URL` | Yes | PostgreSQL connection string with `?pgbouncer=true` |
+| `DIRECT_URL` | Yes | Direct database connection (Supabase) with `?pgbouncer=true` |
+| `AUTH_SECRET` | Yes | NextAuth v5 JWT secret |
+| `NEXTAUTH_SECRET` | Yes | NextAuth v4/v5 compatibility (same as AUTH_SECRET) |
 | `NEXTAUTH_URL` | Yes | Production URL |
 | `NODE_ENV` | No | Set to `production` automatically |
 
@@ -392,6 +393,7 @@ node scripts/parseUnifiedVocabulary.cjs
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 3.0.1 | 2026-04-28 | **PASSWORD PERSISTENCE**: Teacher UX improvement<br>- Added `initialPassword` field to Enrollment model<br>- Passwords persist across page refreshes<br>- Supabase pooler fix (`?pgbouncer=true`)<br>- NextAuth configuration fixes (AUTH_SECRET + NEXTAUTH_SECRET) |
 | 3.0.0 | 2026-04-28 | **PRODUCTION RELEASE**: Vercel deployment complete<br>- Deployed to https://weeklyvocabulary.vercel.app<br>- Configured Vercel Root Directory (next-app)<br>- Fixed Tailwind CSS v3 compatibility (downgraded from v4)<br>- Fixed Radix UI components (removed --spacing() syntax)<br>- Configured Prisma Client for Node.js runtime<br>- Page-level authentication (removed middleware)<br>- Environment variables configured |
 | 2.6.0 | 2026-04-27 | **BULK IMPORT/EXPORT**: Excel-based student management<br>- ImportBatch model for tracking bulk operations<br>- Excel import API (POST /students/import)<br>- Excel export API (GET /students/export)<br>- Parent contact fields (parentEmail, parentPhone)<br>- Download template functionality<br>- Import results display with error logging<br>- xlsx library integration |
 | 2.5.0 | 2026-04-27 | **TEACHER/STUDENT PORTAL COMPLETE**: Full portal implementation<br>- Student welcome screen with grade/subject selection<br>- Week map with progress visualization<br>- Quiz interface with difficulty levels<br>- Reading comprehension section<br>- Teacher dashboard with class management<br>- Student enrollment system<br>- Class detail view with student roster<br>- Progress tracking per student/subject |

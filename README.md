@@ -6,7 +6,7 @@ A gamified vocabulary learning application for Grades 1-5 covering 8 academic su
 **Production:** https://weeklyvocabulary.vercel.app
 
 ## Version
-**v3.0.0** (2026-04-28) - Production Release on Vercel
+**v3.0.1** (2026-04-28) - Password Persistence Feature
 
 ## Features
 
@@ -89,9 +89,10 @@ npm run dev
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `DATABASE_URL` | Yes | PostgreSQL connection string |
-| `DIRECT_URL` | Yes | Direct database connection (Supabase) |
-| `NEXTAUTH_SECRET` | Yes | NextAuth JWT secret |
+| `DATABASE_URL` | Yes | PostgreSQL connection string with `?pgbouncer=true` |
+| `DIRECT_URL` | Yes | Direct database connection with `?pgbouncer=true` (Supabase) |
+| `AUTH_SECRET` | Yes | NextAuth v5 JWT secret |
+| `NEXTAUTH_SECRET` | Yes | NextAuth compatibility (same as AUTH_SECRET) |
 | `NEXTAUTH_URL` | Yes | Production URL |
 
 ### Manual Deployment
@@ -159,7 +160,14 @@ weeklyvocabulary/
 2. **Student**: Grade → Subject → Week → Quiz
 3. **Teacher**: Dashboard → Classes → Students → Progress
 
-## Recent Updates (v3.0.0)
+## Recent Updates (v3.0.1)
+
+- ✅ **Password Persistence**: Teachers can now see student passwords permanently
+- ✅ **Database Enhancement**: Added `initialPassword` field to Enrollment table
+- ✅ **Supabase Pooler Fix**: Added `?pgbouncer=true` for Prisma compatibility
+- ✅ **UI Improvement**: Password displayed with one-click copy button
+
+## Previous Updates (v3.0.0)
 
 - 🎉 **PRODUCTION RELEASE**: Deployed to Vercel
 - ✅ **Authentication**: NextAuth v5 with role-based access

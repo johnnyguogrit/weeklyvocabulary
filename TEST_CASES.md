@@ -5,7 +5,7 @@
 ### Production (Vercel)
 - **URL**: https://weeklyvocabulary.vercel.app
 - **Test Date**: 2026-04-28
-- **Version**: 3.0.0
+- **Version**: 3.0.1
 - **Database**: Supabase PostgreSQL (Project: weeklyvocabulary)
 
 ### Local Development
@@ -175,10 +175,12 @@
 4. Click "Add Student"
 
 **Expected Result:**
-- Success message: "Student added successfully!"
+- Success message: "Student added successfully! Password: password123"
 - Student appears in class roster
 - Student count updates to 1
 - Student card shows: Diana Ho (diana.ho@example.com)
+- Password is visible next to student name with copy button
+- Password persists after page refresh
 
 **Actual Result:** ___________________
 
@@ -389,6 +391,67 @@ charlie.lee@example.com,Charlie,Lee,G1,Pass789,parent.charlie@example.com,+852-7
 
 ---
 
+## Bug Fixes - v3.0.1 (2026-04-28)
+
+### 🐛 BUG-003: Password Not Visible After Page Refresh
+**Status:** FIXED
+
+**Issue:**
+Teachers could see student passwords during import but they disappeared after page refresh. Passwords were only stored in React component state.
+
+**Root Cause:**
+- Passwords are hashed in database (bcrypt) and cannot be retrieved
+- Only temporary state storage existed
+- No persistent password storage for teachers
+
+**Fixes Applied:**
+| File | Change |
+|------|--------|
+| `prisma/schema.prisma` | Added `initialPassword TEXT` field to Enrollment model |
+| `app/api/teacher/classes/[id]/students/import/route.ts` | Store `initialPassword` when creating enrollment |
+| `app/api/teacher/classes/[id]/students/enroll-existing/route.ts` | Accept and store `initialPassword` parameter |
+| `app/teacher/classes/[id]/page.tsx` | Display password from database with copy button |
+
+### 🐛 BUG-004: Supabase Prepared Statement Error
+**Status:** FIXED
+
+**Issue:**
+```
+PostgresError { code: "42P05", message: "prepared statement \"s2\" already exists" }
+```
+
+**Root Cause:**
+- Supabase connection pooler (PgBouncer) incompatibility with Prisma
+- Missing `?pgbouncer=true` parameter in connection string
+
+**Fixes Applied:**
+| Setting | Change |
+|---------|--------|
+| `DATABASE_URL` | Added `?pgbouncer=true` parameter |
+| `DIRECT_URL` | Added `?pgbouncer=true` parameter |
+
+### 🐛 BUG-005: NextAuth Configuration Error
+**Status:** FIXED
+
+**Issue:**
+```
+Sign in error: Configuration
+```
+
+**Root Cause:**
+- NextAuth v5 requires `AUTH_SECRET`
+- Fallback code also needs `NEXTAUTH_SECRET`
+- Missing `NEXTAUTH_URL` for production
+
+**Fixes Applied:**
+| Variable | Value |
+|----------|-------|
+| `AUTH_SECRET` | Set in Vercel environment |
+| `NEXTAUTH_SECRET` | Set to same value as AUTH_SECRET |
+| `NEXTAUTH_URL` | Set to `https://weeklyvocabulary.vercel.app` |
+
+---
+
 ## Bug Fixes - v2.7.0 (2026-04-27)
 
 ### 🐛 BUG-001: Teacher Login Redirecting to Student Page
@@ -430,6 +493,7 @@ Error: "Can't reach database server at `db.udczwafhjuewnzvrcvdq.supabase.co:5432
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v3.0.1 | 2026-04-28 | **Password Persistence** - Added initialPassword to Enrollment, Supabase pooler fix |
 | v3.0.0 | 2026-04-28 | **PRODUCTION RELEASE** - Deployed to Vercel, Tailwind v3 compatibility, Prisma Client location fix |
 | v2.7.0 | 2026-04-27 | Fixed auth routing, database connection |
 | v2.6.1 | 2026-04-27 | Fixed progress saving, week unlock |
@@ -476,5 +540,6 @@ Error: "Can't reach database server at `db.udczwafhjuewnzvrcvdq.supabase.co:5432
 
 | Date | Tester | Pass | Fail | Blocked | Notes |
 |------|--------|------|------|---------|-------|
+| 2026-04-28 | Claude | - | - | - | v3.0.1 - Password persistence, Supabase pooler fix |
 | 2026-04-28 | Claude | - | - | - | v3.0.0 - Production deployment on Vercel |
 | 2026-04-27 | Claude | - | - | - | v2.7.0 - Auth fixes |

@@ -102,16 +102,44 @@ Fixed Radix UI components that used Tailwind v4 syntax:
 
 **Solution:** Click **Redeploy** to apply new configuration settings to production.
 
+### 7. Supabase Pooler Compatibility
+
+**Problem:** Prisma queries fail with `PostgresError { code: "42P05", message: "prepared statement \"s2\" already exists"`.
+
+**Root Cause:** Supabase connection pooler (PgBouncer) in transaction mode doesn't support prepared statements the same way as direct connections.
+
+**Solution:** Add `?pgbouncer=true` parameter to connection strings:
+```
+DATABASE_URL="postgresql://...pooler.supabase.com:6543/postgres?pgbouncer=true"
+DIRECT_URL="postgresql://...pooler.supabase.com:6543/postgres?pgbouncer=true"
+```
+
+This tells Prisma to use transaction mode compatible with Supabase pooler.
+
+### 8. NextAuth Configuration Error
+
+**Problem:** `Sign in error: Configuration` when logging in.
+
+**Root Cause:** NextAuth v5 requires `AUTH_SECRET` but some fallback code looks for `NEXTAUTH_SECRET`. Both must be set in production.
+
+**Solution:** Set both environment variables in Vercel:
+- `AUTH_SECRET` - Primary secret for NextAuth v5
+- `NEXTAUTH_SECRET` - Fallback for compatibility
+- `NEXTAUTH_URL` - Production URL (e.g., `https://weeklyvocabulary.vercel.app`)
+
 ## Environment Variables (Required)
 
 Set these in Vercel Dashboard → Settings → Environment Variables:
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `DATABASE_URL` | PostgreSQL connection string | `postgresql://...` |
-| `DIRECT_URL` | Direct connection for Supabase | `postgresql://...` |
-| `NEXTAUTH_SECRET` | NextAuth secret | Random string |
+| `DATABASE_URL` | PostgreSQL connection string with `?pgbouncer=true` | `postgresql://...?pgbouncer=true` |
+| `DIRECT_URL` | Direct connection for Supabase with `?pgbouncer=true` | `postgresql://...?pgbouncer=true` |
+| `AUTH_SECRET` | NextAuth v5 secret | Random string |
+| `NEXTAUTH_SECRET` | NextAuth v4/v5 compatibility | Same as AUTH_SECRET |
 | `NEXTAUTH_URL` | Production URL | `https://weeklyvocabulary.vercel.app` |
+
+**IMPORTANT:** Supabase pooler requires `?pgbouncer=true` parameter to avoid "prepared statement already exists" errors.
 
 ## Build Process Summary
 
@@ -131,6 +159,8 @@ Set these in Vercel Dashboard → Settings → Environment Variables:
 | `Edge Runtime unsupported modules` | Middleware with Prisma | Remove middleware, use page-level auth |
 | `No Output Directory named "public"` | Wrong root directory | Set Root Directory to `next-app` |
 | `404 on all routes` | Old deployment configuration | Redeploy with new settings |
+| `prepared statement "sX" already exists` | Supabase pooler incompatibility | Add `?pgbouncer=true` to DATABASE_URL |
+| `Sign in error: Configuration` | Missing NEXTAUTH_SECRET or NEXTAUTH_URL | Add both environment variables in Vercel |
 
 ## Performance Optimization
 
