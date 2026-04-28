@@ -5,7 +5,7 @@
 ### Production (Vercel)
 - **URL**: https://weeklyvocabulary.vercel.app
 - **Test Date**: 2026-04-28
-- **Version**: 3.0.1
+- **Version**: 3.0.2
 - **Database**: Supabase PostgreSQL (Project: weeklyvocabulary)
 
 ### Local Development
@@ -371,6 +371,99 @@ charlie.lee@example.com,Charlie,Lee,G1,Pass789,parent.charlie@example.com,+852-7
 
 ---
 
+### TC-205: G1 Week Unlocking After Quiz Completion
+
+| Field | Value |
+|-------|-------|
+| **Test ID** | TC-205 |
+| **Title** | Verify G1 non-consecutive week unlocking |
+| **Priority** | High |
+| **Preconditions** | G1 Student logged in, Week 2 completed |
+
+**Steps:**
+
+1. Login as G1 student
+2. Select Grade 1 → Mathematics
+3. Complete Week 2 quiz with 70%+ accuracy
+4. Click "Finish Quiz" button
+5. Verify redirect back to Mathematics week map
+6. Check which weeks are unlocked
+
+**Expected Result:**
+- Redirects to `/student/G1/maths` page
+- Week 2 shows as completed (checkmark)
+- Week 3 is unlocked (clickable)
+- Week 4 remains locked (lock icon)
+- Progress saved to database with `completed: true`
+
+**Actual Result:** ___________________
+
+**Status:** Pass / Fail
+
+---
+
+### TC-206: G1 Week 5 to Week 7 Unlocking
+
+| Field | Value |
+|-------|-------|
+| **Test ID** | TC-206 |
+| **Title** | Verify G1 review week to next section unlocking |
+| **Priority** | High |
+| **Preconditions** | G1 Student logged in, Week 5 (Review) completed |
+
+**Steps:**
+
+1. Login as G1 student
+2. Select Grade 1 → Mathematics
+3. Complete Week 5 (Review Week) quiz with 70%+ accuracy
+4. Click "Finish Quiz" button
+5. Verify redirect back to Mathematics week map
+6. Check which weeks are unlocked
+
+**Expected Result:**
+- Redirects to `/student/G1/maths` page
+- Week 5 shows as completed (checkmark)
+- Week 7 is unlocked (clickable) - Note: Week 6 doesn't exist in G1
+- Week 8 remains locked (lock icon)
+
+**Actual Result:** ___________________
+
+**Status:** Pass / Fail
+
+---
+
+### TC-207: Quiz Completion Redirect Flow
+
+| Field | Value |
+|-------|-------|
+| **Test ID** | TC-207 |
+| **Title** | Verify quiz completion redirects correctly |
+| **Priority** | High |
+| **Preconditions** | Any student logged in, on last question |
+
+**Steps:**
+
+1. Start any quiz (e.g., Week 2 Mathematics)
+2. Answer all questions until the last question
+3. On the last question, select an answer
+4. View the result explanation
+5. Click "Finish Quiz" button
+6. Observe the page behavior
+
+**Expected Result:**
+- Button shows "Finish Quiz" (not "Next Question")
+- After clicking, progress is saved
+- Page redirects to subject week map
+- Week map shows updated progress
+- No console errors
+- Page fully refreshes (hard reload, not soft navigation)
+
+**Actual Result:** ___________________
+
+**Status:** Pass / Fail
+
+---
+
 ## Test Accounts Summary
 
 ### Teacher Account
@@ -388,6 +481,47 @@ charlie.lee@example.com,Charlie,Lee,G1,Pass789,parent.charlie@example.com,+852-7
 | Alice Chan | alice.chan@example.com | Pass123 | G1 | TC-103 (Import) |
 | Bob Wong | bob.wong@example.com | Pass456 | G1 | TC-103 (Import) |
 | Charlie Lee | charlie.lee@example.com | Pass789 | G1 | TC-103 (Import) |
+
+---
+
+## Bug Fixes - v3.0.2 (2026-04-28)
+
+### 🐛 BUG-006: G1 Week Unlocking Not Working
+**Status:** FIXED
+
+**Issue:**
+After completing a quiz in G1, the next week was not unlocking. Students couldn't progress through the weeks.
+
+**Root Cause:**
+- G1 weeks are non-consecutive (2,3,4,5,7,8,9,10,11,12,13,14,15)
+- Progress API was using `weekNum + 1` to find next week
+- This caused Week 5 → Week 6 (doesn't exist) instead of Week 5 → Week 7
+
+**Fixes Applied:**
+| File | Change |
+|------|--------|
+| `app/api/progress/route.ts` | Added `g1WeekSequence` array for correct week order |
+| `app/api/progress/route.ts` | Use sequence-based lookup instead of `weekNum + 1` |
+| `app/api/progress/route.ts` | Fixed initial week locking (only week 2 unlocked for G1) |
+
+### 🐛 BUG-007: Quiz Completion Not Redirecting
+**Status:** FIXED
+
+**Issue:**
+After clicking "Finish Quiz", students were not redirected back to the subject week map page.
+
+**Root Cause:**
+- `saveProgress` was not awaited, causing race condition
+- Using `router.push` for soft navigation (cached page)
+- Progress might not be saved before redirect
+
+**Fixes Applied:**
+| File | Change |
+|------|--------|
+| `app/student/[grade]/[subject]/[weekId]/page.tsx` | Awaited all progress save calls |
+| `app/student/[grade]/[subject]/[weekId]/page.tsx` | Added final save before redirect |
+| `app/student/[grade]/[subject]/[weekId]/page.tsx` | Use `window.location.href` for hard refresh |
+| `app/student/[grade]/[subject]/[weekId]/page.tsx` | Added detailed logging for debugging |
 
 ---
 
@@ -493,6 +627,7 @@ Error: "Can't reach database server at `db.udczwafhjuewnzvrcvdq.supabase.co:5432
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v3.0.2 | 2026-04-28 | **G1 Format & Quiz Fixes** - G1 vocabulary structure updated, week unlocking fixed, quiz redirect fixed |
 | v3.0.1 | 2026-04-28 | **Password Persistence** - Added initialPassword to Enrollment, Supabase pooler fix |
 | v3.0.0 | 2026-04-28 | **PRODUCTION RELEASE** - Deployed to Vercel, Tailwind v3 compatibility, Prisma Client location fix |
 | v2.7.0 | 2026-04-27 | Fixed auth routing, database connection |
@@ -540,6 +675,7 @@ Error: "Can't reach database server at `db.udczwafhjuewnzvrcvdq.supabase.co:5432
 
 | Date | Tester | Pass | Fail | Blocked | Notes |
 |------|--------|------|------|---------|-------|
+| 2026-04-28 | Claude | - | - | - | v3.0.2 - G1 format update, week unlocking fix, quiz redirect fix |
 | 2026-04-28 | Claude | - | - | - | v3.0.1 - Password persistence, Supabase pooler fix |
 | 2026-04-28 | Claude | - | - | - | v3.0.0 - Production deployment on Vercel |
 | 2026-04-27 | Claude | - | - | - | v2.7.0 - Auth fixes |

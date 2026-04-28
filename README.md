@@ -6,7 +6,7 @@ A gamified vocabulary learning application for Grades 1-5 covering 8 academic su
 **Production:** https://weeklyvocabulary.vercel.app
 
 ## Version
-**v3.0.1** (2026-04-28) - Password Persistence Feature
+**v3.0.2** (2026-04-28) - G1 Vocabulary Format Update & Quiz Flow Fixes
 
 ## Features
 
@@ -160,14 +160,15 @@ weeklyvocabulary/
 2. **Student**: Grade → Subject → Week → Quiz
 3. **Teacher**: Dashboard → Classes → Students → Progress
 
-## Recent Updates (v3.0.1)
+## Recent Updates (v3.0.2)
 
-- ✅ **Password Persistence**: Teachers can now see student passwords permanently
-- ✅ **Database Enhancement**: Added `initialPassword` field to Enrollment table
-- ✅ **Supabase Pooler Fix**: Added `?pgbouncer=true` for Prisma compatibility
-- ✅ **UI Improvement**: Password displayed with one-click copy button
+- ✅ **G1 Vocabulary Format Update**: Changed from "review weeks" to individual keyword weeks
+- ✅ **Week Unlocking Fix**: Fixed non-consecutive week ID unlocking for G1 (2,3,4,5,7,8,9...)
+- ✅ **Quiz Completion Flow**: Fixed redirect after finishing quiz using hard refresh
+- ✅ **Progress Save Fix**: Awaited async progress save to ensure completion before navigation
+- ✅ **Data Parser Update**: Now updates both app/ and next-app/ directories
 
-## Previous Updates (v3.0.0)
+## Previous Updates (v3.0.1)
 
 - 🎉 **PRODUCTION RELEASE**: Deployed to Vercel
 - ✅ **Authentication**: NextAuth v5 with role-based access

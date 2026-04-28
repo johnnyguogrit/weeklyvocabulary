@@ -4,7 +4,7 @@
 
 | Field | Value |
 |-------|-------|
-| Version | 3.0.1 |
+| Version | 3.0.2 |
 | Last Updated | 2026-04-28 |
 | Status | **Production** |
 
@@ -159,6 +159,27 @@ Deployment: Vercel (Root Directory: next-app)
 | Physical Education | ⚽ | #00695C | PE |
 
 **Note**: G5 uses "Performing Arts" instead of separate "Drama" subject.
+
+### 4.4 G1 Week Structure (v3.0.2+)
+
+**Grade 1 uses a different week format** compared to G2-G5:
+
+| Week | Type | Description |
+|------|------|-------------|
+| 2, 3, 4 | Individual Keyword | Each week focuses on a single vocabulary word |
+| 5 | Review Week | Comprehensive review with reading passage |
+| 7, 8 | Individual Keyword | Each week focuses on a single vocabulary word |
+| 9 | Review Week | Comprehensive review with reading passage |
+| 10 | Review Week | Comprehensive review with reading passage |
+| 11, 12, 13 | Individual Keyword | Each week focuses on a single vocabulary word |
+| 14 | Review Week | Comprehensive review with reading passage |
+| 15 | Final Review | Final comprehensive review |
+
+**Key Differences:**
+- **Non-consecutive week IDs**: 2,3,4,5,7,8,9,10,11,12,13,14,15 (no week 1 or 6)
+- **13 weeks total** per subject (vs 15 for G2+)
+- **4 review weeks** with reading comprehension passages
+- **Progress API** uses `g1WeekSequence` array for proper week unlocking
 
 ## 5. Functional Requirements
 
@@ -393,6 +414,7 @@ node scripts/parseUnifiedVocabulary.cjs
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 3.0.2 | 2026-04-28 | **G1 FORMAT UPDATE & QUIZ FIXES**: G1 vocabulary structure changed<br>- G1 weeks now: 2,3,4,5,7,8,9,10,11,12,13,14,15 (individual keyword + review)<br>- Fixed week unlocking for non-consecutive IDs (G1 sequence)<br>- Fixed quiz completion redirect using hard refresh<br>- Progress save now awaited before navigation<br>- Data parser updates both app/ and next-app/ |
 | 3.0.1 | 2026-04-28 | **PASSWORD PERSISTENCE**: Teacher UX improvement<br>- Added `initialPassword` field to Enrollment model<br>- Passwords persist across page refreshes<br>- Supabase pooler fix (`?pgbouncer=true`)<br>- NextAuth configuration fixes (AUTH_SECRET + NEXTAUTH_SECRET) |
 | 3.0.0 | 2026-04-28 | **PRODUCTION RELEASE**: Vercel deployment complete<br>- Deployed to https://weeklyvocabulary.vercel.app<br>- Configured Vercel Root Directory (next-app)<br>- Fixed Tailwind CSS v3 compatibility (downgraded from v4)<br>- Fixed Radix UI components (removed --spacing() syntax)<br>- Configured Prisma Client for Node.js runtime<br>- Page-level authentication (removed middleware)<br>- Environment variables configured |
 | 2.6.0 | 2026-04-27 | **BULK IMPORT/EXPORT**: Excel-based student management<br>- ImportBatch model for tracking bulk operations<br>- Excel import API (POST /students/import)<br>- Excel export API (GET /students/export)<br>- Parent contact fields (parentEmail, parentPhone)<br>- Download template functionality<br>- Import results display with error logging<br>- xlsx library integration |
