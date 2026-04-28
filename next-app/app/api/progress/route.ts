@@ -155,12 +155,22 @@ export async function POST(request: NextRequest) {
       });
 
       if (!weekProgress) {
+        // Determine if this week should be locked initially
+        // For G1: only week 2 is unlocked by default
+        // For G2+: only week 3 is unlocked by default
+        let initiallyLocked = true;
+        if (grade === 'G1') {
+          initiallyLocked = weekNum !== 2;
+        } else {
+          initiallyLocked = weekNum !== 3;
+        }
+
         // Create new WeekProgress
         weekProgress = await prisma.weekProgress.create({
           data: {
             studentProgressId: studentProgress.id,
             weekId: weekNum,
-            locked: weekNum > 2, // First week (2) is unlocked by default
+            locked: initiallyLocked,
             completed: completed || false,
             score: score || 0,
             keywordsMastered: JSON.stringify(quizData?.keywordsMastered || []),
@@ -202,31 +212,48 @@ export async function POST(request: NextRequest) {
 
       // Unlock next week if current week is completed
       if (completed && weekProgress) {
-        const nextWeekId = weekNum + 1;
-        // Use upsert to create the next week if it doesn't exist, or unlock if it does
-        await prisma.weekProgress.upsert({
-          where: {
-            studentProgressId_weekId: {
+        // Define the actual week sequence for G1 (not consecutive: 2,3,4,5,7,8,9,10,11,12,13,14,15)
+        const g1WeekSequence = [2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+        let nextWeekId: number | undefined;
+
+        // For G1, use the predefined sequence
+        if (grade === 'G1') {
+          const currentIndex = g1WeekSequence.indexOf(weekNum);
+          if (currentIndex >= 0 && currentIndex < g1WeekSequence.length - 1) {
+            nextWeekId = g1WeekSequence[currentIndex + 1];
+          }
+        } else {
+          // For G2+, weeks are consecutive
+          nextWeekId = weekNum + 1;
+        }
+
+        if (nextWeekId !== undefined) {
+          // Use upsert to create the next week if it doesn't exist, or unlock if it does
+          await prisma.weekProgress.upsert({
+            where: {
+              studentProgressId_weekId: {
+                studentProgressId: studentProgress.id,
+                weekId: nextWeekId,
+              },
+            },
+            create: {
               studentProgressId: studentProgress.id,
               weekId: nextWeekId,
+              locked: false, // Unlock the next week
+              completed: false,
+              score: 0,
+              questionsCorrect: 0,
+              questionsTotal: 0,
+              readingCompCorrect: 0,
+              readingCompTotal: 0,
+              keywordsMastered: JSON.stringify([]),
             },
-          },
-          create: {
-            studentProgressId: studentProgress.id,
-            weekId: nextWeekId,
-            locked: false, // Unlock the next week
-            completed: false,
-            score: 0,
-            questionsCorrect: 0,
-            questionsTotal: 0,
-            readingCompCorrect: 0,
-            readingCompTotal: 0,
-            keywordsMastered: JSON.stringify([]),
-          },
-          update: {
-            locked: false, // Unlock if it already exists
-          },
-        });
+            update: {
+              locked: false, // Unlock if it already exists
+            },
+          });
+        }
       }
 
       // Recalculate overall progress
