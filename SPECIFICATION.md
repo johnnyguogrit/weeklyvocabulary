@@ -4,9 +4,9 @@
 
 | Field | Value |
 |-------|-------|
-| Version | 3.0.2 |
-| Last Updated | 2026-04-28 |
-| Status | **Production** |
+| Version | 3.0.3 |
+| Last Updated | 2026-04-29 |
+| Status | **Open Beta** |
 
 ## 1. System Overview
 
@@ -414,6 +414,7 @@ node scripts/parseUnifiedVocabulary.cjs
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 3.0.3 | 2026-04-29 | **OPEN BETA LAUNCH**: Production-ready release<br>- Removed demo account credentials from login page<br>- Added open beta welcome message<br>- Clean UI for student/teacher use |
 | 3.0.2 | 2026-04-28 | **G1 FORMAT UPDATE & QUIZ FIXES**: G1 vocabulary structure changed<br>- G1 weeks now: 2,3,4,5,7,8,9,10,11,12,13,14,15 (individual keyword + review)<br>- Fixed week unlocking for non-consecutive IDs (G1 sequence)<br>- Fixed quiz completion redirect using hard refresh<br>- Progress save now awaited before navigation<br>- Data parser updates both app/ and next-app/ |
 | 3.0.1 | 2026-04-28 | **PASSWORD PERSISTENCE**: Teacher UX improvement<br>- Added `initialPassword` field to Enrollment model<br>- Passwords persist across page refreshes<br>- Supabase pooler fix (`?pgbouncer=true`)<br>- NextAuth configuration fixes (AUTH_SECRET + NEXTAUTH_SECRET) |
 | 3.0.0 | 2026-04-28 | **PRODUCTION RELEASE**: Vercel deployment complete<br>- Deployed to https://weeklyvocabulary.vercel.app<br>- Configured Vercel Root Directory (next-app)<br>- Fixed Tailwind CSS v3 compatibility (downgraded from v4)<br>- Fixed Radix UI components (removed --spacing() syntax)<br>- Configured Prisma Client for Node.js runtime<br>- Page-level authentication (removed middleware)<br>- Environment variables configured |

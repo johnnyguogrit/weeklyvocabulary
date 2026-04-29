@@ -4,9 +4,10 @@
 
 ### Production (Vercel)
 - **URL**: https://weeklyvocabulary.vercel.app
-- **Test Date**: 2026-04-28
-- **Version**: 3.0.2
+- **Test Date**: 2026-04-29
+- **Version**: 3.0.3
 - **Database**: Supabase PostgreSQL (Project: weeklyvocabulary)
+- **Status**: Open Beta
 
 ### Local Development
 - **URL**: http://localhost:3000
@@ -627,6 +628,7 @@ Error: "Can't reach database server at `db.udczwafhjuewnzvrcvdq.supabase.co:5432
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v3.0.3 | 2026-04-29 | **Open Beta Launch** - Removed demo credentials from login, added beta welcome message |
 | v3.0.2 | 2026-04-28 | **G1 Format & Quiz Fixes** - G1 vocabulary structure updated, week unlocking fixed, quiz redirect fixed |
 | v3.0.1 | 2026-04-28 | **Password Persistence** - Added initialPassword to Enrollment, Supabase pooler fix |
 | v3.0.0 | 2026-04-28 | **PRODUCTION RELEASE** - Deployed to Vercel, Tailwind v3 compatibility, Prisma Client location fix |

@@ -6,7 +6,7 @@ A gamified vocabulary learning application for Grades 1-5 covering 8 academic su
 **Production:** https://weeklyvocabulary.vercel.app
 
 ## Version
-**v3.0.2** (2026-04-28) - G1 Vocabulary Format Update & Quiz Flow Fixes
+**v3.0.3** (2026-04-29) - Open Beta Release
 
 ## Features
 
@@ -38,7 +38,7 @@ cp .env.example .env
 # Edit .env with your DATABASE_URL
 npx prisma generate
 npx prisma db push
-pnpm db:seed  # Create demo accounts
+pnpm db:seed  # Create demo accounts (local only)
 
 pnpm dev
 # Access at http://localhost:3000
@@ -160,7 +160,13 @@ weeklyvocabulary/
 2. **Student**: Grade → Subject → Week → Quiz
 3. **Teacher**: Dashboard → Classes → Students → Progress
 
-## Recent Updates (v3.0.2)
+## Recent Updates (v3.0.3)
+
+- ✅ **Open Beta Launch**: Removed demo credentials from login page
+- ✅ **Clean UI**: Login page now shows open beta welcome message
+- ✅ **Production Ready**: System ready for student and teacher use
+
+## Previous Updates (v3.0.2)
 
 - ✅ **G1 Vocabulary Format Update**: Changed from "review weeks" to individual keyword weeks
 - ✅ **Week Unlocking Fix**: Fixed non-consecutive week ID unlocking for G1 (2,3,4,5,7,8,9...)
