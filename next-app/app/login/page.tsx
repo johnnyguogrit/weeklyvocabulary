@@ -131,15 +131,8 @@ export default function LoginPage() {
             </Link>
           </div>
 
-          <div className="mt-4 text-center text-sm text-muted-foreground">
-            <p>Demo Accounts:</p>
-            <div className="mt-2 space-y-1 text-xs">
-              {role === 'TEACHER' ? (
-                <p>👨‍🏫 Teacher: teacher@school.com / teacher123</p>
-              ) : (
-                <p>👦 Student: student@school.com / student123</p>
-              )}
-            </div>
+          <div className="mt-4 pt-4 border-t text-center text-xs text-muted-foreground">
+            🌱 Open Beta - Welcome to Vocabulary Adventure
           </div>
         </CardContent>
       </Card>
